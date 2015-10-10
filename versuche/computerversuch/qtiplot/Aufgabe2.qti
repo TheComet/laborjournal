@@ -1,0 +1,116 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	muParser
+<windows>	2
+<table>
+Table1	30	3	30/09/2015 09:42
+geometry	0	0	435	644	active
+header	Messung[X]	Eisengehalt[Y]	Absoluter Fehler[Y]
+ColWidth	100	123	112	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0
+HiddenColumn	0	0	0
+Comments				
+WindowLabel		2
+<data>
+0	1	20.3	1.2
+1	2	21.9	1.3
+2	3	21.1	1.1
+3	4	19.6	0.8
+4	5	19.9	1.3
+5	6	18	1.3
+6	7	19.4	1
+7	8	22.2	2
+8	9	21.6	0.8
+</data>
+</table>
+<multiLayer>
+Graph1	1	1	30/09/2015 11:53
+geometry	392	-1	731	618	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	6	-1	710	554
+<PageGeometry>0.00829876	-0.00174825	0.982019	0.968531</PageGeometry>
+PlotTitle	Title	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	%(?X)	%(?Y)		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	18	75	0	0	0
+ScaleFont0	Sans Serif	15	75	0	0	0
+ScaleFont1	Sans Serif	15	75	0	0	0
+ScaleFont2	Sans Serif	15	75	0	0	0
+ScaleFont3	Sans Serif	15	75	0	0	0
+AxisFont0	Sans Serif	15	50	0	0	0
+AxisFont1	Sans Serif	15	50	0	0	0
+AxisFont2	Sans Serif	15	50	0	0	0
+AxisFont3	Sans Serif	15	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#fffdf9	#fffdf9	#fffdf9	#fffdf9
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Table1_Messung	Table1_Eisengehalt	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	8	1
+scale	0	17	23	0	7	5	0	0
+scale	1	17	23	0	7	5	0	0
+scale	2	0	10	0	6	5	0	0
+scale	3	0	10	0	6	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>0.22670025188917</x>
+<y>22.818181818182</y>
+<right>1.79229480737018</right>
+<bottom>22.5374449339207</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+</Text>
+<Font>Sans Serif	15	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<open>1</open>

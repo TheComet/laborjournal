@@ -1,0 +1,13 @@
+# LaTeX stuff
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.pdf
+
+# libreoffice stuff
+*.ods#

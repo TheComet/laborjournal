@@ -1,0 +1,199 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	muParser
+<windows>	2
+<table>
+Table1	30	2	09/10/2015 16:05
+geometry	0	0	284	505	
+header	1[X]	2[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/6	0;0/6
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		2
+<data>
+0	1	6.83
+1	2	7.41
+2	3	7.32
+3	4	7.31
+4	5	7.23
+5	6	7.68
+6	7	7.33
+7	8	7.7
+8	9	7.93
+9	10	7.54
+10	11	7.36
+11	12	7.31
+12	13	7.56
+13	14	7.14
+14	15	6.94
+15	16	7.32
+16	17	7.34
+17	18	7.28
+18	19	7.01
+19	20	7.76
+</data>
+</table>
+<multiLayer>
+Graph1	1	1	09/10/2015 16:06
+geometry	308	-2	750	536	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	8	5	729	472
+<PageGeometry>0.0107817	0.0102041	0.98248	0.963265</PageGeometry>
+PlotTitle	Title	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	%(?X)	%(?Y)		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	15	75	0	0	0
+ScaleFont0	Sans Serif	13	75	0	0	0
+ScaleFont1	Sans Serif	13	75	0	0	0
+ScaleFont2	Sans Serif	13	75	0	0	0
+ScaleFont3	Sans Serif	13	75	0	0	0
+AxisFont0	Sans Serif	13	50	0	0	0
+AxisFont1	Sans Serif	13	50	0	0	0
+AxisFont2	Sans Serif	13	50	0	0	0
+AxisFont3	Sans Serif	13	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#fffdf9	#fffdf9	#fffdf9	#fffdf9
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Table1_1	Table1_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	29	1
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit2</Title>
+<Expression>a</Expression>
+<Variable>x</Variable>
+<Range>1	20</Range>
+<Points>100</Points>
+<Constant>a	7.365</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	6.8	8	0	7	5	0	0
+scale	1	6.8	8	0	7	5	0	0
+scale	2	0	25	0	6	5	0	0
+scale	3	0	25	0	6	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>0.56675062972292</x>
+<y>7.9636363636364</y>
+<right>6.80100755667506</right>
+<bottom>7.84646464646465</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(2)%(2)
+</Text>
+<Font>Sans Serif	13	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<open>1</open>
+<log>
+[09/10/2015 16:07	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table1_2, using function: a*x+b
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000000000000e+00 to x = 2.000000000000000e+01
+a = 6.917275971967361e-04 +/- 1.096047931927616e-02
+b = 7.357736860208576e+00 +/- 1.312972199238876e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 7.988787802840437e-02
+R^2 = 0.000221230264006556
+Adjusted R^2 = -0.11739980146964
+RMSE (Root Mean Squared Error) = 0.282644437462343
+RSS (Residual Sum of Squares) = 1.43798180451128
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+[09/10/2015 16:08	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table1_2, using function: a
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000000000000e+00 to x = 2.000000000000000e+01
+a = 7.365000000000000e+00 +/- 6.152235369617563e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 7.569999999999992e-02
+R^2 = 0
+Adjusted R^2 = -0.0555555555555556
+RMSE (Root Mean Squared Error) = 0.275136329843952
+RSS (Residual Sum of Squares) = 1.4383
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+[09/10/2015 16:10	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table1_2, using function: avg(y)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000000000000e+00 to x = 2.000000000000000e+01
+y = 7.365000000000000e+00 +/- 6.152235369617563e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 7.569999999999992e-02
+R^2 = 0
+Adjusted R^2 = -0.0555555555555556
+RMSE (Root Mean Squared Error) = 0.275136329843952
+RSS (Residual Sum of Squares) = 1.4383
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+</log>
