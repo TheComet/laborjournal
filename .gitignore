@@ -11,3 +11,7 @@
 
 # libreoffice stuff
 *.ods#
+
+# temp files
+*.swp
+
