@@ -3,8 +3,8 @@ QtiPlot 0.9.8 project file
 <windows>	2
 <table>
 Table1	30	3	30/09/2015 09:42
-geometry	0	0	435	644	active
-header	Messung[X]	Eisengehalt[Y]	Absoluter Fehler[Y]
+geometry	0	0	435	644	
+header	Messung[X]	Eisengehalt[Y]	Absoluter Fehler[yEr]
 ColWidth	100	123	112	
 <com>
 </com>
@@ -27,7 +27,7 @@ WindowLabel		2
 </table>
 <multiLayer>
 Graph1	1	1	30/09/2015 11:53
-geometry	392	-1	731	618	
+geometry	467	39	731	618	active
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
@@ -69,8 +69,29 @@ AxesBaseline	0	0	0	0
 CanvasFrame	1	#000000
 CanvasBackground	#ffffff	0
 curve	Table1_Messung	Table1_Eisengehalt	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	8	1
-scale	0	17	23	0	7	5	0	0
-scale	1	17	23	0	7	5	0	0
+ErrorBars	1	Table1_Messung	Table1_Eisengehalt	Table1_Absoluter Fehler	1	8	#000000	1	1	1	0
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit1</Title>
+<Expression>a</Expression>
+<Variable>x</Variable>
+<Range>1	9</Range>
+<Points>1000</Points>
+<Constant>a	20.3681484514509</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#ff0000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	16	26	0	6	5	0	0
+scale	1	16	26	0	6	5	0	0
 scale	2	0	10	0	6	5	0	0
 scale	3	0	10	0	6	5	0	0
 LabelsFormat	0	6	0	6	0	6	0	6
@@ -91,17 +112,23 @@ EnabledTickLabels	1	0	1	0
 <Color>#000000</Color>
 <FrameWidth>1</FrameWidth>
 <LineStyle>0</LineStyle>
-<x>0.22670025188917</x>
-<y>22.818181818182</y>
-<right>1.79229480737018</right>
-<bottom>22.5374449339207</bottom>
+<x>0.048780487804878</x>
+<y>25.933774834437</y>
+<right>4.09756097560976</right>
+<bottom>23.1743929359823</bottom>
 <attachTo>1</attachTo>
 <onTop>1</onTop>
 <visible>1</visible>
 <Text>
 \l(1)%(1)
+\l(3)%(3)
+<b>Dataset</b>: Table1_Eisengehalt
+<b>Function</b>: a
+<b>Chi^2/doF</b> = 1.2940e+00
+<b>R^2</b> = 0.004295
+<b>a</b> = 2.0368e+01 +/- 4.1071e-01
 </Text>
-<Font>Sans Serif	15	50	0	0	0</Font>
+<Font>Sans Serif	12	50	0	0	0</Font>
 <TextColor>#000000</TextColor>
 <Background>#ffffff</Background>
 <Alpha>0</Alpha>
@@ -114,3 +141,21 @@ EnabledTickLabels	1	0	1	0
 <ScaleLayers>1</ScaleLayers>
 </multiLayer>
 <open>1</open>
+<log>
+[11/10/2015 22:43	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table1_Eisengehalt, using function: a
+Weighting Method: Arbitrary Dataset: Table1_Absoluter Fehler
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.0000e+00 to x = 9.0000e+00
+a = 2.0368e+01 +/- 4.1071e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.2940e+00
+R^2 = 0.004295
+Adjusted R^2 = -0.1379
+RMSE (Root Mean Squared Error) = 1.138
+RSS (Residual Sum of Squares) = 10.35
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+</log>

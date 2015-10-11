@@ -15,3 +15,5 @@
 # temp files
 *.swp
 
+# qti temp files
+*.qti~
