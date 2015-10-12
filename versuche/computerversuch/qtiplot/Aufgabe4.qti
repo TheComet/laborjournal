@@ -1,0 +1,256 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	muParser
+<windows>	2
+<table>
+Table1	91	2	12/10/2015 15:49
+geometry	0	-4	263	659	
+header	t (s)[X]	y (m)[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/6	0;0/6
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		2
+<data>
+0	0.5	-0.418
+1	1	-0.07
+2	1.5	0.082
+3	2	0.19
+4	2.5	0.494
+5	3	0.566
+6	3.5	0.753
+7	4	0.913
+8	4.5	0.869
+9	5	0.977
+10	5.5	0.956
+11	6	0.996
+12	6.5	0.971
+13	7	0.827
+14	7.5	0.784
+15	8	0.594
+16	8.5	0.632
+17	9	0.435
+18	9.5	0.366
+19	10	0.123
+20	10.5	0.064
+21	11	-0.084
+22	11.5	-0.152
+23	12	-0.299
+24	12.5	-0.506
+25	13	-0.479
+26	13.5	-0.576
+27	14	-0.662
+28	14.5	-0.498
+29	15	-0.654
+30	15.5	-0.577
+31	16	-0.48
+32	16.5	-0.414
+33	17	-0.46
+34	17.5	-0.187
+35	18	-0.171
+36	18.5	-0.03
+37	19	-0.072
+38	19.5	-0.011
+39	20	0.082
+40	20.5	0.109
+41	21	0.25
+42	21.5	0.404
+43	22	0.272
+44	22.5	0.317
+45	23	0.417
+46	23.5	0.423
+47	24	0.45
+48	24.5	0.389
+49	25	0.488
+50	25.5	0.317
+51	26	0.344
+52	26.5	0.363
+53	27	0.218
+54	27.5	0.084
+55	28	0.113
+56	28.5	0.166
+57	29	0.02
+58	29.5	-0.032
+59	30	0.011
+60	30.5	-0.132
+61	31	-0.123
+62	31.5	-0.075
+63	32	-0.373
+64	32.5	-0.146
+65	33	-0.176
+66	33.5	-0.193
+67	34	-0.138
+68	34.5	-0.259
+69	35	-0.078
+70	35.5	0.018
+71	36	-0.059
+72	36.5	0.056
+73	37	0.004
+74	37.5	0.042
+75	38	0.152
+76	38.5	0.058
+77	39	0.193
+78	39.5	0.07
+79	40	0.235
+80	40.5	0.084
+81	41	0.248
+82	41.5	0.319
+83	42	0.052
+84	42.5	0.159
+85	43	0.134
+86	43.5	0.079
+87	44	0.097
+88	44.5	0.162
+89	45	0.03
+90	0	
+</data>
+</table>
+<multiLayer>
+Graph1	1	1	12/10/2015 15:53
+geometry	270	5	623	537	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	605	476
+<PageGeometry>0.00813008	0.0101833	0.98374	0.96945</PageGeometry>
+PlotTitle	 	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>0</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	t (s)	y (m)		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	5124	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	12	75	0	0	0
+ScaleFont0	Sans Serif	10	75	0	0	0
+ScaleFont1	Sans Serif	10	75	0	0	0
+ScaleFont2	Sans Serif	10	75	0	0	0
+ScaleFont3	Sans Serif	10	75	0	0	0
+AxisFont0	Sans Serif	10	50	0	0	0
+AxisFont1	Sans Serif	10	50	0	0	0
+AxisFont2	Sans Serif	10	50	0	0	0
+AxisFont3	Sans Serif	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Table1_t (s)	Table1_y (m)	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	90	1
+<Function>
+<Type>0</Type>
+<Title>DampedOscillationFit1</Title>
+<Expression>A*exp(-T*x)*sin(2*pi*f*x-d)+y0</Expression>
+<Variable>x</Variable>
+<Range>0.5	45</Range>
+<Points>1000</Points>
+<Constant>A	1.29165497907453</Constant>
+<Constant>T	0.051705959877369</Constant>
+<Constant>d	0.503365273850913</Constant>
+<Constant>f	0.0553314388558531</Constant>
+<Constant>y0	0.0413611560980134</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	-1	1.5	0	6	5	0	0
+scale	1	-1	1.5	0	6	5	0	0
+scale	2	0	50	0	6	5	0	0
+scale	3	0	50	0	6	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	1	3	1
+MinorTicks	3	1	3	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>10.802469135802</x>
+<y>1.4223300970874</y>
+<right>10.0553505535055</right>
+<bottom>1.26161369193154</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(2)%(2)
+<b>Dataset</b>: Table1_2
+<b>Function</b>: A*exp(-T*x)*sin(2*pi*f*x-d)+y0
+<b>Chi^2/doF</b> = 4.679703e-03
+<b>R^2</b> = 0.97066
+<b>A</b> = 1.291655e+00 +/- 4.034882e-02
+<b>T</b> = 5.170596e-02 +/- 2.224468e-03
+<b>d</b> = 5.033653e-01 +/- 2.322231e-02
+<b>f</b> = 5.533144e-02 +/- 3.057427e-04
+<b>y0</b> = 4.136116e-02 +/- 7.444476e-03
+</Text>
+<Font>Sans Serif	10	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<open>1</open>
+<log>
+[12/10/2015 15:55	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table1_2, using function: A*exp(-T*x)*sin(2*pi*f*x-d)+y0
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 5.000000e-01 to x = 4.500000e+01
+A = 1.291655e+00 +/- 4.034882e-02
+T = 5.170596e-02 +/- 2.224468e-03
+d = 5.033653e-01 +/- 2.322231e-02
+f = 5.533144e-02 +/- 3.057427e-04
+y0 = 4.136116e-02 +/- 7.444476e-03
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.679703e-03
+R^2 = 0.97066
+Adjusted R^2 = 0.968914
+RMSE (Root Mean Squared Error) = 0.0684084
+RSS (Residual Sum of Squares) = 0.397775
+---------------------------------------------------------------------------------------
+Iterations = 4
+Status = success
+---------------------------------------------------------------------------------------
+
+
+</log>

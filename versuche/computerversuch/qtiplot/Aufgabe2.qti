@@ -27,7 +27,7 @@ WindowLabel		2
 </table>
 <multiLayer>
 Graph1	1	1	30/09/2015 11:53
-geometry	467	39	731	618	active
+geometry	458	17	613	530	active
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
@@ -36,9 +36,9 @@ Alignement	0	0
 <AlignPolicy>0</AlignPolicy>
 <CommonAxes>0</CommonAxes>
 <graph>
-ggeometry	6	-1	710	554
-<PageGeometry>0.00829876	-0.00174825	0.982019	0.968531</PageGeometry>
-PlotTitle	Title	#000000	4228
+ggeometry	6	-1	591	466
+<PageGeometry>0.00991736	-0.00206612	0.97686	0.96281</PageGeometry>
+PlotTitle	 	#000000	4228
 <Antialiasing>0</Antialiasing>
 <Autoscaling>1</Autoscaling>
 <ScaleFonts>1</ScaleFonts>
@@ -48,23 +48,23 @@ Background	#ffffff	0
 Margin	0
 Border	0	#000000
 grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
-EnabledAxes	1	1	1	1	
-AxesTitles	%(?X)	%(?Y)		 	
+EnabledAxes	1	0	1	0	
+AxesTitles	Messung	Eisengehalt (%)		 	
 AxesTitleColors	#000000	#000000	#000000	#000000	
-AxesTitleAlignment	5124	5124	5124	5124
-AxesTitleDistance	2	2	2	2
+AxesTitleAlignment	5124	4	5124	4
+AxesTitleDistance	2	-1	2	-1
 InvertedTitle	0	0	0	0
-TitleFont	Sans Serif	18	75	0	0	0
-ScaleFont0	Sans Serif	15	75	0	0	0
-ScaleFont1	Sans Serif	15	75	0	0	0
-ScaleFont2	Sans Serif	15	75	0	0	0
-ScaleFont3	Sans Serif	15	75	0	0	0
-AxisFont0	Sans Serif	15	50	0	0	0
-AxisFont1	Sans Serif	15	50	0	0	0
-AxisFont2	Sans Serif	15	50	0	0	0
-AxisFont3	Sans Serif	15	50	0	0	0
+TitleFont	Sans Serif	15	75	0	0	0
+ScaleFont0	Sans Serif	13	75	0	0	0
+ScaleFont1	Sans Serif	13	75	0	0	0
+ScaleFont2	Sans Serif	13	75	0	0	0
+ScaleFont3	Sans Serif	13	75	0	0	0
+AxisFont0	Sans Serif	13	50	0	0	0
+AxisFont1	Sans Serif	13	50	0	0	0
+AxisFont2	Sans Serif	13	50	0	0	0
+AxisFont3	Sans Serif	13	50	0	0	0
 AxesColors	#000000	#000000	#000000	#000000
-AxesNumberColors	#fffdf9	#fffdf9	#fffdf9	#fffdf9
+AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
 AxesBaseline	0	0	0	0	
 CanvasFrame	1	#000000
 CanvasBackground	#ffffff	0
@@ -114,8 +114,8 @@ EnabledTickLabels	1	0	1	0
 <LineStyle>0</LineStyle>
 <x>0.048780487804878</x>
 <y>25.933774834437</y>
-<right>4.09756097560976</right>
-<bottom>23.1743929359823</bottom>
+<right>2.05714285714286</right>
+<bottom>25.0537084398977</bottom>
 <attachTo>1</attachTo>
 <onTop>1</onTop>
 <visible>1</visible>
@@ -128,7 +128,7 @@ EnabledTickLabels	1	0	1	0
 <b>R^2</b> = 0.004295
 <b>a</b> = 2.0368e+01 +/- 4.1071e-01
 </Text>
-<Font>Sans Serif	12	50	0	0	0</Font>
+<Font>Sans Serif	10	50	0	0	0</Font>
 <TextColor>#000000</TextColor>
 <Background>#ffffff</Background>
 <Alpha>0</Alpha>
@@ -158,4 +158,7 @@ RSS (Residual Sum of Squares) = 10.35
 Iterations = 2
 Status = cannot reach the specified tolerance in F
 ---------------------------------------------------------------------------------------
+
+
+
 </log>

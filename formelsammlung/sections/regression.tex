@@ -1,0 +1,18 @@
+\section{Regression}
+
+F\"ur eine gegebene Gesetzm\"assigkeit $f(x, a_0, a_1, \ldots)$ werden hierzu Messwertpaare
+$(x_i, y_i)$ gemessen und die Parameter $(a_0, a_1, \ldots)$ so angepasst, bis die Summe der quadratischen
+Abweichungen minimal werden.
+
+\[ \chi^2(a_1, a_2, \ldots) = \sum_{i=1}^{N} \frac{(y_i - f(x_i, a_1, a_2, \ldots)^2)^2}{\sigma_i^2} \to min \]
+
+\[ \sigma = \sqrt{ \frac{\sum_{i=1}^{N} (y_i - f(x_i, a_1, a_2, \ldots))^2}{N-m} } \]
+
+\subsection{Lineare Regression}
+
+\[ \sum_{i=1}^{N} (y_i - (a + bx_i))^2 \to min \]
+
+\[ b = \frac{ \sum_{i=1}^{N} (x_i - \bar{x})(y_i - \bar{y}) }{ \sum_{i=1}^{N} (x_i - \bar{x})^2 } \]
+
+\[ a = \bar{y} - b \bar{x} = \frac{ \sum_{i=1}^{N} x_i^2 \sum_{i=1}^{N} y_i - \sum_{i=1}^{N} x_i \sum_{i=1}^{N} x_i y_i }{ N \sum_{i=1}^{N} x_i^2 - (\sum_{i=1}^{N} x_i)^2 } \]
+

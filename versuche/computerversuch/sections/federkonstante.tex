@@ -2,34 +2,61 @@
 
 \subsection{Arbeitsgrundlagen}
 
-\subsection{Durchf\"{u}hrung}
+\subsection{Durchf\"uhrung}
 
 \subsubsection*{Versuchsanordnung}
 
 \subsubsection*{Messergebnisse}
 
-\begin{threeparttable}
-    \caption{Gemessene Gr\"ossen}
-    \begin{tabular}{ccc}
-        \toprule
-        $F (N)$ & \hspace{12mm} & $z (m)$ \\
-        \midrule
-        3.83  & & 0.20 \\
-        7.79  & & 0.35 \\
-        8.08  & & 0.42 \\
-        9.70  & & 0.46 \\
-        10.58 & & 0.51 \\
-        12.33 & & 0.54 \\
-        12.23 & & 0.59 \\
-        14.43 & & 0.67 \\
-        15.51 & & 0.71 \\
-        17.09 & & 0.80 \\
-        \bottomrule
-    \end{tabular}
-    \begin{tablenotes}
-        \small
-        \item \textbf{Hinweis:} Daten wurden vom Auftragsdokument kopiert.
-    \end{tablenotes}
-\end{threeparttable}
+\begin{center}
+    \begin{threeparttable}
+        \caption{Gemessene Gr\"ossen}
+        \begin{tabular}{ccc}
+            \toprule
+            $F (N)$ & \hspace{12mm} & $z (m)$ \\
+            \midrule
+            3.83  & & 0.20 \\
+            7.79  & & 0.35 \\
+            8.08  & & 0.42 \\
+            9.70  & & 0.46 \\
+            10.58 & & 0.51 \\
+            12.33 & & 0.54 \\
+            12.23 & & 0.59 \\
+            14.43 & & 0.67 \\
+            15.51 & & 0.71 \\
+            17.09 & & 0.80 \\
+            \bottomrule
+        \end{tabular}
+        \begin{tablenotes}
+            \small
+            \item \textbf{Hinweis:} Daten wurden vom Auftragsdokument kopiert.
+        \end{tablenotes}
+    \end{threeparttable}
+\end{center}
 
+\[ \frac{\partial R}{\partial x} \biggr \rvert_{5}^{6} \]
+
+
+\subsubsection*{QtiPlot}
+
+\begin{figure}[h!]
+    \center
+    \caption{Lineare Regression zur Bestimmung von $k$ und $F_0$}
+    \includegraphics[width=.7\textwidth]{qtiplot/feder-linear}
+    \label{fig:feder-linear}
+\end{figure}
+
+\begin{figure}[h!]
+    \center
+    \caption{95\% Confidence- und Prediction-bands sowie Residuals}
+    \includegraphics[width=.7\textwidth]{qtiplot/feder-95-bands}
+    \label{fig:feder-95-bands}
+\end{figure}
+
+\begin{figure}[h!]
+    \center
+    \caption{66\% Confidence- und Prediction-bands sowie Residuals}
+    \includegraphics[width=.7\textwidth]{qtiplot/feder-66-bands}
+    \label{fig:feder-66-bands}
+\end{figure}
 

@@ -1,0 +1,1997 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	muParser
+<windows>	3
+<table>
+Table1	30	4	12/10/2015 15:59
+geometry	0	0	516	240	
+header	f (Hz)[X]	Ua (V)[Y]	phi (°)[Y]	phi (rad)[Y]
+ColWidth	100	100	100	100	
+<com>
+</com>
+ColType	0;0/6	0;0/6	0;0/6	0;0/6
+ReadOnlyColumn	0	0	0	0
+HiddenColumn	0	0	0	0
+Comments					
+WindowLabel		2
+<data>
+0	100	4	-3.24	-0.0565487
+1	500	3.8	-16.9	-0.294961
+2	1000	3.3	-31.3	-0.546288
+3	1500	2.8	-43.6	-0.760964
+4	5000	1.14	-72.4	-1.26362
+5	10000	0.58	-82.5	-1.4399
+6	100000	0.075	-90	-1.5708
+7	1592	2.7	-44	-0.767945
+</data>
+</table>
+<multiLayer>
+Graph1	1	1	12/10/2015 16:01
+geometry	523	1	602	502	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	584	441
+<PageGeometry>0.00841751	0.0109649	0.983165	0.967105</PageGeometry>
+PlotTitle	 	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>0</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	Frequenz (Hz)	Ausgangsspannung (V)		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	5124	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	12	75	0	0	0
+ScaleFont0	Sans Serif	10	75	0	0	0
+ScaleFont1	Sans Serif	10	75	0	0	0
+ScaleFont2	Sans Serif	10	75	0	0	0
+ScaleFont3	Sans Serif	10	75	0	0	0
+AxisFont0	Sans Serif	10	50	0	0	0
+AxisFont1	Sans Serif	10	50	0	0	0
+AxisFont2	Sans Serif	10	50	0	0	0
+AxisFont3	Sans Serif	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Table1_f (Hz)	Table1_Ua (V)	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	29	1
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit1</Title>
+<Expression>Ue/sqrt((2*pi*x*C*R)^2+1)</Expression>
+<Variable>x</Variable>
+<Range>100	100000</Range>
+<Points>1000</Points>
+<Log10>1</Log10>
+<Constant>C	2.16656861046102e-07</Constant>
+<Constant>R	500</Constant>
+<Constant>Ue	4</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	0	5	0	6	5	0	0
+scale	1	0	5	0	6	5	0	0
+scale	2	100	120000	0	5	5	1	0
+scale	3	100	120000	0	5	5	1	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	1	3	1
+MinorTicks	3	1	3	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>3603.2731497566</x>
+<y>4.5052083333333</y>
+<right>487.498462350837</right>
+<bottom>4.44915254237288</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(2)%(2)
+<b>Dataset</b>: Table1_Ua (V)
+<b>Function</b>: Ue/sqrt((2*pi*x*C*R)^2+1)
+<b>Chi^2/doF</b> = 1.269442e-04
+<b>R^2</b> = 0.999944
+<b>C</b> = 2.166569e-07 +/- 9.331741e-10
+R = 500 (constant)
+Ue = 4 (constant)
+</Text>
+<Font>Sans Serif	10	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Graph2	1	1	12/10/2015 21:15
+geometry	521	506	600	501	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	582	440
+<PageGeometry>0.00844595	0.010989	0.983108	0.967033</PageGeometry>
+PlotTitle	 	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>0</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	Frequenz (Hz)	Phase (rad)		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	5124	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	12	75	0	0	0
+ScaleFont0	Sans Serif	10	75	0	0	0
+ScaleFont1	Sans Serif	10	75	0	0	0
+ScaleFont2	Sans Serif	10	75	0	0	0
+ScaleFont3	Sans Serif	10	75	0	0	0
+AxisFont0	Sans Serif	10	50	0	0	0
+AxisFont1	Sans Serif	10	50	0	0	0
+AxisFont2	Sans Serif	10	50	0	0	0
+AxisFont3	Sans Serif	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Table1_f (Hz)	Table1_phi (rad)	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	29	1
+<Function>
+<Type>0</Type>
+<Title>RC-lowpass-ue-ua-phaseFit1</Title>
+<Expression>atan(-2*pi*x*R*C)</Expression>
+<Variable>x</Variable>
+<Range>100	100000</Range>
+<Points>1000</Points>
+<Log10>1</Log10>
+<Constant>C	1.97536921002696e-07</Constant>
+<Constant>R	500</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	-1.6	0	0	9	5	0	0
+scale	1	-1.6	0	0	9	5	0	0
+scale	2	100	120000	0	5	5	1	0
+scale	3	100	120000	0	5	5	1	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	1	3	1
+MinorTicks	3	1	3	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>3733.3299566229</x>
+<y>-0.11697127937337</y>
+<right>490.875046021629</right>
+<bottom>-0.176770538243626</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(2)%(2)
+<b>Dataset</b>: Table1_phi (rad)
+<b>Function</b>: atan(-2*pi*x*R*C)
+<b>Chi^2/doF</b> = 2.172584e-04
+<b>R^2</b> = 0.99927
+<b>C</b> = 1.975369e-07 +/- 3.080243e-09
+R = 500 (constant)
+</Text>
+<Font>Sans Serif	10	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<open>1</open>
+<log>
+[12/10/2015 20:52	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table1_Ua (V), using function: Ue*2*pi*x*C/sqrt((2*pi*x*C)^2+R^2)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 6.756657e+00 +/- 2.929488e+02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 5.562984e+00
+R^2 = -1.46389
+Adjusted R^2 = -1.87454
+RMSE (Root Mean Squared Error) = 2.3586
+RSS (Residual Sum of Squares) = 38.9409
+---------------------------------------------------------------------------------------
+Iterations = 13
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+Ue = 4 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 20:55	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table1_Ua (V), using function: Ue/sqrt((2*pi*x*C*R)^2+1)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = -6.529908e-07 +/- 2.855025e-07
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.273687e+00
+R^2 = 0.435873
+Adjusted R^2 = 0.341852
+RMSE (Root Mean Squared Error) = 1.12858
+RSS (Residual Sum of Squares) = 8.91581
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+Ue = 4 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 20:56	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table1_Ua (V), using function: Ue/sqrt((2*pi*x*C*R)^2+1)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 7.198972e-08 +/- 3.123653e-08
+--------------------------------------------------------------------------------------
+Chi^2/doF = 8.379635e-01
+R^2 = 0.628859
+Adjusted R^2 = 0.567002
+RMSE (Root Mean Squared Error) = 0.915403
+RSS (Residual Sum of Squares) = 5.86574
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+Ue = 4 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 20:56	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table1_Ua (V), using function: Ue/sqrt((2*pi*x*C*R)^2+1)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.469639e-07 +/- 2.292639e-08
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.293296e-01
+R^2 = 0.942719
+Adjusted R^2 = 0.933172
+RMSE (Root Mean Squared Error) = 0.359624
+RSS (Residual Sum of Squares) = 0.905307
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+Ue = 4 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 20:56	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table1_Ua (V), using function: Ue/sqrt((2*pi*x*C*R)^2+1)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 2.067466e-07 +/- 3.856757e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.313137e-03
+R^2 = 0.998975
+Adjusted R^2 = 0.998805
+RMSE (Root Mean Squared Error) = 0.0480951
+RSS (Residual Sum of Squares) = 0.016192
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+Ue = 4 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 20:56	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table1_Ua (V), using function: Ue/sqrt((2*pi*x*C*R)^2+1)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 2.166569e-07 +/- 9.331741e-10
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.269442e-04
+R^2 = 0.999944
+Adjusted R^2 = 0.999934
+RMSE (Root Mean Squared Error) = 0.011267
+RSS (Residual Sum of Squares) = 0.00088861
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+Ue = 4 (constant)
+---------------------------------------------------------------------------------------
+
+[12/10/2015 21:05	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (°), using function: atan(-2*pi*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 6.003182e+05 +/- 0.000000e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.439189e+03
+R^2 = -2.52246
+Adjusted R^2 = -3.10953
+RMSE (Root Mean Squared Error) = 58.6446
+RSS (Residual Sum of Squares) = 24,074.3
+---------------------------------------------------------------------------------------
+Iterations = 44
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:06	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (°), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 2.310600e+03 +/- 6.145393e+13
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.439189e+03
+R^2 = -2.52246
+Adjusted R^2 = -3.10953
+RMSE (Root Mean Squared Error) = 58.6446
+RSS (Residual Sum of Squares) = 24,074.3
+---------------------------------------------------------------------------------------
+Iterations = 11
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:06	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (°), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 2.310600e+03 +/- 6.145393e+13
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.439189e+03
+R^2 = -2.52246
+Adjusted R^2 = -3.10953
+RMSE (Root Mean Squared Error) = 58.6446
+RSS (Residual Sum of Squares) = 24,074.3
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:06	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (°), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 2.310600e+03 +/- 6.145393e+13
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.439189e+03
+R^2 = -2.52246
+Adjusted R^2 = -3.10953
+RMSE (Root Mean Squared Error) = 58.6446
+RSS (Residual Sum of Squares) = 24,074.3
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:06	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (°), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 2.310600e+03 +/- 6.145393e+13
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.439189e+03
+R^2 = -2.52246
+Adjusted R^2 = -3.10953
+RMSE (Root Mean Squared Error) = 58.6446
+RSS (Residual Sum of Squares) = 24,074.3
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:06	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (°), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 2.310600e+03 +/- 6.145393e+13
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.439189e+03
+R^2 = -2.52246
+Adjusted R^2 = -3.10953
+RMSE (Root Mean Squared Error) = 58.6446
+RSS (Residual Sum of Squares) = 24,074.3
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:06	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (°), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 2.310600e+03 +/- 6.145393e+13
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.439189e+03
+R^2 = -2.52246
+Adjusted R^2 = -3.10953
+RMSE (Root Mean Squared Error) = 58.6446
+RSS (Residual Sum of Squares) = 24,074.3
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:06	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (°), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 4.510769e+02 +/- 2.957228e+29
+R = 4.510769e+02 +/- 2.957228e+29
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.012387e+03
+R^2 = -2.52246
+Adjusted R^2 = -3.93144
+RMSE (Root Mean Squared Error) = 63.3434
+RSS (Residual Sum of Squares) = 24,074.3
+---------------------------------------------------------------------------------------
+Iterations = 7
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+[12/10/2015 21:06	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (°), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 6.834869e+04 +/- 4.776030e+15
+R = 6.834869e+04 +/- 0.000000e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.012387e+03
+R^2 = -2.52246
+Adjusted R^2 = -3.93144
+RMSE (Root Mean Squared Error) = 63.3434
+RSS (Residual Sum of Squares) = 24,074.3
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+[12/10/2015 21:06	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (°), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 6.834870e+04 +/- 3.090645e+31
+R = 6.834870e+04 +/- 3.090645e+31
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.012387e+03
+R^2 = -2.52246
+Adjusted R^2 = -3.93144
+RMSE (Root Mean Squared Error) = 63.3434
+RSS (Residual Sum of Squares) = 24,074.3
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+[12/10/2015 21:06	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (°), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 6.834870e+04 +/- 3.090645e+31
+R = 6.834870e+04 +/- 3.090645e+31
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.012387e+03
+R^2 = -2.52246
+Adjusted R^2 = -3.93144
+RMSE (Root Mean Squared Error) = 63.3434
+RSS (Residual Sum of Squares) = 24,074.3
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+[12/10/2015 21:10	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (°), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 5.604000e+02 +/- 5.950156e+12
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.439189e+03
+R^2 = -2.52246
+Adjusted R^2 = -3.10953
+RMSE (Root Mean Squared Error) = 58.6446
+RSS (Residual Sum of Squares) = 24,074.3
+---------------------------------------------------------------------------------------
+Iterations = 11
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:10	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (°), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 5.604000e+02 +/- 5.950156e+12
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.439189e+03
+R^2 = -2.52246
+Adjusted R^2 = -3.10953
+RMSE (Root Mean Squared Error) = 58.6446
+RSS (Residual Sum of Squares) = 24,074.3
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:10	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (°), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 5.604000e+02 +/- 5.950156e+12
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.439189e+03
+R^2 = -2.52246
+Adjusted R^2 = -3.10953
+RMSE (Root Mean Squared Error) = 58.6446
+RSS (Residual Sum of Squares) = 24,074.3
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:10	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (°), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 5.604000e+02 +/- 5.950156e+12
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.439189e+03
+R^2 = -2.52246
+Adjusted R^2 = -3.10953
+RMSE (Root Mean Squared Error) = 58.6446
+RSS (Residual Sum of Squares) = 24,074.3
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:10	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (°), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 5.604000e+02 +/- 5.950156e+12
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.439189e+03
+R^2 = -2.52246
+Adjusted R^2 = -3.10953
+RMSE (Root Mean Squared Error) = 58.6446
+RSS (Residual Sum of Squares) = 24,074.3
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:10	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (°), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 5.604000e+02 +/- 5.950156e+12
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.439189e+03
+R^2 = -2.52246
+Adjusted R^2 = -3.10953
+RMSE (Root Mean Squared Error) = 58.6446
+RSS (Residual Sum of Squares) = 24,074.3
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:10	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (°), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 5.604000e+02 +/- 5.950156e+12
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.439189e+03
+R^2 = -2.52246
+Adjusted R^2 = -3.10953
+RMSE (Root Mean Squared Error) = 58.6446
+RSS (Residual Sum of Squares) = 24,074.3
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 4.503995e-06 +/- 7.021930e-06
+--------------------------------------------------------------------------------------
+Chi^2/doF = 6.093922e-01
+R^2 = -1.04894
+Adjusted R^2 = -1.39043
+RMSE (Root Mean Squared Error) = 0.780636
+RSS (Residual Sum of Squares) = 4.26575
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 3.205812e-06 +/- 4.254128e-06
+--------------------------------------------------------------------------------------
+Chi^2/doF = 5.368254e-01
+R^2 = -0.804952
+Adjusted R^2 = -1.10578
+RMSE (Root Mean Squared Error) = 0.732684
+RSS (Residual Sum of Squares) = 3.75778
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 2.400898e-06 +/- 2.896348e-06
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.728108e-01
+R^2 = -0.589718
+Adjusted R^2 = -0.854671
+RMSE (Root Mean Squared Error) = 0.687612
+RSS (Residual Sum of Squares) = 3.30968
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.821916e-06 +/- 2.007155e-06
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.103185e-01
+R^2 = -0.379602
+Adjusted R^2 = -0.609536
+RMSE (Root Mean Squared Error) = 0.640561
+RSS (Residual Sum of Squares) = 2.87223
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.389095e-06 +/- 1.345289e-06
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.470557e-01
+R^2 = -0.166895
+Adjusted R^2 = -0.361378
+RMSE (Root Mean Squared Error) = 0.589114
+RSS (Residual Sum of Squares) = 2.42939
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.077391e-06 +/- 8.781248e-07
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.858895e-01
+R^2 = 0.038762
+Adjusted R^2 = -0.121444
+RMSE (Root Mean Squared Error) = 0.534686
+RSS (Residual Sum of Squares) = 2.00123
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 8.639230e-07 +/- 5.849199e-07
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.318906e-01
+R^2 = 0.220321
+Adjusted R^2 = 0.0903744
+RMSE (Root Mean Squared Error) = 0.48155
+RSS (Residual Sum of Squares) = 1.62323
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 7.178507e-07 +/- 4.075608e-07
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.870347e-01
+R^2 = 0.371139
+Adjusted R^2 = 0.266329
+RMSE (Root Mean Squared Error) = 0.432475
+RSS (Residual Sum of Squares) = 1.30924
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 6.144204e-07 +/- 2.966228e-07
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.505948e-01
+R^2 = 0.49366
+Adjusted R^2 = 0.40927
+RMSE (Root Mean Squared Error) = 0.388065
+RSS (Residual Sum of Squares) = 1.05416
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 5.383209e-07 +/- 2.236434e-07
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.211839e-01
+R^2 = 0.592547
+Adjusted R^2 = 0.524638
+RMSE (Root Mean Squared Error) = 0.348115
+RSS (Residual Sum of Squares) = 0.848287
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 4.804920e-07 +/- 1.733936e-07
+--------------------------------------------------------------------------------------
+Chi^2/doF = 9.750012e-02
+R^2 = 0.672178
+Adjusted R^2 = 0.617541
+RMSE (Root Mean Squared Error) = 0.31225
+RSS (Residual Sum of Squares) = 0.682501
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 3.764461e-07 +/- 9.503553e-08
+--------------------------------------------------------------------------------------
+Chi^2/doF = 5.337113e-02
+R^2 = 0.820552
+Adjusted R^2 = 0.790644
+RMSE (Root Mean Squared Error) = 0.231022
+RSS (Residual Sum of Squares) = 0.373598
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.270013e-07 +/- 2.226432e-08
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.374411e-02
+R^2 = 0.920166
+Adjusted R^2 = 0.90686
+RMSE (Root Mean Squared Error) = 0.154091
+RSS (Residual Sum of Squares) = 0.166209
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.856401e-07 +/- 5.274205e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 7.114433e-04
+R^2 = 0.997608
+Adjusted R^2 = 0.997209
+RMSE (Root Mean Squared Error) = 0.0266729
+RSS (Residual Sum of Squares) = 0.0049801
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.973289e-07 +/- 3.078329e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.174016e-04
+R^2 = 0.999269
+Adjusted R^2 = 0.999147
+RMSE (Root Mean Squared Error) = 0.0147445
+RSS (Residual Sum of Squares) = 0.00152181
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975389e-07 +/- 3.080271e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:16	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 7.494953e-05 +/- 1.618819e-03
+--------------------------------------------------------------------------------------
+Chi^2/doF = 8.879566e-01
+R^2 = -1.98555
+Adjusted R^2 = -2.48314
+RMSE (Root Mean Squared Error) = 0.942314
+RSS (Residual Sum of Squares) = 6.2157
+---------------------------------------------------------------------------------------
+Iterations = 16
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 4.257156e-05 +/- 5.188956e-04
+--------------------------------------------------------------------------------------
+Chi^2/doF = 8.702688e-01
+R^2 = -1.92608
+Adjusted R^2 = -2.41376
+RMSE (Root Mean Squared Error) = 0.932882
+RSS (Residual Sum of Squares) = 6.09188
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 3.226532e-05 +/- 2.970114e-04
+--------------------------------------------------------------------------------------
+Chi^2/doF = 8.574309e-01
+R^2 = -1.88291
+Adjusted R^2 = -2.3634
+RMSE (Root Mean Squared Error) = 0.925976
+RSS (Residual Sum of Squares) = 6.00202
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 2.639585e-05 +/- 1.983188e-04
+--------------------------------------------------------------------------------------
+Chi^2/doF = 8.458279e-01
+R^2 = -1.8439
+Adjusted R^2 = -2.31789
+RMSE (Root Mean Squared Error) = 0.919689
+RSS (Residual Sum of Squares) = 5.9208
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 2.249459e-05 +/- 1.438285e-04
+--------------------------------------------------------------------------------------
+Chi^2/doF = 8.349398e-01
+R^2 = -1.80729
+Adjusted R^2 = -2.27518
+RMSE (Root Mean Squared Error) = 0.91375
+RSS (Residual Sum of Squares) = 5.84458
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.967725e-05 +/- 1.099923e-04
+--------------------------------------------------------------------------------------
+Chi^2/doF = 8.245585e-01
+R^2 = -1.77239
+Adjusted R^2 = -2.23445
+RMSE (Root Mean Squared Error) = 0.908052
+RSS (Residual Sum of Squares) = 5.77191
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.753134e-05 +/- 8.732185e-05
+--------------------------------------------------------------------------------------
+Chi^2/doF = 8.145745e-01
+R^2 = -1.73882
+Adjusted R^2 = -2.19529
+RMSE (Root Mean Squared Error) = 0.902538
+RSS (Residual Sum of Squares) = 5.70202
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 5.610605e-07 +/- 2.446508e-07
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.301961e-01
+R^2 = 0.562246
+Adjusted R^2 = 0.489286
+RMSE (Root Mean Squared Error) = 0.360827
+RSS (Residual Sum of Squares) = 0.911373
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 4.979472e-07 +/- 1.880735e-07
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.047539e-01
+R^2 = 0.647789
+Adjusted R^2 = 0.589087
+RMSE (Root Mean Squared Error) = 0.323657
+RSS (Residual Sum of Squares) = 0.733278
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 4.247369e-07 +/- 1.294146e-07
+--------------------------------------------------------------------------------------
+Chi^2/doF = 7.390658e-02
+R^2 = 0.751506
+Adjusted R^2 = 0.71009
+RMSE (Root Mean Squared Error) = 0.271858
+RSS (Residual Sum of Squares) = 0.517346
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 2.582476e-07 +/- 2.651163e-08
+--------------------------------------------------------------------------------------
+Chi^2/doF = 9.601413e-03
+R^2 = 0.967717
+Adjusted R^2 = 0.962337
+RMSE (Root Mean Squared Error) = 0.0979868
+RSS (Residual Sum of Squares) = 0.0672099
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.887180e-07 +/- 4.417838e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.849138e-04
+R^2 = 0.99837
+Adjusted R^2 = 0.998098
+RMSE (Root Mean Squared Error) = 0.0220208
+RSS (Residual Sum of Squares) = 0.0033944
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.974456e-07 +/- 3.079153e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172860e-04
+R^2 = 0.999269
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147406
+RSS (Residual Sum of Squares) = 0.001521
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975378e-07 +/- 3.080256e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+[12/10/2015 21:17	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table1_phi (rad), using function: atan(-2*pi*x*R*C)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.000000e+02 to x = 1.592000e+03
+C = 1.975369e-07 +/- 3.080243e-09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.172584e-04
+R^2 = 0.99927
+Adjusted R^2 = 0.999148
+RMSE (Root Mean Squared Error) = 0.0147397
+RSS (Residual Sum of Squares) = 0.00152081
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+R = 500 (constant)
+---------------------------------------------------------------------------------------
+
+</log>
