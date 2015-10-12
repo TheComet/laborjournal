@@ -18,9 +18,12 @@ Temperatur im Experimentierraum betrug $\vartheta=23 \degree C$.
 
 
 \subsubsection*{Messergebnisse}
+
+Die gemessene Gr\"ossen sind in der Tabelle \ref{table:schallgeschwindigkeit} ersichtlich.
+
 \begin{center}
     \begin{threeparttable}
-        \caption{Gemessene Gr\"{o}ssen}
+        \caption{Gemessene Gr\"ossen}
         \begin{tabular}{cccc}
             \toprule
             Messung & Laufzeit $t_i$ & Messung & Laufzeit $t_i$ \\
@@ -41,8 +44,11 @@ Temperatur im Experimentierraum betrug $\vartheta=23 \degree C$.
             \small
             \item \textbf{Hinweis:} Daten wurden vom Auftragsdokument kopiert.
         \end{tablenotes}
+        \label{table:schallgeschwindigkeit}
     \end{threeparttable}
 \end{center}
+
+Es soll die mitlere Laufzeit $\bar{t}$ sowie die Schallgeschwindigkeit $c$ (mitsammt Fehler) ermittelt werden.
 
 
 \subsubsection*{Mittlere Laufzeit}
@@ -79,16 +85,23 @@ Somit ergibt sich die Schallgeschwindigkeit
 
 \subsubsection*{QtiPlot}
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \center
-    \caption{XY-Scatter der einzelnen Laufzeiten und Visualisierung der Standardabweichung und Fehler}
+    \caption{Visualisierung der Standardabweichung und Fehler}
     \includegraphics[width=.85\textwidth]{qtiplot/schallgeschwindigkeit}
     \label{fig:schallgeschwindigkeit}
 \end{figure}
 
-
-
-
 \subsection{Resultate und Diskussion}
 
+Das Endresultat von $(347.7\pm2.9)\frac{\textrm{m}}{\textrm{s}}$ ist ein wenig h\"oher als der
+Literaturwert von $340.29 \frac{\textrm{m}}{\textrm{s}}$. Warscheinlich liegt diese Abweichung
+daran, dass der Literaturwert bei $\vartheta=20\degree C$ auf Meeresh\"ohe gemessen wurde
+anstatt bei $\vartheta=23\degree C$ (und h\"ochstwarscheinlich auch auf einer anderen H\"ohe). Die
+Schallgeschwindigkeit nimmt ab be h\"oherem Druck und tieferer Temperatur ab.
+
+In der Figur \ref{fig:schallgeschwindigkeit} sind die Einzelnen messwerte in einer XY-Scatter-Plot
+dargestellt. Die Standardabweichung (Violett) sollte die Stelle markieren, wo statistisch 67\%
+aller Messwerte fallen werden. Wenn man nachz\"ahlt, wie viele Punkte innerhalb und ausserhalb des
+Bandes liegen -- 13 innerhalb und 8 ausserhalb -- so kommt man grob auf $\frac{8}{13}=\simeq67\textrm{\%}$.
 
