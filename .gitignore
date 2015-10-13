@@ -21,3 +21,6 @@
 
 # qti temp files
 *.qti~
+
+# don't exclude final pdf
+!laborjournal.pdf
