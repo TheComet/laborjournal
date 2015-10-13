@@ -2,9 +2,14 @@
 
 \subsection{Arbeitsgrundlagen}
 
-\subsection{Durchf\"{u}hrung}
+(Siehe Formelsammlung)
+
+
+\subsection{Durchf\"uhrung}
 
 \subsubsection*{Versuchsanordnung}
+
+Der Eisengehalt in einer Legierung wurde mit verschiedene Messmethoden bestimmt.
 
 
 \subsubsection*{Messergebnisse}
@@ -34,22 +39,52 @@
     \end{threeparttable}
 \end{center}
 
+Es soll der einfache sowohl auch der gewichtete Mittelwert berechnet werden. Weiterhin soll auch
+der einfache und gewichtete Fehler berechnet werden.
+
+
+\subsubsection*{Mittelwert}
+
 Der einfache Mittelwert berechnet sich mit der Formel
-\[ \bar{x}_{einfach} = \frac{1}{9} \sum_{i=1}^{9} x_i = \underline{\underline{20.4 \textrm{\%}}} \]
+\begin{equation}
+	\bar{x}_{einfach} = \frac{1}{9} \sum_{i=1}^{9} x_i = \underline{\underline{20.4 \textrm{\%}}}
+    \label{eq:einfacher-mittelwert}
+\end{equation}
+
 wobei $x_i$ das Eisengehalt in Prozent ist.
 
 Der gewichtete Mittelwert l\"asst sich mit der Formel
-\[ \bar{x}_{gewichtet} = \frac{ \sum_{i=1}^{9} g_{\bar{x}_i} \cdot x_i}{ \sum_{i=1}^{9} g_{\bar{x}_i}} = \underline{\underline{20.4 \textrm{\%}}} \]
+\begin{equation}
+	\bar{x}_{gewichtet} = \frac{ \sum_{i=1}^{9} g_{\bar{x}_i} \cdot x_i}{ \sum_{i=1}^{9} g_{\bar{x}_i}} = \underline{\underline{20.4 \textrm{\%}}}
+    \label{eq:gewichteter-mittelwert}
+\end{equation}
+
 berechnen, wobei
-\[ g_{\bar{x}_i} = \frac{1}{s_{\bar{x}_i}^2} \]
+\begin{equation}
+	g_{\bar{x}_i} = \frac{1}{s_{\bar{x}_i}^2}
+    \label{eq:gewicht}
+\end{equation}
+
 und $x_i$ der Eisengehalt in Prozent ist und $g_{\bar{x}_i}$ der absoluter Fehler in Prozent ist.
 
+
+\subsubsection*{Fehler}
+
 Der einfache Fehler berechnet sich mit der Formel
-\[ s_{\bar{x}_{einfach}} = \sqrt{ \frac{ \sum_{i=1}^{9} (x_i - s_{\bar{x}})^2}{ 9 \cdot (9-1) }} = \underline{\underline{0.5 \textrm{\%}}} \]
+\begin{equation}
+	s_{\bar{x}_{einfach}} = \sqrt{ \frac{ \sum_{i=1}^{9} (x_i - s_{\bar{x}})^2}{ 9 \cdot (9-1) }} = \underline{\underline{0.5 \textrm{\%}}}
+    \label{eq:einfacher-fehler}
+\end{equation}
+
 wobei $x_i$ der Eisengehalt in Prozent ist und $s_{\bar{x}}$ der \emph{einfache} Mittelwert ist.
 
 Der gewichtete Fehler berechnet sich mit der Formel
-\[ s_{\bar{x}_{gewichtet}} = \frac{1}{ \sqrt{ \sum_{i=1}^{9} g_{\bar{x}_i} } } = \underline{\underline{0.4 \textrm{\%}}}  \]
+\begin{equation}
+	s_{\bar{x}_{gewichtet}} = \frac{1}{ \sqrt{ \sum_{i=1}^{9} g_{\bar{x}_i} } } = \underline{\underline{0.4 \textrm{\%}}} 
+    \label{eq:gewichteter-fehler}
+\end{equation}
+
+wobei $g_{\bar{x}_i}$ wieder mit der Formel \ref{eq:gewicht} berechnet wird.
 
 
 \subsubsection*{QtiPlot}
@@ -60,4 +95,11 @@ Der gewichtete Fehler berechnet sich mit der Formel
     \caption{XY-Scatter der gemessenen Eisengehalte mit Fehler}
     \label{fig:eisengehalt}
 \end{figure}
+
+
+\subsection{Resultate und Diskussion}
+
+Von QtiPlot in der Figur \ref{fig:eisengehalt} kann der berechnete Wert von $a=(20.4 \pm 0.4)\textrm{\%}$
+ausgelesen werden. Dieser Wert vergleicht sich ganz gut mit den Resultaten der Formeln
+\ref{eq:gewichteter-mittelwert} und \ref{eq:gewichteter-fehler} von $(20.4 \pm 0.4)\textrm{\%}$.
 

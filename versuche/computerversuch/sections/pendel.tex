@@ -2,9 +2,29 @@
 
 \subsection{Arbeitsgrundlagen}
 
-\subsection{Durchf\"{u}hrung}
+Die ged\"ampfte Schwingung eines Pendels kann mit der Formel
+\begin{equation}
+    y = A \cdot e^{-\Gamma \cdot t} \cdot \sin(2\pi f t - \delta) + y_0
+    \hspace{5mm} \textrm{wobei} \hspace{5mm}
+    \begin{tabular}{ll}
+        $A$:        & Amplitude \\
+        $\Gamma$:   & Abklingkonstante \\
+        $f$:        & Frequenz in Hz \\
+        $\delta$:   & Phase \\
+        $y_0$:      & Offset \\
+    \end{tabular}
+    \label{eq:gedaempfte-schwingung}
+\end{equation}
+beschrieben werden.
+
+
+\subsection{Durchf\"uhrung}
 
 \subsubsection*{Versuchsanordnung}
+
+Die ged\"ampfte Schwingung eines Pendels wurde mittels Ultraschallsensor vermessen. Die Zeitabh\"angige
+Positionsdaten sind in der Tabelle \ref{tab:pendel} aufgezeichnet.
+
 
 \subsubsection*{Messergebnisse}
 
@@ -36,8 +56,12 @@
             \small
             \item \textbf{Hinweis:} Daten wurden vom Auftragsdokument kopiert.
         \end{tablenotes}
+        \label{tab:pendel}
     \end{threeparttable}
 \end{center}
+
+Die Amplitude $A$, Abklingkonstante $\Gamma$, Frequenz $f$, Phase $\delta$ und Offset $y_0$ sollen
+ermittelt werden.
 
 
 \subsubsection*{QtiPlot}
@@ -49,3 +73,19 @@
     \label{fig:pendel}
 \end{figure}
 
+Die Formel \ref{eq:gedaempfte-schwingung} wird in QtiPlot als Fit-Funktion eingegeben. Die gesuchten
+Parameter k\"onnen mittels nicht-linearer Regression ermittelt werden. Angrunt der nicht-linearen Art
+der Formel m\"ussen vor dem Fitten gute Startwerte von Hand eingestellt werden. Dazu wird der Checkbox
+``Preview'' eingeschalten und mit den Parametern gespielt, bis die Kurve ungef\"ar passt.
+
+
+\subsection{Resultate und Diskussion}
+
+Von der Figur \ref{fig:pendel} k\"onnen die gesuchten Parameter abgelesen werden. Diese sind:
+\begin{tabular}{ll}
+    $A$:        &  \SI{1.29 \pm 0.04}{m}    \\
+    $\Gamma$:   &  $(51.7 \pm 2.2) e-3$ \\
+    $\delta$:   &  $(503  \pm 23) e-3$  \\
+    $f$:        &  $(55.3 \pm 0.3) e-3$ \\
+    $y_0$:      &  $(41.4 \pm 7.4) e-3$ \\
+\end{tabular}

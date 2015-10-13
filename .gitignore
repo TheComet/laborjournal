@@ -9,6 +9,9 @@
 *.fdb_latexmk
 *.dvi
 *.pdf
+*-blx.bib
+*.bcf
+*.run.xml
 
 # libreoffice stuff
 *.ods#
