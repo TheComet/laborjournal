@@ -4,15 +4,38 @@ F\"ur eine gegebene Gesetzm\"assigkeit $f(x, a_0, a_1, \ldots)$ werden hierzu Me
 $(x_i, y_i)$ gemessen und die Parameter $(a_0, a_1, \ldots)$ so angepasst, bis die Summe der quadratischen
 Abweichungen minimal werden.
 
-\[ \chi^2(a_1, a_2, \ldots) = \sum_{i=1}^{N} \frac{(y_i - f(x_i, a_1, a_2, \ldots)^2)^2}{\sigma_i^2} \to min \]
+\begin{equation}
+    \chi^2(a_1, a_2, \ldots) = \sum_{i=1}^{N} \frac{(y_i - f(x_i, a_1, a_2, \ldots))^2}{\sigma_i^2} \to min
+\end{equation}
 
-\[ \sigma = \sqrt{ \frac{\sum_{i=1}^{N} (y_i - f(x_i, a_1, a_2, \ldots))^2}{N-m} } \]
+Wobei $\sigma_i$ die Standardabweichung der Einzelmessungen ist. In vielen praktischen F\"allen ist $\sigma_i$
+\textbf{konstant -- aber unbekannt}. In diesen F\"allen kann sie mit folgender Formel nach der Regression
+berechnet werden.
+
+\begin{equation}
+    \sigma = \sqrt{ \frac{\sum_{i=1}^{N} (y_i - f(x_i, a_1, a_2, \ldots))^2}{N-m} }
+\end{equation}
+
 
 \subsection{Lineare Regression}
 
-\[ \sum_{i=1}^{N} (y_i - (a + bx_i))^2 \to min \]
+Es sei die lineare Funktion $\bar{y}=b\bar{x} + a$ f\"ur die Messpaare $(x_i, y_i)$ gesucht.
 
-\[ b = \frac{ \sum_{i=1}^{N} (x_i - \bar{x})(y_i - \bar{y}) }{ \sum_{i=1}^{N} (x_i - \bar{x})^2 } \]
+\begin{equation}
+    \sum_{i=1}^{N} (y_i - (a + bx_i))^2 \to min
+    \label{eq:linear-regression-min}
+\end{equation}
 
-\[ a = \bar{y} - b \bar{x} = \frac{ \sum_{i=1}^{N} x_i^2 \sum_{i=1}^{N} y_i - \sum_{i=1}^{N} x_i \sum_{i=1}^{N} x_i y_i }{ N \sum_{i=1}^{N} x_i^2 - (\sum_{i=1}^{N} x_i)^2 } \]
+$b$ l\"asst sich mit der folgenden Formel errechnen:
+
+\begin{equation}
+    b = \frac{ \sum_{i=1}^{N} (x_i - \bar{x})(y_i - \bar{y}) }{ \sum_{i=1}^{N} (x_i - \bar{x})^2 }
+\end{equation}
+
+$a$ kann danach direkt durch Aufl\"osen der Funktion $\bar{y}=b\bar{x} + a$ berechnet werden, oder sonst
+\"uber die erste Ableitung der Formel \ref{eq:linear-regression-min} berechnet werden:
+
+\begin{equation}
+    a = \bar{y} - b \bar{x} = \frac{ \sum_{i=1}^{N} x_i^2 \sum_{i=1}^{N} y_i - \sum_{i=1}^{N} x_i \sum_{i=1}^{N} x_i y_i }{ N \sum_{i=1}^{N} x_i^2 - (\sum_{i=1}^{N} x_i)^2 }
+\end{equation}
 

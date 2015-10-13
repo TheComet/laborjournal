@@ -2,35 +2,46 @@
 
 \subsection{Unter gleichen Bedinungen widerholt gemessene Gr\"ossen}
 
-\bgroup
-    \def\arraystretch{1.8}
-    \begin{tabular}{ll}
-        Arithmetischer Mittelwert &  $ \bar{x} = \frac{1}{N} \sum_{i=1}^{N} x_i $ \\
-        Standardabweichung        &  $s_x = \sqrt{ \frac{ \sum_{i=1}^{N} (x_i - \bar{x})^2 }{ N-1 } }$ \\
-        Fehler des Mittelwertes   &  $s_{\bar{x}} = \frac{ s_x }{ \sqrt{N} }$ \\
-    \end{tabular}
-\egroup
+Arithmetischer Mittelwert
+\begin{equation}
+    \bar{x} = \frac{1}{N} \sum_{i=1}^{N} x_i
+\end{equation}
+
+Standardabweichung
+\begin{equation}
+    s_x = \sqrt{ \frac{ \sum_{i=1}^{N} (x_i - \bar{x})^2 }{ N-1 } }
+\end{equation}
+
+Fehler des Mittelwertes
+\begin{equation}
+    s_{\bar{x}} = \frac{ s_x }{ \sqrt{N} }
+\end{equation}
 
 
 \subsection{Mittelwertbildung mit Gewichten}
 
 Durch verschiedene Messmethoden bestimmte Messgr\"ossen
 
-\begin{tabular}{c}
-    $x_1 = \bar{x_1} \pm s_{\bar{x_1}}$ \\
-    $x_2 = \bar{x_2} \pm s_{\bar{x_2}}$ \\
-    $\ldots$                            \\
-    $x_n = \bar{x_n} \pm s_{\bar{x_n}}$ \\
-\end{tabular}
+\begin{center}
+    \begin{tabular}{c}
+        $x_1 = \bar{x_1} \pm s_{\bar{x_1}}$ \\
+        $x_2 = \bar{x_2} \pm s_{\bar{x_2}}$ \\
+        $\ldots$                            \\
+        $x_n = \bar{x_n} \pm s_{\bar{x_n}}$ \\
+    \end{tabular}
+\end{center}
 
 kann $\bar{x}$ und $s_{\bar{x}}$ folgendermassen bestimmt werden.
 
-\bgroup
-    \def\arraystretch{1.8}
-    \begin{tabular}{ll}
-        Den wahrscheinlichsten Wert von $\bar{x}$  &  $\bar{x} = \frac{ \sum_{i=1}^{N} g_{\bar{x_i}} \cdot x_i }{ \sum_{i=1}^{N} g_{\bar{x_i}} }$ mit $g_{\bar{x_i}} = \frac{1}{s_{\bar{x_i}}^2}$ \\
-        Fehler des gewogenen Mittels               &  $s_{\bar{x}} = \frac{1}{\sqrt{\sum_{i=1}^{N} g_{\bar{x_i}}}}$ \\
-    \end{tabular}
-\egroup
+Den wahrscheinlichsten Wert von $\bar{x}$
+\begin{equation}
+    \bar{x} = \frac{ \sum_{i=1}^{N} g_{\bar{x_i}} \cdot x_i }{ \sum_{i=1}^{N} g_{\bar{x_i}} }
+    \hspace{5mm} \textrm{mit} \hspace{5mm}
+    g_{\bar{x_i}} = \frac{1}{s_{\bar{x_i}}^2}
+\end{equation}
 
+Fehler des gewogenen Mittels
+\begin{equation}
+    s_{\bar{x}} = \frac{1}{\sqrt{\sum_{i=1}^{N} g_{\bar{x_i}}}}
+\end{equation}
 
