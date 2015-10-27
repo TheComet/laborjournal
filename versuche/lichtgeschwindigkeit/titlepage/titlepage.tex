@@ -1,4 +1,18 @@
+\newcommand\blfootnote[1]{%
+    \begingroup
+    \renewcommand\thefootnote{}\footnote{#1}%
+    \addtocounter{footnote}{-1}%
+    \endgroup
+}
+
 \begin{titlepage}
     \maketitle
+    \blfootnote{%
+        \large
+        \begin{tabular}{lcl}
+            Versuchsleiter: & \hspace{5mm} & Alex Murray \\
+            Mitarbeiter:    &              & Yohannes Measho \\
+        \end{tabular}
+    }
 \end{titlepage}
 

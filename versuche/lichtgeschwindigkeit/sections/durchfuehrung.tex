@@ -12,7 +12,7 @@ ist.
 \begin{figure}[H]
     \center
     \includegraphics[width=.5\textwidth]{images/laser-angle.pdf}
-    \caption{}
+    \caption{Tisch mit Laser von Oben (links) und von der Seite (rechts) gesehen}
     \label{fig:laser-angle}
 \end{figure}
 
@@ -25,7 +25,7 @@ h_2+h_4$.
 \begin{figure}[H]
     \center
     \includegraphics[width=.8\textwidth]{images/laser-height.pdf}
-    \caption{}
+    \caption{Abstand der beiden Tische vom Boden}
     \label{fig:laser-height}
 \end{figure}
 
@@ -63,50 +63,84 @@ Drehspiegel  genug  genau  ausgerichtet, schaut man weiter auf den Umlenkspiegel
 $US$  und  kann somit wieder durch feinjustieren des Endspiegels $ES$ den Strahl
 noch weiter genauer ausrichten.
 
+\begin{figure}[H]
+    \center
+    \includegraphics[width=\textwidth]{images/setup.pdf}
+    \caption{Vereinfachte Messeinrichtung mit relevanten Daten}
+    \label{fig:setup}
+\end{figure}
+
 Nun  wird  der  Strahlteiler  in  den Laserstrahl eingef\"ugt, in der n\"ahe des
 Messokulars. Wenn alles stimmt, m\"usste der zur\"uckreflektierender Laserstrahl
 nun   durch   das   Messokular   strahlen   und   auf   die   Wand   auftreffen.
 
-\begin{figure}[H]
-    \center
-    \includegraphics[width=\textwidth]{images/setup.pdf}
-    \caption{}
-    \label{fig:setup}
-\end{figure}
-
-Die Distanz $S_1$ vom Laserstrahl zum Okular wird gemessen und der Spalt wird
-verschoben, bis er auch mit der Distanz $S_1$ vom Strahlteiler entfernt ist.
+Die  Distanz  $S_1$  vom Laserstrahl zum Okular wird gemessen und der Spalt wird
+verschoben,  bis  er  auch  mit der Distanz $S_1$ vom Strahlteiler entfernt ist.
 
 Gemessen wurde $S_1 = (107\pm3)\textrm{mm}$.
 
-Jetzt  wird die  Linse $L_1$  in den  Laserstrahl eingef\"ugt. Die  Linse muss
-gleich der Brennweite $f_1 = 1000\textrm{mm}$ vom Spalt distanziert werden.
+Jetzt wird die Linse $L_1$ in den Laserstrahl eingef\"ugt. Die Linse muss gleich
+der   Brennweite   $f_1   =   1000\textrm{mm}$  vom  Spalt  distanziert  werden.
 
 Gemessen wurde die Distanz von der Linse $L_1$ zum Spalt $(998\pm3)\textrm{mm}$.
+
+Zur \"Ubersicht sind die gemessene Gr\"ossen hier nochmals zusammengefasst:
+
+\begin{tabular}{lp{25mm}l}
+    \hspace{4mm}
+    & $f_1$ & $(998\pm3)\textrm{mm}$ \\
+    & $S_1$ & $(107\pm3)\textrm{mm}$ \\
+    & $f_2$ & $(4988\pm5)\textrm{mm}$ \\
+    & $S_2$ & $(4.894\pm5)\textrm{mm}$ \\
+\end{tabular}
+
+Als   letztes   wird   der   Spalt   geschlossen   bis   die   Distanz  $d$  des
+Interferenzmusters  (siehe  Abbildung \ref{fig:diffraction}) auf dem Drehspiegel
+$DS$    in    etwa    so    breit    ist    wie    der    Drehspiegel    selbst.
 
 \begin{figure}[H]
     \center
     \includegraphics[width=.9\textwidth]{images/diffraction.png}
-    \caption{}
+    \caption{Beugungsmuster des Laserstrahls, verursacht durch den Spalt}
     \label{fig:diffraction}
 \end{figure}
 
+Danach  wird  das  Filter  gedreht und der Laserstrahl abgeschw\"acht, damit der
+Messvorgang   auch   ohne   Massensterben   von  Netzhautzellen  erfolgen  kann.
 
-\subsection{Messvorgang}
+
+\subsection{Messmethoden}
+
+In  der  Tabelle  \ref{tab:messgeraete}  sind  alle  Ger\"ate  aufgelistet,  die
+gebraucht  wurden,  um  die Distanzen zwischen den Optikelementen zu messen. Die
+Toleranzen  sind grossz\"ugig angegeben.
+
+\begin{center}
+    \begin{threeparttable}
+        \caption{Liste von Messger\"aten}
+        \label{tab:messgeraete}
+        \begin{tabular}{ll}
+            \toprule
+            Bezeichnung                         & Genauigkeit \\
+            \midrule
+            Disto 08 Laserdistanzmessger\"at    & $\pm1\textrm{mm}$ \\
+            $30\textrm{cm}$ Lineal, Metall      & $\pm2\textrm{mm}$ \\
+            \bottomrule
+        \end{tabular}
+    \end{threeparttable}
+\end{center}
+
+Es ist zu beachten dass je nach Art der
+Messung die Toleranz nochmals abnimmt, wie zum Beispiel beim Messen des Abstands
+des Laserstrahls. Die gesch\"atzten Toleranzen sind bei jeder Messung angegeben.
+
 
 \subsection{Messungen}
 
-\begin{figure}[H]
-    \center
-    \includegraphics[width=.8\textwidth]{images/w-x-alex.pdf}
-    \caption{}
-    \label{fig:w-x-alex}
-\end{figure}
-
-\begin{figure}[H]
-    \center
-    \includegraphics[width=.8\textwidth]{images/w-x-yohannes.pdf}
-    \caption{}
-    \label{fig:w-x-yohannes}
-\end{figure}
+Wegen nicht-genaues Lesen der Versuchsanleitung sind uns zwei Details entgangen:
+Die  maximale Drehzahl des Motors haben wir bei der Lichtgeschwindigkeitsmessung
+\"uberschritten;  es wurde bis 1600 rpm gemessen obwohl der Motor unter 1000 rpm
+h\"atte  betrieben werden sollen. Weiter wurde bei der Kalibrationsmessung nicht
+im  Bereich von den im Versuchsanleitung angegebenen $\pm1\textrm{mm}$ gemessen,
+sondern im Bereich von $\pm2.5\textrm{mm}$.
 
