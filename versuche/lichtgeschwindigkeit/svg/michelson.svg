@@ -14,7 +14,7 @@
    id="svg8902"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="michelson.pdf">
+   sodipodi:docname="michelson.svg">
   <defs
      id="defs8904">
     <clipPath
@@ -209,8 +209,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="404.36194"
-     inkscape:cy="817.21753"
+     inkscape:cx="361.27568"
+     inkscape:cy="839.67443"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -227,7 +227,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -4654,13 +4654,15 @@
                  id="g2364"
                  transform="matrix(0.8427351,0,0,0.8426829,56.69992,468.3226)">
                 <text
-                   transform="matrix(1,0,0,-1,359.9999,17.7323)"
-                   id="text2366">
+                   transform="scale(1,-1)"
+                   id="text2366"
+                   x="357.28763"
+                   y="-18.74946">
                   <tspan
                      style="font-size:10px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Geneva;-inkscape-font-specification:Geneva"
-                     x="0"
-                     y="0"
-                     id="tspan2368">f</tspan>
+                     x="357.28763"
+                     y="-18.74946"
+                     id="tspan2368">D</tspan>
                 </text>
               </g>
               <g
@@ -4822,13 +4824,15 @@
                  id="g2440"
                  transform="matrix(0.8427351,0,0,0.8426829,56.69992,468.3226)">
                 <text
-                   transform="matrix(1,0,0,-1,188.5039,203.4016)"
-                   id="text2442">
+                   transform="scale(1,-1)"
+                   id="text2442"
+                   x="185.46965"
+                   y="-204.41876">
                   <tspan
                      style="font-size:10px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Geneva;-inkscape-font-specification:Geneva"
-                     x="0"
-                     y="0"
-                     id="tspan2444">f</tspan>
+                     x="185.46965"
+                     y="-204.41876"
+                     id="tspan2444">D</tspan>
                 </text>
               </g>
               <g

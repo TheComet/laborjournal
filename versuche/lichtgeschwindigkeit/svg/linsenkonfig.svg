@@ -14,7 +14,7 @@
    id="svg4544"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="linsenkonfig.ps">
+   sodipodi:docname="linsenkonfig.svg">
   <defs
      id="defs4546">
     <clipPath
@@ -121,9 +121,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="351.48334"
-     inkscape:cy="834.32539"
+     inkscape:zoom="1.979899"
+     inkscape:cx="274.66162"
+     inkscape:cy="880.04577"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -140,7 +140,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -408,13 +408,16 @@
              id="g690"
              transform="matrix(0.9025735,0,0,0.8932584,56.69992,423.7008)">
             <text
-               transform="matrix(1,0,0,-1,308.9764,37.6063)"
-               id="text692">
+               transform="scale(1,-1)"
+               id="text692"
+               x="306.60223"
+               y="-38.086086"
+               style="font-size:12px">
               <tspan
                  style="font-size:10px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Geneva;-inkscape-font-specification:Geneva"
-                 x="0"
-                 y="0"
-                 id="tspan694">f</tspan>
+                 x="306.60223"
+                 y="-38.086086"
+                 id="tspan694">D</tspan>
             </text>
           </g>
           <g
@@ -434,13 +437,16 @@
              id="g702"
              transform="matrix(0.9025735,0,0,0.8932584,56.69992,423.7008)">
             <text
-               transform="matrix(1,0,0,-1,493.2284,37.6063)"
-               id="text704">
+               transform="scale(1,-1)"
+               id="text704"
+               x="490.69595"
+               y="-37.766228"
+               style="font-size:12px">
               <tspan
                  style="font-size:10px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Geneva;-inkscape-font-specification:Geneva"
-                 x="0"
-                 y="0"
-                 id="tspan706">f</tspan>
+                 x="490.69595"
+                 y="-37.766228"
+                 id="tspan706">D</tspan>
             </text>
           </g>
           <g
@@ -610,13 +616,16 @@
              id="g778"
              transform="matrix(0.9025735,0,0,0.8932584,56.69992,423.7008)">
             <text
-               transform="matrix(1,0,0,-1,223.937,37.6063)"
-               id="text780">
+               transform="scale(1,-1)"
+               id="text780"
+               x="221.088"
+               y="-37.926155"
+               style="font-size:12px">
               <tspan
                  style="font-size:10px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Geneva;-inkscape-font-specification:Geneva"
-                 x="0"
-                 y="0"
-                 id="tspan782">f</tspan>
+                 x="221.088"
+                 y="-37.926155"
+                 id="tspan782">D</tspan>
             </text>
           </g>
           <g
@@ -645,13 +654,16 @@
              id="g794"
              transform="matrix(0.9025735,0,0,0.8932584,56.69992,423.7008)">
             <text
-               transform="matrix(1,0,0,-1,39.685,34.7716)"
-               id="text796">
+               transform="scale(1,-1)"
+               id="text796"
+               x="36.519447"
+               y="-35.251385"
+               style="font-size:12px">
               <tspan
                  style="font-size:10px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Geneva;-inkscape-font-specification:Geneva"
-                 x="0"
-                 y="0"
-                 id="tspan798">f</tspan>
+                 x="36.519447"
+                 y="-35.251385"
+                 id="tspan798">D</tspan>
             </text>
           </g>
           <g
@@ -888,7 +900,7 @@
                  x="0"
                  sodipodi:role="line"
                  id="tspan924"
-                 y="0">+ f )</tspan>
+                 y="0">+ D )</tspan>
             </text>
           </g>
           <g
@@ -897,13 +909,13 @@
             <text
                transform="scale(1,-1)"
                id="text928"
-               x="248.42566"
-               y="-3.0918"
+               x="252.23091"
+               y="-2.7525413"
                style="font-size:12px">
               <tspan
                  style="font-size:7.5px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Geneva;-inkscape-font-specification:Geneva"
-                 x="248.42566"
-                 y="-3.0918"
+                 x="252.23091"
+                 y="-2.7525413"
                  id="tspan930">2</tspan>
             </text>
           </g>
