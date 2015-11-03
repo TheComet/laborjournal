@@ -1,10 +1,6 @@
 \section{Auswertung}
 
-In den Tabellen \ref{tab:am-f-x} und  \ref{tab:ym-f-x}  sind die von Alex Murray
-und   Yohannes   Measho   gemessene  Distanzenverschiebungen  in  Funktion   der
-Drehfrequenz  $f$  aufgezeichnet.  Die Messungen in der Tabelle \ref{tab:am-f-x}
-wurden bei Inkrementieren der Drehfrequenz erfasst, die Messungen in der Tabelle
-\ref{tab:ym-f-x}   wurden   bei   Dekrementieren   der   Drehfrequenz   erfasst.
+\subsection{Lichtgeschwindigkeitsmessung}
 
 \begin{table}[H]
     \caption{Distanzmessungen bei Inkrementieren und Dekrementieren der Drehfrequenz}
@@ -54,9 +50,46 @@ wurden bei Inkrementieren der Drehfrequenz erfasst, die Messungen in der Tabelle
     \end{subtable}
 \end{table}
 
-In    den   Tabellen   \ref{tab:am-x-z}   und    \ref{tab:ym-x-z}    sind    die
-Kalibrationsmessungen von Alex Murray  und  Yohannes  Measho aufgef\"uhrt. Beide
-haben   die   gleiche   Messung   unabh\"angig  von   einander   durchgef\"uhrt.
+In den Tabellen \ref{tab:am-f-x} und  \ref{tab:ym-f-x}  sind die von Alex Murray
+und   Yohannes   Measho   gemessene  Distanzenverschiebungen  in  Funktion   der
+Drehfrequenz  $f$  aufgezeichnet.  Die Messungen in der Tabelle \ref{tab:am-f-x}
+wurden bei Inkrementieren der Drehfrequenz erfasst, die Messungen in der Tabelle
+\ref{tab:ym-f-x}   wurden   bei   Dekrementieren   der   Drehfrequenz   erfasst.
+
+\begin{figure}[H]
+    \center
+    \includegraphics[width=.8\textwidth]{images/am-f-x-fit-b.pdf}
+    \caption{Lineare Regression zur Berechnung des Faktors $b$, Messdaten von Alex Murray}
+    \label{fig:am-f-x-fit-b}
+\end{figure}
+
+In  der Abbildung \ref{fig:am-f-x-fit-b} sind die  Messpunkte  von  der  Tabelle
+\ref{tab:am-f-x} als  XY-Scatter  Plot  dargestellt.  Die Punkte wurden nach der
+Formel \ref{eq:lichtgeschwindigkeit} gefittet und damit ergibt  sich  der Faktor
+$b_{Alex}$ als:
+\begin{equation}
+    b_{Alex} = -(833.0024 \pm 5.339964)\cdot 10^{-9}
+    \label{eq:am-b}
+\end{equation}
+
+\begin{figure}[H]
+    \center
+    \includegraphics[width=.8\textwidth]{images/ym-f-x-fit-b.pdf}
+    \caption{Lineare Regression zur Berechnung des Faktors $b$, Messdaten von Yohannes Measho}
+    \label{fig:ym-f-x-fit-b}
+\end{figure}
+
+In der Abbildung \ref{fig:ym-f-x-fit-b} sind  die  Messpunkte  von  der  Tabelle
+\ref{tab:ym-f-x}  als  XY-Scatter  Plot  dargestellt. Die Punkte wurden nach der
+Formel \ref{eq:lichtgeschwindigkeit} gefittet und damit ergibt sich  der  Faktor
+$b_{Yohannes}$ als:
+\begin{equation}
+    b_{Yohannes} = -(839.0909 \pm 8.999140)\cdot 10^{-9}
+    \label{eq:ym-b}
+\end{equation}
+
+
+\subsection{Kalibrationsmessung}
 
 \begin{table}[H]
     \caption{Kalibrationsmessdaten}
@@ -106,44 +139,9 @@ haben   die   gleiche   Messung   unabh\"angig  von   einander   durchgef\"uhrt.
     \end{subtable}
 \end{table}
 
-
-\subsection{Messergebnisse}
-
-In  diesem Abschnitt sind die  Messpunkte  von  den  Tabellen  \ref{tab:am-f-x},
-\ref{tab:ym-f-x},  \ref{tab:am-x-z}  und \ref{tab:ym-x-z} grafisch  Dargestellt.
-Weiter wurden sie linear gefittet.
-
-\begin{figure}[H]
-    \center
-    \includegraphics[width=.8\textwidth]{images/am-f-x-fit-b.pdf}
-    \caption{Lineare Regression zur Berechnung des Faktors $b$, Messdaten von Alex Murray}
-    \label{fig:am-f-x-fit-b}
-\end{figure}
-
-In  der Abbildung \ref{fig:am-f-x-fit-b} sind die  Messpunkte  von  der  Tabelle
-\ref{tab:am-f-x} als  XY-Scatter  Plot  dargestellt.  Die Punkte wurden nach der
-Formel \ref{eq:lichtgeschwindigkeit} gefittet und damit ergibt  sich  der Faktor
-$b_{Alex}$ als:
-\begin{equation}
-    b_{Alex} = -(833.0024 \pm 5.339964)\cdot 10^{-9}
-    \label{eq:am-b}
-\end{equation}
-
-\begin{figure}[H]
-    \center
-    \includegraphics[width=.8\textwidth]{images/ym-f-x-fit-b.pdf}
-    \caption{Lineare Regression zur Berechnung des Faktors $b$, Messdaten von Yohannes Measho}
-    \label{fig:ym-f-x-fit-b}
-\end{figure}
-
-In der Abbildung \ref{fig:ym-f-x-fit-b} sind  die  Messpunkte  von  der  Tabelle
-\ref{tab:ym-f-x}  als  XY-Scatter  Plot  dargestellt. Die Punkte wurden nach der
-Formel \ref{eq:lichtgeschwindigkeit} gefittet und damit ergibt sich  der  Faktor
-$b_{Yohannes}$ als:
-\begin{equation}
-    b_{Yohannes} = -(839.0909 \pm 8.999140)\cdot 10^{-9}
-    \label{eq:ym-b}
-\end{equation}
+In    den   Tabellen   \ref{tab:am-x-z}   und    \ref{tab:ym-x-z}    sind    die
+Kalibrationsmessungen von Alex Murray  und  Yohannes  Measho aufgef\"uhrt. Beide
+haben   die   gleiche   Messung   unabh\"angig  von   einander   durchgef\"uhrt.
 
 \begin{figure}[H]
     \center
