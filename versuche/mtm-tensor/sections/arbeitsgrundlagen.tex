@@ -1,2 +1,120 @@
 \section{Arbeitsgrundlagen}
 
+\subsection{Tensor}
+
+Ein  Tensor ist  ein  mathematisches  Objekt  das  f\"ur  die  Beschreibung  von
+physikalischen Eigenschaften benutzt werden kann.  Tensoren  sind lediglich eine
+Verallgemeinerung von Skalare Gr\"ossen  und Vektoren; Ein Skalar ist ein Tensor
+nullter Ordnung und ein Vektor ist ein Tensor erster Ordnung.
+
+Die  Ordnung  eines  Tensors  ist  definiert  durch die f\"ur  die  Beschreibung
+notwendig  Anzahl  Richtungen.  Beispielsweise  k\"onnen  Objekte, die nur  eine
+Richtung brauchen, vollst\"andig  durch  einen 3x1 Vektor beschrieben werden und
+Objekte, die zwei Richtungen brauchen, k\"onnen mit 9 Zahlen in einer 3x3 Matrix
+arrangiert beschrieben werden.
+
+Das MTM kann durch ein Tensor zweiter Ordnung beschrieben werden.
+
+
+\subsection{Das MTM im Hauptachsensystem}
+
+Legen  wir  den Ursprung  unseres  Koordinatensystems  in  den  Schwerpunkt  des
+Testk\"orpers und richten dieses parallel zu den MTM-Hauptachsen aus, so spricht
+man vom Hauptachsensystem.
+
+\begin{figure}[H]
+    \center
+    \includegraphics[width=.4\textwidth]{images/mtm-hauptachsensystem.pdf}
+    \caption{}
+\end{figure}
+
+Eine Konvention ist, dass das gr\"osste MTM  bei  der  Rotation  um  die x-Achse
+vorliegt und das kleinste MTM bei der  Rotation  um  die  z-Achse  vorliegt.  In
+diesem  Koordinatensystem  (wenn  der  K\"orper  so   ausgerichtet  ist)  lautet
+
+\begin{equation}
+    \vec{\vec{I}} =
+    \begin{pmatrix}
+        I_{x,x} & I_{x,y} & I_{x,z} \\
+        I_{y,x} & I_{y,y} & I_{z,z} \\
+        I_{z,x} & I_{z,y} & I_{y,z} \\
+    \end{pmatrix} =
+    \begin{pmatrix}
+        I_{x,x} & 0       & 0       \\
+        0       & I_{y,y} & 0       \\
+        0       & 0       & I_{z,z} \\
+    \end{pmatrix} =
+    2m \cdot
+    \begin{pmatrix}
+        e^2 & 0   & 0           \\
+        0   & d^2 & 0           \\
+        0   & 0   & (d^2 + e^2) \\
+    \end{pmatrix}
+\end{equation}
+
+
+\subsection{MTM-Tensor eines verdrehten K\"orpers}
+
+Verdreht man einen K\"orper um die x-Achse um den Winkel $\vartheta$ so entsteht folgender Tensor.
+
+\begin{align}
+    \vec{\vec{I}}^* &= \vec{\vec{R_x}} \cdot \vec{\vec{I}} \cdot \vec{\vec{R_x}}^{-1} \\
+                    &=  \begin{pmatrix}
+                            1 & 0               & 0                \\
+                            0 & \cos{\vartheta} & -\sin{\vartheta} \\
+                            0 & \sin{\vartheta} & \cos{\vartheta}  \\
+                        \end{pmatrix} \cdot
+                        \begin{pmatrix}
+                            I_{x,x} & 0       & 0       \\
+                            0       & I_{y,y} & 0       \\
+                            0       & 0       & I_{z,z} \\
+                        \end{pmatrix} \cdot
+                        \begin{pmatrix}
+                            1 & 0                & 0               \\
+                            0 & \cos{\vartheta}  & \sin{\vartheta} \\
+                            0 & -\sin{\vartheta} & \cos{\vartheta} \\
+                        \end{pmatrix} \\
+                    &=  \begin{pmatrix}
+                            I_{x,x} & 0                                                         & 0                                                         \\
+                            0       & I_{y,y}\cos^2{\vartheta} + I_{z,z}\sin^2{\vartheta}       & \frac{1}{2}\left(I_{y,y} - I_{z,z}\right)\sin{2\vartheta} \\
+                            0       & \frac{1}{2}\left(I_{y,y} - I_{z,z}\right)\sin{2\vartheta} & I_{y,y}\sin^2{\vartheta} + I_{z,z}\cos^2{\vartheta}       \\
+                        \end{pmatrix} \\
+\end{align}
+
+wobei $\vec{\vec{R_x}}$ die Rotationsmatrix um die x-Achse ist
+\begin{equation}
+    \vec{\vec{R_x}} =
+    \begin{pmatrix}
+        1 & 0               & 0                \\
+        0 & \cos{\vartheta} & -\sin{\vartheta} \\
+        0 & \sin{\vartheta} & \cos{\vartheta}  \\
+    \end{pmatrix}
+\end{equation}
+
+
+\subsection{Verdrehter rotierender K\"orper}
+
+Ein um die x-Achse verdrehter K\"orper wird mit konstanter Winkelgeschwindigkeit
+$\omega$  um  die  z-Achse  rotiert.  Der  Tensor  $\vec{\vec{I}}^*$  muss  also
+zeitabh\"angig   gedreht   werden.   Es   wird   zuerst   eine   zeitabh\"angige
+Rotationsmatrix $R_z$ erstellt.
+\begin{equation}
+    \vec{\vec{R_z}}(t) =
+    \begin{pmatrix}
+        \cos{\omega t} & -\sin{\omega t} & 0 \\
+        \sin{\omega t} & \cos{\omega t}  & 0 \\
+        0              & 0               & 1 \\
+    \end{pmatrix}
+\end{equation}
+
+Nun kann der zeitabh\"aniger Drehimpulsvektor beschrieben werden durch
+\begin{equation}
+    \vec{L}(t) = \vec{\vec{R_z}} \cdot \vec{\vec{I^*}} \cdot \vec{\vec{R_z}} \cdot
+    \begin{pmatrix}
+        0      \\
+        0      \\
+        \omega \\
+    \end{pmatrix}
+\end{equation}
+
+
