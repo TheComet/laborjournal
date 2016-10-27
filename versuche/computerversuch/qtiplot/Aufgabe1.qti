@@ -14,26 +14,26 @@ HiddenColumn	0	0
 Comments			
 WindowLabel		2
 <data>
-0	1	6.83
-1	2	7.41
-2	3	7.32
-3	4	7.31
-4	5	7.23
-5	6	7.68
-6	7	7.33
-7	8	7.7
-8	9	7.93
-9	10	7.54
-10	11	7.36
-11	12	7.31
-12	13	7.56
-13	14	7.14
-14	15	6.94
-15	16	7.32
-16	17	7.34
-17	18	7.28
-18	19	7.01
-19	20	7.76
+0	1	7.59
+1	2	7.16
+2	3	6.97
+3	4	7.55
+4	5	6.77
+5	6	6.97
+6	7	7.74
+7	8	7.18
+8	9	7.32
+9	10	7.7
+10	11	7.4
+11	12	7.58
+12	13	7.04
+13	14	7.17
+14	15	6.89
+15	16	7.2
+16	17	7.33
+17	18	7.21
+18	19	8.05
+19	20	7.63
 20	0	
 </data>
 </table>
@@ -1069,7 +1069,7 @@ WindowLabel	Confidence Limits of Non-linear Fit	2
 </table>
 <multiLayer>
 Graph1	1	1	11/10/2015 21:17
-geometry	470	5	604	499	active
+geometry	470	5	680	498	active
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
@@ -1078,9 +1078,9 @@ Alignement	0	0
 <AlignPolicy>0</AlignPolicy>
 <CommonAxes>0</CommonAxes>
 <graph>
-ggeometry	3	4	586	445
-<PageGeometry>0.00503356	0.00883002	0.983221	0.98234</PageGeometry>
-PlotTitle	 	#000000	4228
+ggeometry	3	4	661	444
+<PageGeometry>0.00446429	0.00884956	0.983631	0.982301</PageGeometry>
+PlotTitle	Laufzeit	#000000	4
 <Antialiasing>0</Antialiasing>
 <Autoscaling>1</Autoscaling>
 <ScaleFonts>0</ScaleFonts>
@@ -1113,28 +1113,8 @@ CanvasBackground	#ffffff	0
 curve	Table1_Messung	Table1_Laufzeit (ms)	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	29	1
 <Function>
 <Type>0</Type>
-<Title>averageFit1</Title>
-<Expression>avg(y)</Expression>
-<Variable>x</Variable>
-<Range>1	20</Range>
-<Points>1000</Points>
-<Constant>y	7.365</Constant>
-<Style>0</Style>
-<LineStyle>1</LineStyle>
-<Pen>
-	<Color>#ff0000</Color>
-	<Style>0</Style>
-	<Width>1</Width>
-</Pen>
-<xAxis>2</xAxis>
-<yAxis>0</yAxis>
-<CurveType>0</CurveType>
-<Visible>1</Visible>
-</Function>
-<Function>
-<Type>0</Type>
 <Title>F1</Title>
-<Expression>x*0+7.365+0.275136329844</Expression>
+<Expression>x*0+7.32+0.33</Expression>
 <Variable>x</Variable>
 <Range>1	20</Range>
 <Points>100</Points>
@@ -1153,7 +1133,7 @@ curve	Table1_Messung	Table1_Laufzeit (ms)	1	0	#000000	0	1	7	1	#000000	#000000	0	
 <Function>
 <Type>0</Type>
 <Title>F2</Title>
-<Expression>x*0+7.365-0.275136329844</Expression>
+<Expression>x*0+7.32-0.33</Expression>
 <Variable>x</Variable>
 <Range>1	20</Range>
 <Points>100</Points>
@@ -1172,7 +1152,7 @@ curve	Table1_Messung	Table1_Laufzeit (ms)	1	0	#000000	0	1	7	1	#000000	#000000	0	
 <Function>
 <Type>0</Type>
 <Title>F3</Title>
-<Expression>x*0+7.365+0.06152235366109</Expression>
+<Expression>x*0+7.32+0.07</Expression>
 <Variable>x</Variable>
 <Range>1	20</Range>
 <Points>100</Points>
@@ -1191,7 +1171,7 @@ curve	Table1_Messung	Table1_Laufzeit (ms)	1	0	#000000	0	1	7	1	#000000	#000000	0	
 <Function>
 <Type>0</Type>
 <Title>F4</Title>
-<Expression>x*0+7.365-0.06152235366109</Expression>
+<Expression>x*0+7.32-0.07</Expression>
 <Variable>x</Variable>
 <Range>1	20</Range>
 <Points>100</Points>
@@ -1207,10 +1187,30 @@ curve	Table1_Messung	Table1_Laufzeit (ms)	1	0	#000000	0	1	7	1	#000000	#000000	0	
 <CurveType>0</CurveType>
 <Visible>1</Visible>
 </Function>
-scale	0	6.8	8	0	7	5	0	0
-scale	1	6.8	8	0	7	5	0	0
-scale	2	0	25	0	6	5	0	0
-scale	3	0	25	0	6	5	0	0
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit1</Title>
+<Expression>t</Expression>
+<Variable>x</Variable>
+<Range>1	20</Range>
+<Points>1000</Points>
+<Constant>t	7.32249999806335</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	6.6	8.2	0	9	5	0	0
+scale	1	6.6	8.2	0	9	5	0	0
+scale	2	0	21	0	6	5	0	0
+scale	3	0	21	0	6	5	0	0
 LabelsFormat	0	6	0	6	0	6	0	6
 AxisType	0	0	0	0	
 MajorTicks	3	1	3	1
@@ -1229,27 +1229,21 @@ EnabledTickLabels	1	1	1	1
 <Color>#000000</Color>
 <FrameWidth>1</FrameWidth>
 <LineStyle>0</LineStyle>
-<x>0.18382352941176</x>
-<y>7.961858190709</y>
-<right>5.21032504780115</right>
-<bottom>7.88270676691729</bottom>
+<x>0.30533117932149</x>
+<y>8.1627906976744</y>
+<right>3.66397415185784</right>
+<bottom>8.04289405684755</bottom>
 <attachTo>1</attachTo>
 <onTop>1</onTop>
 <visible>1</visible>
 <Text>
-\l(1)%(1)
-\l(2)%(2)
 <b>Dataset</b>: Table1_Laufzeit (ms)
-<b>Function</b>: avg(y)
-<b>Chi^2/doF</b> = 7.5700e-02
-<b>R^2</b> = 0
-<b>y</b> = 7.3650e+00 +/- 6.1522e-02
-\l(3)%(3)
-\l(4)%(4)
-\l(5)%(5)
-\l(6)%(6)
+<b>Function</b>: t
+<b>Chi^2/doF</b> = 1.08136e-01
+<b>R^2</b> = 2.2204e-16
+<b>t</b> = 7.32250e+00 +/- 7.35308e-02
 </Text>
-<Font>Sans Serif	9	50	0	0	0</Font>
+<Font>Sans Serif	10	50	0	0	0</Font>
 <TextColor>#000000</TextColor>
 <Background>#ffffff</Background>
 <Alpha>0</Alpha>
@@ -1314,4 +1308,21 @@ Status = success
 
 
 
+
+[27/10/2016 12:12	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table1_Laufzeit (ms), using function: t
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.00000e+00 to x = 2.00000e+01
+t = 7.32250e+00 +/- 7.35308e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.08136e-01
+R^2 = 2.2204e-16
+Adjusted R^2 = -0.055556
+RMSE (Root Mean Squared Error) = 0.32884
+RSS (Residual Sum of Squares) = 2.0546
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
 </log>

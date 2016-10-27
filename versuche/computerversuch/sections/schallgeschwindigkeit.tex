@@ -2,7 +2,7 @@
 
 \subsection{Arbeitsgrundlagen}
 
-Die Schallgeschwindigkeit $c$ kann mit
+Die Schallgeschwindigkeit $c$ kann mit der Formel
 \begin{equation}
     c=\frac{s}{t}
     \label{eq:schallgeschwindigkeit}
@@ -31,16 +31,16 @@ Die gemessene Gr\"ossen sind in der Tabelle \ref{table:schallgeschwindigkeit} er
             \toprule
             Messung & Laufzeit $t_i$ & Messung & Laufzeit $t_i$ \\
             \midrule
-            1  & 6.83 & 11 & 7.36 \\
-            2  & 7.41 & 12 & 7.31 \\
-            3  & 7.32 & 13 & 7.56 \\
-            4  & 7.31 & 14 & 7.14 \\
-            5  & 7.23 & 15 & 6.94 \\
-            6  & 7.68 & 16 & 7.32 \\
-            7  & 7.33 & 17 & 7.34 \\
-            8  & 7.7  & 18 & 7.28 \\
-            9  & 7.93 & 19 & 7.01 \\
-            10 & 7.54 & 20 & 7.76 \\
+            1  & 7.59 & 11 & 7.40 \\
+            2  & 7.16 & 12 & 7.58 \\
+            3  & 6.97 & 13 & 7.04 \\
+            4  & 7.55 & 14 & 7.17 \\
+            5  & 6.77 & 15 & 6.89 \\
+            6  & 6.97 & 16 & 7.20 \\
+            7  & 7.74 & 17 & 7.33 \\
+            8  & 7.18 & 18 & 7.21 \\
+            9  & 7.32 & 19 & 8.05 \\
+            10 & 7.70 & 20 & 7.63 \\
            \bottomrule
         \end{tabular}
         \begin{tablenotes}
@@ -58,28 +58,27 @@ Es soll die mitlere Laufzeit $\bar{t}$ sowie die Schallgeschwindigkeit $c$ (mits
 
 Die mittlere Laufzeit wird berechnet mit
 \begin{equation}
-    \bar{t} = \frac{1}{20} \sum_{i=1}^{20} t_i = \frac{7.36+7.31+7.56+7.14+6.94+\ldots}{20} = 7.37 \textrm{ms}
+    \bar{t} = \frac{1}{20} \sum_{i=1}^{20} t_i = \frac{7.59+7.16+6.97+7.55+6.77+\ldots}{20} = \SI{7.32}{\milli\second}
 \end{equation}
 
 Die Standardabweichung wird berechnet mit
 \begin{equation}
-    s_t = \sqrt{ \frac{ \sum_{i=1}^{20} (t_i - \bar{t})^2 }{20-1} } = 0.28
+    s_t = \sqrt{ \frac{ \sum_{i=1}^{20} (t_i - \bar{t})^2 }{20-1} } = 0.33
 \end{equation}
 
 und der Fehler mit
 \begin{equation}
-    s_{\bar{t}} = \frac{s_t}{\sqrt{20}} = 0.06
+    s_{\bar{t}} = \frac{s_t}{\sqrt{20}} = \SI{0.07}{\milli\second}
 \end{equation}
 
-Somit ergibt sich die mittlere Laufzeit mit Unsicherheit als \underline{\underline{$t = (7.37 \pm 0.06)$ ms}}.
-
+Somit ergibt sich die mittlere Laufzeit mit Unsicherheit als $t = (7.32 \pm 0.07)\SI{}{\milli\second}$.
 
 \subsubsection*{Schallgeschwindigkeit}
 
 Die Schallgeschwindigkeit wird mit $c=\frac{s}{t}$ berechnet. Wir wissen dass
 $s=\bar{s}+s_{\bar{s}}=(2.561\pm0.003) \textrm{m}$
 und
-$t=\bar{t}+s_{\bar{t}}=(7.37\pm0.06) \textrm{ms}$.
+$t=\bar{t}+s_{\bar{t}}=(7.32\pm0.07) \textrm{ms}$.
 
 Da die Schallgeschwindigkeit eine Funktion von mehreren Messgr\"ossen ist, muss mit Hilfe der
 Gauss'schen Fehlerfortpflanzungsgesetzes der Fehler berechnet werden. Dazu wird die Formel $c=\frac{s}{t}$
@@ -90,16 +89,16 @@ partitiell abgeleitet nach $s$ und $t$
 und in die Formel des Fehlerfortpflanzungsgesetzes eingesetzt
 
 \begin{equation}
-	s_{\bar{c}} = \sqrt{(\frac{1}{t} \cdot s_{\bar{s}})^2 + (\frac{-s}{t^2} \cdot s_{\bar{t}})^2} = 2.86 \frac{\textrm{m}}{\textrm{s}}
+	s_{\bar{c}} = \sqrt{\left(\frac{1}{t} \cdot s_{\bar{s}}\right)^2 + \left(\frac{-s}{t^2} \cdot s_{\bar{t}}\right)^2} = 3.5 \SI{}{\meter\per\second}
 \end{equation}
 
 Die mittlere Schallgeschwindigkeit berechnet sich mit
 \begin{equation}
-	\bar{c}=\frac{\bar{s}}{\bar{t}} = 347.73 \frac{\textrm{m}}{\textrm{s}}
+	\bar{c}=\frac{\bar{s}}{\bar{t}} = 349.7 \SI{}{\meter\per\second}
 \end{equation}
 
 Somit ergibt sich die Schallgeschwindigkeit
-\underline{\underline{$c=(347.7 \pm 2.9) \frac{\textrm{m}}{\textrm{s}}$}}
+$c=(349.7 \pm 3.5) \SI{}{\meter\per\second}$
 
 
 \subsubsection*{QtiPlot}
@@ -113,15 +112,9 @@ Somit ergibt sich die Schallgeschwindigkeit
 
 \subsection{Resultate und Diskussion}
 
-Das Endresultat von $(347.7\pm2.9)\frac{\textrm{m}}{\textrm{s}}$ ist ein wenig h\"oher als der
-Literaturwert\footcite{ref:schallgeschwindigkeit} von $344 \frac{\textrm{m}}{\textrm{s}}$.
+Das Endresultat von $(347.7\pm2.9)\SI{}{\meter\per\second}$ ist ein wenig h\"oher als der
+Literaturwert\footcite{ref:schallgeschwindigkeit} von $\SI{344}{\meter\per\second}$.
 Warscheinlich liegt diese Abweichung daran, dass der Literaturwert bei $\vartheta=20\degree C$
 auf Meeresh\"ohe gemessen wurde anstatt bei $\vartheta=23\degree C$ (und h\"ochstwarscheinlich
-auch auf einer anderen H\"ohe). Die Schallgeschwindigkeit nimmt ab be h\"oherem Druck und tieferer
-Temperatur ab.
-
-In der Figur \ref{fig:schallgeschwindigkeit} sind die Einzelnen messwerte in einer XY-Scatter-Plot
-dargestellt. Die Standardabweichung (Violett) sollte die Stelle markieren, wo statistisch 67\%
-aller Messwerte fallen werden. Wenn man nachz\"ahlt, wie viele Punkte innerhalb und ausserhalb des
-Bandes liegen -- 13 innerhalb und 8 ausserhalb -- so kommt man grob auf $\frac{8}{13}\simeq67\textrm{\%}$.
+auf einer anderen H\"ohe). Die Schallgeschwindigkeit nimmt zu bei h\"oherem Temperatur.
 

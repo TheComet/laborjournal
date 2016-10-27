@@ -28,7 +28,7 @@ Der Eisengehalt in einer Legierung wurde mit verschiedene Messmethoden bestimmt.
             5   & 19.9  & 1.3 \\
             6   & 18.0  & 1.3 \\
             7   & 19.4  & 1.0 \\
-            8   & 22.2  & 2.0 \\
+            8   & 23.2  & 2.0 \\
             9   & 21.6  & 0.8 \\
             \bottomrule
         \end{tabular}
@@ -47,7 +47,7 @@ der einfache und gewichtete Fehler berechnet werden.
 
 Der einfache Mittelwert berechnet sich mit der Formel
 \begin{equation}
-	\bar{x}_{einfach} = \frac{1}{9} \sum_{i=1}^{9} x_i = \underline{\underline{20.4 \textrm{\%}}}
+	\bar{x}_{einfach} = \frac{1}{9} \sum_{i=1}^{9} x_i = \SI{20.6}{\percent}
     \label{eq:einfacher-mittelwert}
 \end{equation}
 
@@ -55,7 +55,7 @@ wobei $x_i$ das Eisengehalt in Prozent ist.
 
 Der gewichtete Mittelwert l\"asst sich mit der Formel
 \begin{equation}
-	\bar{x}_{gewichtet} = \frac{ \sum_{i=1}^{9} g_{\bar{x}_i} \cdot x_i}{ \sum_{i=1}^{9} g_{\bar{x}_i}} = \underline{\underline{20.4 \textrm{\%}}}
+	\bar{x}_{gewichtet} = \frac{ \sum_{i=1}^{9} g_{\bar{x}_i} \cdot x_i}{ \sum_{i=1}^{9} g_{\bar{x}_i}} = \SI{20.4}{\percent}
     \label{eq:gewichteter-mittelwert}
 \end{equation}
 
@@ -72,7 +72,7 @@ und $x_i$ der Eisengehalt in Prozent ist und $g_{\bar{x}_i}$ der absoluter Fehle
 
 Der einfache Fehler berechnet sich mit der Formel
 \begin{equation}
-	s_{\bar{x}_{einfach}} = \sqrt{ \frac{ \sum_{i=1}^{9} (x_i - s_{\bar{x}})^2}{ 9 \cdot (9-1) }} = \underline{\underline{0.5 \textrm{\%}}}
+	s_{\bar{x}_{einfach}} = \sqrt{ \frac{ \sum_{i=1}^{9} (x_i - s_{\bar{x}})^2}{ 9 \cdot (9-1) }} = \SI{0.5}{\percent}
     \label{eq:einfacher-fehler}
 \end{equation}
 
@@ -80,7 +80,7 @@ wobei $x_i$ der Eisengehalt in Prozent ist und $s_{\bar{x}}$ der \emph{einfache}
 
 Der gewichtete Fehler berechnet sich mit der Formel
 \begin{equation}
-	s_{\bar{x}_{gewichtet}} = \frac{1}{ \sqrt{ \sum_{i=1}^{9} g_{\bar{x}_i} } } = \underline{\underline{0.4 \textrm{\%}}} 
+	s_{\bar{x}_{gewichtet}} = \frac{1}{ \sqrt{ \sum_{i=1}^{9} g_{\bar{x}_i} } } = \SI{0.4}{\percent}
     \label{eq:gewichteter-fehler}
 \end{equation}
 
@@ -99,7 +99,7 @@ wobei $g_{\bar{x}_i}$ wieder mit der Formel \ref{eq:gewicht} berechnet wird.
 
 \subsection{Resultate und Diskussion}
 
-Von QtiPlot in der Figur \ref{fig:eisengehalt} kann der berechnete Wert von $a=(20.4 \pm 0.4)\textrm{\%}$
+Von QtiPlot in der Figur \ref{fig:eisengehalt} kann der berechnete Wert von $a=(20.4 \pm 0.4)\SI{}{\percent}$
 ausgelesen werden. Dieser Wert vergleicht sich ganz gut mit den Resultaten der Formeln
-\ref{eq:gewichteter-mittelwert} und \ref{eq:gewichteter-fehler} von $(20.4 \pm 0.4)\textrm{\%}$.
+\ref{eq:gewichteter-mittelwert} und \ref{eq:gewichteter-fehler} von $(20.4 \pm 0.4)\SI{}{\percent}$.
 

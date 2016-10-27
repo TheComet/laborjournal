@@ -91,12 +91,12 @@ Die Kapazit\"at $C$ kann auf zwei Arten ermittelt werden.
 \begin{itemize}
     \item In der Figur \ref{fig:rc-ua} wird die Ausgangsspannung $U_A$ in Funktion der Frequenz dargestellt.
     Durch Regression mit der Formel \ref{eq:ua} kann $C$ bestimmt werden. Der Wert betr\"agt somit
-    $\underline{\underline{C_1 = (216.7 \pm 0.9)\textrm{nF}}}$ (aus dem Plot von QtiPlot
+    $C_1 = (216.7 \pm 0.9)\SI{}{\nano\farad}$ (aus dem Plot von QtiPlot
     abgelesen).
 
     \item In der Figur \ref{fig:rc-phase} wird der Phasenwinkel $\varphi$ in Funktion der Frequenz dargestellt.
     Durch Regression mit der Formel \ref{eq:phase} kann $C$ auch bestimmt werden. Der Wert betr\"agt
-    somit $\underline{\underline{C_2 = (197.5 \pm 3.1)\textrm{nF}}}$ (aus dem Plot von
+    somit $C_2 = (197.5 \pm 3.1)\SI{}{\nano\farad}$ (aus dem Plot von
     QtiPlot abgelesen).
 \end{itemize}
 
@@ -112,13 +112,13 @@ Um an einen genaueren Wert von $C$ zu gelangen k\"onnte man jetzt $C_1$ und $C_2
 mitteln mit
 \begin{equation}
     \bar{C} = \frac{ \sum_{i=1}^{N} g_{\bar{C}_i} \cdot C_i }{ \sum_{í=1}^{N} g_{\bar{C}_i} }
-            = \frac{ \frac{1}{0.9^2} \cdot 216.7 + \frac{1}{3.1^2} \cdot 197.5}{ \frac{1}{0.9^2} + \frac{1}{3.1^2} } = 215.2 \textrm{nF}
+            = \frac{ \frac{1}{0.9^2} \cdot 216.7 + \frac{1}{3.1^2} \cdot 197.5}{ \frac{1}{0.9^2} + \frac{1}{3.1^2} } = \SI{215.2}{\nano\farad}
 \end{equation}
 und den Fehler des gewogenen Mittels berechnen mit
 \begin{equation}
-    s_{\bar{C}} = \frac{1}{\sqrt{\sum_{i=1}^{N} g_{\bar{C}_i}}} = \frac{1}{\sqrt{\frac{1}{0.9^2} + \frac{1}{3.1^2}}} = 0.9 \textrm{nF}
+    s_{\bar{C}} = \frac{1}{\sqrt{\sum_{i=1}^{N} g_{\bar{C}_i}}} = \frac{1}{\sqrt{\frac{1}{0.9^2} + \frac{1}{3.1^2}}} = \SI{0.9}{\nano\farad}
 \end{equation}
-Somit ergibt sich der genauere Wert $\underline{\underline{C = (215.2 \pm 0.9) \textrm{nF}}}$
+Somit ergibt sich der genauere Wert $C = (215.2 \pm 0.9) \SI{}{\nano\farad}$
 
 Es ist zu beachten, dass der berechnete Fehler der Kapazit\"at nur den statistischen Fehler
 darstellt. Als systematischer Fehler m\"usste noch die Unsicherheit des Widerstandwertes

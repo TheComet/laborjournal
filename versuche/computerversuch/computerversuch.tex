@@ -1,10 +1,13 @@
 \documentclass{fhnwreport/fhnwreport}
 
 \input{preamble/packages}
+\input{preamble/pythonplothelpers}
 \input{preamble/title}
+\usepackage{preamble/shitpython}
 
 \addbibresource{bibliography/bibliography.bib}
 
+%& -shell-escape
 \begin{document}
     \input{titlepage/titlepage}
     \include{sections/schallgeschwindigkeit}
@@ -12,9 +15,10 @@
     \include{sections/federkonstante}
     \include{sections/pendel}
     \include{sections/rc-glied}
+    
+    \printbibliography
 
     \include{sections/appendix}
 
-%    \printbibliography
 \end{document}
 
