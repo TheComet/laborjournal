@@ -3,7 +3,10 @@ close all;
 % subroutines are located in this folder
 addpath([pwd,'/mfunctions'])
 
-curves = gen_hudzovic_curves('shit', 10);
+curves = gen_hudzovic_curves();
+save('hudzovic_curves.mat', 'curves');
+%load('hudzovic_curves.mat', 'curves');
+
 figure(1);
 subplot(211); hold on, grid on
 for order = 2:8

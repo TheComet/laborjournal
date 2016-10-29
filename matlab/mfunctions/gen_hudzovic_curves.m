@@ -1,9 +1,6 @@
-% This function calculates the Hudzovic curves, which are later used used
+% This function calculates the Hudzovic curves, which are later used
 % for looking up time constants of a specific plant. The curves range from
 % order 2 to order 8 (this is hardcoded).
-%
-% The curves are saved to "filename" so they don't have to be computed
-% over and over again.
 %
 % The return value is an array of structures, where the first element is
 % for order=2, the second element is for order=3 and so on.
@@ -12,7 +9,9 @@
 %             to the x axis. r will range from 0 <= r < 1/(order-1)
 %   - tu_tg : The result of Tu/Tg for a specific value of r.
 %   - t_tg  : The result of t/Tg for a specific value of r.
-function curves = gen_hudzovic_curves(filename, resolution)
+%
+% Resolution specifies how finely grained the r vector should be.
+function curves = gen_hudzovic_curves(resolution)
     if nargin < 2
         resolution = 50;
     end
