@@ -1,7 +1,13 @@
 close all;
+
 % subroutines are located in this folder
 addpath([pwd,'/mfunctions'])
 
+gen_hudzovic_curves();
+return
+
+% Load the step response of a heater directly from an image plot. We have
+% to manually specify the offset and Y scale Ks.
 yoffset = 22;
 Ks = 37 - yoffset;
 decimation_factor = 10;
