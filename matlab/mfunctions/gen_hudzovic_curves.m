@@ -1,15 +1,34 @@
-function gen_hudzovic_curves(resolution)
-    if nargin < 1
-        resolution = 10;
+% This function calculates the Hudzovic curves, which are later used used
+% for looking up time constants of a specific plant. The curves range from
+% order 2 to order 8 (this is hardcoded).
+%
+% The curves are saved to "filename" so they don't have to be computed
+% over and over again.
+%
+% The return value is an array of structures, where the first element is
+% for order=2, the second element is for order=3 and so on.
+% Each structure containes 3 fields:
+%   - r     : The "r" vector, which is an array of datapoints that belong
+%             to the x axis. r will range from 0 <= r < 1/(order-1)
+%   - tu_tg : The result of Tu/Tg for a specific value of r.
+%   - t_tg  : The result of t/Tg for a specific value of r.
+function curves = gen_hudzovic_curves(filename, resolution)
+    if nargin < 2
+        resolution = 50;
     end
 
     s = tf('s');
-    curves = zeros(resolution, 6, 3);
-
+    curves = struct('r', 0, 'tu_tg', 0, 't_tg', 0);
+    
     for order = 2:8
 
         % 0 <= r < 1/(order-1)
         r = linspace(0, 1/(order-1)-1e-9, resolution);
+        
+        % Reserve space in curves object
+        curves(order-1).r = r;
+        curves(order-1).tu_tg = zeros(1, resolution);
+        curves(order-1).t_tg = zeros(1, resolution);
 
         for r_index = 1:resolution
             % Set T=1 for calculating Tk, construct transfer function G(s)
@@ -25,20 +44,8 @@ function gen_hudzovic_curves(resolution)
             
             % Now we can calculate Tu/Tg as well as T/Tg with T=1 to yield
             % the two plots seen in the Hudzovic method
-            curves(r_index, order-1, 2) = Tu/Tg;
-            curves(r_index, order-1, 3) = 1/Tg;
+            curves(order-1).tu_tg(r_index) = Tu/Tg;
+            curves(order-1).t_tg(r_index) = 1/Tg;
         end
-        % Need to store r vector for each curve, as it changes
-        curves(:, order-1, 1) = r;
-    end
-
-    figure(1);
-    subplot(211); hold on, grid on
-    for order = 2:8
-        plot(curves(:, order-1, 1), curves(:, order-1, 2));
-    end
-    subplot(212); hold on, grid on
-    for order = 2:8
-        plot(curves(:, order-1, 1), curves(:, order-1, 3));
     end
 end

@@ -3,7 +3,16 @@ close all;
 % subroutines are located in this folder
 addpath([pwd,'/mfunctions'])
 
-gen_hudzovic_curves();
+curves = gen_hudzovic_curves('shit', 10);
+figure(1);
+subplot(211); hold on, grid on
+for order = 2:8
+    plot(curves(order-1).r, curves(order-1).tu_tg);
+end
+subplot(212); hold on, grid on
+for order = 2:8
+    plot(curves(order-1).r, curves(order-1).t_tg);
+end
 return
 
 % Load the step response of a heater directly from an image plot. We have
