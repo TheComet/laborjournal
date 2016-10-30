@@ -15,6 +15,7 @@
 
 # MATLAB
 *.m~
+*.mat
 
 # libreoffice stuff
 *.ods#

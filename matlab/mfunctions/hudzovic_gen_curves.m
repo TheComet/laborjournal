@@ -13,14 +13,15 @@
 % Resolution specifies how finely grained the r vector should be.
 function curves = gen_hudzovic_curves(resolution)
     if nargin < 2
-        resolution = 50;
+        resolution = 100;
     end
 
     s = tf('s');
     curves = struct('r', 0, 'tu_tg', 0, 't_tg', 0);
     
     for order = 2:8
-
+        fprintf('Generating hudzovic curve, order %d/8\n', order);
+        
         % 0 <= r < 1/(order-1)
         r = linspace(0, 1/(order-1)-1e-9, resolution);
         
@@ -30,7 +31,7 @@ function curves = gen_hudzovic_curves(resolution)
         curves(order-1).t_tg = zeros(1, resolution);
 
         for r_index = 1:resolution
-            % Set T=1 for calculating Tk, construct transfer function G(s)
+            % Set T=1 for calculating Tk, construct transfer function H(s)
             H = 1;
             for k = 1:order
                 Tk = 1/(1-(k-1)*r(r_index));
@@ -47,4 +48,5 @@ function curves = gen_hudzovic_curves(resolution)
             curves(order-1).t_tg(r_index) = 1/Tg;
         end
     end
+    fprintf('Done.\n');
 end
