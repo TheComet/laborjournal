@@ -1,4 +1,4 @@
-% This function calculates the Hudzovic curves, which are later used
+% This function calculates the Sani curves, which are later used
 % for looking up time constants of a specific plant. The curves range from
 % order 2 to order 8 (this is hardcoded).
 %
@@ -11,7 +11,7 @@
 %   - t_tg  : The result of t/Tg for a specific value of r.
 %
 % Resolution specifies how finely grained the r vector should be.
-function curves = hudzovic_gen_curves(resolution)
+function curves = sani_gen_curves(resolution)
     if nargin < 1
         resolution = 100;
     end
@@ -20,11 +20,10 @@ function curves = hudzovic_gen_curves(resolution)
     curves = struct('r', 0, 'tu_tg', 0, 't_tg', 0);
     
     for order = 2:8
-        fprintf('Generating hudzovic curve, order %d/8\n', order);
+        fprintf('Generating sani curve, order %d/8\n', order);
         
-        % 0 <= r < 1/(order-1)
-        r = linspace(0, 1/(order-1), resolution+1);
-        r = r(1:end-1);
+        r = linspace(0, 1, resolution+1);
+        r = r(2:end);
         
         % Reserve space in curves object
         curves(order-1).r = r;
@@ -35,18 +34,17 @@ function curves = hudzovic_gen_curves(resolution)
             % Set T=1 for calculating Tk, construct transfer function H(s)
             H = 1;
             for k = 1:order
-                Tk = 1/(1-(k-1)*r(r_index));
-                H = H / (1+Tk*s);
+                H = H / (1+s*r(r_index)^k);
             end
             
             % Get Tu/Tg from step response of resulting transfer function
             [h, t] = step(H);
-            [Tu, Tg] = hudzovic_tu_tg(t, h);
+            [Tu, Tg] = calculate_tu_tg(t, h);
             
             % Now we can calculate Tu/Tg as well as T/Tg with T=1 to yield
-            % the two plots seen in the Hudzovic method
-            curves(order-1).tu_tg(r_index) = Tu/Tg;
-            curves(order-1).t_tg(r_index) = 1/Tg;
+            % the two plots seen in the Sani method
+            curves(order-1).tu_tg(r_index) = Tu/Tg; %t50/(t90-t10);
+            curves(order-1).t_tg(r_index) = 1/Tg; %(log(2) - 1 + (1-r(r_index)^(order+1))/(1-r(r_index))) / t50;
         end
     end
     fprintf('Done.\n');

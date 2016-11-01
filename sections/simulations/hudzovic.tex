@@ -1,7 +1,3 @@
-\subsubsection{Calculating Tu and Tg}
-
-
-
 \subsubsection{Generating Hudzovic lookup curves}
 
 As previously discussed, the Hudzovic method approximates the step response of a
@@ -41,13 +37,16 @@ parameters   $r$  and  $n$),  calculate  their  time   domain   step   responses
 $g_{r,n}(t)$,  and  calculate  $g_{T_u/T_g}$  and  $g_{1/T_g}$   for  each  step
 response.
 
-Thus, $g_{T_u/T_g}$ and $g_{1/T_g}$ can are both functions of $r$ and $n$:
+Thus,  $g_{T_u/T_g}$  and  $g_{1/T_g}$  are  both  functions  of  $r$  and  $n$:
 \begin{align}
     g_{T_u/T_g} = g_{T_u/T_g}(r, n) \\
     g_{1/T_g}  =  g_{1/T_g}(r,n)
 \end{align}
-Visualising    this    data    yields    the     curves    seen    in    figures
-\ref{fig:hudzovic:curves_tu_tg}        and       \ref{fig:hudzovic:curves_t_tg}.
+Visualising    this    data    yields    the    curves     seen    in    figures
+\ref{fig:hudzovic:curves_tu_tg}  and \ref{fig:hudzovic:curves_t_tg}. What  these
+figures show beautifully  is  that  the  higher  the  order  $n$ of the transfer
+function  is,  the  steeper  the  step  response  becomes   (higher   values  of
+$\frac{T_u}{T_g}$   mean   faster   rise   times   of   the   step   responses).
 
 Finding $n$ is now a simple matter of  computing $plant_{T_u/T_g}$ and comparing
 the  result  to the Y axis in figure \ref{fig:hudzovic:curves_tu_tg} for  $r=0$.

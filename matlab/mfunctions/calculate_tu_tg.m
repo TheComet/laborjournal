@@ -3,7 +3,7 @@
 % xdata must be a vector of equispaced datapoints.
 % Note that no smoothing is performed on the input function. Make sure to
 % pre-process the curve as necessary if it has noise.
-function [Tu, Tg] = hudzovic_tu_tg(xdata, ydata)
+function [Tu, Tg] = calculate_tu_tg(xdata, ydata)
 
     % Find the point of inflection by searching for a maximum in the
     % derivative

@@ -5,7 +5,7 @@ function [x, y, image] = import_curve_from_image(filename, decimation_factor, co
         hue_threshold = 0.1; % good starting value I think
     end
     if nargin < 3
-        color_key = auto_detect_color_key(image, hue_threshold);
+        color_key = auto_detect_color_key(image, 10);
     end
     if nargin < 2
         decimation_factor = 1;
@@ -19,7 +19,7 @@ function [x, y, image] = import_curve_from_image(filename, decimation_factor, co
     hue_key = color_key(1);
     [y, x] = find(hue > hue_key - hue_threshold & hue < hue_key + hue_threshold);
     
-    % decimate vectors, you don't need that many points for fitting.
+    % decimate vectors, you don't need that many points for what we're doing
     x = x(1:decimation_factor:end);
     y = y(1:decimation_factor:end);
     
@@ -31,13 +31,10 @@ function [x, y, image] = import_curve_from_image(filename, decimation_factor, co
     % computations are easier. We assume there is some amount of noise
     % present in the data, and we assume that the the function is more or
     % less flat in the beginning and end.
-    % 
-    % 
-    xmin = mean(x(1:10));
-    xmax = mean(x(length(x)-10:end));
-    x = x - xmin;
-    x = x / (xmax - xmin);
-    
+    x = x - x(1);
+    x = x / x(end);
+    % average start and end to be closer to the "true" start and end
+    % values.
     ymin = mean(y(1:10));
     ymax = mean(y(length(y)-10:end));
     y = y - ymin;
@@ -49,7 +46,17 @@ function color_key = auto_detect_color_key(image_data, threshold)
     % grey (r == g == b). If we find some number of pixels that don't
     % satisfy this requirement and at the same time have a similar color
     % to one another, we can assume that this is the correct color key
-    color_key = [0, 0, 255];
+    color_key = [0, 0, 0];
+    r = image_data(:,:,1);
+    g = image_data(:,:,2);
+    b = image_data(:,:,3);
+    for i = 1:numel(r)
+        if r(i) ~= g(i) || r(i) ~= b(i) || g(i) ~= b(i)
+            color_key = [r(i), g(i), b(i)];
+            return;
+        end
+    end
+    fprintf('Warning: auto-detection of color key failed.\n');
 end
 
 function hsv = single_rgb2hsv(rgb)
