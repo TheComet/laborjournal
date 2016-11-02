@@ -13,17 +13,17 @@
 % Resolution specifies how finely grained the r vector should be.
 function curves = sani_gen_curves(resolution)
     if nargin < 1
-        resolution = 100;
+        resolution = 20;
     end
 
-    s = tf('s');
+    %s = tf('s');
     curves = struct('r', 0, 'tu_tg', 0, 't_tg', 0);
     
     for order = 2:8
         fprintf('Generating sani curve, order %d/8\n', order);
         
-        r = linspace(0, 1, resolution+1);
-        r = r(2:end);
+        r = linspace(0, 1, resolution+2);
+        r = r(2:end-1);
         
         % Reserve space in curves object
         curves(order-1).r = r;
@@ -32,19 +32,16 @@ function curves = sani_gen_curves(resolution)
 
         for r_index = 1:resolution
             % Set T=1 for calculating Tk, construct transfer function H(s)
-            H = 1;
-            for k = 1:order
-                H = H / (1+s*r(r_index)^k);
-            end
+            H = sani_transfer_function(T, r(r_index), order);
             
             % Get Tu/Tg from step response of resulting transfer function
             [h, t] = step(H);
             [Tu, Tg] = calculate_tu_tg(t, h);
-            
+
             % Now we can calculate Tu/Tg as well as T/Tg with T=1 to yield
             % the two plots seen in the Sani method
-            curves(order-1).tu_tg(r_index) = Tu/Tg; %t50/(t90-t10);
-            curves(order-1).t_tg(r_index) = 1/Tg; %(log(2) - 1 + (1-r(r_index)^(order+1))/(1-r(r_index))) / t50;
+            curves(order-1).tu_tg(r_index) = Tu/Tg;
+            curves(order-1).t_tg(r_index) = 1/Tg;
         end
     end
     fprintf('Done.\n');
