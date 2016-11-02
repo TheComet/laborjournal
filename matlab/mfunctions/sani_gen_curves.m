@@ -32,11 +32,11 @@ function curves = sani_gen_curves(resolution)
 
         for r_index = 1:resolution
             % Set T=1 for calculating Tk, construct transfer function H(s)
-            H = sani_transfer_function(T, r(r_index), order);
+            H = sani_transfer_function(1, r(r_index), order);
             
             % Get Tu/Tg from step response of resulting transfer function
             [h, t] = step(H);
-            [Tu, Tg] = calculate_tu_tg(t, h);
+            [Tu, Tg] = normalise_curve(t, h);
 
             % Now we can calculate Tu/Tg as well as T/Tg with T=1 to yield
             % the two plots seen in the Sani method

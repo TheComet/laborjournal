@@ -17,7 +17,7 @@ function [T, r, order] = hudzovic_lookup(Tu, Tg)
             break
         end
     end
-    fprintf('order is %d\n', order);
+    fprintf('Hudzovic Tu/Tg, order %d\n', order);
     
     % Next, look up r in tu_tg table. Use cubic interpolation for higher
     % accuracy.

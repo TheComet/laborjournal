@@ -1,28 +1,87 @@
-function [T, r, order] = sani_lookup(t10, t50, t90)
-    % see if we're doing Tu/Tg or 
+function [T, r, order] = sani_lookup(a, b, c)
+    if nargin == 2
+        if length(a) > 1 && length(b) > 1
+            [T, r, order] = sani_fit(a, b);
+        else
+            [T, r, order] = sani_lookup_tu_tg(a, b);
+        end
+    end
+    if nargin == 3
+        [T, r, order] = sani_lookup_t10_t50_t90(a, b, c);
+    end
+end
+
+function [T, r, order] = sani_lookup_tu_tg(Tu, Tg)
+    % Check if we can load the curves
+    if exist('sani_curves.mat', 'file') == 2
+        load('sani_curves.mat', 'curves');
+    else
+        fprintf('Sani curves need to be generated (only needs to be done once).\n');
+        fprintf('This may take a while. Go get a coffee or something.\n');
+        curves = sani_gen_curves();
+        save('sani_curves.mat', 'curves');
+    end
+    
     % First, determine required order. We check Tu/Tg against the tu_tg
     % sani curve for this
+    tu_tg = Tu/Tg;
+    for order = 2:8
+        if tu_tg <= curves(order-1).tu_tg(end)
+            break
+        end
+    end
+    fprintf('Sani Tu/Tg, order %d\n', order);
+    
+    % Next, look up r in tu_tg table. Use cubic interpolation for higher
+    % accuracy.
+    r = spline(curves(order-1).tu_tg, curves(order-1).r, tu_tg);
+    
+    % With r, look up T in T/Tg table. Use cubic interpolation for higher
+    % accuracy.
+    T = spline(curves(order-1).r, curves(order-1).t_tg, r) * Tg;
+end
+
+function [T, r, order] = sani_lookup_t10_t50_t90(t10, t50, t90)
+    % Calculate lambda and determine the required filter order by doing a
+    % quick lookup on all orders.
     lambda = (t90 - t10) / t50;
+    order = sani_determine_order(lambda);
+
+    % Next, do a binary search on the lambda function for the chosen order
+    % to find r.
+    fun = @(r)sani_lambda(r, order);
+    r = binary_search(fun, lambda, 0, 1);
+
+    % With r, calculate T using the t50 formula.
+    T = t50 / (log(2) - 1 + (1-r^order)/(1-r));
+end
+
+function [T, r, order] = sani_fit(xdata, ydata)
+    [t10, t50, t90] = normalise_curve(xdata, ydata, 'discrete');
+    order = sani_determine_order((t90-t10)/t50);
+    
+    x(1) = 1;    % T
+    x(2) = 0.5;  % r
+    function ydata = fun(x, xdata)
+        H = sani_transfer_function(x(1), x(2), order);
+        ydata = step(H, xdata);
+    end
+    x = lsqcurvefit(@fun, x, xdata, ydata);
+    T = x(1);
+    r = x(2);
+end
+
+function order = sani_determine_order(lambda)
     for order = 2:8
         if lambda >= sani_lambda(1-1e-6, order);
             break;
         end
     end
-    fprintf('order is %d\n', order);
-
-    % Next, look up r in tu_tg table. Use cubic interpolation for higher
-    % accuracy.
-    %r = spline(curves(order-1).tu_tg, curves(order-1).r, tu_tg);
-    fun = @(r)sani_lambda(r, order);
-    r = binary_search(fun, lambda, 0, 1);
-
-    % With r, look up T in T/Tg table. Use cubic interpolation for higher
-    % accuracy.
-    T = t50 / (log(2) - 1 + (1-r^(order+1))/(1-r));
+    fprintf('Sani t10/t50/t90, order %d\n', order);
 end
 
 function lambda = sani_lambda(r, order)
-    lambda = (1.315*sqrt(3.8 * (1-r^(2*(order+1)))/(1-r^2) - 1)) / (log(2) - 1 + (1-r^(order+1))/(1-r));
+    lambda = (1.315*sqrt(3.8 * (1-r^(2*order))/(1-r^2) - 1)) / (log(2) - 1 + (1-r^order)/(1-r));
 end
 
 function result = binary_search(fun, target, lower, upper)

@@ -26,30 +26,39 @@ ydata = ydata - ydata(1);
 xdata = xdata - xdata(1);
 ydata = ydata / ydata(end);
 xdata = xdata * 5 / xdata(end);
+xdata_raw = xdata;
+ydata_raw = ydata;
 
 [Tu, Tg] = normalise_curve(xdata, ydata);
+[t10, t50, t90] = normalise_curve(xdata, ydata);
+
 [T, r, order] = hudzovic_lookup(Tu, Tg);
 G = hudzovic_transfer_function(T, r, order);
-g_hudzovic = step(G * Ks + yoffset, xdata);
+g_hudzovic_tu_tg = step(G * Ks + yoffset, xdata);
 
-[t10, t50, t90] = normalise_curve(xdata, ydata);
+%[T, r, order] = hudzovic_lookup(t10, t50, t90);
+%G = hudzovic_transfer_function(T, r, order);
+%g_hudzovic_t3 = step(G * Ks + yoffset, xdata);
+
+[T, r, order] = sani_lookup(Tu, Tg);
+G = sani_transfer_function(T, r, order);
+g_sani_tu_tg = step(G * Ks + yoffset, xdata);
+
 [T, r, order] = sani_lookup(t10, t50, t90);
 G = sani_transfer_function(T, r, order);
-g_sani = step(G * Ks + yoffset, xdata);
+g_sani_t3 = step(G * Ks + yoffset, xdata);
 
-T = 2; n=3; r=0.7;
-G = sani_transfer_function(T, r, n);
-%G = 1/((1+2*s)*(1+1.4*s)*(1+0.98*s));
-[y, t] = step(G);
-[t10, t50, t90] = normalise_curve(t, y)
-plot(t, y);
-return;
+[T, r, order] = sani_lookup(xdata_raw, ydata_raw);
+G = sani_transfer_function(T, r, order);
+g_sani_fit = step(G * Ks + yoffset, xdata);
 
 figure; hold on, grid on, grid minor
 scatter(xdata, ydata * Ks + yoffset);
-plot(xdata, g_hudzovic);
-plot(xdata, g_sani);
-legend('original data', 'hudzovic', 'sani');
+plot(xdata, g_hudzovic_tu_tg);
+plot(xdata, g_sani_tu_tg);
+plot(xdata, g_sani_t3);
+plot(xdata, g_sani_fit);
+legend('original data', 'hudzovic Tu/Tg', 'sani Tu/Tg', 'sani t10/t50/t90', 'sani fit');
 return;
 
 % Try fitting the time constants individually
