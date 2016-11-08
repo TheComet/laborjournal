@@ -11,12 +11,28 @@
 %   - t_tg  : The result of t/Tg for a specific value of r.
 %
 % Resolution specifies how finely grained the r vector should be.
-function curves = hudzovic_gen_curves(resolution)
+function curves = hudzovic_curves(resolution)
     if nargin < 1
         resolution = 50;
     end
+    
+    % Check if we can load the curves
+    if exist('hudzovic_curves.mat', 'file') == 2
+        s = load('hudzovic_curves.mat');
+        curves = s.curves;
+        if length(curves(1).r) == resolution
+            return;
+        end
+    end
+        
+    fprintf('Hudzovic curves need to be generated (only needs to be done once).\n');
+    fprintf('This may take a while. Go get a coffee or something.\n');
+    curves = hudzovic_gen_curves(resolution);
+    save('hudzovic_curves.mat', 'curves');
+end
 
-    curves = struct('r', 0, 'tu_tg', 0, 't_tg', 0);
+function curves = hudzovic_gen_curves(resolution)
+    curves = struct('r', 0, 'tu_tg', 0, 't_tg', 0, 'lambda', 0, 't_t50', 0);
 
     for order = 2:8
         fprintf('Generating hudzovic curve, order %d/8\n', order);
@@ -37,11 +53,14 @@ function curves = hudzovic_gen_curves(resolution)
             % Get Tu/Tg from step response of resulting transfer function
             [h, t] = step(H);
             [Tu, Tg] = normalise_curve(t, h);
+            [t10, t50, t90] = normalise_curve(t, h, [0, 1]);
 
             % Now we can calculate Tu/Tg as well as T/Tg with T=1 to yield
             % the two plots seen in the Hudzovic method
             curves(order-1).tu_tg(r_index) = Tu/Tg;
             curves(order-1).t_tg(r_index) = 1/Tg;
+            curves(order-1).lambda(r_index) = (t90-t10)/t50;
+            curves(order-1).t_t50(r_index) = 1/t50;
         end
     end
     fprintf('Done.\n');

@@ -1,13 +1,16 @@
-function [T, r, order] = hudzovic_lookup(Tu, Tg)
-    % Check if we can load the curves
-    if exist('hudzovic_curves.mat', 'file') == 2
-        load('hudzovic_curves.mat', 'curves');
+function [T, r, order] = hudzovic_lookup(a, b, c, xdata, ydata)
+    if nargin == 2
+        [T, r, order] = hudzovic_lookup_tu_tg(a, b);
+    elseif nargin == 3
+        [T, r, order] = hudzovic_lookup_t10_t50_t90(a, b, c);
     else
-        fprintf('Hudzovic curves need to be generated (only needs to be done once).\n');
-        fprintf('This may take a while. Go get a coffee or something.\n');
-        curves = hudzovic_gen_curves();
-        save('hudzovic_curves.mat', 'curves');
+        error('Invalid input arguments');
     end
+    order = 4;
+end
+
+function [T, r, order] = hudzovic_lookup_tu_tg(Tu, Tg)
+    curves = hudzovic_curves();
     
     % First, determine required order. We check Tu/Tg against the tu_tg
     % hudzovic curve for this
@@ -26,4 +29,31 @@ function [T, r, order] = hudzovic_lookup(Tu, Tg)
     % With r, look up T in T/Tg table. Use cubic interpolation for higher
     % accuracy.
     T = spline(curves(order-1).r, curves(order-1).t_tg, r) * Tg;
+end
+
+function [T, r, order] = hudzovic_lookup_t10_t50_t90(t10, t50, t90)
+    curves = hudzovic_curves();
+
+    % First, determine required order. We check lambda against the
+    % hudzovic curve for this
+    lambda = (t90-t10)/t50;
+    order = hudzovic_determine_order(lambda);
+
+    % Next, look up r in lambda table. Use cubic interpolation for higher
+    % accuracy.
+    r = spline(curves(order-1).lambda, curves(order-1).r, lambda);
+
+    % With r, look up T in t/t50 table. Use cubic interpolation for higher
+    % accuracy.
+    T = t50 * spline(curves(order-1).r, curves(order-1).t_t50, r);
+end
+
+function order = hudzovic_determine_order(lambda)
+    curves = hudzovic_get_curves();
+    for order = 2:8
+        if lambda >= curves(order-1).lambda(1)
+            break
+        end
+    end
+    fprintf('Hudzovic t10/t50/t90, order %d\n', order);
 end

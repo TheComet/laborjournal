@@ -17,48 +17,53 @@ decimation_factor = 10;
 xdata = linspace(xdata_raw(1), xdata_raw(end), length(xdata_raw))';
 
 % Input data is quite noisy, smooth it with a sliding average filter
-ydata = sliding_average(ydata_raw, 30);
-
-s = tf('s');
-G = 1/((1+s)^2*(1+s*0.5)^2);
-[ydata, xdata] = step(G);
-ydata = ydata - ydata(1);
-xdata = xdata - xdata(1);
-ydata = ydata / ydata(end);
-xdata = xdata * 5 / xdata(end);
-xdata_raw = xdata;
-ydata_raw = ydata;
+ydata = sliding_average(ydata_raw, ceil(length(ydata) * 0.08));
 
 [Tu, Tg] = normalise_curve(xdata, ydata);
 [t10, t50, t90] = normalise_curve(xdata, ydata);
 
+% Hudzovic, Tu/Tg
 [T, r, order] = hudzovic_lookup(Tu, Tg);
 G = hudzovic_transfer_function(T, r, order);
 g_hudzovic_tu_tg = step(G * Ks + yoffset, xdata);
 
-%[T, r, order] = hudzovic_lookup(t10, t50, t90);
-%G = hudzovic_transfer_function(T, r, order);
-%g_hudzovic_t3 = step(G * Ks + yoffset, xdata);
+% Hudzovic, t10/t50/t90
+[T, r, order] = hudzovic_lookup(t10, t50, t90);
+G = hudzovic_transfer_function(T, r, order);
+g_hudzovic_t3 = step(G * Ks + yoffset, xdata);
 
+% Sani, Tu/Tg
 [T, r, order] = sani_lookup(Tu, Tg);
 G = sani_transfer_function(T, r, order);
 g_sani_tu_tg = step(G * Ks + yoffset, xdata);
 
+% Sani, t10/t50/t90
 [T, r, order] = sani_lookup(t10, t50, t90);
 G = sani_transfer_function(T, r, order);
 g_sani_t3 = step(G * Ks + yoffset, xdata);
 
-[T, r, order] = sani_lookup(xdata_raw, ydata_raw);
+% Hudzovic fit of raw data
+[T, r, order] = hudzovic_lookup(Tu, Tg);
+[T, r] = hudzovic_fit(T, r, order, xdata_raw, ydata_raw);
+G = hudzovic_transfer_function(T, r, order);
+g_hudzovic_fit = step(G * Ks + yoffset, xdata);
+
+% Sani fit of raw data
+[T, r, order] = sani_lookup(t10, t50, t90);
+[T, r] = sani_fit(T, r, order, xdata_raw, ydata_raw);
 G = sani_transfer_function(T, r, order);
 g_sani_fit = step(G * Ks + yoffset, xdata);
 
 figure; hold on, grid on, grid minor
+scatter(xdata_raw, ydata_raw * Ks + yoffset);
 scatter(xdata, ydata * Ks + yoffset);
 plot(xdata, g_hudzovic_tu_tg);
+plot(xdata, g_hudzovic_t3);
 plot(xdata, g_sani_tu_tg);
 plot(xdata, g_sani_t3);
+plot(xdata, g_hudzovic_fit);
 plot(xdata, g_sani_fit);
-legend('original data', 'hudzovic Tu/Tg', 'sani Tu/Tg', 'sani t10/t50/t90', 'sani fit');
+legend('Original data', 'Hudzovic Tu/Tg', 'Hudzovic t10/t50/t90', 'Sani Tu/Tg', 'Sani t10/t50/t90', 'Hudzovic fit', 'Sani fit');
 return;
 
 % Try fitting the time constants individually

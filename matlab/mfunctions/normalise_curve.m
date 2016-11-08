@@ -3,22 +3,12 @@
 % the times t10, t50 and t90 as specified by L. Sani.
 %
 % Examples:
-%    [t10, t50, t90] = normalise_curve(xdata, ydata, 'spline');
+%    [t10, t50, t90] = normalise_curve(xdata, ydata);
 %    [Tu, Tg] = normalise_curve(xdata, ydata);
 %
 % Parameters:
 %    xdata, ydata are vectors of XY data.
-%    mode : Optional, and only relevant when calculating t10, t50, t90.
-%
-%           Can specify 'spline' or 'discrete'. Spline is the default mode
-%           and causes the t10, t50, and t90 lookups to interpolate between
-%           data points for a more accurate result. This requires that the
-%           input data be monotonic and the X data be equispaced.
-%
-%           Descrete mode will work on any scattered XY data, but is less
-%           accurate, because no interpolation method is used. The nearest
-%           data point is snapped to.
-function [a, b, c] = normalise_curve(xdata, ydata, mode)
+function [a, b, c] = normalise_curve(xdata, ydata, ylimits)
     if nargout == 2
         if nargin > 2
             error('mode does nothing when calculating Tu/Tg');
@@ -28,30 +18,29 @@ function [a, b, c] = normalise_curve(xdata, ydata, mode)
         if nargin < 3
             [a, b, c] = calculate_t10_t50_t90(xdata, ydata);
         else
-            [a, b, c] = calculate_t10_t50_t90(xdata, ydata, mode);
+            [a, b, c] = calculate_t10_t50_t90(xdata, ydata, ylimits);
         end
     else
         error('Either use [Tu,Tg] = normalise_curve() or [t10,t50,t90] = normalise_curve()');
     end
 end
 
-function [t10, t50, t90] = calculate_t10_t50_t90(xdata, ydata, mode)
+function [t10, t50, t90] = calculate_t10_t50_t90(xdata, ydata, ylimits)
     if nargin < 3
-        mode = 'spline';
+        ylimits = [ydata(1), ydata(end)];
     end
-    if strcmp(mode, 'discrete')
-        [t10, t50, t90] = do_discrete(xdata, ydata);
-    elseif strcmp(mode, 'spline')
-        [t10, t50, t90] = do_spline(xdata, ydata);
-    else
-        error('unknown option to calculate_t10_t50_t90');
+    
+    try
+        [t10, t50, t90] = do_spline(xdata, ydata, ylimits);
+    catch
+        [t10, t50, t90] = do_discrete(xdata, ydata, ylimits);
     end
 end
 
-function [t10, t50, t90] = do_discrete(xdata, ydata)
-    y10 = (ydata(end) - ydata(1)) * 0.1;
-    y50 = (ydata(end) - ydata(1)) * 0.5;
-    y90 = (ydata(end) - ydata(1)) * 0.9;
+function [t10, t50, t90] = do_discrete(xdata, ydata, ylimits)
+    y10 = (ylimits(2) - ylimits(1)) * 0.1 + ydata(1);
+    y50 = (ylimits(2) - ylimits(1)) * 0.5 + ydata(1);
+    y90 = (ylimits(2) - ylimits(1)) * 0.9 + ydata(1);
     for i = 1:length(ydata)
         if ydata(i) > y10
             t10 = xdata(i);
@@ -72,10 +61,11 @@ function [t10, t50, t90] = do_discrete(xdata, ydata)
     end
 end
 
-function [t10, t50, t90] = do_spline(xdata, ydata)
-    t10 = spline(ydata, xdata, ydata(1) + (ydata(end)-ydata(1)) * 0.1);
-    t50 = spline(ydata, xdata, ydata(1) + (ydata(end)-ydata(1)) * 0.5);
-    t90 = spline(ydata, xdata, ydata(1) + (ydata(end)-ydata(1)) * 0.9);
+function [t10, t50, t90] = do_spline(xdata, ydata, ylimits)
+    t10 = spline(ydata, xdata, ydata(1) + (ylimits(2) - ylimits(1)) * 0.1);
+    t50 = spline(ydata, xdata, ydata(1) + (ylimits(2) - ylimits(1)) * 0.5);
+    t90 = spline(ydata, xdata, ydata(1) + (ylimits(2) - ylimits(1)) * 0.9);
+    
 end
 
 % Input function must be a PTn element. This function will calculate the
@@ -90,6 +80,9 @@ function [Tu, Tg] = calculate_tu_tg(xdata, ydata)
     dx = xdata(2) - xdata(1);
     dy = diff(ydata) / dx;
     [inflection_gradient, inflection_index] = max(dy);
+    
+    % DEBUG
+    % line([xdata(inflection_index), xdata(inflection_index)], [22, 35]);
     
     % Get the coordinates of the inflection point, then construct a tangent
     % through it and find where it intersects with the horizontal line
@@ -111,7 +104,7 @@ function [Tu, Tg] = calculate_tu_tg(xdata, ydata)
     % Tu is the offset to the point of intersection
     Tu = intersection - xdata(1);
     
-    % Tg is calculated similarly, except we intersect the tangent with the
+    % Tg is calculated similarly, except we intersect the tangent with thep
     % maximum horizontal line (ydata(end)).
     intersection = (ydata(end) - line_y + line_x * inflection_gradient) / inflection_gradient;
     Tg = intersection - Tu - xdata(1);

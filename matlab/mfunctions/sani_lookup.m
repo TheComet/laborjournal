@@ -1,26 +1,15 @@
 function [T, r, order] = sani_lookup(a, b, c)
     if nargin == 2
-        if length(a) > 1 && length(b) > 1
-            [T, r, order] = sani_fit(a, b);
-        else
-            [T, r, order] = sani_lookup_tu_tg(a, b);
-        end
-    end
-    if nargin == 3
+        [T, r, order] = sani_lookup_tu_tg(a, b);
+    elseif nargin == 3
         [T, r, order] = sani_lookup_t10_t50_t90(a, b, c);
+    else
+        error('Invalid input arguments');
     end
 end
 
 function [T, r, order] = sani_lookup_tu_tg(Tu, Tg)
-    % Check if we can load the curves
-    if exist('sani_curves.mat', 'file') == 2
-        load('sani_curves.mat', 'curves');
-    else
-        fprintf('Sani curves need to be generated (only needs to be done once).\n');
-        fprintf('This may take a while. Go get a coffee or something.\n');
-        curves = sani_gen_curves();
-        save('sani_curves.mat', 'curves');
-    end
+    curves = sani_curves();
     
     % First, determine required order. We check Tu/Tg against the tu_tg
     % sani curve for this
@@ -54,21 +43,6 @@ function [T, r, order] = sani_lookup_t10_t50_t90(t10, t50, t90)
 
     % With r, calculate T using the t50 formula.
     T = t50 / (log(2) - 1 + (1-r^order)/(1-r));
-end
-
-function [T, r, order] = sani_fit(xdata, ydata)
-    [t10, t50, t90] = normalise_curve(xdata, ydata, 'discrete');
-    order = sani_determine_order((t90-t10)/t50);
-    
-    x(1) = 1;    % T
-    x(2) = 0.5;  % r
-    function ydata = fun(x, xdata)
-        H = sani_transfer_function(x(1), x(2), order);
-        ydata = step(H, xdata);
-    end
-    x = lsqcurvefit(@fun, x, xdata, ydata);
-    T = x(1);
-    r = x(2);
 end
 
 function order = sani_determine_order(lambda)

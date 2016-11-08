@@ -11,12 +11,27 @@
 %   - t_tg  : The result of t/Tg for a specific value of r.
 %
 % Resolution specifies how finely grained the r vector should be.
-function curves = sani_gen_curves(resolution)
+function curves = sani_curves(resolution)
     if nargin < 1
-        resolution = 20;
+        resolution = 50;
     end
+    
+    % Check if we can load the curves
+    if exist('sani_curves.mat', 'file') == 2
+        s = load('sani_curves.mat');
+        curves = s.curves;
+        if length(curves.r) == resolution
+            return;
+        end
+    end
+        
+    fprintf('Sani curves need to be generated (only needs to be done once).\n');
+    fprintf('This may take a while. Go get a coffee or something.\n');
+    curves = sani_gen_curves(resolution);
+    save('sani_curves.mat', 'curves');
+end
 
-    %s = tf('s');
+function curves = sani_gen_curves(resolution)
     curves = struct('r', 0, 'tu_tg', 0, 't_tg', 0);
     
     for order = 2:8
