@@ -66,10 +66,10 @@ function display_calculations()
     ylabel('\fontsize{14}Mean-squared error');
     title('\fontsize{16}Error vs Input noise');
     
-    % Plot the "failure rate". Whenever the error is too large, the error
-    % is set to Inf. For every order, we created 100 random step responses
-    % which means the number of Inf items is directly the failure rate in
-    % percent.
+    % Plot the "failure rate" in function of order. Whenever the error is
+    % too large, the error is set to Inf. For every order, we created 100
+    % random step responses which means the number of Inf items is directly
+    % the failure rate in percent.
     tmp = zeros(7, 6);
     for k = 2:8
         tmp(k-1, 1) = 100 - sum(isfinite(errors_order(k-1).hudzovic_tu_tg));
@@ -92,7 +92,6 @@ function display_calculations()
     xlabel('\fontsize{14}Order of filter');
     ylabel('\fontsize{14}Failure Rate (%)');
     title('\fontsize{16}Failure vs Order');
-    
 end
 
 function error_calculations_noise()

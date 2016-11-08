@@ -20,7 +20,7 @@ function curves = sani_curves(resolution)
     if exist('sani_curves.mat', 'file') == 2
         s = load('sani_curves.mat');
         curves = s.curves;
-        if length(curves.r) == resolution
+        if length(curves(1).r) == resolution
             return;
         end
     end

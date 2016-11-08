@@ -1,4 +1,33 @@
 \section{Theory}
 
-\input{sections/theory/hudzovic}
+The effect of any invariant linear system (LTI) on an arbitrary input  signal is
+obtained by convolution of the input signal  with  the system's impulse response
+function. In a LTI system, the  output  of the system $y(t)$ for an input $x(t)$
+can be obtained by the convolution integral:
+
+\begin{equation}
+    y(t)=g(t)*x(t)=\int_0^t g(t-\tau)x(\tau)\,d\tau
+\end{equation}
+
+where $g(t)$ is the \textit{impulse response}  of the system. That is, $g(t)$ is
+the output of the system with an input $x(t)$ = $\delta(t)$,  where  $\delta(t)$
+is the Dirac delta. The impulse response completely  characterizes  the  dynamic
+behavior of the system
+
+Ideally, one would want to directly measure the impulse response. Unfortunately,
+it is very hard to do this in most practical cases, due to:
+
+\begin{enumerate}
+    \item Difficulty of generating a Dirac delta function (infinite amplitude, zero time).
+    \item Any finite approximation of the Dirac delta function will cause an extremely small and hard to measure response signal.
+\end{enumerate}
+
+A far more practical method is  to  measure  the \textit{step response} instead.
+The derivative of the resulting measured signal will  very  closely resemble its
+theoretical impulse resopnse.
+
+\todo{talk about approximating with predefined G(s)}
+
+\input{sections/theory/hudzovic_vs_sani}
+\input{sections/theory/image_import}
 

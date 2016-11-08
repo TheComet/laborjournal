@@ -3,17 +3,19 @@
 \input{preamble/packages}
 \input{preamble/title}
 
-%\addbibresource{bibliography/bibliography.bib}
+\addbibresource{bibliography/bibliography.bib}
 
 \begin{document}
     \input{titlepage/titlepage}
     \tableofcontents
-    \include{sections/introduction}
-    \include{sections/theory}
-    \include{sections/simulations}
-    \include{sections/results}
-    \include{sections/discussion}
-    %\addcontentsline{toc}{section}{Literature}
-    %\printbibliography
+    \twocolumn
+    \input{sections/introduction}
+    \input{sections/theory}
+    \input{sections/simulations}
+    \input{sections/results}
+    \input{sections/discussion}
+    \addcontentsline{toc}{section}{Literature}
+    \printbibliography
 \end{document}
+
 
