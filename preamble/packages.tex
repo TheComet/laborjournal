@@ -1,23 +1,33 @@
 \usepackage{gensymb}
-\usepackage[T1]{fontenc}
 \usepackage{textcomp}
-\usepackage{booktabs,caption,fixltx2e}
-\usepackage[flushleft]{threeparttable}
+\usepackage[T1]{fontenc}
+\usepackage{lipsum}
+\usepackage{titling}       % Abstract on titlepage
+\usepackage{changepage}    % Change width of abstract text
 \usepackage{float}
 \usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
 \usepackage{todonotes}
 \usepackage[backend=bibtex,bibstyle=numeric,sorting=nyt]{biblatex}
 \usepackage[toc,page]{appendix}
 \usepackage{siunitx}
 \usepackage{subcaption}
 \usepackage{pdfpages}
-\usepackage{mathrsfs}
 \sisetup{output-exponent-marker=\ensuremath{\mathrm{E}}}
-\usepackage{dirtytalk}
-\usepackage{pgfplots}
-\usepackage{tikz}
-\usetikzlibrary{arrows}
-\usetikzlibrary{patterns}
-\usetikzlibrary{plotmarks}
-\pgfplotsset{compat=1.11}
+
+% For MATLAB code
+\usepackage{listings}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+
+% Also required for tuning appearance of MATLAB code
+\usepackage{microtype}
+\usepackage[scaled]{beramono}
+\newcommand\smaller{\fontsize{8}{8.2}\selectfont}
+\newcommand*\LSTfont{\smaller\ttfamily\SetTracking{encoding=*}{-60}\lsstyle}
+
+% Laplace L
+\DeclareMathOperator{\laplace}{\mathscr{L}}
 

@@ -3,12 +3,15 @@
 % the times t10, t50 and t90 as specified by L. Sani.
 %
 % Examples:
-%    [t10, t50, t90] = normalise_curve(xdata, ydata);
-%    [Tu, Tg] = normalise_curve(xdata, ydata);
+%    [t10, t50, t90] = characterise_curve(xdata, ydata);
+%    [Tu, Tg] = characterise_curve(xdata, ydata);
 %
 % Parameters:
 %    xdata, ydata are vectors of XY data.
-function [a, b, c] = normalise_curve(xdata, ydata, ylimits)
+%    ylimis is an optional parameter. Should be a vector containing 2 items
+%           that override the lower and upper bounds of the input data.
+%           Only useful when calculating t10, t50, t90.
+function [a, b, c] = characterise_curve(xdata, ydata, ylimits)
     if nargout == 2
         if nargin > 2
             error('mode does nothing when calculating Tu/Tg');
@@ -21,7 +24,7 @@ function [a, b, c] = normalise_curve(xdata, ydata, ylimits)
             [a, b, c] = calculate_t10_t50_t90(xdata, ydata, ylimits);
         end
     else
-        error('Either use [Tu,Tg] = normalise_curve() or [t10,t50,t90] = normalise_curve()');
+        error('Either use [Tu,Tg] = characterise_curve() or [t10,t50,t90] = normalise_curve()');
     end
 end
 
@@ -30,9 +33,13 @@ function [t10, t50, t90] = calculate_t10_t50_t90(xdata, ydata, ylimits)
         ylimits = [ydata(1), ydata(end)];
     end
     
+    % First try spline. If that fails, fall back to a discrete method which
+    % is far less accurate (this generally happens when the input data is
+    % noisy).
     try
         [t10, t50, t90] = do_spline(xdata, ydata, ylimits);
     catch
+        warning('Falling back on discrete lookup for t10/t50/t90');
         [t10, t50, t90] = do_discrete(xdata, ydata, ylimits);
     end
 end

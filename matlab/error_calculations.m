@@ -3,17 +3,16 @@ function error_calculations()
     
     % subroutines are located in this folder
     addpath([pwd,'/mfunctions']);
-    addpath([pwd,'/fig2tex']);
     
     %error_calculations_noise();
-    %error_calculations_order();
-    display_calculations();
+    error_calculations_order();
+    %display_calculations();
 end
 
 function display_calculations()
     load('errors_order.mat', 'errors_order');
     load('errors_noise.mat', 'errors_noise');
-    
+
     % Error vs Order
     for k = 2:8
         tmp(k-1, 1) = mean(errors_order(k-1).hudzovic_tu_tg(isfinite(errors_order(k-1).hudzovic_tu_tg)));
@@ -23,7 +22,7 @@ function display_calculations()
         tmp(k-1, 5) = mean(errors_order(k-1).hudzovic_fit(isfinite(errors_order(k-1).hudzovic_fit)));
         tmp(k-1, 6) = mean(errors_order(k-1).sani_fit(isfinite(errors_order(k-1).sani_fit)));
     end
-    
+
     figure;
     semilogy(2:8, tmp, 'LineWidth', 2);
     grid on
@@ -33,10 +32,10 @@ function display_calculations()
         '\fontsize{14}Sani t10/t50/t90',...
         '\fontsize{14}Hudzovic fit',...
         '\fontsize{14}Sani fit');
-    axis([2 8 10e-5 10e2]);
+    %axis([2 8 10e-7 20e-3]);
     axis square
     xlabel('\fontsize{14}Order of filter');
-    ylabel('\fontsize{14}Mean-squared error');
+    ylabel('\fontsize{14}Root-Mean-Square Error');
     title('\fontsize{16}Error vs Order');
 
     % Error vs Input noise
@@ -65,7 +64,7 @@ function display_calculations()
     xlabel('\fontsize{14}Normalised noise amplitude');
     ylabel('\fontsize{14}Mean-squared error');
     title('\fontsize{16}Error vs Input noise');
-    
+
     % Plot the "failure rate" in function of order. Whenever the error is
     % too large, the error is set to Inf. For every order, we created 100
     % random step responses which means the number of Inf items is directly
@@ -99,105 +98,75 @@ function error_calculations_noise()
     rand('state', 0);
     errors_noise = struct;
 
-    % Amplitude and offset of step response
-    yoffset = 22;
-    Ks = 37 - yoffset;
     % generate transfer function
     G = hudzovic_transfer_function(1, 1/3/2, 4);
     [ydata_orig, xdata_orig] = step(G);
     ydata_orig = ydata_orig - ydata_orig(1);
     ydata_orig = ydata_orig / ydata_orig(end);
 
-    num_simulations = 1000;
+    num_simulations = 10000;
     for i = 1:num_simulations
         % apply noise
-        amp_rand = 0.35 * (i-1) / (num_simulations-1);
+        amp_rand = 2 * (i-1) / (num_simulations-1);
         xdata_raw = xdata_orig;
         ydata_raw = ydata_orig + amp_rand * (rand(length(ydata_orig),1)-0.5);
 
         % save noise to struct as well
         errors_noise.noise_amplitude(i) = amp_rand;
 
-        % The xdata vector is not monotonically increasing with evenly spaced time
-        % samples. It is very close to it though, so we can approximate it with
-        % linspace
-        xdata = linspace(xdata_raw(1), xdata_raw(end), length(xdata_raw))';
+        try
+            [xdata, ydata] = preprocess_curve(xdata_raw, ydata_raw);
+            [Tu, Tg] = characterise_curve(xdata, ydata);
+            [t10, t50, t90] = characterise_curve(xdata, ydata, [0 1]); % We know it's normalised to 0-1
 
-        % Input data is quite noisy, smooth it with a sliding average filter
-        ydata = sliding_average(ydata_raw, log(0.6)/log(amp_rand) * length(ydata_raw));
+            % Hudzovic, Tu/Tg
+            [T, r, order] = hudzovic_lookup(Tu, Tg);
+            G = hudzovic_transfer_function(T, r, order);
+            g_hudzovic_tu_tg = step(G, xdata);
 
-        [Tu, Tg] = normalise_curve(xdata, ydata);
-        [t10, t50, t90] = normalise_curve(xdata, ydata);
+            % Hudzovic, t10/t50/t90
+            [T, r, order] = hudzovic_lookup(t10, t50, t90);
+            G = hudzovic_transfer_function(T, r, order);
+            g_hudzovic_t3 = step(G, xdata);
 
-        % Hudzovic, Tu/Tg
-        [T, r, order] = hudzovic_lookup(Tu, Tg);
-        G = hudzovic_transfer_function(T, r, order);
-        g_hudzovic_tu_tg = step(G * Ks + yoffset, xdata);
+            % Sani, Tu/Tg
+            [T, r, order] = sani_lookup(Tu, Tg);
+            G = sani_transfer_function(T, r, order);
+            g_sani_tu_tg = step(G, xdata);
 
-        % Hudzovic, t10/t50/t90
-        [T, r, order] = hudzovic_lookup(t10, t50, t90);
-        G = hudzovic_transfer_function(T, r, order);
-        g_hudzovic_t3 = step(G * Ks + yoffset, xdata);
+            % Sani, t10/t50/t90
+            [T, r, order] = sani_lookup(t10, t50, t90);
+            G = sani_transfer_function(T, r, order);
+            g_sani_t3 = step(G, xdata);
 
-        % Sani, Tu/Tg
-        [T, r, order] = sani_lookup(Tu, Tg);
-        G = sani_transfer_function(T, r, order);
-        g_sani_tu_tg = step(G * Ks + yoffset, xdata);
+            % Hudzovic fit of raw data
+            [T, r, order] = hudzovic_lookup(t10, t50, t90);
+            [T, r] = hudzovic_fit(T, r, order, xdata_raw, ydata_raw);
+            G = hudzovic_transfer_function(T, r, order);
+            g_hudzovic_fit = step(G, xdata);
 
-        % Sani, t10/t50/t90
-        [T, r, order] = sani_lookup(t10, t50, t90);
-        G = sani_transfer_function(T, r, order);
-        g_sani_t3 = step(G * Ks + yoffset, xdata);
+            % Sani fit of raw data
+            [T, r, order] = sani_lookup(t10, t50, t90);
+            [T, r] = sani_fit(T, r, order, xdata_raw, ydata_raw);
+            G = sani_transfer_function(T, r, order);
+            g_sani_fit = step(G, xdata);
+            
+        catch
+        end
 
-        % Hudzovic fit of raw data
-        [T, r, order] = hudzovic_lookup(t10, t50, t90);
-        [T, r] = hudzovic_fit(T, r, order, xdata_raw, ydata_raw);
-        G = hudzovic_transfer_function(T, r, order);
-        g_hudzovic_fit = step(G * Ks + yoffset, xdata);
-
-        % Sani fit of raw data
-        [T, r, order] = sani_lookup(t10, t50, t90);
-        [T, r] = sani_fit(T, r, order, xdata_raw, ydata_raw);
-        G = sani_transfer_function(T, r, order);
-        g_sani_fit = step(G * Ks + yoffset, xdata);
-
-        ydata = ydata_orig * Ks + yoffset;
-        errors_noise.hudzovic_tu_tg(i) = immse(g_hudzovic_tu_tg, ydata);
-        errors_noise.hudzovic_t10_t50_t90(i) = immse(g_hudzovic_t3, ydata);
-        errors_noise.sani_tu_tg(i) = immse(g_sani_tu_tg, ydata);
-        errors_noise.sani_t10_t50_t90(i) = immse(g_sani_t3, ydata);
-        errors_noise.hudzovic_fit(i) = immse(g_hudzovic_fit, ydata);
-        errors_noise.sani_fit(i) = immse(g_sani_fit, ydata);
-
-        % For this particular dataset, the maximum error that makes sense is
-        % about ~100. If any curves exceed these, mark them by setting the
-        % error to infinity
-        if errors_noise.hudzovic_tu_tg(i) > 100; errors_noise.hudzovic_tu_tg(i) = Inf; end;
-        if errors_noise.hudzovic_t10_t50_t90(i) > 100; errors_noise.hudzovic_t10_t50_t90(i) = Inf; end;
-        if errors_noise.sani_tu_tg(i) > 100; errors_noise.sani_tu_tg(i) = Inf; end;
-        if errors_noise.sani_t10_t50_t90(i) > 100; errors_noise.sani_t3(i) = Inf; end;
-        if errors_noise.hudzovic_fit(i) > 100; errors_noise.hudzovic_fit(i) = Inf; end;
-        if errors_noise.sani_fit(i) > 100; errors_noise.sani_fit(i) = Inf; end;
+        errors_noise.hudzovic_tu_tg(i) = rmse(g_hudzovic_tu_tg, ydata_orig);
+        errors_noise.hudzovic_t10_t50_t90(i) = rmse(g_hudzovic_t3, ydata_orig);
+        errors_noise.sani_tu_tg(i) = rmse(g_sani_tu_tg, ydata_orig);
+        errors_noise.sani_t10_t50_t90(i) = rmse(g_sani_t3, ydata_orig);
+        errors_noise.hudzovic_fit(i) = rmse(g_hudzovic_fit, ydata_orig);
+        errors_noise.sani_fit(i) = rmse(g_sani_fit, ydata_orig);
     end
 
     save('errors_noise.mat', 'errors_noise');
-
-    figure; hold on, grid on, grid minor
-    plot(log(errors_noise.hudzovic_tu_tg));
-    plot(log(errors_noise.hudzovic_t10_t50_t90));
-    plot(log(errors_noise.sani_tu_tg));
-    plot(log(errors_noise.sani_t10_t50_t90));
-    plot(log(errors_noise.hudzovic_fit));
-    plot(log(errors_noise.sani_fit));
-    legend('Hudzovic Tu/Tg', 'Hudzovic t10/t50/t90', 'Sani Tu/Tg', 'Sani t10/t50/t90', 'Hudzovic fit', 'Sani fit');
 end
 
 function error_calculations_order()
     rand('state', 0);
-    
-    % Amplitude and offset of step response
-    yoffset = 22;
-    Ks = 37 - yoffset;
 
     for k = 2:8
         num_simulations = 100;
@@ -210,84 +179,83 @@ function error_calculations_order()
             'sani_fit', 0);
         
         for i = 1:num_simulations
-            [xdata_raw, ydata_raw] = gen_random_ptn(k);
-            
-            % The xdata vector is not monotonically increasing with evenly spaced time
-            % samples. It is very close to it though, so we can approximate it with
-            % linspace
-            xdata = linspace(xdata_raw(1), xdata_raw(end), length(xdata_raw))';
+            [xdata, ydata] = gen_random_ptn(k);
 
-            % Input data is quite noisy, smooth it with a sliding average filter
-            ydata = ydata_raw;
+            [Tu, Tg] = characterise_curve(xdata, ydata);
+            [t10, t50, t90] = characterise_curve(xdata, ydata, [0 1]); % We know it's normalised to 0-1
 
-            [Tu, Tg] = normalise_curve(xdata, ydata);
-            [t10, t50, t90] = normalise_curve(xdata, ydata);
-
+            try
             % Hudzovic, Tu/Tg
             [T, r, order] = hudzovic_lookup(Tu, Tg);
             G = hudzovic_transfer_function(T, r, order);
-            g_hudzovic_tu_tg = step(G * Ks + yoffset, xdata);
+            g_hudzovic_tu_tg = step(G, xdata);
 
             % Hudzovic, t10/t50/t90
             [T, r, order] = hudzovic_lookup(t10, t50, t90);
             G = hudzovic_transfer_function(T, r, order);
-            g_hudzovic_t3 = step(G * Ks + yoffset, xdata);
+            g_hudzovic_t3 = step(G, xdata);
 
             % Sani, Tu/Tg
             [T, r, order] = sani_lookup(Tu, Tg);
             G = sani_transfer_function(T, r, order);
-            g_sani_tu_tg = step(G * Ks + yoffset, xdata);
+            g_sani_tu_tg = step(G, xdata);
 
             % Sani, t10/t50/t90
             [T, r, order] = sani_lookup(t10, t50, t90);
             G = sani_transfer_function(T, r, order);
-            g_sani_t3 = step(G * Ks + yoffset, xdata);
+            g_sani_t3 = step(G, xdata);
 
             % Hudzovic fit of raw data
             [T, r, order] = hudzovic_lookup(t10, t50, t90);
-            [T, r] = hudzovic_fit(T, r, order, xdata_raw, ydata_raw);
+            [T, r] = hudzovic_fit(T, r, order, xdata, ydata);
             G = hudzovic_transfer_function(T, r, order);
-            g_hudzovic_fit = step(G * Ks + yoffset, xdata);
+            g_hudzovic_fit = step(G, xdata);
 
             % Sani fit of raw data
             [T, r, order] = sani_lookup(t10, t50, t90);
-            [T, r] = sani_fit(T, r, order, xdata_raw, ydata_raw);
+            [T, r] = sani_fit(T, r, order, xdata, ydata);
             G = sani_transfer_function(T, r, order);
-            g_sani_fit = step(G * Ks + yoffset, xdata);
+            g_sani_fit = step(G, xdata);
+            catch
+            end
 
-            ydata = ydata_raw * Ks + yoffset;
-            errors_order(k-1).hudzovic_tu_tg(i) = immse(g_hudzovic_tu_tg, ydata);
-            errors_order(k-1).hudzovic_t10_t50_t90(i) = immse(g_hudzovic_t3, ydata);
-            errors_order(k-1).sani_tu_tg(i) = immse(g_sani_tu_tg, ydata);
-            errors_order(k-1).sani_t10_t50_t90(i) = immse(g_sani_t3, ydata);
-            errors_order(k-1).hudzovic_fit(i) = immse(g_hudzovic_fit, ydata);
-            errors_order(k-1).sani_fit(i) = immse(g_sani_fit, ydata);
-
-            % For this particular dataset, the maximum error that makes sense is
-            % about ~100. If any curves exceed these, mark them by setting the
-            % error to infinity
-            if errors_order(k-1).hudzovic_tu_tg(i) > 100; errors_order(k-1).hudzovic_tu_tg(i) = Inf; end;
-            if errors_order(k-1).hudzovic_t10_t50_t90(i) > 100; errors_order(k-1).hudzovic_t10_t50_t90(i) = Inf; end;
-            if errors_order(k-1).sani_tu_tg(i) > 100; errors_order(k-1).sani_tu_tg(i) = Inf; end;
-            if errors_order(k-1).sani_t10_t50_t90(i) > 100; errors_order(k-1).sani_t3(i) = Inf; end;
-            if errors_order(k-1).hudzovic_fit(i) > 100; errors_order(k-1).hudzovic_fit(i) = Inf; end;
-            if errors_order(k-1).sani_fit(i) > 100; errors_order(k-1).sani_fit(i) = Inf; end;
+            errors_order(k-1).hudzovic_tu_tg(i) = rmse(g_hudzovic_tu_tg, ydata);
+            errors_order(k-1).hudzovic_t10_t50_t90(i) = rmse(g_hudzovic_t3, ydata);
+            errors_order(k-1).sani_tu_tg(i) = rmse(g_sani_tu_tg, ydata);
+            errors_order(k-1).sani_t10_t50_t90(i) = rmse(g_sani_t3, ydata);
+            errors_order(k-1).hudzovic_fit(i) = rmse(g_hudzovic_fit, ydata);
+            errors_order(k-1).sani_fit(i) = rmse(g_sani_fit, ydata);
         end
     end
-    
+
     save('errors_order.mat', 'errors_order');
+end
+
+function error_calculations_order_sani_lookup()
+    rand('state', 0);
 
     for k = 2:8
-        tmp(k-1, 1) = mean(errors_order(k-1).hudzovic_tu_tg(isfinite(errors_order(k-1).hudzovic_tu_tg)));
-        tmp(k-1, 2) = mean(errors_order(k-1).hudzovic_t10_t50_t90(isfinite(errors_order(k-1).hudzovic_t10_t50_t90)));
-        tmp(k-1, 3) = mean(errors_order(k-1).sani_tu_tg(isfinite(errors_order(k-1).sani_tu_tg)));
-        tmp(k-1, 4) = mean(errors_order(k-1).sani_t10_t50_t90(isfinite(errors_order(k-1).sani_t10_t50_t90)));
-        tmp(k-1, 5) = mean(errors_order(k-1).hudzovic_fit(isfinite(errors_order(k-1).hudzovic_fit)));
-        tmp(k-1, 6) = mean(errors_order(k-1).sani_fit(isfinite(errors_order(k-1).sani_fit)));
+        num_simulations = 100;
+        
+        for i = 1:num_simulations
+            [xdata, ydata] = gen_random_ptn(k);
+
+            [Tu, Tg] = characterise_curve(xdata, ydata);
+            [t10, t50, t90] = characterise_curve(xdata, ydata, [0 1]); % We know it's normalised to 0-1
+
+            try
+            % Sani, t10/t50/t90
+            [T, r, order] = sani_lookup(t10, t50, t90);
+            G = sani_transfer_function(T, r, order);
+            g_sani_t3 = step(G, xdata);
+            catch
+            end
+
+            errors_order(k-1) = rmse(g_sani_t3, ydata);
+        end
     end
-    figure; hold on, grid on, grid minor
-    plot(tmp);
-    legend('Hudzovic Tu/Tg', 'Hudzovic t10/t50/t90', 'Sani Tu/Tg', 'Sani t10/t50/t90', 'Hudzovic fit', 'Sani fit');
+
+    save('errors_order_sani_lambda_lookup.mat', 'errors_order');
 end
 
 function [xdata, ydata] = gen_random_ptn(order)

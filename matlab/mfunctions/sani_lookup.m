@@ -6,6 +6,18 @@ function [T, r, order] = sani_lookup(a, b, c)
     else
         error('Invalid input arguments');
     end
+    
+    % sanity check
+    if r < 0 || r > 1
+        warning('sani lookup failed, parameters are too extreme. Falling back to default values.');
+        a, b
+        if nargin == 3
+            c
+        end
+        T, r
+        r = 0.5;
+        T = 1;
+    end
 end
 
 function [T, r, order] = sani_lookup_tu_tg(Tu, Tg)

@@ -51,10 +51,13 @@ function curves = sani_gen_curves(resolution)
             
             % Get Tu/Tg from step response of resulting transfer function
             [h, t] = step(H);
-            [Tu, Tg] = normalise_curve(t, h);
+            [Tu, Tg] = characterise_curve(t, h);
+            [t10, t50, t90] = characterise_curve(t, h, [0 1]);
 
             % Now we can calculate Tu/Tg as well as T/Tg with T=1 to yield
             % the two plots seen in the Sani method
+            curves(order-1).lambda = (t90-t10)/t50;
+            curves(order-1).t_t50 = 1/t_50;
             curves(order-1).tu_tg(r_index) = Tu/Tg;
             curves(order-1).t_tg(r_index) = 1/Tg;
         end

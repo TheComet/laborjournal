@@ -6,7 +6,6 @@ addpath([pwd,'/mfunctions']);
 % Load the step response of a heater directly from an image plot. We have
 % to manually specify the offset and Y scale Ks.
 yoffset = 22;
-xtime = 10;
 Ks = 37 - yoffset;
 decimation_factor = 10;
 [xdata_raw, ydata_raw, img] = import_curve_from_image('images/plant1.png', decimation_factor);
@@ -19,8 +18,8 @@ xdata = linspace(xdata_raw(1), xdata_raw(end), length(xdata_raw))';
 % Input data is quite noisy, smooth it with a sliding average filter
 ydata = sliding_average(ydata_raw, ceil(length(ydata) * 0.08));
 
-[Tu, Tg] = normalise_curve(xdata, ydata);
-[t10, t50, t90] = normalise_curve(xdata, ydata);
+[Tu, Tg] = characterise_curve(xdata, ydata);
+[t10, t50, t90] = characterise_curve(xdata, ydata);
 
 % Hudzovic, Tu/Tg
 [T, r, order] = hudzovic_lookup(Tu, Tg);

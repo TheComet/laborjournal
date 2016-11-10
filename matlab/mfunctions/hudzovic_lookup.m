@@ -6,7 +6,17 @@ function [T, r, order] = hudzovic_lookup(a, b, c, xdata, ydata)
     else
         error('Invalid input arguments');
     end
-    order = 4;
+    
+    if r < 0 || r >= 1/(order-1)
+        warning('hudzovic lookup failed, parameters are too extreme. Falling back to default values.');
+        a, b
+        if nargin == 3
+            c
+        end
+        T, r
+        r = 1/(order-1)/2;
+        T = 1;
+    end
 end
 
 function [T, r, order] = hudzovic_lookup_tu_tg(Tu, Tg)
@@ -49,7 +59,7 @@ function [T, r, order] = hudzovic_lookup_t10_t50_t90(t10, t50, t90)
 end
 
 function order = hudzovic_determine_order(lambda)
-    curves = hudzovic_get_curves();
+    curves = hudzovic_curves();
     for order = 2:8
         if lambda >= curves(order-1).lambda(1)
             break

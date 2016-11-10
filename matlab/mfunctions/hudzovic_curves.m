@@ -52,8 +52,8 @@ function curves = hudzovic_gen_curves(resolution)
 
             % Get Tu/Tg from step response of resulting transfer function
             [h, t] = step(H);
-            [Tu, Tg] = normalise_curve(t, h);
-            [t10, t50, t90] = normalise_curve(t, h, [0, 1]);
+            [Tu, Tg] = characterise_curve(t, h);
+            [t10, t50, t90] = characterise_curve(t, h, [0, 1]);
 
             % Now we can calculate Tu/Tg as well as T/Tg with T=1 to yield
             % the two plots seen in the Hudzovic method

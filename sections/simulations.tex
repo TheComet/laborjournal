@@ -1,2 +1,146 @@
 \section{Simulations}
 
+A set  of  subroutines  required  to compute and evaluate the transfer functions
+outlined in this report are  located  in  the  folder  \textit{mfunctions}.  The
+folder must be appended to MATLAB's path:
+
+\begin{lstlisting}
+addpath([pwd,'/mfunctions']);
+\end{lstlisting}
+
+
+\subsubsection*{Pre-processing}
+
+Typically, the input data is never perfect. It might contain noise, it might not
+have equispaced time values.  For  instance, it might have been imported from an
+image, like so:
+
+\begin{lstlisting}
+% Load the step response of a heater directly
+% from an image plot. We have to manually
+% specify the offset and Y scale Ks.
+yoffset = 22;
+Ks = 37 - yoffset;
+decimation_factor = 10;
+[xr, yr, img] = import_curve_from_image('images/plant1.png', decimation_factor);
+\end{lstlisting}
+
+In order to achieve better  results,  the  data  must be smoothed and quantised.
+Note  that  at  the  time   of  writing  I  did  not  have  access  to  MATLAB's
+\textit{smooth()}  function,  so  I  had  to  write   my   own   implementation,
+\textit{sliding\_average()}.  It  is recommended  to  use  \textit{smooth()}  if
+possible.
+
+\begin{lstlisting}
+% The xdata vector is not monotonically
+% increasing with evenly spaced time samples.
+% It is very close to it though, so we can
+% approximate it with linspace.
+x = linspace(xr(1), xr(end), length(xr))';
+
+% Input data is quite noisy, smooth it with a
+% sliding average filter
+y = sliding_average(yr, 20));
+\end{lstlisting}
+
+
+\subsubsection*{Characterising the curve}
+
+With the data prepared, it is  now  possible to calculate $T_u/T_g$ or $t_{10}$,
+$t_{50}$ and $t_{90}$, depending on what you  wish  to  do  next.  The  function
+\textit{normalise\_curve()}  can  handle  both   cases   for   you,   like   so:
+
+\begin{lstlisting}
+% Characterises the curve, either using
+% Hudzovic's method or Sani's method.
+[Tu, Tg] = characterise_curve(x, y);
+[t10, t50, t90] = characterise_curve(x, y);
+\end{lstlisting}
+
+
+\subsubsection*{Calculating T, r and n}
+
+As  previously discussed, the three constants  $T$,  $r$  and  $n$  need  to  be
+calculated. This is true for both methods from L.  Sani  and  P.  Hudzovic.  For
+this,    we    have    the    two    functions    \textit{sani\_lookup()}    and
+\textit{hudzovic\_lookup()}.
+
+Both  of these functions accept either $T_u/T_g$ or $t_{10}$, $t_{50}$, $t_{90}$
+as parameters. Depending  on  which  one  you  choose  to use, the function will
+perform a different lookup:
+
+\begin{lstlisting}
+% Hudzovic method, Sani method, and their permutations
+[T, r, n] = hudzovic_lookup(Tu, Tg);
+[T, r, n] = hudzovic_lookup(t10, t50, t90);
+[T, r, n] = sani_lookup(t10, t50, t90);
+[T, r, n] = sani_lookup(Tu, Tg);
+\end{lstlisting}
+
+Note how it's  also  possible  to  use the $t_{10}$, $t_{50}$, $t_{90}$ approach
+with  Hudzovic's method,  and  similarly,  use  $T_u/T_g$  with  Sani's  method.
+
+When  calling  these  functions  for  the  first time, they will spend some time
+generating  the  lookup  curves  discussed in the theory section. This can  take
+about a minute. They are saved to  disk  and  loaded  again if available, so all
+subsequent calls will be fast.
+
+
+\subsubsection*{Calculating the Transfer Function}
+
+Once    $T$,    $r$    and    $n$    are    obtained,    the    two    functions
+\textit{hudzovic\_transfer\_function()}  and \textit{sani\_transfer\_function()}
+will help  convert  those  three  constants into a continuous transfer function:
+
+\begin{lstlisting}
+% Calculating the transfer functions
+G_hudzovic = hudzovic_transfer_function(T, r, n);
+G_sani = sani_transfer_function(T, r, n);
+\end{lstlisting}
+
+
+\subsubsection*{Fitting}
+
+So far, we've seen the  typical  work-flow for calculating the transfer function
+look somewhat like the following code:
+
+\begin{lstlisting}
+% Hudzovic, Tu/Tg
+[Tu, Tg] = characterise_curve(x, y);
+[T, r, order] = hudzovic_lookup(Tu, Tg);
+G = hudzovic_transfer_function(T, r, order);
+\end{lstlisting}
+
+To  further  refine  the result, it is possible to perform a least squares curve
+fit on a result  obtained  by  P.  Hudzovic's method using the \textbf{original}
+(non-smoothed)    data.    This    can   be   achieved   with   the    functions
+\textit{hudzovic\_fit()} and \textit{sani\_fit()}.
+
+\begin{lstlisting}
+% Hudzovic, Tu/Tg, with fitting
+[Tu, Tg] = characterise_curve(x, y);
+[T, r, n] = hudzovic_lookup(Tu, Tg);
+[T, r] = hudzovic_fit(T, r, n, xr, yr);
+G = hudzovic_transfer_function(T, r, order);
+\end{lstlisting}
+
+Here,  \textit{xr},  \textit{yr}  contain  the  ``raw''  data,  and  \textit{x},
+\textit{y} contain the pre-processed (smoothed) data.
+
+Similarly, it is  possible  to  further  refine  a  result obtained by L. Sani's
+method using the function \textit{sani\_fit()}:
+
+\begin{lstlisting}
+% Hudzovic, Tu/Tg, with fitting
+[t10, t50, t90] = characterise_curve(x, y);
+[T, r, n] = sani_lookup(t10, t50, t90);
+[T, r] = sani_fit(T, r, n, xr, yr);
+G = sani_transfer_function(T, r, order);
+\end{lstlisting}
+
+The fit is currently not  able  to determine the required order by itself, so it
+is necessary to first call \textit{characterise\_curve()} on  the  smoothed data
+to retrieve the order. A nice  side  effect  of  doing this is it also gives you
+good starting values for $T$ and $r$. This  avoids  the  possibility  of falling
+into a local minimum while fitting the data.
+

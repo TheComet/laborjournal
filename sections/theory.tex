@@ -7,15 +7,42 @@ can be obtained by the convolution integral:
 
 \begin{equation}
     y(t)=g(t)*x(t)=\int_0^t g(t-\tau)x(\tau)\,d\tau
+    \label{eq:conv_int}
 \end{equation}
 
 where $g(t)$ is the \textit{impulse response}  of the system. That is, $g(t)$ is
 the output of the system with an input $x(t)$ = $\delta(t)$,  where  $\delta(t)$
 is the Dirac delta. The impulse response completely  characterizes  the  dynamic
-behavior of the system
+behaviour of the system.
 
-Ideally, one would want to directly measure the impulse response. Unfortunately,
-it is very hard to do this in most practical cases, due to:
+Applying   the   Laplace   transform  to  the  convolution  integral   (equation
+\ref{eq:conv_int}) we obtain equation \ref{eq:laplace}:
+
+\begin{equation}
+    \laplace[y(t)] = \laplace[g(t) ∗ x(t)] = \laplace[g(t)] \laplace[x(t)]
+\end{equation}
+
+or in simple expression:
+
+\begin{equation}
+    Y(s) = G(s)X(s)
+    \label{eq:laplace}
+\end{equation}
+
+where $Y(s)$, $G(s)$ and $X(s)$ are the Laplace transforms of $y(t)$, $g(t)$ and
+$x(t)$ respectively. A Transfer Function (TF) is the mathematical representation
+of  the  relation between the input and output of a system. In a LTI system,  TF
+can be  expressed  as  the  ratio of the Laplace transform of the output and the
+input, and  corresponds to the Laplace transform of the impulse response $G(s)$.
+
+\begin{equation}
+    G(s) = \frac{Y(s)}{X(s)}
+\end{equation}
+
+So the task is simple: In order to obtain  $G(s)$  we must simply apply a signal
+in the form of the Dirac delta function to the input of a system and measure its
+output. Unfortunately, it is very hard to do this in most  practical  cases, due
+to:
 
 \begin{enumerate}
     \item Difficulty of generating a Dirac delta function (infinite amplitude, zero time).
@@ -24,10 +51,13 @@ it is very hard to do this in most practical cases, due to:
 
 A far more practical method is  to  measure  the \textit{step response} instead.
 The derivative of the resulting measured signal will  very  closely resemble its
-theoretical impulse resopnse.
+theoretical impulse response.
 
 \todo{talk about approximating with predefined G(s)}
 
-\input{sections/theory/hudzovic_vs_sani}
+\input{sections/theory/model}
+\input{sections/theory/characterisation_of_step_responses}
+\input{sections/theory/approximating_step_response}
+\input{sections/theory/least_squares}
 \input{sections/theory/image_import}
 

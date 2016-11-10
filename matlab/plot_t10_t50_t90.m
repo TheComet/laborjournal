@@ -7,7 +7,7 @@ s = tf('s');
 G = 1.4 + 5/(1+s)^2/(1+0.5*s)/(1+0.4*s);
 [y, t] = step(G);
 
-[t10, t50, t90] = normalise_curve(t, y);
+[t10, t50, t90] = characterise_curve(t, y);
 y10 = spline(t, y, t10);
 y50 = spline(t, y, t50);
 y90 = spline(t, y, t90);
