@@ -39,25 +39,23 @@ input, and  corresponds to the Laplace transform of the impulse response $G(s)$.
     G(s) = \frac{Y(s)}{X(s)}
 \end{equation}
 
-So the task is simple: In order to obtain  $G(s)$  we must simply apply a signal
-in the form of the Dirac delta function to the input of a system and measure its
-output. Unfortunately, it is very hard to do this in most  practical  cases, due
-to:
+So the task  is  simple:  In order to obtain $G(s)$, a signal in the form of the
+Dirac delta function must be applied to the input of an unknown system  and  its
+output  must be measured. Unfortunately, it is very hard  to  do  this  in  most
+practical cases, due to:
 
 \begin{enumerate}
     \item Difficulty of generating a Dirac delta function (infinite amplitude, zero time).
     \item Any finite approximation of the Dirac delta function will cause an extremely small and hard to measure response signal.
 \end{enumerate}
 
-A far more practical method is  to  measure  the \textit{step response} instead.
-The derivative of the resulting measured signal will  very  closely resemble its
-theoretical impulse response.
-
-\todo{talk about approximating with predefined G(s)}
+A far more practical method is to measure the  \textit{step response} instead. A
+step function is easier to create in the physical world.  The  derivative of the
+resulting measured signal will  very  closely  resemble  its theoretical impulse
+response.
 
 \input{sections/theory/model}
 \input{sections/theory/characterisation_of_step_responses}
 \input{sections/theory/approximating_step_response}
 \input{sections/theory/least_squares}
-\input{sections/theory/image_import}
 

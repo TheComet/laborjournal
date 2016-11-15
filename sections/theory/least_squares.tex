@@ -1,3 +1,26 @@
 \subsection{Least Squares Fit}
 
+Given a discrete set of data points which represent a measured step  response of
+an  unknown system, the input parameters  of  the  function  $G_n(s,r)$  can  be
+tweaked such that the squared error between its step response and the input data
+is minimised. The squared error is computed using:
 
+\begin{equation}
+    S = \sum_{i} \left(g(t_i)-y_i\right)^2
+\end{equation}
+
+where $g(t)$ is the inverse Laplace transform  of $\frac{G_n(s,r)}{s}$ (the time
+domain step response) and ($t_i$,$y_i$) are  data  points  of  the measured step
+response.
+
+By fitting a system $G_n(s,r)$ to  the  input  data,  it  is possible to further
+refine the results  obtained by the two methods mentioned thus far, or otherwise
+find  optimal  values  for  $T$  and  $r$ when dealing with  noisy  input  data.
+
+The possibility of finding local minima exists. It is therefore advised to first
+use one of the four previous methods to find optimal initial values for $T$, $r$
+and $n$ before performing the fit.
+
+It will be shown that the  least  squares  fit  approach  will  yield  the  most
+accurate results by orders of magnitude. The downside to this method, of course,
+is the large amount of computation time required.

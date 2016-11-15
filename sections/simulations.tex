@@ -9,6 +9,9 @@ addpath([pwd,'/mfunctions']);
 \end{lstlisting}
 
 
+\input{sections/simulations/image_import}
+
+
 \subsubsection*{Pre-processing}
 
 Typically, the input data is never perfect. It might contain noise, it might not
@@ -60,10 +63,11 @@ $t_{50}$ and $t_{90}$, depending on what you  wish  to  do  next.  The  function
 
 \subsubsection*{Calculating T, r and n}
 
-As  previously discussed, the three constants  $T$,  $r$  and  $n$  need  to  be
-calculated. This is true for both methods from L.  Sani  and  P.  Hudzovic.  For
-this,    we    have    the    two    functions    \textit{sani\_lookup()}    and
-\textit{hudzovic\_lookup()}.
+With  $T_u$,  $T_g$  or  $t_{10}$,  $t_{50}$,  $t_{90}$  determined,  the  three
+constants $T$, $r$ and $n$ can be calculated using  either  P.  Hudzovic's or L.
+Sani's  transfer function (equations \ref{eq:hudzovic}  or  \ref{eq:sani}).  For
+this, the two functions  \textit{sani\_lookup()} and \textit{hudzovic\_lookup()}
+may be used.
 
 Both  of these functions accept either $T_u/T_g$ or $t_{10}$, $t_{50}$, $t_{90}$
 as parameters. Depending  on  which  one  you  choose  to use, the function will
@@ -101,8 +105,8 @@ G_sani = sani_transfer_function(T, r, n);
 
 \subsubsection*{Fitting}
 
-So far, we've seen the  typical  work-flow for calculating the transfer function
-look somewhat like the following code:
+So  far,  the  typical  work-flow  for  calculating  the transfer function looks
+somewhat like the following code:
 
 \begin{lstlisting}
 % Hudzovic, Tu/Tg

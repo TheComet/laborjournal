@@ -25,7 +25,7 @@ P. Hudzovic proposed the following method (see figure \ref{fig:tu_tg}):
 Find  the  point  of  inflection of the step function. This  typically  involves
 calculating the derivative and searching for a maximum.
     \item
-Place a tangent in said points and find the intersections  with  the minimum and
+Place a tangent  in  said  point and find the intersections with the minimum and
 maximum horizontal lines.
     \item
 The distance between the two intersections  is  referred  to  as  $T_g$, and the
@@ -50,8 +50,7 @@ values   at    \SI{10}{\percent},    \SI{50}{\percent}    and   \SI{90}{percent}
 respectively.
 
 The   ``complexity''   of  the  step  response  is  defined  by  the  ratio   of
-$t_{90}-t_{10}$ and $t_{50}$, otherwise referred to as $\lambda$, and is defined
-as:
+$t_{90}-t_{10}$   and   $t_{50}$,   otherwise   referred   to   as    $\lambda$:
 
 \begin{equation}
     \textrm{plant}_{\lambda} = \frac{t_{90}-t_{10}}{t_{50}}
@@ -68,16 +67,18 @@ equation  \ref{eq:tu_tg}  increases.   Similarly,   decreasing   the  difference
 $t_{90}-t_{10}$ in figure \ref{fig:t10_t50_t90} also causes the step response to
 become  steeper  and causes the value of  $\textrm{plant}_{\lambda}$  increases.
 
-On the other hand, one can also see how increasing  $T_u$ and $t_{50}$ increases
-the  lag  time  of  the  step  response,  which  similarly  leads  to  a  higher
+On the other hand, one can  also see how increasing $T_u$ and $t_{50}$ increases
+the delay  time  of  the  step  response,  which  similarly  leads  to  a higher
 ``complexity'', and thus, a higher order $n$.
 
-\begin{figure}
+How $n$ is calculated will become clear in the next section.
+
+\begin{figure}[t]
     \includegraphics[width=\linewidth]{images/step_response_tu_tg}
     \caption{Method of P. Hudzovic, determine Tu and Tg}
     \label{fig:tu_tg}
 \end{figure}
-\begin{figure}
+\begin{figure}[t]
     \includegraphics[width=\linewidth]{images/step_response_t10_t50_t90}
     \caption{Method of L. Sani, determine t10, t50 and t90}
     \label{fig:t10_t50_t90}

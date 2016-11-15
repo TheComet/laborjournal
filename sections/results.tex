@@ -35,8 +35,14 @@ resulting in figure \ref{fig:error_noise}.
 
 \begin{figure}
     \includegraphics[width=\linewidth]{images/error_noise}
-    \caption{The root mean square error (RMSE) of each method to the original step response function in function of normalised input noise amplitude.}
+    \caption{The root mean square error (RMSE) of each method to the original step response function, in function of normalised input noise amplitude.}
     \label{fig:error_noise}
+\end{figure}
+
+\begin{figure}
+    \includegraphics[width=\linewidth]{images/error_noise_long_term}
+    \caption{Long term view of the root mean square error (RMSE) of each method to the original step response function, in function of normalised input noise amplitude.}
+    \label{fig:error_noise_long_term}
 \end{figure}
 
 An  immediate  conclusion  to be drawn is that the two fitting methods (cyan and
@@ -106,11 +112,14 @@ proves  to be better than the Hudzovic fit.
 An interesting observation is that the method proposed by L. Sani\cite{ref:sani}
 using the $t_{10}$, $t_{50}$, $t_{90}$ characterisation performs worse and worse
 the  higher  the order, whereas all other methods perform better and better. The
-exact reason as to why this is is unclear,  but  I  would  speculate  that it is
-related  to  the interpolation formulae proposed by L. Sani  \todo{reference  to
+exact reason as to why this happens is related  to  the interpolation formulae proposed by L. Sani  \todo{reference  to
 theory section}.
 
-
+\begin{figure}
+    \includegraphics[width=\linewidth]{images/sani_interpolation_vs_lookup}
+    \caption{Interpolation formulae proposed by L. Sani compared to ``brute force'' calculating the individual t10, t50, t90 parameters and creating lookup curves}
+    \label{fig:interpolation_vs_lookup}
+\end{figure}
 
 \todo{Worth investigating a more accurate method of determining t10, t50, t90}
 
