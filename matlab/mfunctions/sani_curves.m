@@ -32,7 +32,7 @@ function curves = sani_curves(resolution)
 end
 
 function curves = sani_gen_curves(resolution)
-    curves = struct('r', 0, 'tu_tg', 0, 't_tg', 0);
+    curves = struct('r', 0, 'tu_tg', 0, 't_tg', 0, 'lambda', 0, 't_t50', 0);
     
     for order = 2:8
         fprintf('Generating sani curve, order %d/8\n', order);
@@ -44,6 +44,8 @@ function curves = sani_gen_curves(resolution)
         curves(order-1).r = r;
         curves(order-1).tu_tg = zeros(1, resolution);
         curves(order-1).t_tg = zeros(1, resolution);
+        curves(order-1).lambda = zeros(1, resolution);
+        
 
         for r_index = 1:resolution
             % Set T=1 for calculating Tk, construct transfer function H(s)

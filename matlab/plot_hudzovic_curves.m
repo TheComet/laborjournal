@@ -40,6 +40,7 @@ end
 xlabel('\fontsize{14}Parameter  r');
 ylabel('\fontsize{14}lambda (\lambda)');
 title('\fontsize{16}Hudzovic Lookup, t10 / t50 / t90');
+axis([0 1 0 3]);
 axis square
 legend('n=2', 'n=3', 'n=4', 'n=5', 'n=6', 'n=7', 'n=8', 'Location', 'southeast');
 
