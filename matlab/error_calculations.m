@@ -257,7 +257,7 @@ function error_calculations_noise()
 %         errors_noise.sani_fit(i) = err_acc(6);
     end
 
-    save('errors_noise_top2.mat', 'errors_noise');
+    save('errors_noise.mat', 'errors_noise');
 end
 
 function error_calculations_order()
