@@ -140,18 +140,18 @@ Instead   of   having   to   generate  the  lookup   curves   seen   in   figure
 approximate these curves. They are:
 
 \begin{equation}
-    \frac{t_{50}}{T} = \log(2)-1+\frac{1-r^{n+1}}{1-r}
+    \frac{t_{50}}{T} = \log(2)-1+\frac{1-r^{n}}{1-r}
     \label{eq:T_t50}
 \end{equation}
 \begin{equation}
-    \frac{t_{90}-t_{10}}{T} = 1.315 \sqrt{3.8\frac{1-r^{2\left(n+1\right)}}{1-r^2} - 1}
+    \frac{t_{90}-t_{10}}{T} = 1.315 \sqrt{3.8\frac{1-r^{2n}}{1-r^2} - 1}
 \end{equation}
 
 Using  the  formula for calculating $\lambda$ in equation  \ref{eq:t10_t50_t90},
 the interpolation formulae can be made independent of $T$:
 
 \begin{equation}
-    \frac{t_{90}-t_{10}}{t_{50}} = \frac{1.315 \sqrt{3.8\frac{1-r^{2\left(n+1\right)}}{1-r^2} - 1}}{\log(2)-1+\frac{1-r^{n+1}}{1-r}}
+    \frac{t_{90}-t_{10}}{t_{50}} = \frac{1.315 \sqrt{3.8\frac{1-r^{2n}}{1-r^2} - 1}}{\log(2)-1+\frac{1-r^{n}}{1-r}}
     \label{eq:sani_interpolation}
 \end{equation}
 
