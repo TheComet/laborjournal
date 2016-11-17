@@ -35,7 +35,7 @@ signal.
 
 With the data prepared (preprocessed), it is now possible to calculate $T_u/T_g$
 or $t_{10}$, $t_{50}$, $t_{90}$, depending on  what  you  wish  to  do next. The
-function  \textit{normalise\_curve()}  can  handle  both cases for you, like so:
+function \textit{characterise\_curve()}  can handle both cases for you, like so:
 
 \begin{lstlisting}
 % Characterises the curve, either using
@@ -48,14 +48,15 @@ Determining $T_u$, $T_g$ is achieved by calculating  the  derivative of the data
 to  find  the  point  of  inflection.  The maximum and minimum of the signal  is
 determined  by  taking  the  value  of  the  first  and  last  element  in  $y$.
 
-Determining  $t_{10}$,  $t_{50}$,  $t_{90}$  is  achieved   by   using  MATLAB's
-\textit{spline()} function for higher accuracy. In the case of noisy input data,
-if  the  spline fails, the fallback method is to simply find the nearest  point.
-The minimum and maximum of the input signal  is  again  determined  by using the
-first and last element in $y$.
+Determining   $t_{10}$,  $t_{50}$,  $t_{90}$  is  achieved  by  using   MATLAB's
+\textit{spline()}  function for higher accuracy and  intersecting  the  data  at
+10\%, 50\% and 90\% amplitude.  In  the  case of noisy input data, if the spline
+fails, the fallback method is to simply find the nearest point. The minimum  and
+maximum of the  input  signal  is  again  determined by using the first and last
+element in $y$.
 
 Because L. Sani's approach heavily relies  on  accurately  determining the start
-and  end  valuse  of  the input step response function, and it  was  found  that
+and  end  values  of  the input step response function, and it  was  found  that
 noisier input  signals  would  significantly  throw  off  correctly  determining
 $t_{10}$,  $t_{50}$,  $t_{90}$, it is possible to override the  default  min/max
 values by passing in a third argument:
