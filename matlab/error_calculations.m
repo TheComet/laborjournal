@@ -10,7 +10,8 @@ function error_calculations()
     display_error_vs_order();
     display_error_vs_noise();
     display_error_vs_noise_avg();
-    %display_failure_rate();
+    display_error_vs_noise_long();
+    display_failure_rate();
     display_sani_lookup_vs_interpolation();
 end
 
@@ -19,12 +20,12 @@ function display_error_vs_order()
 
     % Error vs Order
     for k = 2:8
-        tmp(k-1, 1) = mean(errors_order(k-1).hudzovic_tu_tg(isfinite(errors_order(k-1).hudzovic_tu_tg)));
-        tmp(k-1, 2) = mean(errors_order(k-1).hudzovic_t10_t50_t90(isfinite(errors_order(k-1).hudzovic_t10_t50_t90)));
-        tmp(k-1, 3) = mean(errors_order(k-1).sani_tu_tg(isfinite(errors_order(k-1).sani_tu_tg)));
-        tmp(k-1, 4) = mean(errors_order(k-1).sani_t10_t50_t90(isfinite(errors_order(k-1).sani_t10_t50_t90)));
-        tmp(k-1, 5) = mean(errors_order(k-1).hudzovic_fit(isfinite(errors_order(k-1).hudzovic_fit)));
-        tmp(k-1, 6) = mean(errors_order(k-1).sani_fit(isfinite(errors_order(k-1).sani_fit)));
+        tmp(k-1, 1) = sqrt(mean(errors_order(k-1).hudzovic_tu_tg(isfinite(errors_order(k-1).hudzovic_tu_tg))));
+        tmp(k-1, 2) = sqrt(mean(errors_order(k-1).hudzovic_t10_t50_t90(isfinite(errors_order(k-1).hudzovic_t10_t50_t90))));
+        tmp(k-1, 3) = sqrt(mean(errors_order(k-1).sani_tu_tg(isfinite(errors_order(k-1).sani_tu_tg))));
+        tmp(k-1, 4) = sqrt(mean(errors_order(k-1).sani_t10_t50_t90(isfinite(errors_order(k-1).sani_t10_t50_t90))));
+        tmp(k-1, 5) = sqrt(mean(errors_order(k-1).hudzovic_fit(isfinite(errors_order(k-1).hudzovic_fit))));
+        tmp(k-1, 6) = sqrt(mean(errors_order(k-1).sani_fit(isfinite(errors_order(k-1).sani_fit))));
     end
 
     figure;
@@ -52,12 +53,12 @@ function display_sani_lookup_vs_interpolation()
     % Error vs Order
     tmp = zeros(7, 6);
     for k = 2:8
-        tmp(k-1, 1) = mean(interpolation(k-1).hudzovic_tu_tg(isfinite(interpolation(k-1).hudzovic_tu_tg)));
-        tmp(k-1, 2) = mean(interpolation(k-1).hudzovic_t10_t50_t90(isfinite(interpolation(k-1).hudzovic_t10_t50_t90)));
-        tmp(k-1, 3) = mean(interpolation(k-1).sani_tu_tg(isfinite(interpolation(k-1).sani_tu_tg)));
-        tmp(k-1, 4) = mean(interpolation(k-1).sani_t10_t50_t90(isfinite(interpolation(k-1).sani_t10_t50_t90)));
-        tmp(k-1, 5) = mean(interpolation(k-1).hudzovic_fit(isfinite(interpolation(k-1).hudzovic_fit)));
-        tmp(k-1, 6) = mean(interpolation(k-1).sani_fit(isfinite(interpolation(k-1).sani_fit)));
+        tmp(k-1, 1) = sqrt(mean(interpolation(k-1).hudzovic_tu_tg(isfinite(interpolation(k-1).hudzovic_tu_tg))));
+        tmp(k-1, 2) = sqrt(mean(interpolation(k-1).hudzovic_t10_t50_t90(isfinite(interpolation(k-1).hudzovic_t10_t50_t90))));
+        tmp(k-1, 3) = sqrt(mean(interpolation(k-1).sani_tu_tg(isfinite(interpolation(k-1).sani_tu_tg))));
+        tmp(k-1, 4) = sqrt(mean(interpolation(k-1).sani_t10_t50_t90(isfinite(interpolation(k-1).sani_t10_t50_t90))));
+        tmp(k-1, 5) = sqrt(mean(interpolation(k-1).hudzovic_fit(isfinite(interpolation(k-1).hudzovic_fit))));
+        tmp(k-1, 6) = sqrt(mean(interpolation(k-1).sani_fit(isfinite(interpolation(k-1).sani_fit))));
     end
 
     figure;
@@ -70,7 +71,7 @@ function display_sani_lookup_vs_interpolation()
     end
     tmp2 = zeros(1, 7);
     for k = 2:8
-        tmp2(k-1) = mean(lookup(k-1).sani_t10_t50_t90(isfinite(lookup(k-1).sani_t10_t50_t90)));
+        tmp2(k-1) = sqrt(mean(lookup(k-1).sani_t10_t50_t90(isfinite(lookup(k-1).sani_t10_t50_t90))));
     end
     semilogy(2:8, tmp2, '--', 'LineWidth', 2);
     
@@ -124,10 +125,10 @@ function display_error_vs_noise_avg()
 
     % Error vs Input noise
     tmp = zeros(length(errors_noise.hudzovic_tu_tg), 6);
-    tmp(:,1) = errors_noise.hudzovic_tu_tg;
-    tmp(:,2) = errors_noise.hudzovic_t10_t50_t90;
-    tmp(:,3) = errors_noise.sani_tu_tg;
-    tmp(:,4) = errors_noise.sani_t10_t50_t90;
+    tmp(:,1) = sqrt(errors_noise.hudzovic_tu_tg);
+    tmp(:,2) = sqrt(errors_noise.hudzovic_t10_t50_t90);
+    tmp(:,3) = sqrt(errors_noise.sani_tu_tg);
+    tmp(:,4) = sqrt(errors_noise.sani_t10_t50_t90);
     for i = 1:4
         tmp(:,i) = sliding_average(tmp(:,i), 20);
     end
@@ -139,11 +140,45 @@ function display_error_vs_noise_avg()
         '\fontsize{14}Sani Tu/Tg',...
         '\fontsize{14}Sani t10/t50/t90',...
         'Location', 'southeast');
-    %axis([0 200 10e-8 20e-2]);
+    axis([0 35 1e-3 3e-2]);
     axis square
     xlabel('\fontsize{14}Normalised noise amplitude (%)');
     ylabel('\fontsize{14}Root Mean Square Error');
     title({'\fontsize{16}Error vs Input noise', '\fontsize{14}(Random Step Responses)'});
+end
+
+function display_error_vs_noise_long()
+    load('errors_noise_10000iter_200percent.mat', 'errors_noise');
+
+    % Error vs Input noise
+    tmp = zeros(length(errors_noise.hudzovic_tu_tg), 6);
+    tmp(:,1) = sqrt(errors_noise.hudzovic_tu_tg);
+    tmp(:,2) = sqrt(errors_noise.hudzovic_t10_t50_t90);
+    tmp(:,3) = sqrt(errors_noise.sani_tu_tg);
+    tmp(:,4) = sqrt(errors_noise.sani_t10_t50_t90);
+    tmp(:,5) = sqrt(errors_noise.hudzovic_fit);
+    tmp(:,6) = sqrt(errors_noise.sani_fit);
+    for i = 1:6
+        for k = 1:length(tmp(:,i))
+            if tmp(k,i) > 1; tmp(k,i) = Inf; end
+        end
+        tmp(:,i) = sliding_average(tmp(:,i), 30);
+    end
+    figure;
+    semilogy(errors_noise.noise_amplitude * 100, tmp);
+    grid on
+    legend('\fontsize{14}Hudzovic Tu/Tg',...
+        '\fontsize{14}Hudzovic t10/t50/t90',...
+        '\fontsize{14}Sani Tu/Tg',...
+        '\fontsize{14}Sani t10/t50/t90',...
+        '\fontsize{14}Hudzovic fit',...
+        '\fontsize{14}Sani fit',...
+        'Location', 'southeast');
+    axis([0 200 1e-4 1e0]);
+    axis square
+    xlabel('\fontsize{14}Normalised noise amplitude (%)');
+    ylabel('\fontsize{14}Root Mean Square Error');
+    title({'\fontsize{16}Error vs Input noise', '\fontsize{14}(Single 4th Order Step Response)'});
 end
 
 function display_failure_rate()
