@@ -3,7 +3,7 @@ QtiPlot 0.9.8 project file
 <windows>	12
 <table>
 Table2	30	2	18/11/2016 17:28
-geometry	148	-326	250	223	
+geometry	148	1	250	223	
 header	1[X]	2[Y]
 ColWidth	100	100	
 <com>
@@ -26,7 +26,7 @@ WindowLabel		2
 </table>
 <table>
 Noah	30	3	18/11/2016 17:31
-geometry	640	-327	445	230	
+geometry	640	0	445	230	
 header	1[X]	2[Y]	3[yEr]
 ColWidth	100	100	100	
 <com>
@@ -46,7 +46,7 @@ WindowLabel		2
 </table>
 <table>
 Alex	30	3	18/11/2016 17:32
-geometry	663	120	419	220	
+geometry	663	447	419	220	
 header	1[X]	2[Y]	3[yEr]
 ColWidth	100	100	100	
 <com>
@@ -64,248 +64,9 @@ WindowLabel		2
 4	2	12.8	0.5
 </data>
 </table>
-<multiLayer>
-Graph5	1	1	18/11/2016 17:29
-geometry	171	-301	467	415	
-WindowLabel		2
-Margins	5	5	5	5
-Spacing	5	5
-LayerCanvasSize	400	300
-Alignement	0	0
-<AlignPolicy>0</AlignPolicy>
-<CommonAxes>0</CommonAxes>
-<graph>
-ggeometry	5	5	449	354
-<PageGeometry>0.0108932	0.0135501	0.978214	0.95935</PageGeometry>
-PlotTitle	Kalibration Gewicht	#000000	4
-<Antialiasing>0</Antialiasing>
-<Autoscaling>1</Autoscaling>
-<ScaleFonts>0</ScaleFonts>
-<GridOnTop>0</GridOnTop>
-<MissingDataGap>1</MissingDataGap>
-Background	#ffffff	0
-Margin	0
-Border	0	#000000
-grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
-EnabledAxes	1	1	1	1	
-AxesTitles	Gemessener Gewicht (kg)	Nenngewicht (kg)		 	
-AxesTitleColors	#000000	#000000	#000000	#000000	
-AxesTitleAlignment	4	5124	4	5124
-AxesTitleDistance	2	2	2	2
-InvertedTitle	0	0	0	0
-TitleFont	Sans Serif	12	75	0	0	0
-ScaleFont0	Sans Serif	10	75	0	0	0
-ScaleFont1	Sans Serif	10	75	0	0	0
-ScaleFont2	Sans Serif	10	75	0	0	0
-ScaleFont3	Sans Serif	10	75	0	0	0
-AxisFont0	Sans Serif	10	50	0	0	0
-AxisFont1	Sans Serif	10	50	0	0	0
-AxisFont2	Sans Serif	10	50	0	0	0
-AxisFont3	Sans Serif	10	50	0	0	0
-AxesColors	#000000	#000000	#000000	#000000
-AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
-AxesBaseline	0	0	0	0	
-CanvasFrame	1	#000000
-CanvasBackground	#ffffff	0
-curve	Table2_1	Table2_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	7	1
-<Function>
-<Type>0</Type>
-<Title>NonLinearFit1</Title>
-<Expression>m0+x*m</Expression>
-<Variable>x</Variable>
-<Range>1	4.5</Range>
-<Points>1000</Points>
-<Constant>m	0.995541095881832</Constant>
-<Constant>m0	0.000602739753214975</Constant>
-<Style>0</Style>
-<LineStyle>1</LineStyle>
-<Pen>
-	<Color>#000000</Color>
-	<Style>0</Style>
-	<Width>1</Width>
-</Pen>
-<xAxis>2</xAxis>
-<yAxis>0</yAxis>
-<CurveType>0</CurveType>
-<Visible>1</Visible>
-</Function>
-scale	0	0.5	5	0	10	5	0	0
-scale	1	0.5	5	0	10	5	0	0
-scale	2	0.5	5	0	10	5	0	0
-scale	3	0.5	5	0	10	5	0	0
-LabelsFormat	0	6	0	6	0	6	0	6
-AxisType	0	0	0	0	
-MajorTicks	3	3	3	3
-MinorTicks	3	3	3	3
-TicksLength	5	9
-DrawAxesBackbone	1	1	1	1	1
-AxesLineWidth	1
-LabelsRotation	0	0	0	0
-LabelsPrefix				
-LabelsSuffix				
-TickLabelsSpace	4	4	4	4
-ShowTicksPolicy	0	0	0	0
-EnabledTickLabels	1	0	1	0
-<Legend>
-<Frame>1</Frame>
-<Color>#000000</Color>
-<FrameWidth>1</FrameWidth>
-<LineStyle>0</LineStyle>
-<x>0.6360201511335</x>
-<y>4.8338926174497</y>
-<right>1.88563049853372</right>
-<bottom>4.34514925373134</bottom>
-<attachTo>1</attachTo>
-<onTop>1</onTop>
-<visible>1</visible>
-<Text>
-\l(1)%(1)
-\l(2)%(2)
-<b>Dataset</b>: Table2_2
-<b>Function</b>: m0+x*m
-<b>Chi^2/doF</b> = 1.81632e-04
-<b>R^2</b> = 0.99991
-<b>m</b> = 9.95541e-01 +/- 4.17335e-03
-<b>m0</b> = 6.02740e-04 +/- 1.24203e-02
-</Text>
-<Font>Sans Serif	10	50	0	0	0</Font>
-<TextColor>#000000</TextColor>
-<Background>#ffffff</Background>
-<Alpha>0</Alpha>
-<Angle>0</Angle>
-<AutoUpdate>1</AutoUpdate>
-<TeXOutput>0</TeXOutput>
-</Legend>
-</graph>
-<LinkXAxes>0</LinkXAxes>
-<ScaleLayers>1</ScaleLayers>
-</multiLayer>
-<multiLayer>
-Graph4	1	1	19/11/2016 23:40
-geometry	687	165	464	415	active
-WindowLabel		2
-Margins	5	5	5	5
-Spacing	5	5
-LayerCanvasSize	400	300
-Alignement	0	0
-<AlignPolicy>0</AlignPolicy>
-<CommonAxes>0</CommonAxes>
-<graph>
-ggeometry	5	5	446	354
-<PageGeometry>0.0109649	0.0135501	0.97807	0.95935</PageGeometry>
-PlotTitle	Kalibration Geschwindigkeit<br>(Alex)	#000000	4
-<Antialiasing>0</Antialiasing>
-<Autoscaling>1</Autoscaling>
-<ScaleFonts>0</ScaleFonts>
-<GridOnTop>0</GridOnTop>
-<MissingDataGap>1</MissingDataGap>
-Background	#ffffff	0
-Margin	0
-Border	0	#000000
-grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
-EnabledAxes	1	1	1	1	
-AxesTitles	Potentiometer	Zeit (s)		 	
-AxesTitleColors	#000000	#000000	#000000	#000000	
-AxesTitleAlignment	5124	5124	5124	5124
-AxesTitleDistance	2	2	2	2
-InvertedTitle	0	0	0	0
-TitleFont	Sans Serif	12	75	0	0	0
-ScaleFont0	Sans Serif	10	75	0	0	0
-ScaleFont1	Sans Serif	10	75	0	0	0
-ScaleFont2	Sans Serif	10	75	0	0	0
-ScaleFont3	Sans Serif	10	75	0	0	0
-AxisFont0	Sans Serif	10	50	0	0	0
-AxisFont1	Sans Serif	10	50	0	0	0
-AxisFont2	Sans Serif	10	50	0	0	0
-AxisFont3	Sans Serif	10	50	0	0	0
-AxesColors	#000000	#000000	#000000	#000000
-AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
-AxesBaseline	0	0	0	0	
-CanvasFrame	1	#000000
-CanvasBackground	#ffffff	0
-curve	Alex_1	Alex_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	4	1
-ErrorBars	1	Alex_1	Alex_2	Alex_3	1	8	#000000	1	1	1	0
-<Function>
-<Type>0</Type>
-<Title>NonLinearFit1</Title>
-<Expression>a*x^b</Expression>
-<Variable>x</Variable>
-<Range>0.4	2</Range>
-<Points>1000</Points>
-<Constant>a	24.8059366544026</Constant>
-<Constant>b	-0.955365798409803</Constant>
-<Style>0</Style>
-<LineStyle>1</LineStyle>
-<Pen>
-	<Color>#000000</Color>
-	<Style>0</Style>
-	<Width>1</Width>
-</Pen>
-<xAxis>2</xAxis>
-<yAxis>0</yAxis>
-<CurveType>0</CurveType>
-<Visible>1</Visible>
-</Function>
-curve	FitStats1_1	FitStats1_LCL	0	1	#00ff00	0	1	0	0	#000000	#a0a0a4	0	#000000	14	0	2	0	0	999	1
-curve	FitStats1_1	FitStats1_UCL	0	1	#00ff00	0	1	0	0	#000000	#a0a0a4	0	#000000	14	0	2	0	0	999	1
-curve	FitResiduals1_1	FitResiduals1_residue	0	1	#ff0000	0	1	0	0	#000000	#a0a0a4	0	#000000	14	0	2	0	0	4	1
-scale	0	-10	70	0	9	5	0	0
-scale	1	-10	70	0	9	5	0	0
-scale	2	0	2.5	0	6	5	0	0
-scale	3	0	2.5	0	6	5	0	0
-LabelsFormat	0	6	0	6	0	6	0	6
-AxisType	0	0	0	0	
-MajorTicks	3	3	3	3
-MinorTicks	3	3	3	3
-TicksLength	5	9
-DrawAxesBackbone	1	1	1	1	1
-AxesLineWidth	1
-LabelsRotation	0	0	0	0
-LabelsPrefix				
-LabelsSuffix				
-TickLabelsSpace	4	4	4	4
-ShowTicksPolicy	0	0	0	0
-EnabledTickLabels	1	0	1	0
-<Legend>
-<Frame>1</Frame>
-<Color>#000000</Color>
-<FrameWidth>1</FrameWidth>
-<LineStyle>0</LineStyle>
-<x>1.0411311053985</x>
-<y>65.420875420875</y>
-<right>2.37789203084833</right>
-<bottom>28.2491582491582</bottom>
-<attachTo>1</attachTo>
-<onTop>1</onTop>
-<visible>1</visible>
-<Text>
-\l(1)%(1)
-\l(3)%(3)
-\l(4)%(4)
-\l(5)%(5)
-\l(6)%(6)
-<b>Dataset</b>: Alex_2
-<b>Function</b>: a*x^b
-<b>Chi^2/doF</b> = 2.09360e-01
-<b>R^2</b> = 0.99989
-<b>a</b> = 2.48059e+01 +/- 1.20681e-01
-<b>b</b> = -9.55366e-01 +/- 6.31058e-03
-</Text>
-<Font>Sans Serif	10	50	0	0	0</Font>
-<TextColor>#000000</TextColor>
-<Background>#ffffff</Background>
-<Alpha>0</Alpha>
-<Angle>0</Angle>
-<AutoUpdate>1</AutoUpdate>
-<TeXOutput>0</TeXOutput>
-</Legend>
-</graph>
-<LinkXAxes>0</LinkXAxes>
-<ScaleLayers>1</ScaleLayers>
-</multiLayer>
 <table>
 FitStats1	1000	3	19/11/2016 23:42
-geometry	919	-97	445	220	hidden
+geometry	919	230	445	220	hidden
 header	1[X]	LCL[Y]	UCL[Y]
 ColWidth	48	51	53	
 <com>
@@ -1320,7 +1081,7 @@ WindowLabel	Confidence Limits of Non-linear Fit	2
 </table>
 <table>
 FitResiduals1	5	2	19/11/2016 23:42
-geometry	919	-97	445	220	hidden
+geometry	919	230	445	220	hidden
 header	1[X]	residue[Y]
 ColWidth	36	66	
 <com>
@@ -1338,132 +1099,9 @@ WindowLabel	Residuals of Non-linear Fit	2
 4	2	0.0073102
 </data>
 </table>
-<multiLayer>
-Graph7	1	1	19/11/2016 23:44
-geometry	666	-286	464	415	
-WindowLabel		2
-Margins	5	5	5	5
-Spacing	5	5
-LayerCanvasSize	400	300
-Alignement	0	0
-<AlignPolicy>0</AlignPolicy>
-<CommonAxes>0</CommonAxes>
-<graph>
-ggeometry	5	5	446	354
-<PageGeometry>0.0109649	0.0135501	0.97807	0.95935</PageGeometry>
-PlotTitle	Kalibration Geschwindigkeit<br>(Noah)	#000000	4
-<Antialiasing>0</Antialiasing>
-<Autoscaling>1</Autoscaling>
-<ScaleFonts>0</ScaleFonts>
-<GridOnTop>0</GridOnTop>
-<MissingDataGap>1</MissingDataGap>
-Background	#ffffff	0
-Margin	0
-Border	0	#000000
-grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
-EnabledAxes	1	1	1	1	
-AxesTitles	Potentiometer	Zeit (s)		 	
-AxesTitleColors	#000000	#000000	#000000	#000000	
-AxesTitleAlignment	4	5124	4	5124
-AxesTitleDistance	2	2	2	2
-InvertedTitle	0	0	0	0
-TitleFont	Sans Serif	12	75	0	0	0
-ScaleFont0	Sans Serif	10	75	0	0	0
-ScaleFont1	Sans Serif	10	75	0	0	0
-ScaleFont2	Sans Serif	10	75	0	0	0
-ScaleFont3	Sans Serif	10	75	0	0	0
-AxisFont0	Sans Serif	10	50	0	0	0
-AxisFont1	Sans Serif	10	50	0	0	0
-AxisFont2	Sans Serif	10	50	0	0	0
-AxisFont3	Sans Serif	10	50	0	0	0
-AxesColors	#000000	#000000	#000000	#000000
-AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
-AxesBaseline	0	0	0	0	
-CanvasFrame	1	#000000
-CanvasBackground	#ffffff	0
-curve	Noah_1	Noah_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	4	1
-ErrorBars	1	Noah_1	Noah_2	Noah_3	1	8	#000000	1	1	1	0
-<Function>
-<Type>0</Type>
-<Title>NonLinearFit1</Title>
-<Expression>a*x^b</Expression>
-<Variable>x</Variable>
-<Range>0.4	2</Range>
-<Points>1000</Points>
-<Constant>a	24.5958063249721</Constant>
-<Constant>b	-0.962785901862561</Constant>
-<Style>0</Style>
-<LineStyle>1</LineStyle>
-<Pen>
-	<Color>#000000</Color>
-	<Style>0</Style>
-	<Width>1</Width>
-</Pen>
-<xAxis>2</xAxis>
-<yAxis>0</yAxis>
-<CurveType>0</CurveType>
-<Visible>1</Visible>
-</Function>
-curve	FitStats2_1	FitStats2_LCL	0	1	#00ff00	0	1	0	0	#000000	#a0a0a4	0	#000000	14	0	2	0	0	999	1
-curve	FitStats2_1	FitStats2_UCL	0	1	#00ff00	0	1	0	0	#000000	#a0a0a4	0	#000000	14	0	2	0	0	999	1
-curve	FitResiduals2_1	FitResiduals2_residue	0	1	#ff0000	0	1	0	0	#000000	#a0a0a4	0	#000000	14	0	2	0	0	4	1
-scale	0	-10	70	0	9	5	0	0
-scale	1	-10	70	0	9	5	0	0
-scale	2	0	2.5	0	6	5	0	0
-scale	3	0	2.5	0	6	5	0	0
-LabelsFormat	0	6	0	6	0	6	0	6
-AxisType	0	0	0	0	
-MajorTicks	3	3	3	3
-MinorTicks	3	3	3	3
-TicksLength	5	9
-DrawAxesBackbone	1	1	1	1	1
-AxesLineWidth	1
-LabelsRotation	0	0	0	0
-LabelsPrefix				
-LabelsSuffix				
-TickLabelsSpace	4	4	4	4
-ShowTicksPolicy	0	0	0	0
-EnabledTickLabels	1	0	1	0
-<Legend>
-<Frame>1</Frame>
-<Color>#000000</Color>
-<FrameWidth>1</FrameWidth>
-<LineStyle>0</LineStyle>
-<x>1.086118251928</x>
-<y>66.228956228956</y>
-<right>2.42287917737789</right>
-<bottom>29.0572390572391</bottom>
-<attachTo>1</attachTo>
-<onTop>1</onTop>
-<visible>1</visible>
-<Text>
-\l(1)%(1)
-\l(3)%(3)
-\l(4)%(4)
-\l(5)%(5)
-\l(6)%(6)
-<b>Dataset</b>: Noah_2
-<b>Function</b>: a*x^b
-<b>Chi^2/doF</b> = 1.49188e-02
-<b>R^2</b> = 0.99999
-<b>a</b> = 2.45958e+01 +/- 3.22725e-02
-<b>b</b> = -9.62786e-01 +/- 1.69889e-03
-</Text>
-<Font>Sans Serif	10	50	0	0	0</Font>
-<TextColor>#000000</TextColor>
-<Background>#ffffff</Background>
-<Alpha>0</Alpha>
-<Angle>0</Angle>
-<AutoUpdate>1</AutoUpdate>
-<TeXOutput>0</TeXOutput>
-</Legend>
-</graph>
-<LinkXAxes>0</LinkXAxes>
-<ScaleLayers>1</ScaleLayers>
-</multiLayer>
 <table>
 FitStats2	1000	3	19/11/2016 23:46
-geometry	919	-97	445	220	hidden
+geometry	919	230	445	220	hidden
 header	1[X]	LCL[Y]	UCL[Y]
 ColWidth	48	51	53	
 <com>
@@ -2478,7 +2116,7 @@ WindowLabel	Confidence Limits of Non-linear Fit	2
 </table>
 <table>
 FitResiduals2	5	2	19/11/2016 23:46
-geometry	919	-97	445	220	hidden
+geometry	919	230	445	220	hidden
 header	1[X]	residue[Y]
 ColWidth	36	66	
 <com>
@@ -2498,7 +2136,7 @@ WindowLabel	Residuals of Non-linear Fit	2
 </table>
 <table>
 FitStats3	1000	3	19/11/2016 23:48
-geometry	919	-97	445	220	hidden
+geometry	919	230	445	220	hidden
 header	1[X]	LCL[Y]	UCL[Y]
 ColWidth	48	51	53	
 <com>
@@ -3513,7 +3151,7 @@ WindowLabel	Confidence Limits of Non-linear Fit	2
 </table>
 <table>
 FitResiduals3	5	2	19/11/2016 23:48
-geometry	919	-97	445	220	hidden
+geometry	919	230	445	220	hidden
 header	1[X]	residue[Y]
 ColWidth	36	66	
 <com>
@@ -3531,6 +3169,356 @@ WindowLabel	Residuals of Non-linear Fit	2
 4	2	0.060748
 </data>
 </table>
+<multiLayer>
+Graph5	1	1	18/11/2016 17:29
+geometry	171	26	467	415	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	449	354
+<PageGeometry>0.0108932	0.0135501	0.978214	0.95935</PageGeometry>
+PlotTitle	Kalibration Gewicht	#000000	4
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>0</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Gemessener Gewicht (kg)	Nenngewicht (kg)		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	5124	4	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	12	75	0	0	0
+ScaleFont0	Sans Serif	10	75	0	0	0
+ScaleFont1	Sans Serif	10	75	0	0	0
+ScaleFont2	Sans Serif	10	75	0	0	0
+ScaleFont3	Sans Serif	10	75	0	0	0
+AxisFont0	Sans Serif	10	50	0	0	0
+AxisFont1	Sans Serif	10	50	0	0	0
+AxisFont2	Sans Serif	10	50	0	0	0
+AxisFont3	Sans Serif	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Table2_1	Table2_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	7	1
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit1</Title>
+<Expression>m0+x*m</Expression>
+<Variable>x</Variable>
+<Range>1	4.5</Range>
+<Points>1000</Points>
+<Constant>m	0.995541095881832</Constant>
+<Constant>m0	0.000602739753214975</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	0.5	5	0	10	5	0	0
+scale	1	0.5	5	0	10	5	0	0
+scale	2	0.5	5	0	10	5	0	0
+scale	3	0.5	5	0	10	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>0.6360201511335</x>
+<y>4.8338926174497</y>
+<right>1.9484375</right>
+<bottom>4.31976744186047</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(2)%(2)
+<b>Dataset</b>: Table2_2
+<b>Function</b>: m0+x*m
+<b>Chi^2/doF</b> = 1.81632e-04
+<b>R^2</b> = 0.99991
+<b>m</b> = 9.95541e-01 +/- 4.17335e-03
+<b>m0</b> = 6.02740e-04 +/- 1.24203e-02
+</Text>
+<Font>Sans Serif	10	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Graph4	1	1	19/11/2016 23:40
+geometry	687	492	464	415	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	446	354
+<PageGeometry>0.0109649	0.0135501	0.97807	0.95935</PageGeometry>
+PlotTitle	Kalibration Geschwindigkeit<br>(Alex)	#000000	4
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>0</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Potentiometer	Zeit (s)		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	12	75	0	0	0
+ScaleFont0	Sans Serif	10	75	0	0	0
+ScaleFont1	Sans Serif	10	75	0	0	0
+ScaleFont2	Sans Serif	10	75	0	0	0
+ScaleFont3	Sans Serif	10	75	0	0	0
+AxisFont0	Sans Serif	10	50	0	0	0
+AxisFont1	Sans Serif	10	50	0	0	0
+AxisFont2	Sans Serif	10	50	0	0	0
+AxisFont3	Sans Serif	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Alex_1	Alex_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	4	1
+ErrorBars	1	Alex_1	Alex_2	Alex_3	1	8	#000000	1	1	1	0
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit1</Title>
+<Expression>a*x^b</Expression>
+<Variable>x</Variable>
+<Range>0.4	2</Range>
+<Points>1000</Points>
+<Constant>a	24.8059366544026</Constant>
+<Constant>b	-0.955365798409803</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	10	70	0	7	5	0	0
+scale	1	10	70	0	7	5	0	0
+scale	2	0	2.5	0	6	5	0	0
+scale	3	0	2.5	0	6	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>0.69121447028424</x>
+<y>65.588235294118</y>
+<right>2.24160206718346</right>
+<bottom>38.0147058823529</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(3)%(3)
+<b>Dataset</b>: Alex_2
+<b>Function</b>: a*x^b
+<b>Chi^2/doF</b> = 2.09360e-01
+<b>R^2</b> = 0.99989
+<b>a</b> = 2.48059e+01 +/- 1.20681e-01
+<b>b</b> = -9.55366e-01 +/- 6.31058e-03
+</Text>
+<Font>Sans Serif	9	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Graph7	1	1	19/11/2016 23:44
+geometry	666	41	483	415	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	6	6	464	354
+<PageGeometry>0.0126316	0.0162602	0.976842	0.95935</PageGeometry>
+PlotTitle	Kalibration Geschwindigkeit<br>(Noah)	#000000	4
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>0</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Potentiometer	Zeit (s)		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	5124	4	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	12	75	0	0	0
+ScaleFont0	Sans Serif	10	75	0	0	0
+ScaleFont1	Sans Serif	10	75	0	0	0
+ScaleFont2	Sans Serif	10	75	0	0	0
+ScaleFont3	Sans Serif	10	75	0	0	0
+AxisFont0	Sans Serif	10	50	0	0	0
+AxisFont1	Sans Serif	10	50	0	0	0
+AxisFont2	Sans Serif	10	50	0	0	0
+AxisFont3	Sans Serif	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Noah_1	Noah_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	4	1
+ErrorBars	1	Noah_1	Noah_2	Noah_3	1	8	#000000	1	1	1	0
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit1</Title>
+<Expression>a*x^b</Expression>
+<Variable>x</Variable>
+<Range>0.4	2</Range>
+<Points>1000</Points>
+<Constant>a	24.5958063249721</Constant>
+<Constant>b	-0.962785901862561</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	10	60	0	6	5	0	0
+scale	1	10	60	0	6	5	0	0
+scale	2	0	2.5	0	6	5	0	0
+scale	3	0	2.5	0	6	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>0.79012345679012</x>
+<y>58.161764705882</y>
+<right>2.1358024691358</right>
+<bottom>37.0220588235294</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(3)%(3)
+<b>Dataset</b>: Noah_2
+<b>Function</b>: a*x^b
+<b>Chi^2/doF</b> = 1.49188e-02
+<b>R^2</b> = 0.99999
+<b>a</b> = 2.45958e+01 +/- 3.22725e-02
+<b>b</b> = -9.62786e-01 +/- 1.69889e-03
+</Text>
+<Font>Sans Serif	9	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
 <open>1</open>
 <log>
 [18/11/2016 17:30	Plot: ''Graph5'']
@@ -4062,4 +4050,5 @@ RSS (Residual Sum of Squares) = 0.044756
 Iterations = 8
 Status = success
 ---------------------------------------------------------------------------------------
+
 </log>
