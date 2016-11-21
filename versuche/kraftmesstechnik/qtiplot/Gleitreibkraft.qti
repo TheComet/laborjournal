@@ -3,7 +3,7 @@ QtiPlot 0.9.8 project file
 <windows>	8
 <table>
 MessungTeppichbeipoti1	30	3	18/11/2016 17:11
-geometry	0	0	428	185	
+geometry	0	-323	428	185	
 header	1[X]	2[Y]	3[yEr]
 ColWidth	100	100	100	
 <com>
@@ -24,7 +24,7 @@ WindowLabel		2
 </table>
 <table>
 MessungPlastikbeipoti1	30	3	18/11/2016 17:18
-geometry	478	0	389	179	
+geometry	478	-323	389	179	
 header	1[X]	2[Y]	3[yEr]
 ColWidth	100	100	100	
 <com>
@@ -45,7 +45,7 @@ WindowLabel		2
 </table>
 <table>
 MessungPlastikbeigewicht4kg	30	3	18/11/2016 17:22
-geometry	1	446	362	222	
+geometry	1	123	362	222	
 header	1[X]	2[Y]	3[yEr]
 ColWidth	100	100	100	
 <com>
@@ -68,7 +68,7 @@ WindowLabel		2
 </table>
 <table>
 Table1	30	3	18/11/2016 17:25
-geometry	501	446	362	216	
+geometry	501	123	362	216	
 header	1[X]	2[Y]	3[yEr]
 ColWidth	100	100	100	
 <com>
@@ -91,7 +91,7 @@ WindowLabel		2
 </table>
 <multiLayer>
 Graph5	1	1	20/11/2016 00:18
-geometry	27	24	468	415	active
+geometry	27	-299	468	415	
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
@@ -178,20 +178,19 @@ EnabledTickLabels	1	0	1	0
 <LineStyle>0</LineStyle>
 <x>0.15869017632242</x>
 <y>1.5515151515152</y>
-<right>1.90428211586902</right>
-<bottom>1.3952861952862</bottom>
+<right>2.20520231213873</right>
+<bottom>1.36716417910448</bottom>
 <attachTo>1</attachTo>
 <onTop>1</onTop>
 <visible>1</visible>
 <Text>
 \l(1)%(1)
 \l(3)%(3)
-\l(3)%(3)
 <b>Dataset</b>: MessungTeppichbeipoti1_2
-<b>Function</b>: N*x
+<b>Function</b>: u_gl*x
 <b>Chi^2/doF</b> = 2.56264e-01
 <b>R^2</b> = 0.99658
-<b>N</b> = 2.26374e-01 +/- 2.65334e-03
+<b>u_gl</b> = 2.26374e-01 +/- 2.65334e-03
 </Text>
 <Font>Sans Serif	10	50	0	0	0</Font>
 <TextColor>#000000</TextColor>
@@ -207,7 +206,7 @@ EnabledTickLabels	1	0	1	0
 </multiLayer>
 <multiLayer>
 Graph6	1	1	20/11/2016 00:19
-geometry	504	26	468	415	
+geometry	504	-297	468	415	
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
@@ -294,8 +293,8 @@ EnabledTickLabels	1	0	1	0
 <LineStyle>0</LineStyle>
 <x>0.15869017632242</x>
 <y>1.1636363636364</y>
-<right>1.90428211586902</right>
-<bottom>1.04646464646465</bottom>
+<right>2.20520231213873</right>
+<bottom>1.02537313432836</bottom>
 <attachTo>1</attachTo>
 <onTop>1</onTop>
 <visible>1</visible>
@@ -303,10 +302,10 @@ EnabledTickLabels	1	0	1	0
 \l(1)%(1)
 \l(3)%(3)
 <b>Dataset</b>: MessungPlastikbeipoti1_2
-<b>Function</b>: N*x
+<b>Function</b>: u_gl*x
 <b>Chi^2/doF</b> = 2.20659e-02
 <b>R^2</b> = 0.99939
-<b>N</b> = 1.63187e-01 +/- 7.78593e-04
+<b>u_gl</b> = 1.63187e-01 +/- 7.78593e-04
 </Text>
 <Font>Sans Serif	10	50	0	0	0</Font>
 <TextColor>#000000</TextColor>
@@ -322,7 +321,7 @@ EnabledTickLabels	1	0	1	0
 </multiLayer>
 <multiLayer>
 Graph7	1	1	20/11/2016 00:21
-geometry	26	472	473	415	
+geometry	25	150	473	415	
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
@@ -331,8 +330,8 @@ Alignement	0	0
 <AlignPolicy>0</AlignPolicy>
 <CommonAxes>0</CommonAxes>
 <graph>
-ggeometry	5	5	455	354
-<PageGeometry>0.0107527	0.0135501	0.978495	0.95935</PageGeometry>
+ggeometry	-2	-2	455	354
+<PageGeometry>-0.00430108	-0.00542005	0.978495	0.95935</PageGeometry>
 PlotTitle	Plastik bei Gewicht=4kg	#000000	4
 <Antialiasing>0</Antialiasing>
 <Autoscaling>1</Autoscaling>
@@ -365,6 +364,26 @@ CanvasFrame	1	#000000
 CanvasBackground	#ffffff	0
 curve	MessungPlastikbeigewicht4kg_1	MessungPlastikbeigewicht4kg_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	7	1
 ErrorBars	1	MessungPlastikbeigewicht4kg_1	MessungPlastikbeigewicht4kg_2	MessungPlastikbeigewicht4kg_3	1	8	#000000	1	1	1	0
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit2</Title>
+<Expression>N</Expression>
+<Variable>x</Variable>
+<Range>0.2	5</Range>
+<Points>1000</Points>
+<Constant>N	0.6875</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
 scale	0	0.55	0.8	0	6	5	0	0
 scale	1	0.55	0.8	0	6	5	0	0
 scale	2	0	6	0	7	5	0	0
@@ -387,15 +406,21 @@ EnabledTickLabels	1	0	1	0
 <Color>#000000</Color>
 <FrameWidth>1</FrameWidth>
 <LineStyle>0</LineStyle>
-<x>0.1360201511335</x>
-<y>0.79242424242424</y>
-<right>1.63224181360202</right>
-<bottom>0.768013468013468</bottom>
+<x>2.3879093198992</x>
+<y>0.64060402684564</y>
+<right>1.86324786324786</right>
+<bottom>0.763619402985075</bottom>
 <attachTo>1</attachTo>
 <onTop>1</onTop>
 <visible>1</visible>
 <Text>
 \l(1)%(1)
+\l(3)%(3)
+<b>Dataset</b>: MessungPlastikbeigewicht4kg_2
+<b>Function</b>: N
+<b>Chi^2/doF</b> = 7.17143e-01
+<b>R^2</b> = 0
+<b>N</b> = 6.87500e-01 +/- 1.49702e-02
 </Text>
 <Font>Sans Serif	10	50	0	0	0</Font>
 <TextColor>#000000</TextColor>
@@ -411,7 +436,7 @@ EnabledTickLabels	1	0	1	0
 </multiLayer>
 <multiLayer>
 Graph8	1	1	20/11/2016 00:22
-geometry	528	488	473	415	
+geometry	528	165	473	415	active
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
@@ -420,8 +445,8 @@ Alignement	0	0
 <AlignPolicy>0</AlignPolicy>
 <CommonAxes>0</CommonAxes>
 <graph>
-ggeometry	5	5	455	354
-<PageGeometry>0.0107527	0.0135501	0.978495	0.95935</PageGeometry>
+ggeometry	5	7	455	354
+<PageGeometry>0.0107527	0.0189702	0.978495	0.95935</PageGeometry>
 PlotTitle	Teppich bei Gewicht=4kg	#000000	4
 <Antialiasing>0</Antialiasing>
 <Autoscaling>1</Autoscaling>
@@ -454,6 +479,26 @@ CanvasFrame	1	#000000
 CanvasBackground	#ffffff	0
 curve	Table1_1	Table1_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	7	1
 ErrorBars	1	Table1_1	Table1_2	Table1_3	1	8	#000000	1	1	1	0
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit1</Title>
+<Expression>N</Expression>
+<Variable>x</Variable>
+<Range>0.2	5</Range>
+<Points>1000</Points>
+<Constant>N	0.94375000001723</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
 scale	0	0.8	1.1	0	7	5	0	0
 scale	1	0.8	1.1	0	7	5	0	0
 scale	2	0	6	0	7	5	0	0
@@ -476,15 +521,21 @@ EnabledTickLabels	1	0	1	0
 <Color>#000000</Color>
 <FrameWidth>1</FrameWidth>
 <LineStyle>0</LineStyle>
-<x>0.1360201511335</x>
-<y>1.0909090909091</y>
-<right>1.63224181360202</right>
-<bottom>1.06161616161616</bottom>
+<x>3.0528967254408</x>
+<y>0.90872483221477</y>
+<right>5.87909319899244</right>
+<bottom>0.81510067114094</bottom>
 <attachTo>1</attachTo>
 <onTop>1</onTop>
 <visible>1</visible>
 <Text>
 \l(1)%(1)
+\l(3)%(3)
+<b>Dataset</b>: Table1_2
+<b>Function</b>: N
+<b>Chi^2/doF</b> = 1.06214e+00
+<b>R^2</b> = -2.2204e-16
+<b>N</b> = 9.43750e-01 +/- 1.82187e-02
 </Text>
 <Font>Sans Serif	10	50	0	0	0</Font>
 <TextColor>#000000</TextColor>
@@ -567,5 +618,247 @@ RSS (Residual Sum of Squares) = 0.11033
 ---------------------------------------------------------------------------------------
 Iterations = 2
 Status = success
+---------------------------------------------------------------------------------------
+[20/11/2016 00:56	Plot: ''Graph7'']
+Non-linear Fit of dataset: MessungPlastikbeigewicht4kg_2, using function: N
+Weighting Method: Arbitrary Dataset: MessungPlastikbeigewicht4kg_3
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.60000e+00 to x = 5.00000e+00
+N = 1.00000e+00 +/- nan
+--------------------------------------------------------------------------------------
+Chi^2/doF = nan
+R^2 = nan
+Adjusted R^2 = nan
+RMSE (Root Mean Squared Error) = inf
+RSS (Residual Sum of Squares) = inf
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = singularity or extremely bad function behavior detected
+---------------------------------------------------------------------------------------
+[20/11/2016 00:57	Plot: ''Graph7'']
+Non-linear Fit of dataset: MessungPlastikbeigewicht4kg_2, using function: N
+Weighting Method: Arbitrary Dataset: MessungPlastikbeigewicht4kg_3
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.60000e+00 to x = 5.00000e+00
+N = 1.00000e+00 +/- nan
+--------------------------------------------------------------------------------------
+Chi^2/doF = nan
+R^2 = nan
+Adjusted R^2 = nan
+RMSE (Root Mean Squared Error) = inf
+RSS (Residual Sum of Squares) = inf
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = singularity or extremely bad function behavior detected
+---------------------------------------------------------------------------------------
+[20/11/2016 00:57	Plot: ''Graph7'']
+Non-linear Fit of dataset: MessungPlastikbeigewicht4kg_2, using function: a
+Weighting Method: Arbitrary Dataset: MessungPlastikbeigewicht4kg_3
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.60000e+00 to x = 5.00000e+00
+a = 1.00000e+00 +/- nan
+--------------------------------------------------------------------------------------
+Chi^2/doF = nan
+R^2 = nan
+Adjusted R^2 = nan
+RMSE (Root Mean Squared Error) = inf
+RSS (Residual Sum of Squares) = inf
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = singularity or extremely bad function behavior detected
+---------------------------------------------------------------------------------------
+[20/11/2016 00:57	Plot: ''Graph7'']
+Non-linear Fit of dataset: MessungPlastikbeigewicht4kg_2, using function: a
+Weighting Method: Arbitrary Dataset: MessungPlastikbeigewicht4kg_3
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.60000e+00 to x = 5.00000e+00
+a = 1.00000e+00 +/- nan
+--------------------------------------------------------------------------------------
+Chi^2/doF = nan
+R^2 = nan
+Adjusted R^2 = nan
+RMSE (Root Mean Squared Error) = inf
+RSS (Residual Sum of Squares) = inf
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = singularity or extremely bad function behavior detected
+---------------------------------------------------------------------------------------
+[20/11/2016 00:57	Plot: ''Graph7'']
+Non-linear Fit of dataset: MessungPlastikbeigewicht4kg_2, using function: a
+Weighting Method: Arbitrary Dataset: MessungPlastikbeigewicht4kg_3
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.60000e+00 to x = 5.00000e+00
+a = 1.00000e+00 +/- nan
+--------------------------------------------------------------------------------------
+Chi^2/doF = nan
+R^2 = nan
+Adjusted R^2 = nan
+RMSE (Root Mean Squared Error) = inf
+RSS (Residual Sum of Squares) = inf
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = singularity or extremely bad function behavior detected
+---------------------------------------------------------------------------------------
+[20/11/2016 00:57	Plot: ''Graph7'']
+Non-linear Fit of dataset: MessungPlastikbeigewicht4kg_2, using function: a
+Weighting Method: Arbitrary Dataset: MessungPlastikbeigewicht4kg_3
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.60000e+00 to x = 5.00000e+00
+a = 1.00000e+00 +/- nan
+--------------------------------------------------------------------------------------
+Chi^2/doF = nan
+R^2 = nan
+Adjusted R^2 = nan
+RMSE (Root Mean Squared Error) = inf
+RSS (Residual Sum of Squares) = inf
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = singularity or extremely bad function behavior detected
+---------------------------------------------------------------------------------------
+[20/11/2016 00:57	Plot: ''Graph7'']
+Non-linear Fit of dataset: MessungPlastikbeigewicht4kg_2, using function: a
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.60000e+00 to x = 5.00000e+00
+a = 7.17500e-01 +/- 1.03078e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.25000e-04
+R^2 = 0
+Adjusted R^2 = -0.5
+RMSE (Root Mean Squared Error) = 0.020616
+RSS (Residual Sum of Squares) = 0.001275
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+[20/11/2016 00:57	Plot: ''Graph7'']
+Non-linear Fit of dataset: MessungPlastikbeigewicht4kg_2, using function: N
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.60000e+00 to x = 5.00000e+00
+N = 7.17500e-01 +/- 1.03078e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.25000e-04
+R^2 = 0
+Adjusted R^2 = -0.5
+RMSE (Root Mean Squared Error) = 0.020616
+RSS (Residual Sum of Squares) = 0.001275
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+[20/11/2016 00:58	Plot: ''Graph7'']
+Non-linear Fit of dataset: MessungPlastikbeigewicht4kg_2, using function: N
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.60000e+00 to x = 5.00000e+00
+N = 7.17500e-01 +/- 1.03078e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.25000e-04
+R^2 = 0
+Adjusted R^2 = -0.5
+RMSE (Root Mean Squared Error) = 0.020616
+RSS (Residual Sum of Squares) = 0.001275
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+[20/11/2016 01:00	Plot: ''Graph8'']
+Non-linear Fit of dataset: Table1_2, using function: N
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.60000e+00 to x = 5.00000e+00
+N = 9.85000e-01 +/- 8.66025e-03
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.00000e-04
+R^2 = 1.1102e-16
+Adjusted R^2 = -0.5
+RMSE (Root Mean Squared Error) = 0.017321
+RSS (Residual Sum of Squares) = 0.0009
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+
+
+[20/11/2016 21:11	Plot: ''Graph7'']
+Non-linear Fit of dataset: MessungPlastikbeigewicht4kg_2, using function: N
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 2.00000e-01 to x = 5.00000e+00
+N = 6.87500e-01 +/- 1.49702e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.79286e-03
+R^2 = 0
+Adjusted R^2 = -0.16667
+RMSE (Root Mean Squared Error) = 0.042342
+RSS (Residual Sum of Squares) = 0.01255
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+[20/11/2016 21:11	Plot: ''Graph7'']
+Non-linear Fit of dataset: MessungPlastikbeigewicht4kg_2, using function: N
+Weighting Method: Arbitrary Dataset: MessungPlastikbeigewicht4kg_3
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 2.00000e-01 to x = 5.00000e+00
+N = 6.87500e-01 +/- 1.49702e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 7.17143e-01
+R^2 = 0
+Adjusted R^2 = -0.16667
+RMSE (Root Mean Squared Error) = 0.84684
+RSS (Residual Sum of Squares) = 5.02
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+[20/11/2016 21:11	Plot: ''Graph7'']
+Non-linear Fit of dataset: MessungPlastikbeigewicht4kg_2, using function: N
+Weighting Method: Arbitrary Dataset: MessungPlastikbeigewicht4kg_3
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 2.00000e-01 to x = 5.00000e+00
+N = 6.87500e-01 +/- 1.49702e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 7.17143e-01
+R^2 = 0
+Adjusted R^2 = -0.16667
+RMSE (Root Mean Squared Error) = 0.84684
+RSS (Residual Sum of Squares) = 5.02
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+[20/11/2016 21:11	Plot: ''Graph7'']
+Non-linear Fit of dataset: MessungPlastikbeigewicht4kg_2, using function: N
+Weighting Method: Arbitrary Dataset: MessungPlastikbeigewicht4kg_3
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 2.00000e-01 to x = 5.00000e+00
+N = 6.87500e-01 +/- 1.49702e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 7.17143e-01
+R^2 = 0
+Adjusted R^2 = -0.16667
+RMSE (Root Mean Squared Error) = 0.84684
+RSS (Residual Sum of Squares) = 5.02
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+[20/11/2016 21:12	Plot: ''Graph8'']
+Non-linear Fit of dataset: Table1_2, using function: N
+Weighting Method: Arbitrary Dataset: Table1_3
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 2.00000e-01 to x = 5.00000e+00
+N = 9.43750e-01 +/- 1.82187e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.06214e+00
+R^2 = -2.2204e-16
+Adjusted R^2 = -0.16667
+RMSE (Root Mean Squared Error) = 1.0306
+RSS (Residual Sum of Squares) = 7.435
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = cannot reach the specified tolerance in F
 ---------------------------------------------------------------------------------------
 </log>
