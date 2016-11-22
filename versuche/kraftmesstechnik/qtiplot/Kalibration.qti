@@ -3,7 +3,7 @@ QtiPlot 0.9.8 project file
 <windows>	12
 <table>
 Table2	30	2	18/11/2016 17:28
-geometry	148	1	250	223	
+geometry	148	-326	250	223	
 header	1[X]	2[Y]
 ColWidth	100	100	
 <com>
@@ -26,7 +26,7 @@ WindowLabel		2
 </table>
 <table>
 Noah	30	3	18/11/2016 17:31
-geometry	640	0	445	230	
+geometry	640	-327	445	230	
 header	1[X]	2[Y]	3[yEr]
 ColWidth	100	100	100	
 <com>
@@ -46,7 +46,7 @@ WindowLabel		2
 </table>
 <table>
 Alex	30	3	18/11/2016 17:32
-geometry	663	447	419	220	
+geometry	663	120	419	220	
 header	1[X]	2[Y]	3[yEr]
 ColWidth	100	100	100	
 <com>
@@ -66,7 +66,7 @@ WindowLabel		2
 </table>
 <table>
 FitStats1	1000	3	19/11/2016 23:42
-geometry	919	230	445	220	hidden
+geometry	919	-97	445	220	hidden
 header	1[X]	LCL[Y]	UCL[Y]
 ColWidth	48	51	53	
 <com>
@@ -1081,7 +1081,7 @@ WindowLabel	Confidence Limits of Non-linear Fit	2
 </table>
 <table>
 FitResiduals1	5	2	19/11/2016 23:42
-geometry	919	230	445	220	hidden
+geometry	919	-97	445	220	hidden
 header	1[X]	residue[Y]
 ColWidth	36	66	
 <com>
@@ -1101,7 +1101,7 @@ WindowLabel	Residuals of Non-linear Fit	2
 </table>
 <table>
 FitStats2	1000	3	19/11/2016 23:46
-geometry	919	230	445	220	hidden
+geometry	919	-97	445	220	hidden
 header	1[X]	LCL[Y]	UCL[Y]
 ColWidth	48	51	53	
 <com>
@@ -2116,7 +2116,7 @@ WindowLabel	Confidence Limits of Non-linear Fit	2
 </table>
 <table>
 FitResiduals2	5	2	19/11/2016 23:46
-geometry	919	230	445	220	hidden
+geometry	919	-97	445	220	hidden
 header	1[X]	residue[Y]
 ColWidth	36	66	
 <com>
@@ -2136,7 +2136,7 @@ WindowLabel	Residuals of Non-linear Fit	2
 </table>
 <table>
 FitStats3	1000	3	19/11/2016 23:48
-geometry	919	230	445	220	hidden
+geometry	919	-97	445	220	hidden
 header	1[X]	LCL[Y]	UCL[Y]
 ColWidth	48	51	53	
 <com>
@@ -3151,7 +3151,7 @@ WindowLabel	Confidence Limits of Non-linear Fit	2
 </table>
 <table>
 FitResiduals3	5	2	19/11/2016 23:48
-geometry	919	230	445	220	hidden
+geometry	919	-97	445	220	hidden
 header	1[X]	residue[Y]
 ColWidth	36	66	
 <com>
@@ -3171,7 +3171,7 @@ WindowLabel	Residuals of Non-linear Fit	2
 </table>
 <multiLayer>
 Graph5	1	1	18/11/2016 17:29
-geometry	171	26	467	415	
+geometry	171	-301	467	415	
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
@@ -3258,8 +3258,8 @@ EnabledTickLabels	1	0	1	0
 <LineStyle>0</LineStyle>
 <x>0.6360201511335</x>
 <y>4.8338926174497</y>
-<right>1.9484375</right>
-<bottom>4.31976744186047</bottom>
+<right>1.88563049853372</right>
+<bottom>4.34514925373134</bottom>
 <attachTo>1</attachTo>
 <onTop>1</onTop>
 <visible>1</visible>
@@ -3287,7 +3287,7 @@ EnabledTickLabels	1	0	1	0
 </multiLayer>
 <multiLayer>
 Graph4	1	1	19/11/2016 23:40
-geometry	687	492	464	415	
+geometry	687	165	464	415	active
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
@@ -3373,10 +3373,10 @@ EnabledTickLabels	1	0	1	0
 <Color>#000000</Color>
 <FrameWidth>1</FrameWidth>
 <LineStyle>0</LineStyle>
-<x>0.69121447028424</x>
-<y>65.588235294118</y>
-<right>2.24160206718346</right>
-<bottom>38.0147058823529</bottom>
+<x>1.0705289672544</x>
+<y>65.985915492958</y>
+<right>2.24181360201511</right>
+<bottom>46.3380281690141</bottom>
 <attachTo>1</attachTo>
 <onTop>1</onTop>
 <visible>1</visible>
@@ -3390,7 +3390,7 @@ EnabledTickLabels	1	0	1	0
 <b>a</b> = 2.48059e+01 +/- 1.20681e-01
 <b>b</b> = -9.55366e-01 +/- 6.31058e-03
 </Text>
-<Font>Sans Serif	9	50	0	0	0</Font>
+<Font>Sans Serif	11	50	0	0	0</Font>
 <TextColor>#000000</TextColor>
 <Background>#ffffff</Background>
 <Alpha>0</Alpha>
@@ -3404,7 +3404,7 @@ EnabledTickLabels	1	0	1	0
 </multiLayer>
 <multiLayer>
 Graph7	1	1	19/11/2016 23:44
-geometry	666	41	483	415	active
+geometry	666	-286	483	415	
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
@@ -3490,10 +3490,10 @@ EnabledTickLabels	1	0	1	0
 <Color>#000000</Color>
 <FrameWidth>1</FrameWidth>
 <LineStyle>0</LineStyle>
-<x>0.79012345679012</x>
-<y>58.161764705882</y>
-<right>2.1358024691358</right>
-<bottom>37.0220588235294</bottom>
+<x>1.1686746987952</x>
+<y>57.183098591549</y>
+<right>2.28915662650602</right>
+<bottom>40.8098591549296</bottom>
 <attachTo>1</attachTo>
 <onTop>1</onTop>
 <visible>1</visible>
@@ -3507,7 +3507,7 @@ EnabledTickLabels	1	0	1	0
 <b>a</b> = 2.45958e+01 +/- 3.22725e-02
 <b>b</b> = -9.62786e-01 +/- 1.69889e-03
 </Text>
-<Font>Sans Serif	9	50	0	0	0</Font>
+<Font>Sans Serif	11	50	0	0	0</Font>
 <TextColor>#000000</TextColor>
 <Background>#ffffff</Background>
 <Alpha>0</Alpha>
@@ -4050,5 +4050,6 @@ RSS (Residual Sum of Squares) = 0.044756
 Iterations = 8
 Status = success
 ---------------------------------------------------------------------------------------
+
 
 </log>

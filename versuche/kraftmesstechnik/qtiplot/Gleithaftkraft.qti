@@ -3,7 +3,7 @@ QtiPlot 0.9.8 project file
 <windows>	8
 <table>
 Table1	30	3	20/11/2016 01:05
-geometry	0	-314	445	220	
+geometry	0	0	445	220	
 header	1[X]	2[Y]	3[yEr]
 ColWidth	100	100	100	
 <com>
@@ -19,9 +19,63 @@ WindowLabel		2
 2	6	1.6663	0.042395
 </data>
 </table>
+<table>
+Table2	30	3	20/11/2016 01:18
+geometry	497	1	445	220	
+header	1[X]	2[Y]	3[yEr]
+ColWidth	100	100	100	
+<com>
+</com>
+ColType	0;0/5	0;0/5	0;0/5
+ReadOnlyColumn	0	0	0
+HiddenColumn	0	0	0
+Comments				
+WindowLabel		2
+<data>
+0	2	0.65975	0.012832
+1	4	1.303	0.039283
+2	6	2.1418	0.050763
+</data>
+</table>
+<table>
+Table3	30	3	20/11/2016 01:22
+geometry	2	458	445	220	
+header	1[X]	2[Y]	3[yEr]
+ColWidth	100	100	100	
+<com>
+</com>
+ColType	0;0/5	0;0/5	0;0/5
+ReadOnlyColumn	0	0	0
+HiddenColumn	0	0	0
+Comments				
+WindowLabel		2
+<data>
+0	2	0.569	0.029696
+1	4	1.19	0.01378
+2	6	1.6947	0.051214
+</data>
+</table>
+<table>
+Table4	30	3	20/11/2016 01:24
+geometry	498	459	445	220	
+header	1[X]	2[Y]	3[yEr]
+ColWidth	100	100	100	
+<com>
+</com>
+ColType	0;0/5	0;0/5	0;0/5
+ReadOnlyColumn	0	0	0
+HiddenColumn	0	0	0
+Comments				
+WindowLabel		2
+<data>
+0	2	0.5585	0.022717
+1	4	1.1207	0.051152
+2	6	1.728	0.040705
+</data>
+</table>
 <multiLayer>
 Graph1	1	1	20/11/2016 01:18
-geometry	24	-273	468	415	
+geometry	24	41	468	415	
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
@@ -43,7 +97,7 @@ Margin	0
 Border	0	#000000
 grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
 EnabledAxes	1	1	1	1	
-AxesTitles	Gewicht (kg)	Grenzhaftkraft (N)		 	
+AxesTitles	Gewicht (kg)	Grenzhaftkraft (kg)		 	
 AxesTitleColors	#000000	#000000	#000000	#000000	
 AxesTitleAlignment	5124	5124	5124	5124
 AxesTitleDistance	2	2	2	2
@@ -108,8 +162,8 @@ EnabledTickLabels	1	0	1	0
 <LineStyle>0</LineStyle>
 <x>1.1360201511335</x>
 <y>1.7577181208054</y>
-<right>2.63224181360202</right>
-<bottom>1.62147651006711</bottom>
+<right>2.89017341040462</right>
+<bottom>1.59626865671642</bottom>
 <attachTo>1</attachTo>
 <onTop>1</onTop>
 <visible>1</visible>
@@ -117,10 +171,10 @@ EnabledTickLabels	1	0	1	0
 \l(1)%(1)
 \l(3)%(3)
 <b>Dataset</b>: Table1_2
-<b>Function</b>: x*N
+<b>Function</b>: x*u_H
 <b>Chi^2/doF</b> = 3.57941e+00
 <b>R^2</b> = 0.99554
-<b>N</b> = 2.94967e-01 +/- 5.47006e-03
+<b>u_H</b> = 2.94967e-01 +/- 5.47006e-03
 </Text>
 <Font>Sans Serif	10	50	0	0	0</Font>
 <TextColor>#000000</TextColor>
@@ -134,27 +188,9 @@ EnabledTickLabels	1	0	1	0
 <LinkXAxes>0</LinkXAxes>
 <ScaleLayers>1</ScaleLayers>
 </multiLayer>
-<table>
-Table2	30	3	20/11/2016 01:18
-geometry	497	-313	445	220	
-header	1[X]	2[Y]	3[yEr]
-ColWidth	100	100	100	
-<com>
-</com>
-ColType	0;0/5	0;0/5	0;0/5
-ReadOnlyColumn	0	0	0
-HiddenColumn	0	0	0
-Comments				
-WindowLabel		2
-<data>
-0	2	0.59675	0.014583
-1	4	1.1938	0.014073
-2	6	1.6663	0.042395
-</data>
-</table>
 <multiLayer>
 Graph2	1	1	20/11/2016 01:21
-geometry	525	-270	468	415	
+geometry	525	44	468	415	
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
@@ -176,7 +212,7 @@ Margin	0
 Border	0	#000000
 grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
 EnabledAxes	1	1	1	1	
-AxesTitles	Gewicht (kg)	Grenzhaftkraft (N)		 	
+AxesTitles	Gewicht (kg)	Grenzhaftkraft (kg)		 	
 AxesTitleColors	#000000	#000000	#000000	#000000	
 AxesTitleAlignment	5124	5124	5124	5124
 AxesTitleDistance	2	2	2	2
@@ -200,11 +236,11 @@ ErrorBars	1	Table2_1	Table2_2	Table2_3	1	8	#000000	1	1	1	0
 <Function>
 <Type>0</Type>
 <Title>NonLinearFit1</Title>
-<Expression>x*N</Expression>
+<Expression>x*u_H</Expression>
 <Variable>x</Variable>
 <Range>2	6</Range>
 <Points>1000</Points>
-<Constant>N	0.294966728860842</Constant>
+<Constant>u_H	0.336778204706318</Constant>
 <Style>0</Style>
 <LineStyle>1</LineStyle>
 <Pen>
@@ -217,8 +253,8 @@ ErrorBars	1	Table2_1	Table2_2	Table2_3	1	8	#000000	1	1	1	0
 <CurveType>0</CurveType>
 <Visible>1</Visible>
 </Function>
-scale	0	0.4	1.8	0	8	5	0	0
-scale	1	0.4	1.8	0	8	5	0	0
+scale	0	0.6	2.2	0	9	5	0	0
+scale	1	0.6	2.2	0	9	5	0	0
 scale	2	1	7	0	7	5	0	0
 scale	3	1	7	0	7	5	0	0
 LabelsFormat	0	6	0	6	0	6	0	6
@@ -239,10 +275,10 @@ EnabledTickLabels	1	0	1	0
 <Color>#000000</Color>
 <FrameWidth>1</FrameWidth>
 <LineStyle>0</LineStyle>
-<x>1.1360201511335</x>
-<y>1.7575757575758</y>
-<right>2.63224181360202</right>
-<bottom>1.62087542087542</bottom>
+<x>1.1964735516373</x>
+<y>2.1570469798658</y>
+<right>4.00755667506297</right>
+<bottom>1.71677852348993</bottom>
 <attachTo>1</attachTo>
 <onTop>1</onTop>
 <visible>1</visible>
@@ -250,10 +286,10 @@ EnabledTickLabels	1	0	1	0
 \l(1)%(1)
 \l(3)%(3)
 <b>Dataset</b>: Table2_2
-<b>Function</b>: x*N
-<b>Chi^2/doF</b> = 3.57941e+00
-<b>R^2</b> = 0.99554
-<b>N</b> = 2.94967e-01 +/- 5.47006e-03
+<b>Function</b>: x*u_H
+<b>Chi^2/doF</b> = 4.05631e+00
+<b>R^2</b> = 0.99753
+<b>u_H</b> = 3.36778e-01 +/- 9.13288e-03
 </Text>
 <Font>Sans Serif	10	50	0	0	0</Font>
 <TextColor>#000000</TextColor>
@@ -267,27 +303,9 @@ EnabledTickLabels	1	0	1	0
 <LinkXAxes>0</LinkXAxes>
 <ScaleLayers>1</ScaleLayers>
 </multiLayer>
-<table>
-Table3	30	3	20/11/2016 01:22
-geometry	2	144	445	220	
-header	1[X]	2[Y]	3[yEr]
-ColWidth	100	100	100	
-<com>
-</com>
-ColType	0;0/5	0;0/5	0;0/5
-ReadOnlyColumn	0	0	0
-HiddenColumn	0	0	0
-Comments				
-WindowLabel		2
-<data>
-0	2	0.569	0.029696
-1	4	1.19	0.01378
-2	6	1.6947	0.051214
-</data>
-</table>
 <multiLayer>
 Graph3	1	1	20/11/2016 01:23
-geometry	30	188	468	415	
+geometry	30	502	468	415	
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
@@ -309,7 +327,7 @@ Margin	0
 Border	0	#000000
 grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
 EnabledAxes	1	1	1	1	
-AxesTitles	Gewicht (kg)	Grenzhaftkraft (N)		 	
+AxesTitles	Gewicht (kg)	Grenzhaftkraft (kg)		 	
 AxesTitleColors	#000000	#000000	#000000	#000000	
 AxesTitleAlignment	5124	5124	5124	5124
 AxesTitleDistance	2	2	2	2
@@ -374,8 +392,8 @@ EnabledTickLabels	1	0	1	0
 <LineStyle>0</LineStyle>
 <x>1.1360201511335</x>
 <y>1.7575757575758</y>
-<right>2.63224181360202</right>
-<bottom>1.62087542087542</bottom>
+<right>2.89017341040462</right>
+<bottom>1.59626865671642</bottom>
 <attachTo>1</attachTo>
 <onTop>1</onTop>
 <visible>1</visible>
@@ -383,10 +401,10 @@ EnabledTickLabels	1	0	1	0
 \l(1)%(1)
 \l(3)%(3)
 <b>Dataset</b>: Table3_2
-<b>Function</b>: x*N
+<b>Function</b>: x*u_H
 <b>Chi^2/doF</b> = 1.59383e+00
 <b>R^2</b> = 0.99369
-<b>N</b> = 2.94910e-01 +/- 3.94288e-03
+<b>u_H</b> = 2.94910e-01 +/- 3.94288e-03
 </Text>
 <Font>Sans Serif	10	50	0	0	0</Font>
 <TextColor>#000000</TextColor>
@@ -400,27 +418,9 @@ EnabledTickLabels	1	0	1	0
 <LinkXAxes>0</LinkXAxes>
 <ScaleLayers>1</ScaleLayers>
 </multiLayer>
-<table>
-Table4	30	3	20/11/2016 01:24
-geometry	498	145	445	220	
-header	1[X]	2[Y]	3[yEr]
-ColWidth	100	100	100	
-<com>
-</com>
-ColType	0;0/5	0;0/5	0;0/5
-ReadOnlyColumn	0	0	0
-HiddenColumn	0	0	0
-Comments				
-WindowLabel		2
-<data>
-0	2	0.5585	0.022717
-1	4	1.1207	0.051152
-2	6	1.728	0.040705
-</data>
-</table>
 <multiLayer>
 Graph4	1	1	20/11/2016 01:25
-geometry	525	188	468	415	active
+geometry	525	502	468	415	active
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
@@ -442,7 +442,7 @@ Margin	0
 Border	0	#000000
 grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
 EnabledAxes	1	1	1	1	
-AxesTitles	Gewicht (kg)	Grenzhaftkraft (N)		 	
+AxesTitles	Gewicht (kg)	Grenzhaftkraft (kg)		 	
 AxesTitleColors	#000000	#000000	#000000	#000000	
 AxesTitleAlignment	5124	5124	5124	5124
 AxesTitleDistance	2	2	2	2
@@ -507,8 +507,8 @@ EnabledTickLabels	1	0	1	0
 <LineStyle>0</LineStyle>
 <x>1.1360201511335</x>
 <y>1.7575757575758</y>
-<right>2.63224181360202</right>
-<bottom>1.62087542087542</bottom>
+<right>2.89017341040462</right>
+<bottom>1.59626865671642</bottom>
 <attachTo>1</attachTo>
 <onTop>1</onTop>
 <visible>1</visible>
@@ -516,10 +516,10 @@ EnabledTickLabels	1	0	1	0
 \l(1)%(1)
 \l(3)%(3)
 <b>Dataset</b>: Table4_2
-<b>Function</b>: x*N
+<b>Function</b>: x*u_H
 <b>Chi^2/doF</b> = 2.95977e-01
 <b>R^2</b> = 0.99931
-<b>N</b> = 2.84750e-01 +/- 2.88366e-03
+<b>u_H</b> = 2.84750e-01 +/- 2.88366e-03
 </Text>
 <Font>Sans Serif	10	50	0	0	0</Font>
 <TextColor>#000000</TextColor>
@@ -662,5 +662,71 @@ RSS (Residual Sum of Squares) = 0.59195
 ---------------------------------------------------------------------------------------
 Iterations = 2
 Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+
+
+[22/11/2016 15:33	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table2_2, using function: u_H
+Weighting Method: Arbitrary Dataset: Table2_3
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 2.00000e+00 to x = 6.00000e+00
+u_H = 7.99284e-01 +/- 2.62816e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.91047e+02
+R^2 = 0.70085
+Adjusted R^2 = 0.4017
+RMSE (Root Mean Squared Error) = 22.16
+RSS (Residual Sum of Squares) = 982.09
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+[22/11/2016 15:33	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table2_2, using function: x*u_H
+Weighting Method: Arbitrary Dataset: Table2_3
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 2.00000e+00 to x = 6.00000e+00
+u_H = 3.36778e-01 +/- 9.13288e-03
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.05631e+00
+R^2 = 0.99753
+Adjusted R^2 = 0.99506
+RMSE (Root Mean Squared Error) = 2.014
+RSS (Residual Sum of Squares) = 8.1126
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+[22/11/2016 15:33	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table2_2, using function: x*u_H
+Weighting Method: Arbitrary Dataset: Table2_3
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 2.00000e+00 to x = 6.00000e+00
+u_H = 3.36778e-01 +/- 9.13288e-03
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.05631e+00
+R^2 = 0.99753
+Adjusted R^2 = 0.99506
+RMSE (Root Mean Squared Error) = 2.014
+RSS (Residual Sum of Squares) = 8.1126
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[22/11/2016 15:33	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table2_2, using function: x*u_H
+Weighting Method: Arbitrary Dataset: Table2_3
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 2.00000e+00 to x = 6.00000e+00
+u_H = 3.36778e-01 +/- 9.13288e-03
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.05631e+00
+R^2 = 0.99753
+Adjusted R^2 = 0.99506
+RMSE (Root Mean Squared Error) = 2.014
+RSS (Residual Sum of Squares) = 8.1126
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
 ---------------------------------------------------------------------------------------
 </log>
