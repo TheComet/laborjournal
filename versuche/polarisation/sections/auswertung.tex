@@ -1,154 +1,123 @@
 \section{Auswertung}
 
-\subsection{Kalibration der Anlage}
+\subsection{Durchlasskennlinie Polarisator/Analysator-Paar}
 
-Die Anlage wurde f\"ur Masse kalibriert. Daf\"ur wurden als  Normobjekte mehrere
-auf  der  Metterl-Waage  kontrollierte W\"agest\"ucke verwendet.  Die  Gewichten
-wurden mehrmals angeh\"angt,  um  zu  sehen,  wie sich der Nullpunkt verschiebt.
-
-\begin{center}
-    \begin{threeparttable}
-        \begin{tabular}{ccc}
-            \toprule
-            Nenngewicht (kg) & Nullpunkt (kg) \\
-            \midrule
-            1   & -0.002 \\
-            1.5 & -0.004 \\
-            2   & -0.005 \\
-            2.5 & -0.009 \\
-            3   & -0.012 \\
-            3.5 & -0.02  \\
-            4   & -0.022 \\
-            4.5 & -0.024 \\
-            \bottomrule
-        \end{tabular}
-        \caption{Abweichungen vom Nullpunkt nach abh\"angen jedes Nenngewichts}
-    \end{threeparttable}
-\end{center}
-
-Es ist zu sehen, dass sich der Nullpunkt um \SI{24}{\gram} verschiebt.
-
-Die  verschiedenen  Nenngewichte in funktion  der  gemessenen  Gewichte  ist  in
-Abbildung  \ref{fig:kalibration_gewicht} zu sehen. Die  Punkte  wurden  mit  der
-linearen   Funktion  $y=m_0+xm$  gefittet.   Es   gab   eine   Fehlmessung   bei
-\SI{3}{\kilo\gram}  Nenngewicht,  deshalb  wurde   dieser   Punkt   beim  Fitten
-ignoriert.
+Die  Durchlasskennlinie  des Polarisator/Analysator-Paars  wurde  gemessen.  Die
+erste   Messung  ist  in  der  Abbildung  \ref{fig:aufgabe-3_falsch}  zu  sehen.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=.7\linewidth]{images/kalibration_gewicht}
-    \caption{Verschiedene Normobjekte wurden angeh\"angt und das Gewicht wurde gemessen. Ein Ausreisser bei \SI{3}{\kilo\gram} wurde beim Fitten ignoriert.}
-    \label{fig:kalibration_gewicht}
+    \includegraphics[width=.6\linewidth]{images/aufgabe-3_falsch.pdf}
+    \caption{Die erste (inkorrekte) Messung der Durchlasskennlinie}
+    \label{fig:aufgabe-3_falsch}
 \end{figure}
 
-Weiter wurde die Anlage  f\"ur  Geschwindigkeit  kalibriert.  Daf\"ur  wurde bei
-verschiedenen Einstellungen des Potentiometers die Zeit gemessen, die das Objekt
-brauchte,  um  \SI{1}{\meter} zur\"uckzulegen. So kann  die  Geschwindigkeit  in
-funktion der Potentiometereinstellung ausgedr\"uckt werden. Diese Messung  wurde
-zwei mal durchgef\"uhrt, ein mal von Alex und ein mal von Noah.
+Es  wurde  bemerkt,  dass  die  Spitzenwerte  bei  jeweils  \SI{0}{\degree}  und
+\SI{180}{\degree} nicht gleich sind. Weiter wurde bemerkt,  dass  die  einzelnen
+Punkte nach der \SI{90}{\degree}-Einstellung nicht korrekt ``gespiegelt'' werden
+konnten.
+
+Die  Messeinrichtung   wurde   nochmals  \"uberpr\"uft,  die  Ausrichtungen  der
+Polarisatoren  wurde  justiert,  und die Messung wurde nochmals  durchgef\"uhrt.
+Abbildung \ref{fig:aufgabe-3} zeigt die zweite Messung.
 
 \begin{figure}[H]
     \centering
-    \begin{subfigure}{.7\textwidth}
-        \includegraphics[width=\linewidth]{images/kalibration_geschwindigkeit_noah}
-        \caption{Die Zeit \"Uber eine Strecke von \SI{1}{\meter} wurde bei verschiedenen Potentiometereinstellungen mit einer Stoppuhr von Noah gemessen.}
-    \end{subfigure}
-    \begin{subfigure}{.7\textwidth}
-        \includegraphics[width=\linewidth]{images/kalibration_geschwindigkeit_alex}
-        \caption{Die Zeit \"Uber eine Strecke von \SI{1}{\meter} wurde bei verschiedenen Potentiometereinstellungen mit einer Stoppuhr von Alex gemessen.}
-    \end{subfigure}
-    \caption{}\label{fig:kalibration_geschwindigkeit}
+    \includegraphics[width=.6\linewidth]{images/aufgabe-3.pdf}
+    \caption{}
+    \label{fig:aufgabe-3}
 \end{figure}
 
+Die  gemessene  Abweichung  scheint  immer  noch  vorhanden  zu  sein.  Es liegt
+warscheinlich daran, dass der Analysator nicht ganz zentriert ist und deshalb in
+der gegenrotierten Richtung eine andere Durchlasskennlinie hat.
 
-\subsection{Gleitreibungskraft Fester K\"orper}
+Die Punkte wurden mit der  Formel  \ref{eq:pol_paar}  gefittet,  aber  mit einer
+kleinen Anpassung. Die Polarisatoren sind in der Messeinrichtung nicht ganz  bei
+\SI{0}{\degree}, es besteht ein unbekannter Offset. Die Formel wurde angepasst:
 
-Die  Gleitreibungskraft  $F_{gl}$  wurde  in  Funktion der Normalkraft  $N$  bei
-konstanter Geschwindigkeit im Bereich von einigen \SI{}{\centi\meter\per\second}
-gemessen. Die Unsicherheit der Messwerte wurde  aus  der  Schwankungsbreite  der
-Anzeige  bestummen, welches sich  ungef\"ahr  zu  \SI{50}{\gram}  herausstellte.
+\begin{equation}
+    I_{out} = I_0\cdot\cos^2(\varphi + \varphi_{offset})
+\end{equation}
 
-Die  Messungen  wurden bei der Potentiometereinstellung=1 durchgef\"uhrt  (siehe
-Abbildung \ref{fig:kalibration_geschwindigkeit}).
+Aus den Fits ist zu lesen:
 
-Die        Abbildungen        \ref{fig:teppich_const_geschwindigkeit}        und
-\ref{fig:plastik_const_geschwindigkeit}  stellen   die   Messungen   f\"ur   die
-Materialien Teppich und Plastik dar.
+\begin{align*}
+    I_{0,1}            &= 1178.2 \pm 28.568\SI{}{\lumen\per\square\meter} \\
+    I_{0,2}            &= 161.60 \pm 9.6233\SI{}{\lumen\per\square\meter} \\
+    \varphi_{offset,1} &= 4.0540 \pm 0.4740\SI{}{\degree} \\
+    \varphi_{offset,2} &= 4.6385 \pm 0.5663\SI{}{\degree} \\
+\end{align*}
+
+Dabei ist zu beachten: $I_{0,1}$ weicht zu stark  ab  weil  die  Messeinrichtung
+verstellt  wurde.   Der  Offset  $\varphi_{offset,1}$  kann  jedoch  immer  noch
+verwendet   werden,   weil   der   Polarisatorwinkel   nicht  verstellt   wurde.
+
+
+\subsection{Drehung einer Halbwellenplatte}
+
+Eine Halbwellenplatte wurde zwischen Polarisator und  Analysator  platziert. Bei
+verschiedenen Winkeln  wurde  der  Ausl\"oschwinkel  des  Analysators  gemessen.
 
 \begin{figure}[H]
     \centering
-    \begin{subfigure}{.7\textwidth}
-        \includegraphics[width=\linewidth]{images/teppich_const_geschwindigkeit}
-        \caption{Die Gleitreibungskraft vom Teppich wurde bei konstanter Geschwindigkeit und verschiedenen Normalkr\"aften gemessen.}
-        \label{fig:teppich_const_geschwindigkeit}
-    \end{subfigure}
-    \begin{subfigure}{.7\textwidth}
-        \includegraphics[width=\linewidth]{images/plastik_const_geschwindigkeit}
-        \caption{Die Gleitreibungskraft vom Plastik wurde bei konstanter Geschwindigkeit und verschiedenen Normalkr\"aften gemessen.}
-        \label{fig:plastik_const_geschwindigkeit}
-    \end{subfigure}
+    \includegraphics[width=.6\linewidth]{images/aufgabe-4.pdf}
+    \caption{}
 \end{figure}
 
-Die  Gleitreibungskraft  $F_{gl}$  wurde  in Funktion  der  Geschwindigkeit  bei
-konstanter Normalkraft gemessen. f\"ur Normalkraft bzw. die Gewichtskraft  wurde
-\SI{4}{\kilo\gram}  gew\"ahlt.   Die   messresultate  sind  in  den  Abbildungen
-\ref{fig:teppich_const_gewicht}  (Teppich)  und  \ref{fig:plastik_const_gewicht}
-(Plastik) zu sehen.
+Gem\"ass Theorie muss eine Winkel\"anderung der  Halbwellenplatte $\varphi$ eine
+verdoppelte Rotation des Ausl\"oschwinkels verursachen.
+
+Wieder muss der unbekannte Offset miteinbezogen werden. Die Fit-Funktion lautet:
+
+\begin{equation}
+    \vartheta = 2\varphi + 90 + \varphi_{offset}
+\end{equation}
+
+Die  \SI{90}{\degree}  sind dort weil der Ausl\"oschwinkel bei  \SI{90}{\degree}
+sein sollte.
+
+Aus dem Fit ist zu lesen:
+
+\begin{align*}
+    \varphi_{offset,3} = 7.1429 \pm 0.2827\SI{}{\degree}
+\end{align*}
+
+
+\subsection{Durchlasskennlinie einer Viertelwellenplatte}
+
+Eine  Viertelwellenplatte  wurde  zwischen Polarisator und Analysator platziert.
+Bei   verschiedenen   Winkeleinstellungen   $\varphi$   der  Platte  wurde   die
+Durchlasskennlinie  mit  dem  Analysatorwinkel  $\vartheta$ gemessen.  D.h.  die
+Intensit\"at  $I(\varphi,\vartheta)$  wurde  in  funktion   der   beiden  Winkel
+gemessen.
 
 \begin{figure}[H]
     \centering
-    \begin{subfigure}{.7\textwidth}
-        \includegraphics[width=\linewidth]{images/teppich_const_gewicht}
-        \caption{Die Gleitreibungskraft vom Teppich wurde bei konstanter Geschwindigkeit und verschiedenen Normalkr\"aften gemessen.}
-        \label{fig:teppich_const_gewicht}
+    \begin{subfigure}{.45\linewidth}
+        \includegraphics[width=\linewidth]{images/aufgabe-5_0grad.pdf}
+        \caption{}
     \end{subfigure}
-    \begin{subfigure}{.7\textwidth}
-        \includegraphics[width=\linewidth]{images/plastik_const_gewicht}
-        \caption{Die Gleitreibungskraft vom Plastik wurde bei konstanter Geschwindigkeit und verschiedenen Normalkr\"aften gemessen.}
-        \label{fig:plastik_const_gewicht}
+    \begin{subfigure}{.45\linewidth}
+        \includegraphics[width=\linewidth]{images/aufgabe-5_15grad.pdf}
+        \caption{}
     \end{subfigure}
-\end{figure}
-
-Es wurde darauf geachtet, dass  alle  Messungen  immer  an  der  Gleichen stelle
-abgelesen  wurden.  Es  entseht  so zwar ein  Systematischer  Fehler,  aber  die
-Streuung der gemessenen Werte werden kleiner sein.
-
-
-\subsection{Grenzhaftkraft Fester K\"orper}
-
-Die Grenzhaftkraft $F_{H0}$ wurde  in  Funktion  der Normalkraft gemessen. Dabei
-wurde  der  K\"orper  an  4 verschiedenen Stellen des Bahnes platziert  und  das
-Maximum des gemessenen Kraftes abgelesen. Der Mittelwert und Fehler dieser Werte
-wurden  berechnet  und  in   den   Abbildungen   \ref{fig:teppich_haft_poti=0.4}
-(Teppich,   poti=0.4),  \ref{fig:plastik_haft_poti=0.4}   (Plastik,   poti=0.4),
-\ref{fig:teppich_haft_poti=3}           (Teppich,          poti=3)           und
-\ref{fig:plastik_haft_poti=3} geplottet.
-
-\begin{figure}[H]
-    \centering
-    \begin{subfigure}{.7\textwidth}
-        \includegraphics[width=\linewidth]{images/teppich_haft_poti=0_4}
-        \caption{Die Grenzhaftkraft vom Teppich wurde bei verschiedenen Normalkr\"aften an verschiedenen Stellen der Bahn gemessen.}
-        \label{fig:teppich_haft_poti=0.4}
+    \begin{subfigure}{.45\linewidth}
+        \includegraphics[width=\linewidth]{images/aufgabe-5_30grad.pdf}
+        \caption{}
     \end{subfigure}
-    \begin{subfigure}{.7\textwidth}
-        \includegraphics[width=\linewidth]{images/plastik_haft_poti=0_4}
-        \caption{Die Grenzhaftkraft vom Plastik wurde bei verschiedenen Normalkr\"aften an verschiedenen Stellen der Bahn gemessen.}
-        \label{fig:plastik_haft_poti=0.4}
+    \begin{subfigure}{.45\linewidth}
+        \includegraphics[width=\linewidth]{images/aufgabe-5_45grad.pdf}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}{.45\linewidth}
+        \includegraphics[width=\linewidth]{images/aufgabe-5_60grad.pdf}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}{.45\linewdith}
+        \includegraphics[width=\linewidth]{images/aufgabe-6.pdf}
+        \caption{}
     \end{subfigure}
 \end{figure}
 
-\begin{figure}[H]
-    \centering
-    \begin{subfigure}{.7\textwidth}
-        \includegraphics[width=\linewidth]{images/teppich_haft_poti=3}
-        \caption{Die Grenzhaftkraft vom Teppich wurde bei verschiedenen Normalkr\"aften an verschiedenen Stellen der Bahn gemessen.}
-        \label{fig:teppich_haft_poti=3}
-    \end{subfigure}
-    \begin{subfigure}{.7\textwidth}
-        \includegraphics[width=\linewidth]{images/plastik_haft_poti=3}
-        \caption{Die Grenzhaftkraft vom Plastik wurde bei verschiedenen Normalkr\"aften an verschiedenen Stellen der Bahn gemessen.}
-        \label{fig:plastik_haft_poti=3}
-    \end{subfigure}
-\end{figure}
 

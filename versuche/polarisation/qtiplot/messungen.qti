@@ -1,0 +1,2845 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	muParser
+<windows>	18
+<table>
+Table1	30	4	03/12/2016 16:04
+geometry	-96	-333	453	236	
+header	Theta[X]	Intensität[Y]	s-Theta[xEr]	s-Intensität[yEr]
+ColWidth	100	100	100	100	
+<com>
+</com>
+ColType	0;0/5	0;0/5	0;0/5	0;0/5
+ReadOnlyColumn	0	0	0	0
+HiddenColumn	0	0	0	0
+Comments					
+WindowLabel		2
+<data>
+0	0	154	0.15	0.001
+1	15	137	0.15	0.001
+2	30	104	0.15	0.001
+3	45	65	0.15	0.001
+4	60	28	0.15	0.001
+5	75	4.87	0.15	1e-05
+6	90	0.97	0.15	1e-05
+7	105	17.75	0.15	1e-05
+8	120	74.1	0.15	0.0001
+</data>
+</table>
+<table>
+Table2	30	4	03/12/2016 16:15
+geometry	-92	88	458	220	
+header	Lambda/2 Winkel[X]	Auslöschwinkel[Y]	s-lambda/2[xEr]	s-Auslöschwinkel[yEr]
+ColWidth	100	100	100	100	
+<com>
+</com>
+ColType	0;0/5	0;0/5	0;0/5	0;0/5
+ReadOnlyColumn	0	0	0	0
+HiddenColumn	0	0	0	0
+Comments					
+WindowLabel		2
+<data>
+0	0	98	0.15	0.5
+1	15	128	0.15	0.5
+2	30	157	0.15	0.5
+3	45	186	0.15	0.5
+4	60	216.5	0.15	0.5
+5	75	247.5	0.15	0.5
+6	90	277	0.15	0.5
+</data>
+</table>
+<table>
+Table3	30	4	03/12/2016 16:19
+geometry	-92	501	445	220	
+header	Theta[X]	Intensität[Y]	s-Theta[xEr]	s-Intensität[yEr]
+ColWidth	100	100	100	100	
+<com>
+</com>
+ColType	0;0/5	0;0/5	0;0/5	0;0/5
+ReadOnlyColumn	0	0	0	0
+HiddenColumn	0	0	0	0
+Comments					
+WindowLabel		2
+<data>
+0	0	151	0.15	0.01
+1	15	140.8	0.15	0.001
+2	30	114.5	0.15	0.001
+3	45	76.7	0.15	0.001
+4	60	38.6	0.15	0.001
+5	75	11.26	0.15	0.0001
+6	90	1.1	0.15	0.0001
+</data>
+</table>
+<table>
+Table4	30	4	03/12/2016 16:25
+geometry	357	501	445	220	
+header	Theta[X]	Intensität[Y]	s-Theta[xEr]	s-Intensität[yEr]
+ColWidth	100	100	100	100	
+<com>
+</com>
+ColType	0;0/5	0;0/5	0;0/5	0;0/5
+ReadOnlyColumn	0	0	0	0
+HiddenColumn	0	0	0	0
+Comments					
+WindowLabel		2
+<data>
+0	0	128	0.15	0.01
+1	15	136	0.15	0.01
+2	30	129	0.15	0.01
+3	45	106.2	0.15	0.001
+4	60	76.6	0.15	0.001
+5	75	47	0.15	0.001
+6	90	25.5	0.15	0.001
+</data>
+</table>
+<table>
+Table5	30	4	03/12/2016 16:26
+geometry	802	498	445	220	
+header	Theta[X]	Intensität[Y]	s-Theta[xEr]	s-Intensität[yEr]
+ColWidth	100	100	100	100	
+<com>
+</com>
+ColType	0;0/5	0;0/5	0;0/5	0;0/5
+ReadOnlyColumn	0	0	0	0
+HiddenColumn	0	0	0	0
+Comments					
+WindowLabel		2
+<data>
+0	0	89	0.15	0.003
+1	15	98.8	0.15	0.001
+2	30	102.7	0.15	0.001
+3	45	99.3	0.15	0.001
+4	60	89.4	0.15	0.001
+5	75	75.8	0.15	0.001
+6	90	62.5	0.15	0.001
+</data>
+</table>
+<table>
+Table6	30	4	03/12/2016 16:26
+geometry	1248	498	445	220	
+header	Theta[X]	Intensität[Y]	s-Theta[xEr]	s-Intensität[yEr]
+ColWidth	100	100	100	100	
+<com>
+</com>
+ColType	0;0/5	0;0/5	0;0/5	0;0/5
+ReadOnlyColumn	0	0	0	0
+HiddenColumn	0	0	0	0
+Comments					
+WindowLabel		2
+<data>
+0	0	76.6	0.15	0.001
+1	15	70.4	0.15	0.001
+2	30	65.5	0.15	0.001
+3	45	63.7	0.15	0.001
+4	60	65.1	0.15	0.001
+5	75	69.3	0.15	0.001
+6	90	75.5	0.15	0.001
+</data>
+</table>
+<table>
+Table7	30	4	03/12/2016 16:27
+geometry	1693	497	445	220	
+header	Theta[X]	Intensität[Y]	s-Theta[xEr]	s-Intensität[yEr]
+ColWidth	100	100	100	100	
+<com>
+</com>
+ColType	0;0/5	0;0/5	0;0/5	0;0/5
+ReadOnlyColumn	0	0	0	0
+HiddenColumn	0	0	0	0
+Comments					
+WindowLabel		2
+<data>
+0	0	101.5	0.15	0.003
+1	15	77.3	0.15	0.001
+2	30	52.8	0.15	0.001
+3	45	34.3	0.15	0.001
+4	60	27.3	0.15	0.001
+5	75	33.3	0.15	0.001
+6	90	50.7	0.15	0.001
+</data>
+</table>
+<table>
+Table8	30	5	03/12/2016 16:28
+geometry	-88	1120	445	330	
+header	Theta[X]	1[X]	Intensität[Y]	s-Theta[xEr]	s-Intensität[yEr]
+ColWidth	100	100	100	100	100	
+<com>
+</com>
+ColType	0;0/5	0;0/5	0;0/5	0;0/5	0;0/5
+ReadOnlyColumn	0	0	0	0	0
+HiddenColumn	0	0	0	0	0
+Comments						
+WindowLabel		2
+<data>
+0	0	1	3.8	0.15	0.001
+1	15	0.96593	3.7	0.15	0.001
+2	30	0.86603	3.9	0.15	0.001
+3	45	0.70711	4.7	0.15	0.001
+4	60	0.5	5.9	0.15	0.001
+5	75	0.25882	7	0.15	0.001
+6	90	6.1232e-17	7.7	0.15	0.001
+7	105	-0.25882	7.1	0.15	0.001
+8	120	-0.5	6.9	0.15	0.001
+9	135	-0.70711	6.5	0.15	0.001
+10	150	-0.86603	4.9	0.15	0.001
+11	165	-0.96593	3.7	0.15	0.001
+12	180	-1	3.14	0.15	0.0001
+</data>
+</table>
+<multiLayer>
+Graph1	1	1	03/12/2016 16:08
+geometry	357	-333	482	415	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	464	354
+<PageGeometry>0.0105485	0.0135501	0.978903	0.95935</PageGeometry>
+PlotTitle	Durchlasskennlinie Polarisator/Analysator	#000000	4
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>0</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Analysator-Winkel in °	Intensität in lm/m^2		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	5124	4	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	12	75	0	0	0
+ScaleFont0	Sans Serif	10	75	0	0	0
+ScaleFont1	Sans Serif	10	75	0	0	0
+ScaleFont2	Sans Serif	10	75	0	0	0
+ScaleFont3	Sans Serif	10	75	0	0	0
+AxisFont0	Sans Serif	10	50	0	0	0
+AxisFont1	Sans Serif	10	50	0	0	0
+AxisFont2	Sans Serif	10	50	0	0	0
+AxisFont3	Sans Serif	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Table1_Theta	Table1_Intensität	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	8	1
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit1</Title>
+<Expression>cos((x+offset)*pi/180)^2*I_0</Expression>
+<Variable>x</Variable>
+<Range>0	120</Range>
+<Points>1000</Points>
+<Constant>I_0	161.601546240997</Constant>
+<Constant>offset	4.63853547613972</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	-50	200	0	6	5	0	0
+scale	1	-20	160	0	10	5	0	0
+scale	2	-20	140	0	9	5	0	0
+scale	3	-20	140	0	9	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>48.796068796069</x>
+<y>188.25503355705</y>
+<right>27.0317002881844</right>
+<bottom>163.619402985075</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(2)%(2)
+<b>Function</b>: cos((x+offset)*pi/180)^2*I_0
+<b>R^2</b> = 0.99948
+<b>I_0</b> = 1.61602e+02 +/- 9.72333e+00
+<b>offset</b> = 4.63854e+00 +/- 5.66246e-01
+</Text>
+<Font>Sans Serif	10	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Graph2	1	1	03/12/2016 16:19
+geometry	358	83	481	415	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	463	354
+<PageGeometry>0.0105708	0.0135501	0.978858	0.95935</PageGeometry>
+PlotTitle	Drehung einer Halbwellenplatte	#000000	4
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>0</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Winkel Halbwellenplatte in °	Auslöschwinkel Analysator in °		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	5124	4	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	12	75	0	0	0
+ScaleFont0	Sans Serif	10	75	0	0	0
+ScaleFont1	Sans Serif	10	75	0	0	0
+ScaleFont2	Sans Serif	10	75	0	0	0
+ScaleFont3	Sans Serif	10	75	0	0	0
+AxisFont0	Sans Serif	10	50	0	0	0
+AxisFont1	Sans Serif	10	50	0	0	0
+AxisFont2	Sans Serif	10	50	0	0	0
+AxisFont3	Sans Serif	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Table2_Lambda/2 Winkel	Table2_Auslöschwinkel	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	6	1
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit1</Title>
+<Expression>2*x+90+offset</Expression>
+<Variable>x</Variable>
+<Range>0	90</Range>
+<Points>1000</Points>
+<Constant>offset	7.14285714245111</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	50	300	0	6	5	0	0
+scale	1	50	300	0	6	5	0	0
+scale	2	-20	100	0	7	5	0	0
+scale	3	-20	100	0	7	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>-17.27959697733</x>
+<y>292.42424242424</y>
+<right>15.3757225433526</right>
+<bottom>263.619402985075</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(2)%(2)
+<b>Function</b>: 2*x+90+offset
+<b>R^2</b> = 0.99987
+<b>offset</b> = 7.14286e+00 +/- 2.82722e-01
+</Text>
+<Font>Sans Serif	10	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Graph3	1	1	03/12/2016 16:27
+geometry	-93	706	472	415	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	454	354
+<PageGeometry>0.0107759	0.0135501	0.978448	0.95935</PageGeometry>
+PlotTitle	Durchlasskennlinie Lambda/4-Platte bei 0°	#000000	4
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>0</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Analysator-Winkel in °	Intensität in lm/m^2		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	5124	4	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	12	75	0	0	0
+ScaleFont0	Sans Serif	10	75	0	0	0
+ScaleFont1	Sans Serif	10	75	0	0	0
+ScaleFont2	Sans Serif	10	75	0	0	0
+ScaleFont3	Sans Serif	10	75	0	0	0
+AxisFont0	Sans Serif	10	50	0	0	0
+AxisFont1	Sans Serif	10	50	0	0	0
+AxisFont2	Sans Serif	10	50	0	0	0
+AxisFont3	Sans Serif	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Table3_Theta	Table3_Intensität	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	6	1
+<Function>
+<Type>0</Type>
+<Title>durchlasskennlinie-lambda-viertelFit1</Title>
+<Expression>I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)</Expression>
+<Variable>x</Variable>
+<Range>0	90</Range>
+<Points>1000</Points>
+<Constant>I_0	152.712869518761</Constant>
+<Constant>offset	6</Constant>
+<Constant>phi	0</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	-20	160	0	10	5	0	0
+scale	1	-20	160	0	10	5	0	0
+scale	2	-20	100	0	7	5	0	0
+scale	3	-20	100	0	7	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>-17.27959697733</x>
+<y>51.275167785235</y>
+<right>48.6146095717884</right>
+<bottom>-9.73154362416107</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(2)%(2)
+<b>Function</b>: I_0*(cos((phi+offset)*pi/180)^2*
+cos((x-phi)*pi/180)^2+
+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)
+<b>Chi^2/doF</b> = 1.75571e-04
+<b>R^2</b> = 0.99998
+<b>I_0</b> = 1.52713e+02 +/- 1.23529e-01
+offset = 6 (constant)
+phi = 0 (constant)
+</Text>
+<Font>Sans Serif	8	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Graph4	1	1	03/12/2016 16:27
+geometry	358	703	470	415	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	452	354
+<PageGeometry>0.0108225	0.0135501	0.978355	0.95935</PageGeometry>
+PlotTitle	Durchlasskennlinie Lambda/4-Platte bei 15°	#000000	4
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>0</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Analysator-Winkel in °	Intensität in lm/m^2		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	12	75	0	0	0
+ScaleFont0	Sans Serif	10	75	0	0	0
+ScaleFont1	Sans Serif	10	75	0	0	0
+ScaleFont2	Sans Serif	10	75	0	0	0
+ScaleFont3	Sans Serif	10	75	0	0	0
+AxisFont0	Sans Serif	10	50	0	0	0
+AxisFont1	Sans Serif	10	50	0	0	0
+AxisFont2	Sans Serif	10	50	0	0	0
+AxisFont3	Sans Serif	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Table4_Theta	Table4_Intensität	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	6	1
+<Function>
+<Type>0</Type>
+<Title>durchlasskennlinie-lambda-viertelFit1</Title>
+<Expression>I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)</Expression>
+<Variable>x</Variable>
+<Range>0	90</Range>
+<Points>1000</Points>
+<Constant>I_0	153.255044932216</Constant>
+<Constant>offset	4.75823931962964</Constant>
+<Constant>phi	15</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	20	140	0	7	5	0	0
+scale	1	20	140	0	7	5	0	0
+scale	2	-20	100	0	7	5	0	0
+scale	3	-20	100	0	7	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>-17.581863979849</x>
+<y>74.765100671141</y>
+<right>60.4030226700252</right>
+<bottom>24.0268456375839</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(2)%(2)
+<b>Function</b>: I_0*(cos((phi+offset)*pi/180)^2*
+cos((x-phi)*pi/180)^2+
+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)
+<b>Chi^2/doF</b> = 5.05765e+03
+<b>R^2</b> = 1
+<b>I_0</b> = 1.53255e+02 +/- 7.62643e-02
+<b>offset</b> = 4.75824e+00 +/- 3.70929e-02
+phi = 15 (constant)
+</Text>
+<Font>Sans Serif	10	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Graph5	1	1	03/12/2016 16:27
+geometry	805	703	470	415	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	452	354
+<PageGeometry>0.0108225	0.0135501	0.978355	0.95935</PageGeometry>
+PlotTitle	Durchlasskennlinie Lambda/4-Platte bei 30°	#000000	4
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>0</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Analysator-Winkel in °	Intensität in lm/m^2		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	12	75	0	0	0
+ScaleFont0	Sans Serif	10	75	0	0	0
+ScaleFont1	Sans Serif	10	75	0	0	0
+ScaleFont2	Sans Serif	10	75	0	0	0
+ScaleFont3	Sans Serif	10	75	0	0	0
+AxisFont0	Sans Serif	10	50	0	0	0
+AxisFont1	Sans Serif	10	50	0	0	0
+AxisFont2	Sans Serif	10	50	0	0	0
+AxisFont3	Sans Serif	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Table5_Theta	Table5_Intensität	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	6	1
+<Function>
+<Type>0</Type>
+<Title>durchlasskennlinie-lambda-viertelFit1</Title>
+<Expression>I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)</Expression>
+<Variable>x</Variable>
+<Range>0	90</Range>
+<Points>1000</Points>
+<Constant>I_0	151.75027257886</Constant>
+<Constant>offset	4.65810330941088</Constant>
+<Constant>phi	30</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	60	110	0	6	5	0	0
+scale	1	60	110	0	6	5	0	0
+scale	2	-20	100	0	7	5	0	0
+scale	3	-20	100	0	7	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>-17.27959697733</x>
+<y>82.48322147651</y>
+<right>57.6826196473552</right>
+<bottom>61.510067114094</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(2)%(2)
+<b>Function</b>: I_0*(cos((phi+offset)*pi/180)^2*
+cos((x-phi)*pi/180)^2+
+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)
+<b>Chi^2/doF</b> = 3.16561e+04
+<b>R^2</b> = 0.99987
+<b>I_0</b> = 1.51750e+02 +/- 1.89005e-01
+<b>offset</b> = 4.65810e+00 +/- 6.37450e-02
+phi = 30 (constant)
+</Text>
+<Font>Sans Serif	10	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Graph6	1	1	03/12/2016 16:28
+geometry	1255	702	460	415	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	442	354
+<PageGeometry>0.0110619	0.0135501	0.977876	0.95935</PageGeometry>
+PlotTitle	Durchlasskennlinie Lambda/4-Platte bei 45°	#000000	4
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>0</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Analysator-Winkel in °	Intensität in lm/m^2		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	12	75	0	0	0
+ScaleFont0	Sans Serif	10	75	0	0	0
+ScaleFont1	Sans Serif	10	75	0	0	0
+ScaleFont2	Sans Serif	10	75	0	0	0
+ScaleFont3	Sans Serif	10	75	0	0	0
+AxisFont0	Sans Serif	10	50	0	0	0
+AxisFont1	Sans Serif	10	50	0	0	0
+AxisFont2	Sans Serif	10	50	0	0	0
+AxisFont3	Sans Serif	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Table6_Theta	Table6_Intensität	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	6	1
+<Function>
+<Type>0</Type>
+<Title>durchlasskennlinie-lambda-viertelFit1</Title>
+<Expression>I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)</Expression>
+<Variable>x</Variable>
+<Range>0	90</Range>
+<Points>1000</Points>
+<Constant>I_0	152.091129508516</Constant>
+<Constant>offset	4.68629839255201</Constant>
+<Constant>phi	45</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	62	78	0	9	5	0	0
+scale	1	62	78	0	9	5	0	0
+scale	2	-20	100	0	7	5	0	0
+scale	3	-20	100	0	7	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>12.040302267003</x>
+<y>77.463087248322</y>
+<right>77.9345088161209</right>
+<bottom>72.0402684563758</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(2)%(2)
+<b>Function</b>: I_0*(cos((phi+offset)*pi/180)^2*
+cos((x-phi)*pi/180)^2+
+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)
+<b>Chi^2/doF</b> = 2.58480e+05
+<b>R^2</b> = 0.99173
+<b>I_0</b> = 1.52091e+02 +/- 6.62276e-01
+<b>offset</b> = 4.68630e+00 +/- 1.76767e-01
+phi = 45 (constant)
+</Text>
+<Font>Sans Serif	8	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Graph7	1	1	03/12/2016 16:28
+geometry	1696	702	470	415	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	452	354
+<PageGeometry>0.0108225	0.0135501	0.978355	0.95935</PageGeometry>
+PlotTitle	Durchlasskennlinie Lambda/4-Platte bei 60°	#000000	4
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>0</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Analysator-Winkel in °	Intensität in lm/m^2		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	12	75	0	0	0
+ScaleFont0	Sans Serif	10	75	0	0	0
+ScaleFont1	Sans Serif	10	75	0	0	0
+ScaleFont2	Sans Serif	10	75	0	0	0
+ScaleFont3	Sans Serif	10	75	0	0	0
+AxisFont0	Sans Serif	10	50	0	0	0
+AxisFont1	Sans Serif	10	50	0	0	0
+AxisFont2	Sans Serif	10	50	0	0	0
+AxisFont3	Sans Serif	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Table7_Theta	Table7_Intensität	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	6	1
+<Function>
+<Type>0</Type>
+<Title>durchlasskennlinie-lambda-viertelFit1</Title>
+<Expression>I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)</Expression>
+<Variable>x</Variable>
+<Range>0	90</Range>
+<Points>1000</Points>
+<Constant>I_0	153.926597146657</Constant>
+<Constant>offset	5.19529314371791</Constant>
+<Constant>phi	60</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	20	110	0	10	5	0	0
+scale	1	20	110	0	10	5	0	0
+scale	2	-20	100	0	7	5	0	0
+scale	3	-20	100	0	7	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>19.596977329975</x>
+<y>107.58389261745</y>
+<right>97.5818639798489</right>
+<bottom>69.5302013422819</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(2)%(2)
+<b>Function</b>: I_0*(cos((phi+offset)*pi/180)^2*
+cos((x-phi)*pi/180)^2+
+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)
+<b>Chi^2/doF</b> = 6.06980e+05
+<b>R^2</b> = 0.9987
+<b>I_0</b> = 1.53927e+02 +/- 1.21418e+00
+<b>offset</b> = 5.19529e+00 +/- 2.75875e-01
+phi = 60 (constant)
+</Text>
+<Font>Sans Serif	10	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Graph8	1	1	03/12/2016 16:29
+geometry	357	1067	568	466	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	549	405
+<PageGeometry>0.00892857	0.0119048	0.980357	0.964286</PageGeometry>
+PlotTitle	Durchlasskennlinie Grünes Laserlicht<br>durch eine Lambda/4-Platte	#000000	4
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>0</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	%(?X)	Intensität in lm/m^2		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	12	75	0	0	0
+ScaleFont0	Sans Serif	10	75	0	0	0
+ScaleFont1	Sans Serif	10	75	0	0	0
+ScaleFont2	Sans Serif	10	75	0	0	0
+ScaleFont3	Sans Serif	10	75	0	0	0
+AxisFont0	Sans Serif	10	50	0	0	0
+AxisFont1	Sans Serif	10	50	0	0	0
+AxisFont2	Sans Serif	10	50	0	0	0
+AxisFont3	Sans Serif	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Table8_Theta	Table8_Intensität	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	12	1
+<Function>
+<Type>0</Type>
+<Title>durchlasskennlinie-lambda-viertelFit1</Title>
+<Expression>I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)</Expression>
+<Variable>x</Variable>
+<Range>0	180</Range>
+<Points>1000</Points>
+<Constant>I_0	10.714783141599</Constant>
+<Constant>offset	6234.81208313027</Constant>
+<Constant>phi	277.583791941065</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	3	8	0	6	5	0	0
+scale	1	3	8	0	6	5	0	0
+scale	2	0	200	0	5	5	0	0
+scale	3	0	200	0	5	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>48.221343873518</x>
+<y>4.9701492537313</y>
+<right>147.826086956522</right>
+<bottom>3.08955223880597</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(2)%(2)
+<b>Function</b>: I_0*(cos((phi+offset)*pi/180)^2*
+cos((x-phi)*pi/180)^2+
+sin((phi+offset)*pi/180)^2*
+sin((x-phi)*pi/180)^2)
+<b>Chi^2/doF</b> = 1.32776e+05
+<b>R^2</b> = 0.99731
+<b>I_0</b> = 1.07148e+01 +/- 1.73416e-01
+<b>offset</b> = 6.23481e+03 +/- 2.03457e+00
+<b>phi</b> = 277.584e+00 +/- 1.82625e+00
+</Text>
+<Font>Sans Serif	9	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<table>
+Table9	30	4	09/12/2016 17:30
+geometry	842	-330	445	220	
+header	Theta[X]	Intensität[Y]	s-Theta[xEr]	s-Intensität[yEr]
+ColWidth	100	100	100	100	
+<com>
+</com>
+ColType	0;0/5	0;0/5	0;0/5	0;0/5
+ReadOnlyColumn	0	0	0	0
+HiddenColumn	0	0	0	0
+Comments					
+WindowLabel		2
+<data>
+0	0	985	0.15	0.002
+1	10	944	0.15	0.001
+2	20	853	0.15	0.001
+3	30	718	0.15	0.001
+4	40	557	0.15	0.001
+5	50	381	0.15	0.001
+6	60	222	0.15	0.001
+7	70	89.7	0.15	0.0001
+8	80	15.9	0.15	0.0001
+9	90	3.5	0.15	0.0001
+10	100	62.9	0.15	0.0001
+11	110	191.3	0.15	0.0003
+12	120	373	0.15	0.001
+13	130	582	0.15	0.001
+14	140	827	0.15	0.001
+15	150	1045	0.15	0.001
+16	160	1209	0.15	0.001
+17	170	1285	0.15	0.003
+18	180	1289	0.15	0.001
+19	190	1203	0.15	0.001
+</data>
+</table>
+<multiLayer>
+Graph9	1	1	09/12/2016 17:32
+geometry	854	-183	479	415	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	461	354
+<PageGeometry>0.0106157	0.0135501	0.978769	0.95935</PageGeometry>
+PlotTitle	Durchlasskennlinie Polarisator/Analysator<br>(Falsch)	#000000	4
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>0</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Analysator-Winkel in °	Intensität in lm/m^2		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	12	75	0	0	0
+ScaleFont0	Sans Serif	10	75	0	0	0
+ScaleFont1	Sans Serif	10	75	0	0	0
+ScaleFont2	Sans Serif	10	75	0	0	0
+ScaleFont3	Sans Serif	10	75	0	0	0
+AxisFont0	Sans Serif	10	50	0	0	0
+AxisFont1	Sans Serif	10	50	0	0	0
+AxisFont2	Sans Serif	10	50	0	0	0
+AxisFont3	Sans Serif	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Table9_Theta	Table9_Intensität	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	19	1
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit1</Title>
+<Expression>I_0*cos((x+offset)*pi/180)^2</Expression>
+<Variable>x</Variable>
+<Range>0	190</Range>
+<Points>1000</Points>
+<Constant>I_0	1178.16210184963</Constant>
+<Constant>offset	4.05404790901355</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	-100	1600	0	9	5	0	0
+scale	1	-100	1600	0	9	5	0	0
+scale	2	-20	200	0	5	5	0	0
+scale	3	-20	200	0	5	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>23.224181360202</x>
+<y>1546.1267605634</y>
+<right>143.476070528967</right>
+<bottom>989.43661971831</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(2)%(2)
+<b>Function</b>: I_0*cos((x+offset)*pi/180)^2
+<b>Chi^2/doF</b> = 6.69729e+09
+<b>R^2</b> = 0.99919
+<b>I_0</b> = 1.17816e+03 +/- 2.85678e+01
+<b>offset</b> = 4.05405e+00 +/- 4.73981e-01
+</Text>
+<Font>Sans Serif	10	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<open>1</open>
+<log>
+[04/12/2016 16:30	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table1_Intensität, using function: cos(x*pi/180)^2*I_0
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 1.20000e+02
+I_0 = 1.48869e+02 +/- 8.71148e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.13781e+02
+R^2 = 0.93429
+Adjusted R^2 = 0.9249
+RMSE (Root Mean Squared Error) = 14.621
+RSS (Residual Sum of Squares) = 1,710.2
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+[04/12/2016 16:30	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table1_Intensität, using function: cos(x*pi/180+offset)^2*I_0
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 1.20000e+02
+I_0 = 1.63110e+02 +/- 4.83051e+00
+offset = 1.34336e-01 +/- 2.15904e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.49708e+01
+R^2 = 0.9879
+Adjusted R^2 = 0.98387
+RMSE (Root Mean Squared Error) = 6.706
+RSS (Residual Sum of Squares) = 314.8
+---------------------------------------------------------------------------------------
+Iterations = 4
+Status = success
+---------------------------------------------------------------------------------------
+[04/12/2016 16:31	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table1_Intensität, using function: cos((x+offset)*pi/180)^2*I_0
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 1.20000e+02
+I_0 = 1.63110e+02 +/- 4.83050e+00
+offset = 7.69676e+00 +/- 1.23704e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.49708e+01
+R^2 = 0.9879
+Adjusted R^2 = 0.98387
+RMSE (Root Mean Squared Error) = 6.706
+RSS (Residual Sum of Squares) = 314.8
+---------------------------------------------------------------------------------------
+Iterations = 5
+Status = success
+---------------------------------------------------------------------------------------
+[04/12/2016 16:34	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table1_Intensität, using function: cos((x+offset)*pi/180)^2*I_0
+Weighting Method: Arbitrary Dataset: Table1_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 1.20000e+02
+I_0 = 1.61602e+02 +/- 9.72333e+00
+offset = 4.63854e+00 +/- 5.66246e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 7.41865e+09
+R^2 = 0.99948
+Adjusted R^2 = 0.99931
+RMSE (Root Mean Squared Error) = 86,132
+RSS (Residual Sum of Squares) = 5.1931e+10
+---------------------------------------------------------------------------------------
+Iterations = 5
+Status = success
+---------------------------------------------------------------------------------------
+[04/12/2016 16:36	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table2_Auslöschwinkel, using function: 2*x+offset
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+offset = 9.71429e+01 +/- 2.82722e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 5.59524e-01
+R^2 = 0.99987
+Adjusted R^2 = 0.99984
+RMSE (Root Mean Squared Error) = 0.74801
+RSS (Residual Sum of Squares) = 3.3571
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+[04/12/2016 16:36	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table2_Auslöschwinkel, using function: 2*x+offset-90
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+offset = 1.87143e+02 +/- 2.82722e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 5.59524e-01
+R^2 = 0.99987
+Adjusted R^2 = 0.99984
+RMSE (Root Mean Squared Error) = 0.74801
+RSS (Residual Sum of Squares) = 3.3571
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = success
+---------------------------------------------------------------------------------------
+[04/12/2016 16:37	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table2_Auslöschwinkel, using function: 2*x+90+offset
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+offset = 7.14286e+00 +/- 2.82722e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 5.59524e-01
+R^2 = 0.99987
+Adjusted R^2 = 0.99984
+RMSE (Root Mean Squared Error) = 0.74801
+RSS (Residual Sum of Squares) = 3.3571
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+[04/12/2016 16:37	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table2_Auslöschwinkel, using function: 2*x+90+offset
+Weighting Method: Arbitrary Dataset: Table2_s-Auslöschwinkel
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+offset = 7.14286e+00 +/- 2.82722e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.23810e+00
+R^2 = 0.99987
+Adjusted R^2 = 0.99984
+RMSE (Root Mean Squared Error) = 1.496
+RSS (Residual Sum of Squares) = 13.429
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+[04/12/2016 16:44	Plot: ''Graph3'']
+Non-linear Fit of dataset: Table3_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table3_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.48708e+02 +/- 3.95596e+00
+offset = -1.03273e+00 +/- 4.01554e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.08823e+07
+R^2 = 0.9999
+Adjusted R^2 = 0.99984
+RMSE (Root Mean Squared Error) = 4,569.7
+RSS (Residual Sum of Squares) = 1.0441e+08
+---------------------------------------------------------------------------------------
+Iterations = 6
+Status = success
+---------------------------------------------------------------------------------------
+phi = 0 (constant)
+---------------------------------------------------------------------------------------
+[04/12/2016 16:45	Plot: ''Graph3'']
+Non-linear Fit of dataset: Table3_Intensität, using function: I_0*(cos((phi)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table3_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.52355e+02 +/- 4.07524e-01
+offset = 4.77476e+00 +/- 1.34398e-01
+phi = 4.86118e+00 +/- 9.51462e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.89214e+05
+R^2 = 1
+Adjusted R^2 = 1
+RMSE (Root Mean Squared Error) = 434.99
+RSS (Residual Sum of Squares) = 7.5686e+05
+---------------------------------------------------------------------------------------
+Iterations = 15
+Status = success
+---------------------------------------------------------------------------------------
+[04/12/2016 16:45	Plot: ''Graph3'']
+Non-linear Fit of dataset: Table3_Intensität, using function: I_0*(cos((phi)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table3_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.49033e+02 +/- 4.20074e+00
+offset = -9.96835e-01 +/- 4.49654e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.26368e+07
+R^2 = 0.99989
+Adjusted R^2 = 0.99983
+RMSE (Root Mean Squared Error) = 4,757.8
+RSS (Residual Sum of Squares) = 1.1318e+08
+---------------------------------------------------------------------------------------
+Iterations = 5
+Status = success
+---------------------------------------------------------------------------------------
+phi = 0 (constant)
+---------------------------------------------------------------------------------------
+[04/12/2016 16:47	Plot: ''Graph3'']
+Non-linear Fit of dataset: Table3_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi-offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi-offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table3_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.48709e+02 +/- 3.95598e+00
+offset = 3.61033e+02 +/- 4.01557e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.08823e+07
+R^2 = 0.9999
+Adjusted R^2 = 0.99984
+RMSE (Root Mean Squared Error) = 4,569.7
+RSS (Residual Sum of Squares) = 1.0441e+08
+---------------------------------------------------------------------------------------
+Iterations = 8
+Status = success
+---------------------------------------------------------------------------------------
+phi = 0 (constant)
+---------------------------------------------------------------------------------------
+[04/12/2016 16:49	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi-offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi-offset)*pi/180)^2)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.48282e+02 +/- 1.11297e+00
+offset = 1.65887e+00 +/- 3.95623e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.00508e+00
+R^2 = 0.99826
+Adjusted R^2 = 0.99738
+RMSE (Root Mean Squared Error) = 2.0013
+RSS (Residual Sum of Squares) = 20.025
+---------------------------------------------------------------------------------------
+Iterations = 4
+Status = success
+---------------------------------------------------------------------------------------
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[04/12/2016 16:50	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi-offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi-offset)*pi/180)^2)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.50207e+02 +/- 6.26093e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.22987e+02
+R^2 = 0.93575
+Adjusted R^2 = 0.9229
+RMSE (Root Mean Squared Error) = 11.09
+RSS (Residual Sum of Squares) = 737.92
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+offset = 7 (constant)
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[04/12/2016 16:51	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.48006e+02 +/- 2.12151e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.46778e+01
+R^2 = 0.99233
+Adjusted R^2 = 0.9908
+RMSE (Root Mean Squared Error) = 3.8312
+RSS (Residual Sum of Squares) = 88.067
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[04/12/2016 16:51	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_Theta
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.48010e+02 +/- nan
+--------------------------------------------------------------------------------------
+Chi^2/doF = inf
+R^2 = nan
+Adjusted R^2 = nan
+RMSE (Root Mean Squared Error) = inf
+RSS (Residual Sum of Squares) = inf
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = singularity or extremely bad function behavior detected
+---------------------------------------------------------------------------------------
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[04/12/2016 16:51	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_Theta
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.48010e+02 +/- nan
+--------------------------------------------------------------------------------------
+Chi^2/doF = inf
+R^2 = nan
+Adjusted R^2 = nan
+RMSE (Root Mean Squared Error) = inf
+RSS (Residual Sum of Squares) = inf
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = singularity or extremely bad function behavior detected
+---------------------------------------------------------------------------------------
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[04/12/2016 16:51	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.52166e+02 +/- 3.52747e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.09921e+07
+R^2 = 0.99067
+Adjusted R^2 = 0.98881
+RMSE (Root Mean Squared Error) = 3,315.4
+RSS (Residual Sum of Squares) = 6.5953e+07
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[04/12/2016 16:52	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.52166e+02 +/- 3.52747e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.09921e+07
+R^2 = 0.99067
+Adjusted R^2 = 0.98881
+RMSE (Root Mean Squared Error) = 3,315.4
+RSS (Residual Sum of Squares) = 6.5953e+07
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[04/12/2016 16:52	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.52166e+02 +/- 3.52747e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.09921e+07
+R^2 = 0.99067
+Adjusted R^2 = 0.98881
+RMSE (Root Mean Squared Error) = 3,315.4
+RSS (Residual Sum of Squares) = 6.5953e+07
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[04/12/2016 16:54	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.52166e+02 +/- 3.52747e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.09921e+07
+R^2 = 0.99067
+Adjusted R^2 = 0.98881
+RMSE (Root Mean Squared Error) = 3,315.4
+RSS (Residual Sum of Squares) = 6.5953e+07
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[04/12/2016 16:55	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.52166e+02 +/- 3.52747e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.09921e+07
+R^2 = 0.99067
+Adjusted R^2 = 0.98881
+RMSE (Root Mean Squared Error) = 3,315.4
+RSS (Residual Sum of Squares) = 6.5953e+07
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[04/12/2016 16:57	Plot: ''Graph3'']
+Non-linear Fit of dataset: Table3_Intensität, using function: I_0*(cos((phi)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table3_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.55237e+02 +/- 4.04353e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.60396e+07
+R^2 = 0.99978
+Adjusted R^2 = 0.99974
+RMSE (Root Mean Squared Error) = 6,003.3
+RSS (Residual Sum of Squares) = 2.1624e+08
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+phi = 0 (constant)
+---------------------------------------------------------------------------------------
+[04/12/2016 16:58	Plot: ''Graph5'']
+Non-linear Fit of dataset: Table5_Intensität, using function: I_0*(cos((phi)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table5_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.41827e+02 +/- 3.08719e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.30065e+07
+R^2 = 0.89058
+Adjusted R^2 = 0.8687
+RMSE (Root Mean Squared Error) = 4,796.5
+RSS (Residual Sum of Squares) = 1.3804e+08
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+phi = 30 (constant)
+---------------------------------------------------------------------------------------
+[04/12/2016 16:59	Plot: ''Graph5'']
+Non-linear Fit of dataset: Table5_Intensität, using function: I_0*(cos((phi)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table5_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.41827e+02 +/- 3.08719e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.30065e+07
+R^2 = 0.89058
+Adjusted R^2 = 0.8687
+RMSE (Root Mean Squared Error) = 4,796.5
+RSS (Residual Sum of Squares) = 1.3804e+08
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+phi = 30 (constant)
+---------------------------------------------------------------------------------------
+[04/12/2016 17:00	Plot: ''Graph6'']
+Non-linear Fit of dataset: Table6_Intensität, using function: I_0*(cos((phi)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table6_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.38886e+02 +/- 3.85743e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.60395e+07
+R^2 = -2.4425e-15
+Adjusted R^2 = -0.2
+RMSE (Root Mean Squared Error) = 5,102.9
+RSS (Residual Sum of Squares) = 1.5624e+08
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+phi = 45 (constant)
+---------------------------------------------------------------------------------------
+[04/12/2016 17:07	Plot: ''Graph6'']
+Non-linear Fit of dataset: Table6_Intensität, using function: I_0*(cos((phi)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table6_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.38886e+02 +/- 3.85743e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.60395e+07
+R^2 = -2.4425e-15
+Adjusted R^2 = -0.2
+RMSE (Root Mean Squared Error) = 5,102.9
+RSS (Residual Sum of Squares) = 1.5624e+08
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+phi = 45 (constant)
+---------------------------------------------------------------------------------------
+[04/12/2016 17:07	Plot: ''Graph7'']
+Non-linear Fit of dataset: Table7_Intensität, using function: I_0*(cos((phi)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table7_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.38491e+02 +/- 6.55549e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.42889e+07
+R^2 = 0.91154
+Adjusted R^2 = 0.89384
+RMSE (Root Mean Squared Error) = 5,855.7
+RSS (Residual Sum of Squares) = 2.0573e+08
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+phi = 60 (constant)
+---------------------------------------------------------------------------------------
+
+[08/12/2016 14:03	Plot: ''Graph6'']
+Non-linear Fit of dataset: Table6_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.49841e+02 +/- 2.43872e+00
+offset = 3.96297e+00 +/- 6.53392e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.10205e+00
+R^2 = 0.86872
+Adjusted R^2 = 0.80309
+RMSE (Root Mean Squared Error) = 2.0254
+RSS (Residual Sum of Squares) = 20.51
+---------------------------------------------------------------------------------------
+Iterations = 7
+Status = success
+---------------------------------------------------------------------------------------
+phi = 45 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 14:04	Plot: ''Graph6'']
+Non-linear Fit of dataset: Table6_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table6_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.49841e+02 +/- 2.43872e+00
+offset = 3.96297e+00 +/- 6.53392e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.10205e+06
+R^2 = 0.86872
+Adjusted R^2 = 0.80309
+RMSE (Root Mean Squared Error) = 2,025.4
+RSS (Residual Sum of Squares) = 2.051e+07
+---------------------------------------------------------------------------------------
+Iterations = 7
+Status = success
+---------------------------------------------------------------------------------------
+phi = 45 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 14:06	Plot: ''Graph5'']
+Non-linear Fit of dataset: Table5_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table5_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.58828e+02 +/- 3.10417e+00
+offset = 6.11967e+00 +/- 8.95101e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 6.39387e+06
+R^2 = 0.97466
+Adjusted R^2 = 0.96199
+RMSE (Root Mean Squared Error) = 2,528.6
+RSS (Residual Sum of Squares) = 3.1969e+07
+---------------------------------------------------------------------------------------
+Iterations = 6
+Status = success
+---------------------------------------------------------------------------------------
+phi = 30 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 14:09	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.77178e+02 +/- 4.69045e+00
+offset = 6.34016e+00 +/- 1.05555e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.84274e+06
+R^2 = 0.99658
+Adjusted R^2 = 0.99486
+RMSE (Root Mean Squared Error) = 2,200.6
+RSS (Residual Sum of Squares) = 2.4214e+07
+---------------------------------------------------------------------------------------
+Iterations = 6
+Status = success
+---------------------------------------------------------------------------------------
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 14:09	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.52166e+02 +/- 3.52747e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.09921e+07
+R^2 = 0.99067
+Adjusted R^2 = 0.98881
+RMSE (Root Mean Squared Error) = 3,315.4
+RSS (Residual Sum of Squares) = 6.5953e+07
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = cannot reach the specified tolerance in X
+---------------------------------------------------------------------------------------
+offset = 0 (constant)
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 14:09	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.52166e+02 +/- 3.52747e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.09921e+07
+R^2 = 0.99067
+Adjusted R^2 = 0.98881
+RMSE (Root Mean Squared Error) = 3,315.4
+RSS (Residual Sum of Squares) = 6.5953e+07
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+offset = 0 (constant)
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 14:09	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.64192e+02 +/- 3.20724e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 7.81188e+06
+R^2 = 0.99337
+Adjusted R^2 = 0.99205
+RMSE (Root Mean Squared Error) = 2,795
+RSS (Residual Sum of Squares) = 4.6871e+07
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+offset = 3 (constant)
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 14:09	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.77179e+02 +/- 4.69041e+00
+offset = 6.34023e+00 +/- 1.05554e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.84274e+06
+R^2 = 0.99658
+Adjusted R^2 = 0.99486
+RMSE (Root Mean Squared Error) = 2,200.6
+RSS (Residual Sum of Squares) = 2.4214e+07
+---------------------------------------------------------------------------------------
+Iterations = 6
+Status = success
+---------------------------------------------------------------------------------------
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 14:10	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.77179e+02 +/- 4.69039e+00
+offset = 6.34025e+00 +/- 1.05554e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.84274e+06
+R^2 = 0.99658
+Adjusted R^2 = 0.99486
+RMSE (Root Mean Squared Error) = 2,200.6
+RSS (Residual Sum of Squares) = 2.4214e+07
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 14:12	Plot: ''Graph3'']
+Non-linear Fit of dataset: Table3_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.50723e+02 +/- 4.69884e-01
+offset = -5.21266e-01 +/- 1.72018e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.71086e-01
+R^2 = 0.99992
+Adjusted R^2 = 0.99988
+RMSE (Root Mean Squared Error) = 0.60917
+RSS (Residual Sum of Squares) = 1.8554
+---------------------------------------------------------------------------------------
+Iterations = 4
+Status = success
+---------------------------------------------------------------------------------------
+phi = 0 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 14:12	Plot: ''Graph3'']
+Non-linear Fit of dataset: Table3_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.64657e+02 +/- 5.49751e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 7.00242e+01
+R^2 = 0.98133
+Adjusted R^2 = 0.9776
+RMSE (Root Mean Squared Error) = 8.368
+RSS (Residual Sum of Squares) = 420.15
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+offset = 6 (constant)
+phi = 0 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 14:13	Plot: ''Graph3'']
+Non-linear Fit of dataset: Table3_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.50723e+02 +/- 4.69884e-01
+offset = -5.21266e-01 +/- 1.72018e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.71086e-01
+R^2 = 0.99992
+Adjusted R^2 = 0.99988
+RMSE (Root Mean Squared Error) = 0.60917
+RSS (Residual Sum of Squares) = 1.8554
+---------------------------------------------------------------------------------------
+Iterations = 4
+Status = success
+---------------------------------------------------------------------------------------
+phi = 0 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 14:13	Plot: ''Graph3'']
+Non-linear Fit of dataset: Table3_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.50723e+02 +/- 4.69884e-01
+offset = -5.21266e-01 +/- 1.72018e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.71086e-01
+R^2 = 0.99992
+Adjusted R^2 = 0.99988
+RMSE (Root Mean Squared Error) = 0.60917
+RSS (Residual Sum of Squares) = 1.8554
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+phi = 0 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 14:14	Plot: ''Graph7'']
+Non-linear Fit of dataset: Table7_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.54447e+02 +/- 8.25554e+00
+offset = 2.89652e+00 +/- 1.77869e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.07360e+01
+R^2 = 0.95308
+Adjusted R^2 = 0.92962
+RMSE (Root Mean Squared Error) = 6.3825
+RSS (Residual Sum of Squares) = 203.68
+---------------------------------------------------------------------------------------
+Iterations = 11
+Status = success
+---------------------------------------------------------------------------------------
+phi = 60 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 14:14	Plot: ''Graph7'']
+Non-linear Fit of dataset: Table7_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table7_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.47010e+02 +/- 9.74074e+00
+offset = 2.17403e+00 +/- 1.84682e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.05138e+07
+R^2 = 0.9344
+Adjusted R^2 = 0.90159
+RMSE (Root Mean Squared Error) = 5,523.9
+RSS (Residual Sum of Squares) = 1.5257e+08
+---------------------------------------------------------------------------------------
+Iterations = 11
+Status = success
+---------------------------------------------------------------------------------------
+phi = 60 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 14:14	Plot: ''Graph7'']
+Non-linear Fit of dataset: Table7_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table7_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.47010e+02 +/- 9.74072e+00
+offset = 2.17411e+00 +/- 1.84681e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.05138e+07
+R^2 = 0.9344
+Adjusted R^2 = 0.90159
+RMSE (Root Mean Squared Error) = 5,523.9
+RSS (Residual Sum of Squares) = 1.5257e+08
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+phi = 60 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 14:14	Plot: ''Graph7'']
+Non-linear Fit of dataset: Table7_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table7_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.38491e+02 +/- 6.55549e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.42889e+07
+R^2 = 0.91154
+Adjusted R^2 = 0.89384
+RMSE (Root Mean Squared Error) = 5,855.7
+RSS (Residual Sum of Squares) = 2.0573e+08
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+offset = 0 (constant)
+phi = 60 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 14:14	Plot: ''Graph7'']
+Non-linear Fit of dataset: Table7_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table7_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.47009e+02 +/- 9.74074e+00
+offset = 2.17400e+00 +/- 1.84682e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.05138e+07
+R^2 = 0.9344
+Adjusted R^2 = 0.90159
+RMSE (Root Mean Squared Error) = 5,523.9
+RSS (Residual Sum of Squares) = 1.5257e+08
+---------------------------------------------------------------------------------------
+Iterations = 12
+Status = success
+---------------------------------------------------------------------------------------
+phi = 60 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 14:14	Plot: ''Graph7'']
+Non-linear Fit of dataset: Table7_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table7_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.60735e+02 +/- 1.04790e+01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 6.42780e+07
+R^2 = 0.83417
+Adjusted R^2 = 0.801
+RMSE (Root Mean Squared Error) = 8,017.4
+RSS (Residual Sum of Squares) = 3.8567e+08
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+offset = 6 (constant)
+phi = 60 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 14:15	Plot: ''Graph7'']
+Non-linear Fit of dataset: Table7_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table7_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.53961e+02 +/- 7.18142e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.33081e+07
+R^2 = 0.91407
+Adjusted R^2 = 0.89688
+RMSE (Root Mean Squared Error) = 5,771.3
+RSS (Residual Sum of Squares) = 1.9985e+08
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+offset = 4 (constant)
+phi = 60 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 14:15	Plot: ''Graph7'']
+Non-linear Fit of dataset: Table7_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table7_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.47010e+02 +/- 9.74072e+00
+offset = 2.17412e+00 +/- 1.84681e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.05138e+07
+R^2 = 0.9344
+Adjusted R^2 = 0.90159
+RMSE (Root Mean Squared Error) = 5,523.9
+RSS (Residual Sum of Squares) = 1.5257e+08
+---------------------------------------------------------------------------------------
+Iterations = 12
+Status = success
+---------------------------------------------------------------------------------------
+phi = 60 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 15:16	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.48006e+02 +/- 2.12151e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.46778e+01
+R^2 = 0.99233
+Adjusted R^2 = 0.9908
+RMSE (Root Mean Squared Error) = 3.8312
+RSS (Residual Sum of Squares) = 88.067
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+offset = 0 (constant)
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 15:17	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.61912e+02 +/- 4.16315e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.71010e+01
+R^2 = 0.97539
+Adjusted R^2 = 0.97047
+RMSE (Root Mean Squared Error) = 6.863
+RSS (Residual Sum of Squares) = 282.61
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+offset = 6 (constant)
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 15:17	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.44906e+02 +/- 3.14070e+00
+offset = -1.64622e+00 +/- 1.31970e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.45031e+01
+R^2 = 0.99369
+Adjusted R^2 = 0.99053
+RMSE (Root Mean Squared Error) = 3.8083
+RSS (Residual Sum of Squares) = 72.516
+---------------------------------------------------------------------------------------
+Iterations = 9
+Status = success
+---------------------------------------------------------------------------------------
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 15:17	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.44906e+02 +/- 3.14070e+00
+offset = -1.64625e+00 +/- 1.31970e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.45031e+01
+R^2 = 0.99369
+Adjusted R^2 = 0.99053
+RMSE (Root Mean Squared Error) = 3.8083
+RSS (Residual Sum of Squares) = 72.516
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 15:17	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.23493e+02 +/- 6.46179e+00
+offset = -8.34847e+00 +/- 2.07580e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 8.33522e+06
+R^2 = 0.99411
+Adjusted R^2 = 0.99116
+RMSE (Root Mean Squared Error) = 2,887.1
+RSS (Residual Sum of Squares) = 4.1676e+07
+---------------------------------------------------------------------------------------
+Iterations = 9
+Status = success
+---------------------------------------------------------------------------------------
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 15:17	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.23493e+02 +/- 6.46171e+00
+offset = -8.34860e+00 +/- 2.07578e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 8.33522e+06
+R^2 = 0.99411
+Adjusted R^2 = 0.99116
+RMSE (Root Mean Squared Error) = 2,887.1
+RSS (Residual Sum of Squares) = 4.1676e+07
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 15:17	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.23493e+02 +/- 6.46169e+00
+offset = -8.34863e+00 +/- 2.07578e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 8.33522e+06
+R^2 = 0.99411
+Adjusted R^2 = 0.99116
+RMSE (Root Mean Squared Error) = 2,887.1
+RSS (Residual Sum of Squares) = 4.1676e+07
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 15:17	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.77179e+02 +/- 4.69040e+00
+offset = 6.34023e+00 +/- 1.05554e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.84274e+06
+R^2 = 0.99658
+Adjusted R^2 = 0.99486
+RMSE (Root Mean Squared Error) = 2,200.6
+RSS (Residual Sum of Squares) = 2.4214e+07
+---------------------------------------------------------------------------------------
+Iterations = 5
+Status = success
+---------------------------------------------------------------------------------------
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 15:17	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.77179e+02 +/- 4.69039e+00
+offset = 6.34025e+00 +/- 1.05554e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.84274e+06
+R^2 = 0.99658
+Adjusted R^2 = 0.99486
+RMSE (Root Mean Squared Error) = 2,200.6
+RSS (Residual Sum of Squares) = 2.4214e+07
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 15:18	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.77179e+02 +/- 4.69039e+00
+offset = 6.34027e+00 +/- 1.05554e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.84274e+06
+R^2 = 0.99658
+Adjusted R^2 = 0.99486
+RMSE (Root Mean Squared Error) = 2,200.6
+RSS (Residual Sum of Squares) = 2.4214e+07
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 15:18	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.77179e+02 +/- 4.69042e+00
+offset = 6.34021e+00 +/- 1.05555e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.84274e+06
+R^2 = 0.99658
+Adjusted R^2 = 0.99486
+RMSE (Root Mean Squared Error) = 2,200.6
+RSS (Residual Sum of Squares) = 2.4214e+07
+---------------------------------------------------------------------------------------
+Iterations = 6
+Status = success
+---------------------------------------------------------------------------------------
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 15:18	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.77178e+02 +/- 4.69047e+00
+offset = 6.34012e+00 +/- 1.05556e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4.84274e+06
+R^2 = 0.99658
+Adjusted R^2 = 0.99486
+RMSE (Root Mean Squared Error) = 2,200.6
+RSS (Residual Sum of Squares) = 2.4214e+07
+---------------------------------------------------------------------------------------
+Iterations = 6
+Status = success
+---------------------------------------------------------------------------------------
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 15:18	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.60152e+02 +/- 3.39903e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 9.21848e+06
+R^2 = 0.99218
+Adjusted R^2 = 0.99061
+RMSE (Root Mean Squared Error) = 3,036.2
+RSS (Residual Sum of Squares) = 5.5311e+07
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+offset = 2 (constant)
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 15:18	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.52166e+02 +/- 3.52747e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.09921e+07
+R^2 = 0.99067
+Adjusted R^2 = 0.98881
+RMSE (Root Mean Squared Error) = 3,315.4
+RSS (Residual Sum of Squares) = 6.5953e+07
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+offset = 0 (constant)
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 15:18	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.52166e+02 +/- 3.52747e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.09921e+07
+R^2 = 0.99067
+Adjusted R^2 = 0.98881
+RMSE (Root Mean Squared Error) = 3,315.4
+RSS (Residual Sum of Squares) = 6.5953e+07
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+offset = 0 (constant)
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 15:18	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi+offset)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi+offset)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.52166e+02 +/- 3.52747e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.09921e+07
+R^2 = 0.99067
+Adjusted R^2 = 0.98881
+RMSE (Root Mean Squared Error) = 3,315.4
+RSS (Residual Sum of Squares) = 6.5953e+07
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+offset = 0 (constant)
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 15:29	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.53255e+02 +/- 7.62643e-02
+offset = 4.75824e+00 +/- 3.70929e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 5.05765e+03
+R^2 = 1
+Adjusted R^2 = 0.99999
+RMSE (Root Mean Squared Error) = 71.117
+RSS (Residual Sum of Squares) = 25,288
+---------------------------------------------------------------------------------------
+Iterations = 4
+Status = success
+---------------------------------------------------------------------------------------
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 15:31	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table4_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table4_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.53255e+02 +/- 7.62643e-02
+offset = 4.75824e+00 +/- 3.70929e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 5.05765e+03
+R^2 = 1
+Adjusted R^2 = 0.99999
+RMSE (Root Mean Squared Error) = 71.117
+RSS (Residual Sum of Squares) = 25,288
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = success
+---------------------------------------------------------------------------------------
+phi = 15 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 15:32	Plot: ''Graph5'']
+Non-linear Fit of dataset: Table5_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table5_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.51750e+02 +/- 1.89005e-01
+offset = 4.65810e+00 +/- 6.37450e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.16561e+04
+R^2 = 0.99987
+Adjusted R^2 = 0.99981
+RMSE (Root Mean Squared Error) = 177.92
+RSS (Residual Sum of Squares) = 1.5828e+05
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = success
+---------------------------------------------------------------------------------------
+phi = 30 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 15:33	Plot: ''Graph6'']
+Non-linear Fit of dataset: Table6_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table6_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.52091e+02 +/- 6.62276e-01
+offset = 4.68630e+00 +/- 1.76767e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.58480e+05
+R^2 = 0.99173
+Adjusted R^2 = 0.98759
+RMSE (Root Mean Squared Error) = 508.41
+RSS (Residual Sum of Squares) = 1.2924e+06
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = success
+---------------------------------------------------------------------------------------
+phi = 45 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 15:34	Plot: ''Graph7'']
+Non-linear Fit of dataset: Table7_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table7_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.53927e+02 +/- 1.21418e+00
+offset = 5.19529e+00 +/- 2.75875e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 6.06980e+05
+R^2 = 0.9987
+Adjusted R^2 = 0.99804
+RMSE (Root Mean Squared Error) = 779.09
+RSS (Residual Sum of Squares) = 3.0349e+06
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = success
+---------------------------------------------------------------------------------------
+phi = 60 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 15:35	Plot: ''Graph3'']
+Non-linear Fit of dataset: Table3_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: Direct Weighting using Dataset: Table3_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 9.00000e+01
+I_0 = 1.52713e+02 +/- 1.23529e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.75571e-04
+R^2 = 0.99998
+Adjusted R^2 = 0.99998
+RMSE (Root Mean Squared Error) = 0.01325
+RSS (Residual Sum of Squares) = 0.0010534
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+offset = 6 (constant)
+phi = 0 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 15:44	Plot: ''Graph8'']
+Non-linear Fit of dataset: Table8_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 1.80000e+02
+I_0 = 1.06062e+01 +/- 8.94849e-01
+offset = 3.23197e+00 +/- 3.59101e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.60245e+00
+R^2 = 0.06951
+Adjusted R^2 = -0.11659
+RMSE (Root Mean Squared Error) = 1.6132
+RSS (Residual Sum of Squares) = 28.627
+---------------------------------------------------------------------------------------
+Iterations = 4
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+phi = 45 (constant)
+---------------------------------------------------------------------------------------
+[08/12/2016 15:57	Plot: ''Graph8'']
+Non-linear Fit of dataset: Table8_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 1.80000e+02
+I_0 = 1.09143e+01 +/- 1.63326e-01
+offset = 4.79593e+01 +/- 1.72411e+00
+phi = 8.29937e+00 +/- 1.62975e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 8.57428e-02
+R^2 = 0.97213
+Adjusted R^2 = 0.96284
+RMSE (Root Mean Squared Error) = 0.29282
+RSS (Residual Sum of Squares) = 0.85743
+---------------------------------------------------------------------------------------
+Iterations = 9
+Status = success
+---------------------------------------------------------------------------------------
+[08/12/2016 15:57	Plot: ''Graph8'']
+Non-linear Fit of dataset: Table8_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 1.80000e+02
+I_0 = 1.09143e+01 +/- 1.63326e-01
+offset = 4.79593e+01 +/- 1.72411e+00
+phi = 8.29937e+00 +/- 1.62975e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 8.57428e-02
+R^2 = 0.97213
+Adjusted R^2 = 0.96284
+RMSE (Root Mean Squared Error) = 0.29282
+RSS (Residual Sum of Squares) = 0.85743
+---------------------------------------------------------------------------------------
+Iterations = 6
+Status = success
+---------------------------------------------------------------------------------------
+[09/12/2016 16:35	Plot: ''Graph8'']
+Non-linear Fit of dataset: Table8_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 1.80000e+02
+I_0 = 1.09143e+01 +/- 1.63326e-01
+offset = 6.23544e+03 +/- 1.77977e+00
+phi = -8.17006e+01 +/- 1.62975e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 8.57428e-02
+R^2 = 0.97213
+Adjusted R^2 = 0.96284
+RMSE (Root Mean Squared Error) = 0.29282
+RSS (Residual Sum of Squares) = 0.85743
+---------------------------------------------------------------------------------------
+Iterations = 12
+Status = success
+---------------------------------------------------------------------------------------
+[09/12/2016 16:36	Plot: ''Graph8'']
+Non-linear Fit of dataset: Table8_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 1.80000e+02
+I_0 = 1.09143e+01 +/- 1.63326e-01
+offset = 6.23544e+03 +/- 1.77977e+00
+phi = -8.17006e+01 +/- 1.62975e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 8.57428e-02
+R^2 = 0.97213
+Adjusted R^2 = 0.96284
+RMSE (Root Mean Squared Error) = 0.29282
+RSS (Residual Sum of Squares) = 0.85743
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[09/12/2016 16:36	Plot: ''Graph8'']
+Non-linear Fit of dataset: Table8_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 1.80000e+02
+I_0 = 1.09143e+01 +/- 1.63326e-01
+offset = 6.23544e+03 +/- 1.77977e+00
+phi = -8.17006e+01 +/- 1.62975e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 8.57428e-02
+R^2 = 0.97213
+Adjusted R^2 = 0.96284
+RMSE (Root Mean Squared Error) = 0.29282
+RSS (Residual Sum of Squares) = 0.85743
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[09/12/2016 16:36	Plot: ''Graph8'']
+Non-linear Fit of dataset: Table8_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 1.80000e+02
+I_0 = 1.09143e+01 +/- 1.63326e-01
+offset = 6.23544e+03 +/- 1.77977e+00
+phi = -8.17006e+01 +/- 1.62975e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 8.57428e-02
+R^2 = 0.97213
+Adjusted R^2 = 0.96284
+RMSE (Root Mean Squared Error) = 0.29282
+RSS (Residual Sum of Squares) = 0.85743
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[09/12/2016 16:36	Plot: ''Graph8'']
+Non-linear Fit of dataset: Table8_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 1.80000e+02
+I_0 = 1.09143e+01 +/- 1.63326e-01
+offset = 6.23544e+03 +/- 1.77977e+00
+phi = 2.78299e+02 +/- 1.62975e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 8.57428e-02
+R^2 = 0.97213
+Adjusted R^2 = 0.96284
+RMSE (Root Mean Squared Error) = 0.29282
+RSS (Residual Sum of Squares) = 0.85743
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = success
+---------------------------------------------------------------------------------------
+[09/12/2016 16:38	Plot: ''Graph8'']
+Non-linear Fit of dataset: Table8_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 1.80000e+02
+I_0 = 1.09143e+01 +/- 1.63326e-01
+offset = 6.23544e+03 +/- 1.77977e+00
+phi = 2.78299e+02 +/- 1.62975e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 8.57428e-02
+R^2 = 0.97213
+Adjusted R^2 = 0.96284
+RMSE (Root Mean Squared Error) = 0.29282
+RSS (Residual Sum of Squares) = 0.85743
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = success
+---------------------------------------------------------------------------------------
+[09/12/2016 16:38	Plot: ''Graph8'']
+Non-linear Fit of dataset: Table8_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table8_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 1.80000e+02
+I_0 = 1.07148e+01 +/- 1.73416e-01
+offset = 6.23481e+03 +/- 2.03457e+00
+phi = 2.77584e+02 +/- 1.82625e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.32776e+05
+R^2 = 0.99731
+Adjusted R^2 = 0.99642
+RMSE (Root Mean Squared Error) = 364.38
+RSS (Residual Sum of Squares) = 1.3278e+06
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = success
+---------------------------------------------------------------------------------------
+[09/12/2016 16:38	Plot: ''Graph8'']
+Non-linear Fit of dataset: Table8_Intensität, using function: I_0*(cos((phi+offset)*pi/180)^2*cos((x-phi)*pi/180)^2+sin((phi+offset)*pi/180)^2*sin((x-phi)*pi/180)^2)
+Weighting Method: Arbitrary Dataset: Table8_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 1.80000e+02
+I_0 = 1.07148e+01 +/- 1.73416e-01
+offset = 6.23481e+03 +/- 2.03457e+00
+phi = 2.77584e+02 +/- 1.82625e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.32776e+05
+R^2 = 0.99731
+Adjusted R^2 = 0.99642
+RMSE (Root Mean Squared Error) = 364.38
+RSS (Residual Sum of Squares) = 1.3278e+06
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[09/12/2016 17:33	Plot: ''Graph9'']
+Non-linear Fit of dataset: Table9_Intensität, using function: I_0*cos((x+offset)*pi/180)^2
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 1.90000e+02
+I_0 = 1.18426e+03 +/- 2.84712e+01
+offset = 6.76529e+00 +/- 1.31752e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 6.89417e+03
+R^2 = 0.96814
+Adjusted R^2 = 0.96439
+RMSE (Root Mean Squared Error) = 83.031
+RSS (Residual Sum of Squares) = 1.2409e+05
+---------------------------------------------------------------------------------------
+Iterations = 4
+Status = success
+---------------------------------------------------------------------------------------
+[09/12/2016 17:34	Plot: ''Graph9'']
+Non-linear Fit of dataset: Table9_Intensität, using function: I_0*cos((x+offset)*pi/180)^2
+Weighting Method: Arbitrary Dataset: Table9_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 1.90000e+02
+I_0 = 1.17816e+03 +/- 2.85678e+01
+offset = 4.05405e+00 +/- 4.73981e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 6.69729e+09
+R^2 = 0.99919
+Adjusted R^2 = 0.99909
+RMSE (Root Mean Squared Error) = 81,837
+RSS (Residual Sum of Squares) = 1.2055e+11
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = success
+---------------------------------------------------------------------------------------
+[09/12/2016 17:34	Plot: ''Graph9'']
+Non-linear Fit of dataset: Table9_Intensität, using function: I_0*cos((x+offset)*pi/180)^2
+Weighting Method: Arbitrary Dataset: Table9_s-Intensität
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 0.00000e+00 to x = 1.90000e+02
+I_0 = 1.17816e+03 +/- 2.85678e+01
+offset = 4.05405e+00 +/- 4.73981e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 6.69729e+09
+R^2 = 0.99919
+Adjusted R^2 = 0.99909
+RMSE (Root Mean Squared Error) = 81,837
+RSS (Residual Sum of Squares) = 1.2055e+11
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+</log>
