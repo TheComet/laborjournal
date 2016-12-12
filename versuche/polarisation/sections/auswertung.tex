@@ -86,38 +86,54 @@ Aus dem Fit ist zu lesen:
 
 \subsection{Durchlasskennlinie einer Viertelwellenplatte}
 
-Eine  Viertelwellenplatte  wurde  zwischen Polarisator und Analysator platziert.
-Bei   verschiedenen   Winkeleinstellungen   $\varphi$   der  Platte  wurde   die
-Durchlasskennlinie  mit  dem  Analysatorwinkel  $\vartheta$ gemessen.  D.h.  die
-Intensit\"at  $I(\varphi,\vartheta)$  wurde  in  funktion   der   beiden  Winkel
-gemessen.
+Eine Viertelwellenplatte wurde  zwischen  Polarisator  und Analysator platziert.
+Bei    verschiedenen    Winkeleinstellungen   $\varphi$    =    \SI{0}{\degree},
+\SI{15}{\degree},  \SI{30}{\degree},  \SI{45}{\degree},   \SI{60}{\degree}   der
+Platte   wurde   die   Durchlasskennlinie  $I(\varphi,   \vartheta)$   gemessen.
 
 \begin{figure}[H]
     \centering
     \begin{subfigure}{.45\linewidth}
         \includegraphics[width=\linewidth]{images/aufgabe-5_0grad.pdf}
-        \caption{}
     \end{subfigure}
     \begin{subfigure}{.45\linewidth}
         \includegraphics[width=\linewidth]{images/aufgabe-5_15grad.pdf}
-        \caption{}
     \end{subfigure}
     \begin{subfigure}{.45\linewidth}
         \includegraphics[width=\linewidth]{images/aufgabe-5_30grad.pdf}
-        \caption{}
     \end{subfigure}
     \begin{subfigure}{.45\linewidth}
         \includegraphics[width=\linewidth]{images/aufgabe-5_45grad.pdf}
-        \caption{}
     \end{subfigure}
     \begin{subfigure}{.45\linewidth}
         \includegraphics[width=\linewidth]{images/aufgabe-5_60grad.pdf}
-        \caption{}
     \end{subfigure}
-    \begin{subfigure}{.45\linewdith}
-        \includegraphics[width=\linewidth]{images/aufgabe-6.pdf}
-        \caption{}
-    \end{subfigure}
+    \caption{}
 \end{figure}
+Gem\"ass Theorie  kann die Formel der Viertelwellenplatte angewendet werden. Die
+Formel \ref{eq:intensitaet} wurde angepasst, damit der unbekannte Offset  wieder
+gefittet werden kann:
 
+\begin{equation}
+    I = I_0\left(\cos^2(\varphi+\varphi_{offset})\cos^2(\vartheta-\varphi) + \sin^2(\varphi+\varphi_{offset})\sin^2(\vartheta-\varphi)\right)
+\end{equation}
+
+Aus dem Fit kann gelesen werden:
+
+\begin{align*}
+    I_{0,4} &= 152.794 \pm 0.3461\SI{}{\lumen\per\square\meter} & \varphi_{offset,4} &= 4.9502 \pm 0.0859\SI{}{\degree} \\
+    I_{0,5} &= 153.255 \pm 0.0763\SI{}{\lumen\per\square\meter} & \varphi_{offset,5} &= 4.7582 \pm 0.0370\SI{}{\degree} \\
+    I_{0,6} &= 151.750 \pm 0.1890\SI{}{\lumen\per\square\meter} & \varphi_{offset,6} &= 4.6581 \pm 0.0637\SI{}{\degree} \\
+    I_{0,7} &= 152.091 \pm 0.0662\SI{}{\lumen\per\square\meter} & \varphi_{offset,7} &= 4.6863 \pm 0.1768\SI{}{\degree} \\
+    I_{0,8} &= 153.927 \pm 1.2142\SI{}{\lumen\per\square\meter} & \varphi_{offset,8} &= 5.1953 \pm 0.2759\SI{}{\degree} \\
+\end{align*}
+
+
+\subsection{Durchlasskennlinie mit Gr\"unes Laserlicht}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.6\linewidth]{images/aufgabe-6.pdf}
+    \caption{}
+\end{figure}
 
