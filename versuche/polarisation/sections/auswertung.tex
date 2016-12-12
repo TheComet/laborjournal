@@ -24,7 +24,7 @@ Abbildung \ref{fig:aufgabe-3} zeigt die zweite Messung.
 \begin{figure}[H]
     \centering
     \includegraphics[width=.6\linewidth]{images/aufgabe-3.pdf}
-    \caption{}
+    \caption{Die Durchlasskennlinie eines Polarisator/Analysator-Paares}
     \label{fig:aufgabe-3}
 \end{figure}
 
@@ -62,13 +62,13 @@ verschiedenen Winkeln  wurde  der  Ausl\"oschwinkel  des  Analysators  gemessen.
 \begin{figure}[H]
     \centering
     \includegraphics[width=.6\linewidth]{images/aufgabe-4.pdf}
-    \caption{}
+    \caption{Auslöschwinkel in Funktion der Drehung einer Halbwellenplatte}
 \end{figure}
 
 Gem\"ass Theorie muss eine Winkel\"anderung der  Halbwellenplatte $\varphi$ eine
 verdoppelte Rotation des Ausl\"oschwinkels verursachen.
 
-Wieder muss der unbekannte Offset miteinbezogen werden. Die Fit-Funktion lautet:
+Wieder muss ein unbekannter Offset miteinbezogen werden.  Die Fit-Funktion lautet:
 
 \begin{equation}
     \vartheta = 2\varphi + 90 + \varphi_{offset}
@@ -105,13 +105,17 @@ Platte   wurde   die   Durchlasskennlinie  $I(\varphi,   \vartheta)$   gemessen.
     \begin{subfigure}{.45\linewidth}
         \includegraphics[width=\linewidth]{images/aufgabe-5_45grad.pdf}
     \end{subfigure}
+\end{figure}
+\begin{figure}[H]
+    \centering
     \begin{subfigure}{.45\linewidth}
         \includegraphics[width=\linewidth]{images/aufgabe-5_60grad.pdf}
     \end{subfigure}
-    \caption{}
+    \caption{Durchlasskennlinien einer Viertelwellenplatte bei verschiedenen Stellungen $\varphi$}
 \end{figure}
-Gem\"ass Theorie  kann die Formel der Viertelwellenplatte angewendet werden. Die
-Formel \ref{eq:intensitaet} wurde angepasst, damit der unbekannte Offset  wieder
+
+Gem\"ass Theorie kann die Formel der Viertelwellenplatte angewendet werden.  Die
+Formel \ref{eq:pol_zirkular} wurde angepasst, damit der unbekannte Offset wieder
 gefittet werden kann:
 
 \begin{equation}
@@ -129,11 +133,40 @@ Aus dem Fit kann gelesen werden:
 \end{align*}
 
 
-\subsection{Durchlasskennlinie mit Gr\"unes Laserlicht}
+\subsection{Durchlasskennlinie Gr\"unes Laserlicht}
+
+Es ist gefragt, wie gut gr\"unes Licht zirkular polarisiert wird, wenn es  durch
+eine Viertelwellenplatte, der  f\"ur  rotes  Licht  abgestummen  ist,  geht. Die
+Durchlasskennlinie  ist  in  der Abbildung  \ref{fig:aufgabe-6}  zu  sehen.  Die
+Viertelwellenplatte ist auf \SI{45}{\degree} eingestellt.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=.6\linewidth]{images/aufgabe-6.pdf}
-    \caption{}
+    \caption{Durchlasskennlinie eines Gr\"unen Lasers durch eine Viertelwellenplatte}
+    \label{fig:aufgabe-6}
 \end{figure}
+
+Um  zu  bestimmen,  wie zirkular es ist, muss diese Durchlasskennlinie  mit  der
+Durchlasskennlinie vom roten  Licht  verglichen  werden. Die Viertelwellenplatte
+ist hier auch auf \SI{45}{\degree} eingestellt.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.6\linewidth]{images/aufgabe-6_rot.pdf}
+    \caption{}
+    \label{fig:aufgabe-6_rot}
+\end{figure}
+
+Es wird aus dem plot gelesen: $a_g = 2.3$, $b_g = 5.30$ f\"ur gr\"unes Licht und
+$a_r = 5.94$ und $b_r = 69.4$.
+
+Es ist zu erwarten, dass  das  Verh\"altnis  $\frac{a}{b}$  f\"ur gr\"unes Licht
+viel gr\"osser ist (d.h. es  ist  ``elliptischer'')  als f\"ur rotes Licht. Dies
+scheint der Fall zu sein:
+
+\begin{align*}
+    \frac{a_g}{b_g} &= 0.4340 \\
+    \frac{a_r}{b_r} &= 0.0855 \\
+\end{align*}
 

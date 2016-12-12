@@ -111,15 +111,6 @@ wieder zur\"ucktransformiert werden.
     \label{eq:polarisator}
 \end{equation}
 
-Durch   Vektorzerlegung  der  Formel   \ref{eq:polarisator}   kann   f\"ur   ein
-Polarisator/Analysator-Paar  eine  einfache  Formel  hergeleitet werden, der die
-Transmission beschreibt:
-
-\begin{equation}
-    I_{out} = I_0 \cdot \cos^2(\varphi)
-    \label{eq:pol_paar}
-\end{equation}
-
 
 \subsection{Elliptische und Zirkulare Polarisation}
 
@@ -188,6 +179,9 @@ Eine Lambdaviertelplatte wird folglich repr\"asentiert durch:
     \end{pmatrix}
 \end{equation}
 
+
+\subsection{Strahlungsintensit\"at}
+
 Die Strahlungsintensit\"at kann berechnet werden, indem die x- und y-Komponenten quadriert und addiert werden.
 
 \begin{equation}
@@ -196,3 +190,23 @@ Die Strahlungsintensit\"at kann berechnet werden, indem die x- und y-Komponenten
 \end{equation}
 
 $E_x^*$ und $E_y^*$ sind komplex konjugiert.
+
+Durch   Vektorzerlegung  der  Formel   \ref{eq:polarisator}   kann   f\"ur   ein
+Polarisator/Analysator-Paar  eine  einfache  Formel  hergeleitet werden, der die
+Transmission beschreibt:
+
+\begin{equation}
+    I_{out} = I_0 \cdot \cos^2(\varphi)
+    \label{eq:pol_paar}
+\end{equation}
+
+\"Ahnlich   kann   auch  die   Formel   f\"ur   die   Durchlasskennlinie   einer
+Viertelwellenplatte hergeleitet werden:
+
+\begin{equation}
+    I(\varphi,\vartheta) = I_0\cdot\left(\cos^2(\varphi)\cdot\cos^2(\vartheta-\varphi) + \sin^2(\varphi)\cdot\sin^2(\vartheta-\varphi)\right)
+    \label{eq:pol_zirkular}
+\end{equation}
+
+Wird eine Halbwellenplatte um $\varphi$ verdreht, so wird die Polarisationsebene
+um den doppelten Winkel verdreht.
