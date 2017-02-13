@@ -19,20 +19,101 @@ man   Papier,   heute   sind   sie   elektronisch  abgelegt).  Damit   spielen
 Reaktanzeintore  (RET)  und  Reaktanzfunktionen  eine  wichtige  Rolle  in der
 Netzwerktheorie und in der Synthese von LC-Filtern.
 
-Reaktanzeintore lassen sich in  vier  Typen einteilen (L-Typ, C-Typ, P-Typ und
+Zu einer LC-Impedanz-  oder  Admittanzfunktion  mit  der h\"ochsten Potenz $n$
+geh\"oren Schaltungen mit \textit{mindestens}  $n$  Elementen. Das heisst dass
+Schaltungen auch mit mehr Elementen dieselbe  Reaktanzfunktion haben k\"onnen.
+Solche Schaltungen sind als  RET  bekannt  (Reaktanzeintore).  Liegen  nur $n$
+Elemente vor,  so ist die Schaltung als MRET (Minimum-Reaktanzeintor) bekannt.
+Eine   interessante   Eigenschaft   von   MRETs   ist,   dass   die  Zahl  der
+Induktivit\"aten gegen\"uber der  Kapazit\"aten  h\"ochstens  um 1 verschieden
+sein kann. Ist dies  nicht  der  Fall, dann ist die Schaltung ein RET und kein
+MRET. Jede RET kann zu einer MRET reduziert werden. Dabei geht  man  wie folgt
+vor:
+
+\begin{itemize}
+\item  Man  sucht   bei   \textit{offenen}   Klemmen   alle  Kreise,  die  nur
+Kapazit\"aten oder  nur  Induktivit\"aten  enthalten  (C-Kreise und L-Kreise).
+\item Man reduziert das Netzwerk,  indem  sukzessiv  Elemente  in  den  L- und
+C-Kreisen  weggelassen werden. Dabei d\"urfen  beim  weglassen  keine  anderen
+Zweige stromlos werden.
+\item   Nun   schliesst  man  die  Klemmen  kurz  und  sucht  nach   C-   oder
+L-Trennb\"undel.  Existieren solche, so schliesst man Elemente kurz, bis keine
+C- oder L-Trennb\"ugel mehr  existieren. Dabei d\"urfen keine anderen Elemente
+kurzgeschlossen werden.
+\end{itemize}
+
+Besitzt das Netzwerk keine Kreise und Trennb\"undel mehr, die aus nur L oder C
+bestehen, so ist es minimal in seiner Anzahl von Elementen.
+
+Reaktanzeintore lassen sich in vier Typen einteilen (L-Typ,  C-Typ,  P-Typ und
 S-Typ)  und  jeder  dieser  Typen  l\"asst  sich  mit  vier  sog.  kanonischen
-Schaltungen  realisieren.  Die  zugeh\"origen Reaktanzfunktionen sind rational
-gebrochene  Funktionen  in  s mit ganz bestimmten Eigenschaften. Zum Auffinden
-der kanonischen Schaltungen und  zur  Berechnung  der  Elemente ben\"otigt man
+Schaltungen  realisieren.  L-Typen sind bei $\omega=0$ ein Kurzschluss und bei
+$\omega\to\infty$ ein Unterbruch.  C-Typen  sind bei $\omega=0$ ein Unterbruch
+und    bei    $\omega\to\infty$    ein    Kurzschluss.    P-Typen   sind   bei
+$\omega=0,\infty$  ein  Kurzschluss  und  S-Typen  sind  bei $\omega=0,\infty$
+ein Unterbruch. Die zugeh\"origen Reaktanzfunktionen sind rational  gebrochene
+Funktionen  in  s   mit  ganz  bestimmten  Eigenschaften.  Zum  Auffinden  der
+kanonischen  Schaltungen  und  zur  Berechnung  der  Elemente  ben\"otigt  man
 Methoden/Verfahren wie die Partialbruchzerlegung und die Kettenbruchzerlegung.
-Bei diesen  numerischen  Verfahren  ist die Genauigkeit (signifikante Stellen)
-sehr  wichtig und stellt ein zentrales Thema dar. Vor allem ist die  ``robuste
+Bei  diesen  numerischen Verfahren ist die Genauigkeit (signifikante  Stellen)
+sehr wichtig und  stellt  ein zentrales Thema dar. Vor allem ist die ``robuste
 und genaue'' Nullstellensuche von Polynomen (root  finding)  eine  sehr grosse
-Herausforderung. In  verschiedenen  Tools  wie  Matlab, Maple, usw. stehen zum
-Teil Befehle zur  Verf\"ugung,  welche eine Partial- oder Kettenbruchzerlegung
+Herausforderung. In verschiedenen Tools wie Matlab,  Maple,  usw.  stehen  zum
+Teil Befehle zur Verf\"ugung, welche  eine  Partial- oder Kettenbruchzerlegung
 durchf\"uhren.
 
+Die Erste kanonische Schaltung  besteht  aus  einer  Kette  von LC-Gliedern in
+Serie geschaltet. Je nach  Typ (L, C, P oder S) ist zus\"atzlich auch noch ein
+C oder L in Serie mit der Kette geschaltet  (bei  P oder S eben nicht). Um die
+einzelnen   LC    Elemente    zu    berechnen    wird   die   Impedanzfunktion
+partialbruchzerlegt. Dies gibt uns die  Polstellen  der  einzelnen LC-Glieder.
+Die Nullstellen k\"onnen berechnet werden, indem das Netzwerk in sein ``Duales
+Gegenst\"uck''  transformiert wird.  Das  erfordert  nichts  anderes  als  die
+Z\"ahler   und   Nenner   zu   tauschen.   Die   Partialbruchzerlegung  dieser
+Admittanzfunktion ergibt die Nullstellen. Aus diesen Resultaten  schliesst man
+auf die einzelen L's und C's.
 
+Die  zweite  Art   von   kanonische   Schaltung   besteht   aus   mehreren  in
+abwechslungsweise   serie-   und   parallelgeschalteten   L's  und  C's.   Die
+Impedanzfunktion  bzw.  die Admittanzfunktion des  dualen  Gegenst\"ucks  wird
+diesmal   Kettenbruchzerlegt,  um  die  Pol  und  Nullstellen  zu   bestimmen.
+
+Es wurden 5 verschiedene Impedanzfunktionen in der Aufgabe gegeben. F\"ur jede
+Impedanzfunktion sollen die  4  kanonischen Schaltungen berechnet werden. Dies
+wurde in MATLAB implementiert und mit dem P2 Java-Tool verglichen. MATLAB kann
+mittels \textit{residue()} eine Partialbruchzerlegung  berechnen.  Leider kann
+MATLAB  aber  kein  Kettenbruch   berechnen.   Jedoch  habe  ich  online  eine
+Implementation gefunden.
+
+Bei der ersten  Aufgabe  ergibt eine Kettenbruchzerlegung der Impedanzfunktion
+nur ganze Zahlen ($C_{\infty}=5, L_1=4, C_1=3, L_2=2, C_2=1$).
+
+Bei der zweiten Aufgabe ergibt die Partialbruchzerlegung der Admittanzfunktion
+nur ganze Zahlen ($L_1=6, C_1=5, L_2=4, C_2=3, L_3=2, C_3=1$).
+
+Bei der dritten  Aufgabe ergibt die Partialbruchzerlegung der Impedanzfunktion
+nur ganze  Zahlen  ($L_{\infty}=4,  C_1=4,  L_1=3, C_2=3, L_2=2, C_3=2, L_3=1,
+C_4=1$).
+
+Bei  der vierten Aufgabe ergibt die Kettenbruchzerlegung der  Impedanzfunktion
+nur ganze Zahlen ($C_{\infty}=1,  C_1=2,  L_1=1, C_2=3, L_2=2, C_3=4, L_3=4$).
+
+Bei der f\"unften Aufgabe ergibt die Kettenbruchzerlegung der Impedanzfunktion
+gute Zahlen ($L_{\infty}=1e-5,  C_1=2.5e-10,  L_1=2e-5,  C_2=1e-10,  L_2=3e-5,
+C_3=5e-11$).
+
+Die Polstellen und Nullstellen in der  f\"unften  Aufgabe  sind  recht  extrem
+gew\"ahlt.  MATLAB  hatte  bei der Partialbruchzerlegung ein bisschen  M\"uhe,
+bzw.  er  hat  zwei  Polstellen und Zwei  Nullstellen  auf  den  gleichen  Ort
+platziert,   obwohl   sie  eigentlich   nicht   gleich   sein   sollten.   Die
+Kettenbruchzerlegung hingegen hat gut funktioniert.
+
+In diesem Versuch habe ich zum ersten mal die Kettenbruchzerlegung im ``echten
+Welt''  einsetzen  k\"onnen.  Ich  dachte  bisher,  dass  es   nicht  wirklich
+Anwendungen  hatte.  Es  ist immer  interessant,  wenn  die  Limitationen  des
+verwendeten  Rechentools  \"uberschritten  werden  (hier:  Bei  der  f\"unften
+Aufgabe). Ich denke dabei  immer  wieder  nach, wie viele Stunden verschwendet
+werden k\"onnten wenn so etwas nicht gleich auff\"allt.
 
 \end{document}
 
