@@ -1,0 +1,109 @@
+\documentclass[notitlepage]{fhnwreport/fhnwreport}
+
+\input{preamble/packages}
+
+\begin{document}
+\section*{Zusammenfassung Leistungsberechnung bei nicht sinus-f\"ormigen Gr\"ossen (Power Elektronik)}
+\hfill \textit{Alex Murray}
+
+In aet1  und  aet2  hatten  wir  gelernt,  die  Blindleistung,  Wirkleistung und
+Scheinleistung  in  Funktion  von  Strom-  und  Spannungsspitzenwert  und  deren
+Phasenverschiebung  $\varphi$  zu  berechnen.  Wir  hatten  auch  gelernt,  dass
+$\cos\varphi$ der Leistungsfaktor ist.
+
+Dies  funktionierte  nur  mit  der  Annahme,  dass   Strom   und  Spannung  rein
+sinusf\"ormige Funktionen waren. Bei der Leistungselektronik ist  dies  h\"aufig
+nicht  mehr  der  Fall.  Baugruppen  wie   zum   Beispiel   Gleichrichter   oder
+Schaltwandler  verzerren Strom und Spannung, sodass Oberschwingungen  entstehen.
+
+Die Phasenverschiebung kann schlecht  definiert  werden.  Man spricht nicht mehr
+von  $\cos\varphi$,  sondern  vom  Leistungsfaktor  $\lambda$,  welcher  aus dem
+Verh\"altnis $\frac{Q}{P}$  berechnet  wird. Die Berechnung von $Q$ und $P$ muss
+neu hergeleitet werden.
+
+In  diesem Versuch geht es um die Leistungsberechnung von  nicht-Sinusf\"ormigen
+gr\"ossen. Es  wird  auch  behandelt,  wie  anhand  der  Fourierreihe ein Signal
+zerlegt werden kann, um die Leistung in eimen Frequenzabh\"angigen Widerstand zu
+berechnen.
+
+In  der  ersten  Aufgabe  sind  zwei   periodische   Signale   vorgegeben,   ein
+Spannungssignal und  ein  Stromsignal.  Der  lineare  Mittelwert wird berechnet,
+indem   man   das   Signal   \"uber  eine  Periode  integriert  und  durch   die
+Periodenl\"ange  teilt.  Bei  einem  sinusf\"ormigen  Signal w\"urde aus  dieser
+Berechnung  nat\"urlich  Null  resultieren.  Der  Effektivwert   wird  \"ahnlich
+berechnet: Das \textit{Quadrat} des Signals wird \"uber eine Periode integriert,
+durch die Periodenl\"ange geteilt, und dann wird die  Wurzel  gezogen. Bei einem
+Sinusf\"ormigen   Signal   w\"urde   aus  dieser  Berechnung  der   wohlbekannte
+Faktor $\frac{1}{\sqrt{2}}$ entstehen.
+
+Weil  das  Stromsignal  einweggleichgerichtet  wurde  (vermutlich),  entsand aus
+dieser Berechnung auch der  Faktor  $\frac{1}{\sqrt{2}}$, nur durch zwei geteilt
+weil die H\"alfte des Signals fehlt.
+
+Als  n\"achstes mussten die Blind-, Wirk-, und Scheinleistungen  allgemein  (und
+somit auch der Leistungsfaktor $\lambda$) in Funktion der Verschiebung  $\theta$
+berechnet werden.
+
+Die Scheinleistung ist  unabh\"angig  von  $\theta$  und  l\"asst  sich  aus den
+Effektivwerten  von  Strom  und  Spannung  berechnen.
+
+Die Wirkleistung wird berechnet, indem die Momentanleistung  ($u(t)\cdot  i(t)$)
+\"uber eine Periode integriert  wird  und  durch  die Periodendauer geteilt wird
+(arithmetischer Mittelwert). In diesem Fall ergibt sich eine Cosinusfunktion mit
+Offset.  Die  Wirkleistung  wird  bei  einem $\theta$  von  exakt  einer  halben
+Periodendauer  ($\SI{180}{\degree}$)  Null.   Der   Maximalwert  entspricht  der
+Leistung der ersten Harmonischen.
+
+Die Oberwellen  des  Rechtecksignals haben keinen Einfluss auf die Wirkleistung.
+Dies  zeigt,  dass  die  Wirkleistung  bei   Signalen  mit  Oberwellen  nie  der
+Scheinleistung   entspricht    und    immer    Blindleistung    vorhanden   ist.
+
+Die  Blindleistung wird nach wie vor mit der Formel von Pythagoras aus  $S$  und
+$P$  berechnet.  Der  Leistungsfaktor  ist   bei   $\theta=\SI{0}{\degree}$   am
+gr\"ossten und bei $\theta=\SI{180}{\degree}$ ist sie Null.
+
+F\"ur  die  Berechnung  der  Fourierkoeffizienten  $a_k$  und  $b_k$  wurden die
+Integralgrenzen  so  gew\"ahlt,  dass   die  Funktion  gerade  wird.  Die  $b_k$
+Koeffizienten  einer  geraden Funktion sind Null. F\"ur die Periodendauer  wurde
+$2\pi$ gew\"ahlt. Die Fourierkoeffizienten des Stromsignals wurden  unabh\"angig
+von der Verschiebung berechnet.
+
+Aus  den  Fourierkoeffizienten  lassen  sich  die  Amplitude und die  Phase  der
+Oberwellen berechnen.  Dabei  k\"onnen  die  koeffizienten  $a_k$  und  $b_k$ zu
+$\underline{c}_k$  (komplexe  Zahl)  umgerechnet  werden  um sich das  Leben  zu
+vereinfachen.   Dabei  ist  aufgefallen,  dass  die  Amplitude   der   einzelnen
+Harmonischen  unabh\"angig  von   $\theta$   ist.   Die   Phase   jedoch  nicht.
+
+Im zweiten  Teil  des  Versuchs  ist  ein  Stromverlauf gegeben, der durch einen
+frequenzabh\"angigen  Widerstand fliesst. Die Frequenzabh\"angigkeit  ist  durch
+den  Skineffekt  gegeben.
+
+Der Effektivwert des  Stromes  wird  zuerst  nach  der  ``klassischen  Methode''
+berechnet. Der erhaltene Wert gilt  nat\"urlich  nur  bei frequenzunabh\"angigen
+Widerst\"anden.  Nach der ``richtigen'' Methode muss die  die  Fourierreihe  des
+Stromes berechnet werden. Da in diesem Fall die Funktion wieder gerade ist, sind
+alle $b_k$ Koeffizienten Null. Zur  Berechnung des Leistungsspektrums wird f\"ur
+jede  Harmonische  der Widerstand ausgerechnet. Da  das  Amplitudenspektrum  die
+Spitzenwerte anzeigt m\"ussen die Werte in Effektivwerte umgerechnet werden (mit
+Faktor $\frac{1}{\sqrt{2}}$ skalieren). Im Leistungsspektrum ist  gut  zu sehen,
+dass die erste  Oberwelle  die gr\"osste Leistung liefert. Die Werte streben bei
+steigender Ordnungszahl schnell nach Null.
+
+Im Vergleich zur ``klassischen Methode'' ist der  ``richtige'' Effektivwert etwa
+um den Faktor $4$ gr\"osser. Die Spannung  \"uber  dem  Widerstand  sieht  recht
+verzerrt  aus.  Jeweils  zu  den  Zeiten, bei denen  die  Steigung  des  Stromes
+\"andert, gibt es einen grossen Spannungspeak.
+
+F\"ur  die Ermittlung  von  allgemeinen  Formeln  wurde  mupad  eingesetzt.  Die
+numerische Berechnung  der  Fourierkoeffizienten  und  die grafische Darstellung
+erfolgten mit MATLAB.
+
+In  diesem  Versuch  lernte  ich  zum ersten Mal,  dass  $\cos\varphi$  nur  bei
+harmonischen  Spannungs-  und  Stromverl\"aufe  Bedeutung  hat.  Bei  verzerrten
+Signalen    muss    auf    die   allgemeine   Methode   mit   Integralrechnungen
+zur\"uckgegriffen werden. Ich hatte mich bis jetzt nicht mit Leistungselektronik
+auseinandergesetzt, doch ich fand  den  Versuch interessant und ich konnte dabei
+Neues lernen.
+
+\end{document}
+

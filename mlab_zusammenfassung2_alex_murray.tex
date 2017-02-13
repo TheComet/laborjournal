@@ -1,0 +1,38 @@
+\documentclass[notitlepage]{fhnwreport/fhnwreport}
+
+\input{preamble/packages}
+
+\begin{document}
+
+\section*{Zusammenfassung Synthese von kanonischen Reaktanzeintoren}
+
+Sei eine  \"Ubertragungsfunktion  eines  LC-Filters bekannt, sollen die L- und
+C-Elemente numerisch berechnet werden. Diese ``synthetisierung'' erfolgt durch
+bestimmung        der       Leerlaufeingangsreaktanz       und/oder        die
+Kurzschlusseingangsreaktanz  des  Netzwerkes  aus   der   \"Ubergangsfunktion.
+
+Mit   diesen   sogenannten   Reaktanzfunktionen   werden   anschliessend   die
+Netzwerkelemente berechnet. Bei der Verwendung von sogenannten Tabellenfiltern
+sind alle diese Schritte vorher schon durchgef\"uhrt worden  (offline) und die
+normierten Werte der Elemente findet  man in ``Tabellen'' (fr\"uher verwendete
+man   Papier,   heute   sind   sie   elektronisch  abgelegt).  Damit   spielen
+Reaktanzeintore  (RET)  und  Reaktanzfunktionen  eine  wichtige  Rolle  in der
+Netzwerktheorie und in der Synthese von LC-Filtern.
+
+Reaktanzeintore lassen sich in  vier  Typen einteilen (L-Typ, C-Typ, P-Typ und
+S-Typ)  und  jeder  dieser  Typen  l\"asst  sich  mit  vier  sog.  kanonischen
+Schaltungen  realisieren.  Die  zugeh\"origen Reaktanzfunktionen sind rational
+gebrochene  Funktionen  in  s mit ganz bestimmten Eigenschaften. Zum Auffinden
+der kanonischen Schaltungen und  zur  Berechnung  der  Elemente ben\"otigt man
+Methoden/Verfahren wie die Partialbruchzerlegung und die Kettenbruchzerlegung.
+Bei diesen  numerischen  Verfahren  ist die Genauigkeit (signifikante Stellen)
+sehr  wichtig und stellt ein zentrales Thema dar. Vor allem ist die  ``robuste
+und genaue'' Nullstellensuche von Polynomen (root  finding)  eine  sehr grosse
+Herausforderung. In  verschiedenen  Tools  wie  Matlab, Maple, usw. stehen zum
+Teil Befehle zur  Verf\"ugung,  welche eine Partial- oder Kettenbruchzerlegung
+durchf\"uhren.
+
+
+
+\end{document}
+
