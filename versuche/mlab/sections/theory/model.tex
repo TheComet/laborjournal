@@ -1,0 +1,49 @@
+\subsection{The Model}
+
+The  model  used  by  both  Hudzovic\cite{ref:hudzovic}  and Sani\cite{ref:sani}
+approximate  the  step  response of a plant by using a series  of  PT1  elements
+multiplied  together with varying time constants $T_k$ to form  a  PTn  element,
+$G(s)$. This is defined as:
+
+\begin{equation}
+    G_n(s,r) = y_0 + K_s \prod_{k=1}^{n} \frac{1}{1+s \cdot T_k(r)}
+    \label{eq:ptn}
+\end{equation}
+
+where the scale factor, $K_s$, is defined as:
+
+\begin{equation}
+    K_s = \frac{xa(\infty)}{xeo}
+\end{equation}
+
+The  transfer function in equation \ref{eq:ptn} serves as a basis to  model  the
+step response of many systems.
+
+Rather than individually having to find the time constants  $T_1\ldots  T_n$  --
+the effort of which would greatly increase with the order $n$ -- the two methods
+of  P.  Hudzovic  and  L.  Sani instead calculate these constants using a common
+function $T_k(r)$.
+
+The  approach  proposed  by  P.  Hudzovic\cite{ref:hudzovic}  for  $T_k(r)$  is:
+
+\begin{equation}
+    T_k(r) = \frac{T}{1 - (k-1)r}
+    \label{eq:hudzovic}
+\end{equation}
+
+where  the  constant  $r$  must  be   confined  to  the  interval  $0  \le  r  <
+\frac{1}{n-1}$.
+
+The   approach   proposed   by   L.   Sani\cite{ref:sani}   for   $T_k(r)$   is:
+
+\begin{equation}
+    T_k(r) = T \cdot r^{k-1}
+    \label{eq:sani}
+\end{equation}
+
+where  the  constant $r$ must be confined to  the  interval  $0  \leq  r  <  1$.
+
+As  can  be  seen,  in both cases, the  problem  has  been  reduced  to  finding
+appropriate values for  $n$,  $T$  and  $r$  such  that  the  step  response  of
+$G_n(s,r)$ approximates the data acquired from the plant as closely as possible.
+

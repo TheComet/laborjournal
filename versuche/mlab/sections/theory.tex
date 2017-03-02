@@ -1,0 +1,61 @@
+\section{Theory}
+
+The effect of any invariant linear system (LTI) on an arbitrary input  signal is
+obtained by convolution of the input signal  with  the system's impulse response
+function. In a LTI system, the  output  of the system $y(t)$ for an input $x(t)$
+can be obtained by the convolution integral:
+
+\begin{equation}
+    y(t)=g(t)*x(t)=\int_0^t g(t-\tau)x(\tau)\,d\tau
+    \label{eq:conv_int}
+\end{equation}
+
+where $g(t)$ is the \textit{impulse response}  of the system. That is, $g(t)$ is
+the output of the system with an input $x(t)$ = $\delta(t)$,  where  $\delta(t)$
+is the Dirac delta. The impulse response completely  characterizes  the  dynamic
+behaviour of the system.
+
+Applying   the   Laplace   transform  to  the  convolution  integral   (equation
+\ref{eq:conv_int}) we obtain equation \ref{eq:laplace}:
+
+\begin{equation}
+    \laplace[y(t)] = \laplace[g(t) ∗ x(t)] = \laplace[g(t)] \laplace[x(t)]
+\end{equation}
+
+or in simple expression:
+
+\begin{equation}
+    Y(s) = G(s)X(s)
+    \label{eq:laplace}
+\end{equation}
+
+where $Y(s)$, $G(s)$ and $X(s)$ are the Laplace transforms of $y(t)$, $g(t)$ and
+$x(t)$ respectively. A Transfer Function (TF) is the mathematical representation
+of  the  relation between the input and output of a system. In a LTI system,  TF
+can be  expressed  as  the  ratio of the Laplace transform of the output and the
+input, and  corresponds to the Laplace transform of the impulse response $G(s)$.
+
+\begin{equation}
+    G(s) = \frac{Y(s)}{X(s)}
+\end{equation}
+
+In order  to  obtain  $G(s)$ from an unknown system, a signal in the form of the
+Dirac delta function  must  be applied to the input of the system and its output
+must  be  measured.  Unfortunately, it is very hard to do this in most practical
+cases, due to:
+
+\begin{enumerate}
+    \item Difficulty of generating a Dirac delta function (infinite amplitude, zero time).
+    \item Any finite approximation of the Dirac delta function will cause an extremely small and hard to measure response signal.
+\end{enumerate}
+
+A far more practical method is to measure the  \textit{step response} instead. A
+step function is easier to create in the physical world.  The  derivative of the
+resulting measured signal will  very  closely  resemble  its theoretical impulse
+response.
+
+\input{sections/theory/model}
+\input{sections/theory/characterisation_of_step_responses}
+\input{sections/theory/approximating_step_response}
+\input{sections/theory/least_squares}
+

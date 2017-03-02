@@ -1,0 +1,30 @@
+\section{Discussion}
+
+The two methods proposed by L. Sani and P. Hudzovic and two combinations thereof
+were investigated and compared to one another.
+
+The most accurate method -- in general -- turns out to be P. Hudzovic's transfer
+function in conjunction with L. Sani's  characterisation  method  (by  measuring
+$t_{10}$, $t_{50}$, $t_{90}$ instead of $T_u/T_g$). This  is true for all orders
+of  $n$  and  this  is  true  for   noisy   and   non-noisy   input   functions.
+
+Of course,  by performing a least-square curve fit, an even more accurate result
+can be obtained.
+
+One factor that was not  considered  is how many data points are required in the
+lookup  curves  to yield accurate enough results. The simulations in this report
+used  50  data  points. It would be worth investigating this further to see  how
+higher resolution (or  lower  resolution)  lookup  curves affect the accuracy of
+each method.
+
+P.  Hudzovic's  characterisation method (by measuring $T_u/T_g$) isn't as robust
+as  L.  Sani's   characterisation   method  (by  measuring  $t_{10}$,  $t_{50}$,
+$t_{90}$),  especially  with  noisy  input data. This is primarily  due  to  the
+derivative  that  must  be  computed  to   find   the   point   of   inflection.
+
+L. Sani's method is definitely  the  easiest  to  implement  due  to  the simple
+interpolation formulae and due to  the simplicity of finding $t_{10}$, $t_{50}$,
+$t_{90}$. It also performs quite  fast  and has a low memory footprint (since it
+doesn't require any lookup curves).  Unfortunately, it does perform the worst of
+all methods.
+
