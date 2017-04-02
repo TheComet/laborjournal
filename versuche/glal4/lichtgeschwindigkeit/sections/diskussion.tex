@@ -9,18 +9,18 @@ Tabelle \ref{tab:zusammenfassung} und  Abbildung \ref{fig:einzelmessungen}).
         \label{tab:zusammenfassung}
         \begin{tabular}{lrrr}
             \toprule
-                                    & Ohne Kalibration                                  & Mit Kalibration                                   \\
+                                    & Ohne Kalibration                                    & Mit Kalibration                                   \\
             \midrule
-            Alex Murray             & $(297.6 \pm 2.5)\cdot 10^6\textrm{m}/\textrm{s}$  & $(298.1 \pm 2.3)\cdot 10^6\textrm{m}/\textrm{s}$  \\
-            Yohannes Measho         & $(295.4 \pm 3.5)\cdot 10^6\textrm{m}/\textrm{s}$  & $(296.4 \pm 3.5)\cdot 10^6\textrm{m}/\textrm{s}$  \\
+            Remo Suter              & $(294.52 \pm 10.37)\cdot 10^6\textrm{m}/\textrm{s}$  & $(297.82 \pm 10.49)\cdot 10^6\textrm{m}/\textrm{s}$  \\
+            Alex Murray             & $(282.79 \pm 6.65) \cdot 10^6\textrm{m}/\textrm{s}$  & $(284.22 \pm 6.75)\cdot 10^6\textrm{m}/\textrm{s}$  \\
             \midrule
-            Gewichtete Mittelwerte  & $(296.8 \pm 2.0)\cdot 10^6\textrm{m}/\textrm{s}$  & $(297.7 \pm 1.9)\cdot 10^6\textrm{m}/\textrm{s}$  \\
+            Gewichtete Mittelwerte  & $(286.21 \pm 5.60)\cdot 10^6\textrm{m}/\textrm{s}$   & $(288.20 \pm 5.67)\cdot 10^6\textrm{m}/\textrm{s}$  \\
             \bottomrule
         \end{tabular}
     \end{center}
 \end{table}
 
-Es ist klar zu sehen dass Herr Murray genauer gemessen hat als Herr Measho, weil
+Es ist klar zu sehen dass Herr Suter genauer gemessen hat als Herr Murray, weil
 die Sicherheit bei allen  Messungen kleiner ist. Die Kalibrationsmessung hat die
 Sicherheit  nicht wesentlich verbessern k\"onnen, jedoch hat sie  die  Resultate
 n\"aher am ``wahren Wert'', sprich, Literaturwert verschieben  k\"onnen,  wie in
@@ -36,10 +36,10 @@ der Abbildung \ref{fig:einzelmessungen} sch\"on zu sehen ist.
             symbolic y coords = {Literaturwert,
                                  Gewichtet mit Kalibration,
                                  Gewichtet ohne Kalibration,
-                                 Yohannes Measho mit Kalibration,
-                                 Yohannes Measho ohne Kalibration,
                                  Alex Murray mit Kalibration,
-                                 Alex Murray ohne Kalibration},
+                                 Alex Murray ohne Kalibration,
+                                 Remo Suter mit Kalibration,
+                                 Remo Suter ohne Kalibration},
         ]
         \addplot+[
             only marks,error bars/.cd,
@@ -48,12 +48,12 @@ der Abbildung \ref{fig:einzelmessungen} sch\"on zu sehen ist.
             ]
         coordinates {
             (299790000,Literaturwert)
-            (296800000,Gewichtet ohne Kalibration)          +- (2000000,0)
-            (297600000,Gewichtet mit Kalibration)           +- (1900000,0)
-            (296400000,Yohannes Measho mit Kalibration)     +- (3460000,0)
-            (295400000,Yohannes Measho ohne Kalibration)    +- (3520000,0)
-            (298130000,Alex Murray mit Kalibration)         +- (2320000,0)
-            (297600000,Alex Murray ohne Kalibration)        +- (2460000,0)
+            (286210000,Gewichtet ohne Kalibration)          +- (5600000,0)
+            (288200000,Gewichtet mit Kalibration)           +- (5670000,0)
+            (284220000,Alex Murray mit Kalibration)         +- (6750000,0)
+            (282790000,Alex Murray ohne Kalibration)        +- (6650000,0)
+            (297820000,Remo Suter mit Kalibration)          +- (10490000,0)
+            (294520000,Remo Suter ohne Kalibration)         +- (10370000,0)
         };
         \end{axis}
     \end{tikzpicture}

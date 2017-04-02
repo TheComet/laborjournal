@@ -2,65 +2,56 @@
 
 \subsection{Lichtgeschwindigkeitsmessung}
 
-In den Abbildungen \ref{fig:x-f-remo} und \ref{fig:x-f-alex} sind die von Alex
-Murray  und  Remo  Suter  gemessene Distanzenverschiebungen  in  Funktion  der
+In den Abbildungen \ref{fig:x-f-remo} und \ref{fig:x-f-alex} sind die von Remo
+Suter  und  Alex  Murray gemessene  Distanzenverschiebungen  in  Funktion  der
 Drehfrequenz $f$ aufgezeichnet.
 
 \begin{figure}[H]
     \center
-    \includegraphics[width=.8\textwidth]{images/x-f-remo.pdf}
-    \caption{Lineare Regression zur Berechnung des Faktors $b$, Messdaten von Remo Suter}
+    \includegraphics[width=.65\textwidth]{images/x-f-remo.pdf}
+    \caption{Lineare Regression zur Berechnung des Faktors $b_1$, Messdaten von Remo Suter}
     \label{fig:x-f-remo}
 \end{figure}
 
 \begin{figure}[H]
     \center
-    \includegraphics[width=.8\textwidth]{images/x-f-alex.pdf}
-    \caption{Lineare Regression zur Berechnung des Faktors $b$, Messdaten von Alex Murray}
+    \includegraphics[width=.65\textwidth]{images/x-f-alex.pdf}
+    \caption{Lineare Regression zur Berechnung des Faktors $b_1$, Messdaten von Alex Murray}
     \label{fig:x-f-alex}
 \end{figure}
 
 Die Punkte wurden nach der Formel \ref{eq:lichtgeschwindigkeit} gefittet und damit ergeben sich  die zwei  Faktoren:
-\begin{align}
-    b_{Remo} = \overline{b_{Remo}} \pm s_{\overline{b_{Remo}}} = (856.59 \pm 29.96)\cdot 10^{-6}
-    b_{Alex} = \overline{b_{Alex}} \pm s_{\overline{b_{Alex}}} = (892.12 \pm 20.68)\cdot 10^{-6}
-\end{align}
+\begin{align*}
+    b_{1,Remo} &= \overline{b_{1,Remo}} \pm s_{\overline{b_{1,Remo}}} = (856.59 \pm 29.96)\cdot 10^{-9} \\
+    b_{1,Alex} &= \overline{b_{1,Alex}} \pm s_{\overline{b_{1,Alex}}} = (892.12 \pm 20.68)\cdot 10^{-9}
+\end{align*}
 
 
 \subsection{Kalibrationsmessung}
 
-In    den   Tabellen   \ref{tab:am-x-z}   und    \ref{tab:ym-x-z}    sind    die
-Kalibrationsmessungen von Alex Murray  und  Yohannes  Measho aufgef\"uhrt. Beide
-haben   die   gleiche   Messung   unabh\"angig  von   einander   durchgef\"uhrt.
+In   den  abbildungen  \ref{fig:z-x-remo}  und  \ref{fig:z-x-alex}  sind   die
+Kalibrationsmessungen von Remo Suter Alex  Murrayaufgef\"uhrt. Beide haben die
+gleiche Messung unabh\"angig von einander durchgef\"uhrt.
 
 \begin{figure}[H]
     \center
-    \includegraphics[width=.8\textwidth]{images/am-x-z-fit-a.pdf}
-    \caption{Lineare Regression zur Berechnung des Faktors $a$ anhand der Kalibrationsmessung, Messdaten von Alex Murray}
-    \label{fig:am-x-z-fit-a}
+    \includegraphics[width=.65\textwidth]{images/z-x-remo.pdf}
+    \caption{Lineare Regression zur Berechnung des Faktors $b_2$ anhand der Kalibrationsmessung, Messdaten von Remo Suter}
+    \label{fig:z-x-remo}
 \end{figure}
-
-In der Abbildung \ref{fig:am-x-z-fit-a}  sind  die  Messpunkte  von  der Tabelle
-\ref{tab:am-x-z} als XY-Scatter Plot dargestellt.  Die  Punkte  wurden  nach der
-Formel  \ref{eq:kalibration-a}   gefittet  und  somit  ergibt  sich  der  Faktor
-$a_{Alex}$ als:
-\begin{equation}
-    a_{Alex} = \overline{a_{Alex}} \pm s_{\overline{a_{Alex}}} = -(1999.827 \pm 2.461)\cdot 10^{-3}
-    \label{eq:am-a}
-\end{equation}
 
 \begin{figure}[H]
     \center
-    \includegraphics[width=.8\textwidth]{images/ym-x-z-fit-a.pdf}
-    \caption{Lineare Regression zur Berechnung des Faktors $a$ anhand der Kalibrationsmessung, Messdaten von Yohannes Measho}
-    \label{fig:ym-x-z-fit-a}
+    \includegraphics[width=.65\textwidth]{images/z-x-alex.pdf}
+    \caption{Lineare Regression zur Berechnung des Faktors $b_2$ anhand der Kalibrationsmessung, Messdaten von Alex Murray}
+    \label{fig:z-x-alex}
 \end{figure}
 
-In  der  Abbildung \ref{fig:ym-x-z-fit-a} sind die Messpunkte  von  der  Tabelle
-\ref{tab:ym-x-z} als XY-Scatter Plot dargestellt. Die  Punkte  wurden  nach  der
-Formel  \ref{eq:kalibration-a}   gefittet  und  somit  ergibt  sich  der  Faktor
-$a_{Yohannes}$ als:
-\begin{equation}
-    a_{Yohannes} = \overline{a_{Yohannes}} \pm s_{\overline{a_{Yohannes}}} = -(2002.809 \pm 3.498)\cdot 10^{-3}
-    \label{eq:ym-a}
-\end{equation}
+Die Punkte wurden nach  der  Formel  \ref{eq:kalibration-a} gefittet und somit
+ergeben sich der Faktoren
+
+\begin{align*}
+    b_{2,Remo} &= \overline{b_{2,Remo}} \pm s_{\overline{b_{2,Remo}}} = -(2030.5 \pm 7.0)\cdot 10^{-3} \\
+    b_{2,Alex} &= \overline{b_{2,Alex}} \pm s_{\overline{b_{2,Alex}}} = -(2018.2 \pm 8.9)\cdot 10^{-3}
+\end{align*}
+

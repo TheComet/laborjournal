@@ -5,7 +5,7 @@
 Die  Daten  von  der   Lichtgeschwindigkeitsmessung   wurden   nach  der  Formel
 \ref{eq:lichtgeschwindigkeit} gefittet. Es gilt:
 \begin{equation}
-    x = b \cdot f + x_{02} \hspace{20mm}\textrm{mit}\hspace{20mm} c = \frac{1}{b} \cdot 8\pi \cdot D_1(S_2+D_2)
+    x = b_1 \cdot f + a_1 \hspace{15mm}\textrm{mit}\hspace{15mm} c = \frac{1}{b_1} \cdot 8\pi \cdot D_1(S_2+D_2)
 \end{equation}
 
 Da $b$ f\"ur beide Messungen bekannt ist und die Distanzen zwischen  den  Linsen
@@ -18,47 +18,45 @@ gemessen  wurde,  kann die Lichtgeschwindigkeit bestimmt werden. In der  Tabelle
         \label{tab:distanzen}
         \begin{tabular}{llp{50mm}}
             \toprule
-            $D_1$           & $= \overline{D_1} \pm s_{\overline{D_1}}$                     & $= (998 \pm 3)\textrm{mm}$ \\
-            $D_2$           & $= \overline{D_2} \pm s_{\overline{D_2}}$                     & $= (4988 \pm 5)\textrm{mm}$ \\
-            $S_2$           & $= \overline{S_2} \pm s_{\overline{S_2}}$                     & $= (4894 \pm 5)\textrm{mm}$ \\
-            $b_{Alex}$      & $= \overline{b_{Alex}} \pm s_{\overline{b_{Alex}}}$           & $= -(833.0024 \pm 5.3400) \cdot 10^{-9}$ \\
-            $b_{Yohannes}$  & $= \overline{b_{Yohannes}} \pm s_{\overline{b_{Yohannes}}}$   & $= -(839.0909 \pm 8.9991) \cdot 10^{-9}$ \\
+            $D_1$           & $= \overline{D_1} \pm s_{\overline{D_1}}$                     & $= (1.004 \pm 3)\textrm{mm}$ \\
+            $D_2$           & $= \overline{D_2} \pm s_{\overline{D_2}}$                     & $= (5000 \pm 3)\textrm{mm}$ \\
+            $S_2$           & $= \overline{S_2} \pm s_{\overline{S_2}}$                     & $= (4998 \pm 3)\textrm{mm}$ \\
+            $b_{1,Remo}$    & $= \overline{b_{1,Remo}} \pm s_{\overline{b_{1,Remo}}}$       & $= (856.59 \pm 29.96)\cdot 10^{-9}$ \\
+            $b_{1,Alex}$    & $= \overline{b_{1,Alex}} \pm s_{\overline{b_{1,Alex}}}$       & $= (892.12 \pm 20.68)\cdot 10^{-9}$ \\
             \bottomrule
         \end{tabular}
     \end{threeparttable}
 \end{center}
 
-Nun kann die mitlere Lichtgeschwindigkeit berechnet werden. Man beachte dass der
-Absolutwert von $b$ f\"ur die  Berechnungen  verwendet  wird,  da  eine negative
-Lichtgeschwindigkeit keinen Sinn macht.
+Nun kann die mitlere Lichtgeschwindigkeit berechnet  werden.
 
 \begin{align*}
-    \overline{c}            &= \frac{1}{\overline{b}} \cdot 8\pi \cdot \overline{D_1}(\overline{S_2} + \overline{D_2}) \\
-    \overline{c_{Alex}}     &= 297.5562 \cdot 10^{6} \textrm{m}/\textrm{s} \\
-    \overline{c_{Yohannes}} &= 295.3971 \cdot 10^{6} \textrm{m}/\textrm{s} \\
+    \overline{c}            &= \frac{1}{\overline{b_1}} \cdot 8\pi \cdot \overline{D_1}(\overline{S_2} + \overline{D_2}) \\
+    \overline{c_{Remo}}     &= 294.519 \cdot 10^{6} \textrm{m}/\textrm{s} \\
+    \overline{c_{Alex}}     &= 282.790 \cdot 10^{6} \textrm{m}/\textrm{s} \\
 \end{align*}
 
-Der Fehler wird mit dem \emph{Gauss'schen Fehlerfortpflanzungsgesetz} berechnet.
-$c$ ist eine Funktion der gemessenen und gefitteten Werte $b$,  $D_1$, $S_2$ und
-$D_2$. Die Partialableitungen der einzelnen Terme sind
+Der  Fehler  wird   mit   dem   \emph{Gauss'schen  Fehlerfortpflanzungsgesetz}
+berechnet. $c$ ist eine Funktion der gemessenen  und  gefitteten  Werte $b_1$,
+$D_1$,  $S_2$ und $D_2$.  Die  Partialableitungen  der  einzelnen  Terme  sind
 
 \begin{align*}
-    \frac{\partial c}{\partial b}   &= -\frac{1}{b^2} \cdot 8\pi \cdot D_1(S_2 + D_2) \\
-    \frac{\partial c}{\partial D_1} &= \frac{1}{b} \cdot 8\pi \cdot (S_2 + D_2) \\
-    \frac{\partial c}{\partial D_2} &= \frac{1}{b} \cdot 8\pi \cdot D_1(S_2 + 1) \\
-    \frac{\partial c}{\partial S_2} &= \frac{1}{b} \cdot 8\pi \cdot D_1(1 + D_2) \\
+    \frac{\partial c}{\partial b_1} &= -\frac{1}{b_1^2} \cdot 8\pi \cdot D_1(S_2 + D_2) \\
+    \frac{\partial c}{\partial D_1} &= \frac{1}{b_1} \cdot 8\pi \cdot (S_2 + D_2) \\
+    \frac{\partial c}{\partial D_2} &= \frac{1}{b_1} \cdot 8\pi \cdot D_1(S_2 + 1) \\
+    \frac{\partial c}{\partial S_2} &= \frac{1}{b_1} \cdot 8\pi \cdot D_1(1 + D_2) \\
 \end{align*}
 
-und   somit    ergeben    sich    die   Fehler   $s_{\overline{c_{Alex}}}$   und
-$s_{\overline{c_{Yohannes}}}$ als
+und   somit    ergeben    sich    die   Fehler   $s_{\overline{c_{Remo}}}$   und
+$s_{\overline{c_{Alex}}}$ als
 
 \begin{align*}
-    s_{\overline{c}} &= \sqrt{ \left( \left.\frac{\partial \overline{c}}{\partial \overline{b  }} \right\rvert_{\overline{c}} \cdot s_{\overline{b  }} \right)^2
+    s_{\overline{c}} &= \sqrt{ \left( \left.\frac{\partial \overline{c}}{\partial \overline{b_1}} \right\rvert_{\overline{c}} \cdot s_{\overline{b_1}} \right)^2
                              + \left( \left.\frac{\partial \overline{c}}{\partial \overline{D_1}} \right\rvert_{\overline{c}} \cdot s_{\overline{D_1}} \right)^2
                              + \left( \left.\frac{\partial \overline{c}}{\partial \overline{D_2}} \right\rvert_{\overline{c}} \cdot s_{\overline{D_2}} \right)^2
                              + \left( \left.\frac{\partial \overline{c}}{\partial \overline{S_2}} \right\rvert_{\overline{c}} \cdot s_{\overline{S_2}} \right)^2 } \\
-    s_{\overline{c_{Alex}}}     &= 2.46 \cdot 10^6 \textrm{m}/\textrm{s} \\
-    s_{\overline{c_{Yohannes}}} &= 3.52 \cdot 10^6 \textrm{m}/\textrm{s} \\
+    s_{\overline{c_{Remo}}}     &= 10.37 \cdot 10^6 \textrm{m}/\textrm{s} \\
+    s_{\overline{c_{Alex}}} &= 6.65 \cdot 10^6 \textrm{m}/\textrm{s} \\
 \end{align*}
 
 Die  zwei  unabh\"angig gemessene Lichtgeschwindigkeiten k\"onnen nun  gewichtet
@@ -68,9 +66,9 @@ gemittelt werden um an einen genaureren Wert zu gelangen. Es gilt:
 \end{align*}
 und somit
 \begin{align*}
-    \overline{c}  &= \frac{ \frac{1}{s_{\overline{c_{Alex}}}^2} \cdot \overline{c_{Alex}} + \frac{1}{s_{\overline{c_{Yohannes}}}^2} \cdot \overline{c_{Yohannes}} }
-                          { \frac{1}{s_{\overline{c_{Alex}}}^2} + \frac{1}{s_{\overline{c_{Yohannes}}}^2} } \\
-                  &= 296.85 \cdot 10^6 \textrm{m}/\textrm{s} \\
+    \overline{c}  &= \frac{ \frac{1}{s_{\overline{c_{Remo}}}^2} \cdot \overline{c_{Remo}} + \frac{1}{s_{\overline{c_{Alex}}}^2} \cdot \overline{c_{Alex}} }
+                          { \frac{1}{s_{\overline{c_{Remo}}}^2} + \frac{1}{s_{\overline{c_{Alex}}}^2} } \\
+                  &= 286.21 \cdot 10^6 \textrm{m}/\textrm{s} \\
 \end{align*}
 
 F\"ur den Fehler des gewogenen Mittels gilt:
@@ -79,21 +77,22 @@ F\"ur den Fehler des gewogenen Mittels gilt:
 \end{align*}
 und somit
 \begin{align*}
-    s_{\overline{c}} &= \frac{1}{ \sqrt{\frac{1}{s_{\overline{c_{Alex}}}^2} + \frac{1}{s_{\overline{c_{Yohannes}}}^2}}} \\
-                     &= 2.02 \cdot 10^6 \textrm{m}/\textrm{s} \\
+    s_{\overline{c}} &= \frac{1}{ \sqrt{\frac{1}{s_{\overline{c_{Remo}}}^2} + \frac{1}{s_{\overline{c_{Alex}}}^2}}} \\
+                     &= 5.60 \cdot 10^6 \textrm{m}/\textrm{s} \\
 \end{align*}
 
 Die Lichtgeschwindigkeit \textbf{ohne Kalibration} ergibt als:
 \begin{align*}
-    c = \overline{c} + s_{\overline{c}} = \underline{\underline{(296.8 \pm 2.0) \cdot 10^6 \textrm{m}/\textrm{s}}}
+    c = \overline{c} + s_{\overline{c}} = \underline{\underline{(286.21 \pm 5.60) \cdot 10^6 \textrm{m}/\textrm{s}}}
 \end{align*}
 
 
 \subsection{Kalibrationsmessung}
 
-Da  $a$  und  $b$ bekannt sind und die Distanzen zwischen  den  Linsen  gemessen
-wurde,  kann  die genauere Lichtgeschwindigkeit bestimmt werden. In der  Tabelle
-\ref{tab:kalibration-werte} sind die relevanten Werte nochmals  zusammengefasst.
+Da $b_1$ und $b_2$ bekannt sind und die Distanzen zwischen den Linsen gemessen
+wurde, kann die genauere Lichtgeschwindigkeit bestimmt werden. In  der Tabelle
+\ref{tab:kalibration-werte}    sind    die     relevanten    Werte    nochmals
+zusammengefasst.
 
 \begin{center}
     \begin{threeparttable}
@@ -101,75 +100,85 @@ wurde,  kann  die genauere Lichtgeschwindigkeit bestimmt werden. In der  Tabelle
         \label{tab:kalibration-werte}
         \begin{tabular}{llp{50mm}}
             \toprule
-            $D_2$           & $= \overline{D_2} \pm s_{\overline{D_2}}$                     & $= (4988 \pm 5)\textrm{mm}$ \\
-            $S_2$           & $= \overline{S_2} \pm s_{\overline{S_2}}$                     & $= (4894 \pm 5)\textrm{mm}$ \\
-            $a_{Alex}$      & $= \overline{a_{Alex}} \pm s_{\overline{a_{Alex}}}$           & $= (1999.827 \pm 2.461) \cdot 10^-3$ \\
-            $a_{Yohannes}$  & $= \overline{a_{Yohannes}} \pm s_{\overline{a_{Yohannes}}}$   & $= (2002.809 \pm 3.498) \cdot 10^-3$ \\
-            $b_{Alex}$      & $= \overline{b_{Alex}} \pm s_{\overline{b_{Alex}}}$           & $= -(833.0024 \pm 5.3400) \cdot 10^{-9}$ \\
-            $b_{Yohannes}$  & $= \overline{b_{Yohannes}} \pm s_{\overline{b_{Yohannes}}}$   & $= -(839.0909 \pm 8.9991) \cdot 10^{-9}$ \\
+            $D_2$            & $= \overline{D_2} \pm s_{\overline{D_2}}$                     & $= (5000 \pm 3)\textrm{mm}$ \\
+            $S_2$            & $= \overline{S_2} \pm s_{\overline{S_2}}$                     & $= (4998 \pm 3)\textrm{mm}$ \\
+            $b_{1,Remo}$     & $= \overline{b_{1,Remo}} \pm s_{\overline{b_{1,Remo}}}$       & $= (856.59 \pm 29.96) \cdot 10^{-9}$ \\
+            $b_{1,Alex}$     & $= \overline{b_{1,Alex}} \pm s_{\overline{b_{1,Alex}}}$       & $= (892.12 \pm 20.68) \cdot 10^{-9}$ \\
+            $b_{2,Remo}$     & $= \overline{b_{2,Remo}} \pm s_{\overline{b_{2,Remo}}}$       & $= (2030.5 \pm 7-0) \cdot 10^{-3}$ \\
+            $b_{2,Alex}$     & $= \overline{b_{2,Alex}} \pm s_{\overline{b_{2,Alex}}}$       & $= (2018.2 \pm 8.9) \cdot 10^{-3}$ \\
             \bottomrule
         \end{tabular}
     \end{threeparttable}
 \end{center}
 
-Die   Daten   von   der    Kalibrationsmessung    wurden    nach    der   Formel
-\ref{eq:kalibration-a}  gefittet.   Die   daraus  gewonnene  Steigung  $a$  kann
-verwendet   werden  um  eine  genauere   Berechnung   der   Lichtgeschwindigkeit
-durchzuf\"uhren. Es gilt dabei die Formel \ref{eq:lichtgeschwindigkeit_genauer}.
-\begin{align*}
-\end{align*}
+Die   Daten   von   der    Kalibrationsmessung    wurden   nach   der   Formel
+\ref{eq:kalibration-a} gefittet. Die  daraus  gewonnene  Steigung  $b_2$  kann
+verwendet  werden  um  eine  genauere  Berechnung   der   Lichtgeschwindigkeit
+durchzuf\"uhren.        Es        gilt        dabei         die         Formel
+\ref{eq:lichtgeschwindigkeit_genauer}.
 
 Die mittlere Lichtgeschwindigkeiten berechnen sich wie folgt.
+
 \begin{align*}
-    \overline{c}            &= 4\pi\frac{\overline{a}}{\overline{b}}(S_2 + D_2) \\
-    \overline{c_{Alex}}     &= 298.13 \cdot 10^6 \textrm{m}/\textrm{s} \\
-    \overline{c_{Yohannes}} &= 296.40 \cdot 10^6 \textrm{m}/\textrm{s} \\
+    \overline{c}            &= 4\pi\frac{\overline{b_2}}{\overline{b_1}}(S_2 + D_2) \\
+    \overline{c_{Remo}}     &= 297.819 \cdot 10^6 \textrm{m}/\textrm{s} \\
+    \overline{c_{Alex}}     &= 284.226 \cdot 10^6 \textrm{m}/\textrm{s} \\
 \end{align*}
 
 Der Fehler wird mit dem \emph{Gauss'schen Fehlerfortpflanzungsgesetz} berechnet.
-$c$ ist eine Funktion  der  gemessenen  und gefitteten Werte $a$, $b$, $D_2$ und
+$c$ ist eine Funktion  der  gemessenen  und gefitteten Werte $b_1$, $b_2$, $D_2$ und
 $S_2$. Die Partialableitungen der einzelnen Terme sind
+
 \begin{align*}
-    \frac{\partial c}{\partial a}   &= 4\pi\frac{1}{b}(S_2+D_2) \\
-    \frac{\partial c}{\partial b}   &= -4\pi\frac{a}{b^2}(S_2+D_2) \\
-    \frac{\partial c}{\partial S_2} &= 4\pi\frac{a}{b}(1+D_2) \\
-    \frac{\partial c}{\partial D_2} &= 4\pi\frac{a}{b}(S_2+1) \\
+    \frac{\partial c}{\partial b_2}   &= 4\pi\frac{1}{b_1}(S_2+D_2) \\
+    \frac{\partial c}{\partial b_1}   &= -4\pi\frac{b_2}{b_1^2}(S_2+D_2) \\
+    \frac{\partial c}{\partial S_2}   &= 4\pi\frac{b_2}{b_1}(1+D_2) \\
+    \frac{\partial c}{\partial D_2}   &= 4\pi\frac{b_2}{b_1}(S_2+1) \\
 \end{align*}
 
-und somit ergeben sich die Fehler $s_{\overline{c_{Alex}}}$ und $s_{\overline{c_{Yohannes}}}$ als
+und    somit   ergeben   sich   die   Fehler   $s_{\overline{c_{Remo}}}$   und
+$s_{\overline{c_{Alex}}}$ als
+
 \begin{align*}
-    s_{\overline{c}}            &= \sqrt{ \left( \left.\frac{\partial \overline{c}}{\partial \overline{a  }} \right\rvert_{\overline{c}} \cdot s_{\overline{a  }} \right)^2
-                                        + \left( \left.\frac{\partial \overline{c}}{\partial \overline{b  }} \right\rvert_{\overline{c}} \cdot s_{\overline{b  }} \right)^2
+    s_{\overline{c}}            &= \sqrt{ \left( \left.\frac{\partial \overline{c}}{\partial \overline{b_2}} \right\rvert_{\overline{c}} \cdot s_{\overline{b_2}} \right)^2
+                                        + \left( \left.\frac{\partial \overline{c}}{\partial \overline{b_1}} \right\rvert_{\overline{c}} \cdot s_{\overline{b_1}} \right)^2
                                         + \left( \left.\frac{\partial \overline{c}}{\partial \overline{S_2}} \right\rvert_{\overline{c}} \cdot s_{\overline{S_2}} \right)^2
                                         + \left( \left.\frac{\partial \overline{c}}{\partial \overline{D_2}} \right\rvert_{\overline{c}} \cdot s_{\overline{D_2}} \right)^2 } \\
-    s_{\overline{c_{Alex}}}     &= 2.32 \cdot 10^6 \textrm{m}/\textrm{s} \\
-    s_{\overline{c_{Yohannes}}} &= 3.46 \cdot 10^6 \textrm{m}/\textrm{s} \\
+    s_{\overline{c_{Remo}}}     &= 10.49 \cdot 10^6 \textrm{m}/\textrm{s} \\
+    s_{\overline{c_{Alex}}}     &= 6.75 \cdot 10^6 \textrm{m}/\textrm{s} \\
 \end{align*}
 
 Die zwei unabh\"angig gemessene Lichtgeschwindigkeiten  k\"onnen  nun  gewichtet
 gemittelt  werden   um   an   einen   genaueren   Wert  zu  gelangen.  Es  gilt:
+
 \begin{align*}
     \overline{x} &= \frac{\sum_{i=1}^{N} g_{\overline{x}_i} \cdot \overline{x}_i}{\sum_{i=1}^{N} g_{\overline{x}_i}} \hspace{8mm}\textrm{mit}\hspace{8mm} g_{\overline{x}_i} = \frac{1}{s^2_{\overline{x}_i}} \\
 \end{align*}
+
 und somit
+
 \begin{align*}
-    \overline{c}  &= \frac{ \frac{1}{s_{\overline{c_{Alex}}}^2} \cdot \overline{c_{Alex}} + \frac{1}{s_{\overline{c_{Yohannes}}}^2} \cdot \overline{c_{Yohannes}} }
-                          { \frac{1}{s_{\overline{c_{Alex}}}^2} + \frac{1}{s_{\overline{c_{Yohannes}}}^2} } \\
-                  &= 297.59 \cdot 10^6 \textrm{m}/\textrm{s} \\ 
+    \overline{c}  &= \frac{ \frac{1}{s_{\overline{c_{Remo}}}^2} \cdot \overline{c_{Remo}} + \frac{1}{s_{\overline{c_{Alex}}}^2} \cdot \overline{c_{Alex}} }
+                          { \frac{1}{s_{\overline{c_{Remo}}}^2} + \frac{1}{s_{\overline{c_{Alex}}}^2} } \\
+                  &= 288.20 \cdot 10^6 \textrm{m}/\textrm{s} \\ 
 \end{align*}
 
 F\"ur den Fehler des gewogenen Mittels gilt:
+
 \begin{align*}
     s_{\overline{x}} &= \frac{1}{\sqrt{\sum_{i=1}^{N} g_{\overline{x}_i}}}
 \end{align*}
+
 und somit
+
 \begin{align*}
-    s_{\overline{c}} &= \frac{1}{ \sqrt{\frac{1}{s_{\overline{c_{Alex}}}^2} + \frac{1}{s_{\overline{c_{Yohannes}}}^2}}} \\
-                     &= 1.93 \cdot 10^6 \textrm{m}/\textrm{s} \\
+    s_{\overline{c}} &= \frac{1}{ \sqrt{\frac{1}{s_{\overline{c_{Remo}}}^2} + \frac{1}{s_{\overline{c_{Alex}}}^2}}} \\
+                     &= 5.67 \cdot 10^6 \textrm{m}/\textrm{s} \\
 \end{align*}
 
 Die Lichtgeschwindigkeit \textbf{mit Kalibration} ergibt als:
+
 \begin{align*}
-    c = \overline{c} + s_{\overline{c}} = \underline{\underline{(297.6 \pm 1.9) \cdot 10^6 \textrm{m}/\textrm{s}}}
+    c = \overline{c} + s_{\overline{c}} = \underline{\underline{(288.20 \pm 5.67) \cdot 10^6 \textrm{m}/\textrm{s}}}
 \end{align*}
 
