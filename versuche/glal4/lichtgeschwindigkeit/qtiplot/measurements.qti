@@ -1,0 +1,551 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	muParser
+<windows>	8
+<table>
+Remo	30	2	30/03/2017 12:23
+geometry	0	-801	260	267	
+header	1[X]	2[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/5	0;0/5
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		0
+<data>
+0	1000	10.9
+1	901	10.83
+2	801	10.74
+3	703	10.7
+4	598	10.62
+5	501	10.52
+6	408	10.42
+7	302	10.32
+8	205	10.2
+9	98	10.16
+</data>
+</table>
+<multiLayer>
+Graph1	1	1	30/03/2017 12:28
+geometry	1	-533	474	415	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	456	354
+<PageGeometry>0.0107296	0.0135501	0.978541	0.95935</PageGeometry>
+PlotTitle	Lichtgeschwindigkeitsmessung Remo	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>0</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Drehfrequenz (Hz)	Distanz (mm)		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	12	75	0	0	0
+ScaleFont0	Sans Serif	10	75	0	0	0
+ScaleFont1	Sans Serif	10	75	0	0	0
+ScaleFont2	Sans Serif	10	75	0	0	0
+ScaleFont3	Sans Serif	10	75	0	0	0
+AxisFont0	Sans Serif	10	50	0	0	0
+AxisFont1	Sans Serif	10	50	0	0	0
+AxisFont2	Sans Serif	10	50	0	0	0
+AxisFont3	Sans Serif	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Remo_1	Remo_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	9	1
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit1</Title>
+<Expression>a1+x*b1</Expression>
+<Variable>x</Variable>
+<Range>98	1000</Range>
+<Points>1000</Points>
+<Constant>a1	10.0684186540579</Constant>
+<Constant>b1	0.000856591165380738</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	10.1	11	0	10	5	0	0
+scale	1	10.1	11	0	10	5	0	0
+scale	2	0	1200	0	7	5	0	0
+scale	3	0	1200	0	7	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>27.2040302267</x>
+<y>10.972727272727</y>
+<right>383.577712609971</right>
+<bottom>10.8685393258427</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(2)LinearFit
+<b>Dataset</b>: Remo_2
+<b>Function</b>: a1+x*b1
+<b>Chi^2/doF</b> = 7.38401e-04
+<b>R^2</b> = 0.9903
+<b>a1</b> = 1.00684e+01 +/- 1.86368e-02
+<b>b1</b> = 8.56591e-04 +/- 2.99756e-05
+</Text>
+<Font>Sans Serif	10	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<table>
+Alex	30	2	30/03/2017 12:34
+geometry	480	-785	256	253	
+header	1[X]	2[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/5	0;0/5
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		0
+<data>
+0	1002	10.93
+1	890	10.84
+2	803	10.77
+3	702	10.69
+4	605	10.61
+5	501	10.51
+6	399	10.38
+7	303	10.31
+8	205	10.21
+9	98	10.16
+</data>
+</table>
+<multiLayer>
+Graph2	1	1	30/03/2017 12:35
+geometry	478	-532	474	415	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	456	354
+<PageGeometry>0.0107296	0.0135501	0.978541	0.95935</PageGeometry>
+PlotTitle	Lichtgeschwindigkeitsmessung Alex	#000000	4
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>0</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Drehfrequenz (Hz)	Distanz (mm)		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	12	75	0	0	0
+ScaleFont0	Sans Serif	10	75	0	0	0
+ScaleFont1	Sans Serif	10	75	0	0	0
+ScaleFont2	Sans Serif	10	75	0	0	0
+ScaleFont3	Sans Serif	10	75	0	0	0
+AxisFont0	Sans Serif	10	50	0	0	0
+AxisFont1	Sans Serif	10	50	0	0	0
+AxisFont2	Sans Serif	10	50	0	0	0
+AxisFont3	Sans Serif	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Alex_1	Alex_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	9	1
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit1</Title>
+<Expression>a2+x*b2</Expression>
+<Variable>x</Variable>
+<Range>98	1002</Range>
+<Points>1000</Points>
+<Constant>a2	10.0496188144727</Constant>
+<Constant>b2	0.000892122704297362</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	10	11	0	6	5	0	0
+scale	1	10.1	11	0	10	5	0	0
+scale	2	0	1200	0	7	5	0	0
+scale	3	0	1200	0	7	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>27.2040302267</x>
+<y>10.972727272727</y>
+<right>326.448362720403</right>
+<bottom>10.8848484848485</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(2)LinearFit
+<b>Dataset</b>: Alex_2
+<b>Function</b>: a2+x*b2
+<b>Chi^2/doF</b> = 3.50472e-04
+<b>R^2</b> = 0.99572
+<b>a2</b> = 1.00496e+01 +/- 1.28367e-02
+<b>b2</b> = 8.92123e-04 +/- 2.06791e-05
+</Text>
+<Font>Sans Serif	10	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<table>
+CalRemo	30	2	30/03/2017 12:59
+geometry	3	-115	265	276	
+header	1[X]	2[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/5	0;0/5
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		0
+<data>
+0	7	13.28
+1	7.1	12.85
+2	7.2	12.48
+3	7.3	12.09
+4	7.4	11.65
+5	7.5	11.25
+6	7.6	10.85
+7	7.7	10.43
+8	7.8	10.02
+9	7.9	9.62
+10	8	9.23
+</data>
+</table>
+<multiLayer>
+Graph3	1	1	30/03/2017 13:00
+geometry	3	164	465	415	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	447	354
+<PageGeometry>0.0109409	0.0135501	0.978118	0.95935</PageGeometry>
+PlotTitle	Kalibrationsmessung Remo	#000000	4
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>0</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	z (mm)	x (mm)		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	12	75	0	0	0
+ScaleFont0	Sans Serif	10	75	0	0	0
+ScaleFont1	Sans Serif	10	75	0	0	0
+ScaleFont2	Sans Serif	10	75	0	0	0
+ScaleFont3	Sans Serif	10	75	0	0	0
+AxisFont0	Sans Serif	10	50	0	0	0
+AxisFont1	Sans Serif	10	50	0	0	0
+AxisFont2	Sans Serif	10	50	0	0	0
+AxisFont3	Sans Serif	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	CalRemo_1	CalRemo_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	10	1
+scale	0	9	14	0	6	5	0	0
+scale	1	9	14	0	6	5	0	0
+scale	2	6.8	8.2	0	8	5	0	0
+scale	3	6.8	8.2	0	8	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>6831.7380352645</x>
+<y>13.848484848485</y>
+<right>7180.8564231738</right>
+<bottom>13.3602693602694</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+</Text>
+<Font>Sans Serif	10	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<table>
+Table1	30	2	30/03/2017 13:04
+geometry	478	-117	267	280	
+header	1[X]	2[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/5	0;0/5
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		2
+<data>
+0	7	13.18
+1	7.1	12.78
+2	7.2	12.38
+3	7.3	11.96
+4	7.4	11.53
+5	7.5	11.16
+6	7.6	10.74
+7	7.7	10.35
+8	7.8	9.95
+9	7.9	9.58
+10	8	9.12
+</data>
+</table>
+<multiLayer>
+Graph4	1	1	30/03/2017 13:04
+geometry	478	165	465	415	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	447	354
+<PageGeometry>0.0109409	0.0135501	0.978118	0.95935</PageGeometry>
+PlotTitle	Kalibrationsmessung Alex	#000000	4
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>0</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	z (mm)	x (mm)		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	12	75	0	0	0
+ScaleFont0	Sans Serif	10	75	0	0	0
+ScaleFont1	Sans Serif	10	75	0	0	0
+ScaleFont2	Sans Serif	10	75	0	0	0
+ScaleFont3	Sans Serif	10	75	0	0	0
+AxisFont0	Sans Serif	10	50	0	0	0
+AxisFont1	Sans Serif	10	50	0	0	0
+AxisFont2	Sans Serif	10	50	0	0	0
+AxisFont3	Sans Serif	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Table1_1	Table1_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	10	1
+scale	0	9	14	0	6	5	0	0
+scale	1	9	14	0	6	5	0	0
+scale	2	6.8	8.2	0	8	5	0	0
+scale	3	6.8	8.2	0	8	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>6.8317380352645</x>
+<y>13.848484848485</y>
+<right>7.1808564231738</right>
+<bottom>13.3602693602694</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+</Text>
+<Font>Sans Serif	10	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<open>1</open>
+<log>
+[30/03/2017 12:31	Plot: ''Graph1'']
+Non-linear Fit of dataset: Remo_2, using function: a1+x*b1
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.00000e+03 to x = 9.80000e+01
+a1 = 1.00684e+01 +/- 1.86368e-02
+b1 = 8.56591e-04 +/- 2.99756e-05
+--------------------------------------------------------------------------------------
+Chi^2/doF = 7.38401e-04
+R^2 = 0.9903
+Adjusted R^2 = 0.98753
+RMSE (Root Mean Squared Error) = 0.027174
+RSS (Residual Sum of Squares) = 0.0059072
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+
+[30/03/2017 12:36	Plot: ''Graph2'']
+Non-linear Fit of dataset: Alex_2, using function: a2+x*b2
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.00200e+03 to x = 9.80000e+01
+a2 = 1.00496e+01 +/- 1.28367e-02
+b2 = 8.92123e-04 +/- 2.06791e-05
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.50472e-04
+R^2 = 0.99572
+Adjusted R^2 = 0.9945
+RMSE (Root Mean Squared Error) = 0.018721
+RSS (Residual Sum of Squares) = 0.0028038
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+</log>
