@@ -1,0 +1,35 @@
+\lstdefinestyle{java}{
+    language            = Java,
+    aboveskip           = 3mm,
+    belowskip           = 3mm,
+    showstringspaces    = false,
+    columns             = flexible,
+    basicstyle          = {\scriptsize\ttfamily},
+    numbers             = left,
+    numberstyle         = \tiny\color{gray},
+    keywordstyle        = \color{blue},
+    commentstyle        = \color{dkgreen},
+    stringstyle         = \color{mauve},
+    breaklines          = true,
+    breakatwhitespace   = true,
+    tabsize             = 3
+}
+\lstdefinestyle{Matlab-editor-2}{%
+  style               = MatlabBaseStyle@mlpr,
+  mllastelementstyle  = \color{black}                    ,
+  mlkeywordstyle      = \color[RGB]{000,000,255}         ,
+  mlcommentstyle      = \color[RGB]{034,139,034}         ,
+  mlstringstyle       = \color[RGB]{160,032,240}         ,
+  mlsyscomstyle       = \color[RGB]{178,140,000}         ,
+  mlsectiontitlestyle = \commentStyle@mlpr      \bfseries,
+  mlsharedvarstyle    = \color[RGB]{000,163,163}         ,
+  mlplaceholderstyle  = \mleditorphstyle,
+  basicstyle          = \ttfamily\scriptsize,
+  numbers             = left,
+}
+
+\lstset{
+    frame=none,
+    breaklines=true,
+    postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}}
+}
