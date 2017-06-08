@@ -1,0 +1,481 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	muParser
+<windows>	6
+<table>
+Table1	30	2	08/06/2017 20:56
+geometry	-122	0	262	175	
+header	1[X]	2[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/5	0;0/5
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		2
+<data>
+0	365	1.635
+1	405	1.395
+2	435.8	1.192
+3	546.1	0.707
+4	578	0.614
+</data>
+</table>
+<multiLayer>
+Graph1	1	1	08/06/2017 21:09
+geometry	143	1	471	420	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	453	359
+<PageGeometry>0.0107991	0.013369	0.978402	0.959893</PageGeometry>
+PlotTitle	Messung der Photospannung Uph	#000000	4
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>0</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Wellenlänge (nm)	Uph (V)		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	12	75	0	0	0
+ScaleFont0	Sans Serif	10	75	0	0	0
+ScaleFont1	Sans Serif	10	75	0	0	0
+ScaleFont2	Sans Serif	10	75	0	0	0
+ScaleFont3	Sans Serif	10	75	0	0	0
+AxisFont0	Sans Serif	10	50	0	0	0
+AxisFont1	Sans Serif	10	50	0	0	0
+AxisFont2	Sans Serif	10	50	0	0	0
+AxisFont3	Sans Serif	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Table1_1	Table1_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	4	1
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit1</Title>
+<Expression>m*x+q</Expression>
+<Variable>x</Variable>
+<Range>365	578</Range>
+<Points>1000</Points>
+<Constant>m	-0.0047558327438635</Constant>
+<Constant>q	3.32472294198628</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	0.4	1.8	0	8	5	0	0
+scale	1	0.6	1.8	0	7	5	0	0
+scale	2	350	600	0	6	5	0	0
+scale	3	350	600	0	6	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>469.01763224181</x>
+<y>1.7292929292929</y>
+<right>589.92443324937</right>
+<bottom>1.18720538720539</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(2)Linear Fit
+<b>Function</b>: m*x+q
+<b>Chi^2/doF</b> = 2.54576e-03
+<b>R^2</b> = 0.99011
+<b>m</b> = -4.75583e-03 +/- 2.74466e-04
+<b>q</b> = 3.32472e+00 +/- 1.29871e-01
+</Text>
+<Font>Sans Serif	10	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<table>
+Table2	30	2	08/06/2017 21:11
+geometry	-120	425	263	223	
+header	1[X]	2[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/5	0;0/5
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		2
+<data>
+0	365	-1.614
+1	405	-1.389
+2	435.8	-1.252
+3	546.1	-0.73
+4	578	-0.652
+</data>
+</table>
+<multiLayer>
+Graph2	1	1	08/06/2017 21:13
+geometry	142	425	479	420	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	461	359
+<PageGeometry>0.0106157	0.013369	0.978769	0.959893</PageGeometry>
+PlotTitle	Messung der Gegenspannung U0	#000000	4
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>0</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Wellenlänge (nm)	U0 (V)		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	12	75	0	0	0
+ScaleFont0	Sans Serif	10	75	0	0	0
+ScaleFont1	Sans Serif	10	75	0	0	0
+ScaleFont2	Sans Serif	10	75	0	0	0
+ScaleFont3	Sans Serif	10	75	0	0	0
+AxisFont0	Sans Serif	10	50	0	0	0
+AxisFont1	Sans Serif	10	50	0	0	0
+AxisFont2	Sans Serif	10	50	0	0	0
+AxisFont3	Sans Serif	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Table2_1	Table2_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	4	1
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit1</Title>
+<Expression>x*m+q</Expression>
+<Variable>x</Variable>
+<Range>365	578</Range>
+<Points>1000</Points>
+<Constant>m	0.0045553483266325</Constant>
+<Constant>q	-3.25010121324441</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	-1.8	-0.6	0	7	5	0	0
+scale	1	-1.8	-0.6	0	7	5	0	0
+scale	2	350	600	0	6	5	0	0
+scale	3	350	600	0	6	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>467.75818639798</x>
+<y>-1.2626262626263</y>
+<right>589.294710327456</right>
+<bottom>-1.72727272727273</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(2)%(2)
+<b>Dataset</b>: Table2_2
+<b>Function</b>: x*m+q
+<b>Chi^2/doF</b> = 1.13474e-03
+<b>R^2</b> = 0.99517
+<b>m</b> = 4.55535e-03 +/- 1.83243e-04
+<b>q</b> = -3.25010e+00 +/- 8.67063e-02
+</Text>
+<Font>Sans Serif	10	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<table>
+Table3	30	2	08/06/2017 21:28
+geometry	615	1	259	198	
+header	1[X]	2[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/5	0;0/5
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		2
+<data>
+0	466.1	2.49
+1	518.6	2.55
+2	594.9	2.07
+3	644.5	1.98
+4	931.5	1.065
+</data>
+</table>
+<multiLayer>
+Graph3	1	1	08/06/2017 21:31
+geometry	877	1	471	420	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	453	359
+<PageGeometry>0.0107991	0.013369	0.978402	0.959893</PageGeometry>
+PlotTitle	Messung der Knickspannung Uk	#000000	4
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>0</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Wellenlänge (nm)	Uk (V)		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	4	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	12	75	0	0	0
+ScaleFont0	Sans Serif	10	75	0	0	0
+ScaleFont1	Sans Serif	10	75	0	0	0
+ScaleFont2	Sans Serif	10	75	0	0	0
+ScaleFont3	Sans Serif	10	75	0	0	0
+AxisFont0	Sans Serif	10	50	0	0	0
+AxisFont1	Sans Serif	10	50	0	0	0
+AxisFont2	Sans Serif	10	50	0	0	0
+AxisFont3	Sans Serif	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Table3_1	Table3_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	4	1
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit1</Title>
+<Expression>m*x+q</Expression>
+<Variable>x</Variable>
+<Range>466.1	931.5</Range>
+<Points>1000</Points>
+<Constant>m	-0.00323987188034081</Constant>
+<Constant>q	4.07574794113466</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	1	2.6	0	9	5	0	0
+scale	1	1	2.6	0	9	5	0	0
+scale	2	400	1000	0	7	5	0	0
+scale	3	400	1000	0	7	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>413.60201511335</x>
+<y>1.6841750841751</y>
+<right>703.778337531486</right>
+<bottom>1.06464646464646</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(2)%(2)
+<b>Dataset</b>: Table3_2
+<b>Function</b>: m*x+q
+<b>Chi^2/doF</b> = 1.19418e-02
+<b>R^2</b> = 0.97472
+<b>m</b> = -3.23987e-03 +/- 3.01223e-04
+<b>q</b> = 4.07575e+00 +/- 1.96289e-01
+</Text>
+<Font>Sans Serif	10	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<open>1</open>
+<log>
+[08/06/2017 21:09	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table1_2, using function: m*x+q
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 3.65000e+02 to x = 5.78000e+02
+m = -4.75583e-03 +/- 2.74466e-04
+q = 3.32472e+00 +/- 1.29871e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.54576e-03
+R^2 = 0.99011
+Adjusted R^2 = 0.98021
+RMSE (Root Mean Squared Error) = 0.050456
+RSS (Residual Sum of Squares) = 0.0076373
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+[08/06/2017 21:25	Plot: ''Graph2'']
+Non-linear Fit of dataset: Table2_2, using function: x*m+q
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 3.65000e+02 to x = 5.78000e+02
+m = 4.55535e-03 +/- 1.83243e-04
+q = -3.25010e+00 +/- 8.67063e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.13474e-03
+R^2 = 0.99517
+Adjusted R^2 = 0.99034
+RMSE (Root Mean Squared Error) = 0.033686
+RSS (Residual Sum of Squares) = 0.0034042
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+[08/06/2017 21:30	Plot: ''Graph3'']
+Non-linear Fit of dataset: Table3_2, using function: m*x+q
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 4.66100e+02 to x = 9.31500e+02
+m = -3.23987e+00 +/- 3.01223e-01
+q = 4.07575e+03 +/- 1.96289e+02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.19418e+04
+R^2 = 0.97472
+Adjusted R^2 = 0.94945
+RMSE (Root Mean Squared Error) = 109.28
+RSS (Residual Sum of Squares) = 35,825
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+[08/06/2017 21:31	Plot: ''Graph3'']
+Non-linear Fit of dataset: Table3_2, using function: m*x+q
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 4.66100e+02 to x = 9.31500e+02
+m = -3.23987e-03 +/- 3.01223e-04
+q = 4.07575e+00 +/- 1.96289e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.19418e-02
+R^2 = 0.97472
+Adjusted R^2 = 0.94945
+RMSE (Root Mean Squared Error) = 0.10928
+RSS (Residual Sum of Squares) = 0.035825
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+</log>
