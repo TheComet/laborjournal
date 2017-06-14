@@ -1,11 +1,61 @@
 \section{Fehlerrechnung}
 
-Mit  der  Steigung  kann  nun mit der  Formel  \ref{eq:h}  der  Konstante  $h$
-berechnet werden:
+Es  wurden  auf drei verschiedene Arten die Steigung  $m_{ph},  m_0  und  m_k$
+bestummen.  Die  Plank'sche  Konstante  $h$  kann mit  der  Formel  \ref{eq:h}
+berechnet werden.
+
+Die Formel \ref{eq:h} wird mit in  das  Gaussischen Fehlerfortpflanzungsgesetz
+eingesetzt, um den Fehler zu Berechnen:
 
 \begin{align*}
-    \overline{h_{ph}} = m_{ph} \cdot e &= 7.619679638499265e-22 \\
-    h_0 = m_0 \cdot e       &= 7.29847526956128e-22 \\
+    h &= m \cdot e \hspace{5mm} \frac{\partial h}{\partial m} = e \hspace{5mm} \frac{\partial h}{\partial e} = m \\
+    s_h &= \sqrt{\left(\overline{e} \cdot s_e\right)^2 + \left(\overline{m} \cdot s_m\right)^2}
 \end{align*}
 
+Da  wir  die Elementarladung $e$ so viel genauer bekannt ist als die gemessene
+Steigung,  kann   $e_s   \approx  0$  angenommen  werden.  Die  Fehlerrechnung
+vereinfacht sich auf:
+
+\begin{equation*}
+    s_h = \overline{m} \cdot s_m
+\end{equation*}
+
+Das Experiment  ist  verschiedenen  Einfl\"ussen unterworfen, welche nicht nur
+die  Messgenauigkeit beeintr\"achtigen, sondern auch zu systematischen Fehlern
+f\"uhren.  Zun\"achst  ist  die  Erfassung  der  kritischen  Gegenspannung  Uo
+unsicher, weil das Verschwinden  bzw. Einsetzen des Photostromes "schleichend"
+ist,  bedingt  durch  das  breite  Energiespektrum  der  Photoelektronen. Dann
+f\"uhren   Inhomogenit\"aten  und  Alterungseffekte  (z.B.Gasadsorption)   der
+Kathodenoberfl\"ache dazu, dass die Austrittsarbeit  Wa \"ortlich und zeitlich
+variert.
+
+Es ist mit  einer  Systematischen  Abweichung  von  etwa \SI{10}{\percent} bis
+\SI{30}{\percent} rechnen. Die  statistischen  Fehler  werden  also angepasst:
+
+\begin{align*}
+    s_{h_{ph}} &:= \sqrt{s_{h_{ph}}^2 + 0.3 \cdot h_{ph}} \\
+    s_{h_0}    &:= \sqrt{s_{h_0}^2 + 0.3 \cdot h_0} \\
+    s_{h_k}    &:= \sqrt{s_{h_k}^2 + 0.3 \cdot h_k}
+\end{align*}
+
+\begin{align*}
+    h_{ph} = \overline{h_{ph}} \pm s_{h_{ph}} &= m_{ph} \cdot e \pm e \cdot s_{m_{ph}} = \left(5.49771 \pm 1.65266\right)e-34 \\
+    h_0    = \overline{h_0}    \pm s_{h_0}    &= m_0    \cdot e \pm e \cdot s_{m_0}    = \left(5.24227 \pm 1.58724\right)e-34 \\
+    h_k    = \overline{h_k}    \pm s_{h_k}    &= m_k    \cdot e \pm e \cdot s_{m_k}    = \left(7.54210 \pm 2.55475\right)e-34
+\end{align*}
+
+Die   drei  Resultate  k\"onnen  jetzt   gewichtet   gemittelt   werden,   mit
+Fehlerrechnung:
+
+\begin{equation*}
+    h = \overline{h} \pm s_h = \frac{\sum_i g_{h_i}\cdot h_i}{\sum_i g_{h_i}} \pm \frac{1}{\sqrt{\sum_i g_{h_i}}}
+    \hspace{5mm}\textrm{mit den Gewichten}\hspace{5mm}
+    g_{h_i} = \frac{1}{s_{h_i}^2}
+\end{equation*}
+
+Es ergibt sich die Plank'sche Konstante:
+
+\begin{equation*}
+    h = \overline{h} \pm s_h = \left(5.72891 \pm 1.04469\right)e-34
+\end{equation*}
 

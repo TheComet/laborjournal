@@ -2,163 +2,68 @@ QtiPlot 0.9.8 project file
 <scripting-lang>	muParser
 <windows>	6
 <table>
-Table1	30	2	08/06/2017 20:56
-geometry	-122	0	262	175	
-header	1[X]	2[Y]
-ColWidth	100	100	
+Table1	30	3	08/06/2017 20:56
+geometry	5	0	349	190	
+header	1[X]	2[Y]	3[yEr]
+ColWidth	100	100	100	
 <com>
 </com>
-ColType	0;0/5	0;0/5
-ReadOnlyColumn	0	0
-HiddenColumn	0	0
-Comments			
+ColType	0;0/5	0;0/5	0;0/5
+ReadOnlyColumn	0	0	0
+HiddenColumn	0	0	0
+Comments				
 WindowLabel		2
 <data>
-0	365	1.635
-1	405	1.395
-2	435.8	1.192
-3	546.1	0.707
-4	578	0.614
+0	8.2135e+14	1.635	0.05
+1	7.4023e+14	1.395	0.05
+2	6.8791e+14	1.192	0.05
+3	5.4897e+14	0.707	0.05
+4	5.1867e+14	0.614	0.05
 </data>
 </table>
-<multiLayer>
-Graph1	1	1	08/06/2017 21:09
-geometry	143	1	471	420	
-WindowLabel		2
-Margins	5	5	5	5
-Spacing	5	5
-LayerCanvasSize	400	300
-Alignement	0	0
-<AlignPolicy>0</AlignPolicy>
-<CommonAxes>0</CommonAxes>
-<graph>
-ggeometry	5	5	453	359
-<PageGeometry>0.0107991	0.013369	0.978402	0.959893</PageGeometry>
-PlotTitle	Messung der Photospannung Uph	#000000	4
-<Antialiasing>0</Antialiasing>
-<Autoscaling>1</Autoscaling>
-<ScaleFonts>0</ScaleFonts>
-<GridOnTop>0</GridOnTop>
-<MissingDataGap>1</MissingDataGap>
-Background	#ffffff	0
-Margin	0
-Border	0	#000000
-grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
-EnabledAxes	1	1	1	1	
-AxesTitles	Wellenlänge (nm)	Uph (V)		 	
-AxesTitleColors	#000000	#000000	#000000	#000000	
-AxesTitleAlignment	5124	5124	5124	5124
-AxesTitleDistance	2	2	2	2
-InvertedTitle	0	0	0	0
-TitleFont	Sans Serif	12	75	0	0	0
-ScaleFont0	Sans Serif	10	75	0	0	0
-ScaleFont1	Sans Serif	10	75	0	0	0
-ScaleFont2	Sans Serif	10	75	0	0	0
-ScaleFont3	Sans Serif	10	75	0	0	0
-AxisFont0	Sans Serif	10	50	0	0	0
-AxisFont1	Sans Serif	10	50	0	0	0
-AxisFont2	Sans Serif	10	50	0	0	0
-AxisFont3	Sans Serif	10	50	0	0	0
-AxesColors	#000000	#000000	#000000	#000000
-AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
-AxesBaseline	0	0	0	0	
-CanvasFrame	1	#000000
-CanvasBackground	#ffffff	0
-curve	Table1_1	Table1_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	4	1
-<Function>
-<Type>0</Type>
-<Title>NonLinearFit1</Title>
-<Expression>m*x+q</Expression>
-<Variable>x</Variable>
-<Range>365	578</Range>
-<Points>1000</Points>
-<Constant>m	-0.0047558327438635</Constant>
-<Constant>q	3.32472294198628</Constant>
-<Style>0</Style>
-<LineStyle>1</LineStyle>
-<Pen>
-	<Color>#000000</Color>
-	<Style>0</Style>
-	<Width>1</Width>
-</Pen>
-<xAxis>2</xAxis>
-<yAxis>0</yAxis>
-<CurveType>0</CurveType>
-<Visible>1</Visible>
-</Function>
-scale	0	0.4	1.8	0	8	5	0	0
-scale	1	0.6	1.8	0	7	5	0	0
-scale	2	350	600	0	6	5	0	0
-scale	3	350	600	0	6	5	0	0
-LabelsFormat	0	6	0	6	0	6	0	6
-AxisType	0	0	0	0	
-MajorTicks	3	3	3	3
-MinorTicks	3	3	3	3
-TicksLength	5	9
-DrawAxesBackbone	1	1	1	1	1
-AxesLineWidth	1
-LabelsRotation	0	0	0	0
-LabelsPrefix				
-LabelsSuffix				
-TickLabelsSpace	4	4	4	4
-ShowTicksPolicy	0	0	0	0
-EnabledTickLabels	1	0	1	0
-<Legend>
-<Frame>1</Frame>
-<Color>#000000</Color>
-<FrameWidth>1</FrameWidth>
-<LineStyle>0</LineStyle>
-<x>469.01763224181</x>
-<y>1.7292929292929</y>
-<right>589.92443324937</right>
-<bottom>1.18720538720539</bottom>
-<attachTo>1</attachTo>
-<onTop>1</onTop>
-<visible>1</visible>
-<Text>
-\l(1)%(1)
-\l(2)Linear Fit
-<b>Function</b>: m*x+q
-<b>Chi^2/doF</b> = 2.54576e-03
-<b>R^2</b> = 0.99011
-<b>m</b> = -4.75583e-03 +/- 2.74466e-04
-<b>q</b> = 3.32472e+00 +/- 1.29871e-01
-</Text>
-<Font>Sans Serif	10	50	0	0	0</Font>
-<TextColor>#000000</TextColor>
-<Background>#ffffff</Background>
-<Alpha>0</Alpha>
-<Angle>0</Angle>
-<AutoUpdate>1</AutoUpdate>
-<TeXOutput>0</TeXOutput>
-</Legend>
-</graph>
-<LinkXAxes>0</LinkXAxes>
-<ScaleLayers>1</ScaleLayers>
-</multiLayer>
 <table>
-Table2	30	2	08/06/2017 21:11
-geometry	-120	425	263	223	
-header	1[X]	2[Y]
-ColWidth	100	100	
+Table2	30	3	08/06/2017 21:11
+geometry	0	427	354	223	
+header	1[X]	2[Y]	3[Y]
+ColWidth	100	100	100	
 <com>
 </com>
-ColType	0;0/5	0;0/5
-ReadOnlyColumn	0	0
-HiddenColumn	0	0
-Comments			
+ColType	0;0/5	0;0/5	0;0/5
+ReadOnlyColumn	0	0	0
+HiddenColumn	0	0	0
+Comments				
 WindowLabel		2
 <data>
-0	365	-1.614
-1	405	-1.389
-2	435.8	-1.252
-3	546.1	-0.73
-4	578	-0.652
+0	8.2135e+14	-1.614	0.05
+1	7.4023e+14	-1.389	0.05
+2	6.8791e+14	-1.252	0.05
+3	5.4897e+14	-0.73	0.05
+4	5.1867e+14	-0.652	0.05
+</data>
+</table>
+<table>
+Table3	30	3	08/06/2017 21:28
+geometry	827	3	377	198	
+header	1[X]	2[Y]	3[Y]
+ColWidth	100	100	100	
+<com>
+</com>
+ColType	0;0/5	0;0/5	0;0/5
+ReadOnlyColumn	0	0	0
+HiddenColumn	0	0	0
+Comments				
+WindowLabel		2
+<data>
+0	6.4319e+14	2.49	0.05
+1	5.7808e+14	2.55	0.05
+2	5.0394e+14	2.07	0.05
+3	4.6516e+14	1.98	0.05
+4	3.2184e+14	1.065	0.05
 </data>
 </table>
 <multiLayer>
-Graph2	1	1	08/06/2017 21:13
-geometry	142	425	479	420	
+Graph5	1	1	12/06/2017 13:35
+geometry	352	419	481	420	
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
@@ -167,8 +72,8 @@ Alignement	0	0
 <AlignPolicy>0</AlignPolicy>
 <CommonAxes>0</CommonAxes>
 <graph>
-ggeometry	5	5	461	359
-<PageGeometry>0.0106157	0.013369	0.978769	0.959893</PageGeometry>
+ggeometry	5	5	463	359
+<PageGeometry>0.0105708	0.013369	0.978858	0.959893</PageGeometry>
 PlotTitle	Messung der Gegenspannung U0	#000000	4
 <Antialiasing>0</Antialiasing>
 <Autoscaling>1</Autoscaling>
@@ -180,7 +85,7 @@ Margin	0
 Border	0	#000000
 grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
 EnabledAxes	1	1	1	1	
-AxesTitles	Wellenlänge (nm)	U0 (V)		 	
+AxesTitles	Freqeunz (Hz)	Gegenspannung (V)		 	
 AxesTitleColors	#000000	#000000	#000000	#000000	
 AxesTitleAlignment	5124	5124	5124	5124
 AxesTitleDistance	2	2	2	2
@@ -203,12 +108,12 @@ curve	Table2_1	Table2_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0
 <Function>
 <Type>0</Type>
 <Title>NonLinearFit1</Title>
-<Expression>x*m+q</Expression>
+<Expression>q+m*x</Expression>
 <Variable>x</Variable>
-<Range>365	578</Range>
+<Range>518670000000000	821350000000000</Range>
 <Points>1000</Points>
-<Constant>m	0.0045553483266325</Constant>
-<Constant>q	-3.25010121324441</Constant>
+<Constant>m	-3.27196751398393e-15</Constant>
+<Constant>q	1.04330831992141</Constant>
 <Style>0</Style>
 <LineStyle>1</LineStyle>
 <Pen>
@@ -223,8 +128,8 @@ curve	Table2_1	Table2_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0
 </Function>
 scale	0	-1.8	-0.6	0	7	5	0	0
 scale	1	-1.8	-0.6	0	7	5	0	0
-scale	2	350	600	0	6	5	0	0
-scale	3	350	600	0	6	5	0	0
+scale	2	500000000000000	850000000000000	0	8	5	0	0
+scale	3	500000000000000	850000000000000	0	8	5	0	0
 LabelsFormat	0	6	0	6	0	6	0	6
 AxisType	0	0	0	0	
 MajorTicks	3	3	3	3
@@ -243,22 +148,22 @@ EnabledTickLabels	1	0	1	0
 <Color>#000000</Color>
 <FrameWidth>1</FrameWidth>
 <LineStyle>0</LineStyle>
-<x>467.75818639798</x>
-<y>-1.2626262626263</y>
-<right>589.294710327456</right>
-<bottom>-1.72727272727273</bottom>
+<x>6.7191435768262e+14</x>
+<y>-0.64848484848485</y>
+<right>603067484662577</right>
+<bottom>-0.775280898876404</bottom>
 <attachTo>1</attachTo>
 <onTop>1</onTop>
 <visible>1</visible>
 <Text>
 \l(1)%(1)
-\l(2)%(2)
+\l(2)Linear Fit
 <b>Dataset</b>: Table2_2
-<b>Function</b>: x*m+q
-<b>Chi^2/doF</b> = 1.13474e-03
-<b>R^2</b> = 0.99517
-<b>m</b> = 4.55535e-03 +/- 1.83243e-04
-<b>q</b> = -3.25010e+00 +/- 8.67063e-02
+<b>Function</b>: q+m*x
+<b>Chi^2/doF</b> = 1.17347e-03
+<b>R^2</b> = 0.995
+<b>m</b> = -3.27197e-15 +/- 1.33856e-16
+<b>q</b> = 1.04331e+00 +/- 9.01155e-02
 </Text>
 <Font>Sans Serif	10	50	0	0	0</Font>
 <TextColor>#000000</TextColor>
@@ -272,29 +177,9 @@ EnabledTickLabels	1	0	1	0
 <LinkXAxes>0</LinkXAxes>
 <ScaleLayers>1</ScaleLayers>
 </multiLayer>
-<table>
-Table3	30	2	08/06/2017 21:28
-geometry	615	1	259	198	
-header	1[X]	2[Y]
-ColWidth	100	100	
-<com>
-</com>
-ColType	0;0/5	0;0/5
-ReadOnlyColumn	0	0
-HiddenColumn	0	0
-Comments			
-WindowLabel		2
-<data>
-0	466.1	2.49
-1	518.6	2.55
-2	594.9	2.07
-3	644.5	1.98
-4	931.5	1.065
-</data>
-</table>
 <multiLayer>
-Graph3	1	1	08/06/2017 21:31
-geometry	877	1	471	420	active
+Graph4	1	1	13/06/2017 13:31
+geometry	355	1	473	420	active
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
@@ -303,8 +188,208 @@ Alignement	0	0
 <AlignPolicy>0</AlignPolicy>
 <CommonAxes>0</CommonAxes>
 <graph>
-ggeometry	5	5	453	359
-<PageGeometry>0.0107991	0.013369	0.978402	0.959893</PageGeometry>
+ggeometry	5	5	455	359
+<PageGeometry>0.0107527	0.013369	0.978495	0.959893</PageGeometry>
+PlotTitle	Messung der Photospannung (Uph)	#000000	4
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>0</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Frequenz (Hz)	Photospannung (V)		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	12	75	0	0	0
+ScaleFont0	Sans Serif	10	75	0	0	0
+ScaleFont1	Sans Serif	10	75	0	0	0
+ScaleFont2	Sans Serif	10	75	0	0	0
+ScaleFont3	Sans Serif	10	75	0	0	0
+AxisFont0	Sans Serif	10	50	0	0	0
+AxisFont1	Sans Serif	10	50	0	0	0
+AxisFont2	Sans Serif	10	50	0	0	0
+AxisFont3	Sans Serif	10	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#fffdf9	#000000	#fffdf9
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	0
+curve	Table1_1	Table1_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	4	1
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit1</Title>
+<Expression>m*x+q</Expression>
+<Variable>x</Variable>
+<Range>518670000000000	821350000000000</Range>
+<Points>1000</Points>
+<Constant>m	3.43139582232823e-15</Constant>
+<Constant>q	-1.16787720482379</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit2</Title>
+<Expression>m*x+q</Expression>
+<Variable>x</Variable>
+<Range>518670000000000	821350000000000</Range>
+<Points>1000</Points>
+<Constant>m	3.44041383969941e-15</Constant>
+<Constant>q	-1.17398667544882</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit3</Title>
+<Expression>m*x+q</Expression>
+<Variable>x</Variable>
+<Range>518670000000000	821350000000000</Range>
+<Points>1000</Points>
+<Constant>m	3.43139582222843e-15</Constant>
+<Constant>q	-1.16787720475293</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit4</Title>
+<Expression>m*x+q</Expression>
+<Variable>x</Variable>
+<Range>518670000000000	821350000000000</Range>
+<Points>1000</Points>
+<Constant>m	3.43139582223098e-15</Constant>
+<Constant>q	-1.16787720476182</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit5</Title>
+<Expression>m*x+q</Expression>
+<Variable>x</Variable>
+<Range>518670000000000	821350000000000</Range>
+<Points>1000</Points>
+<Constant>m	3.43139582223098e-15</Constant>
+<Constant>q	-1.16787720476182</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	0.6	1.8	0	7	5	0	0
+scale	1	0.6	1.8	0	7	5	0	0
+scale	2	500000000000000	850000000000000	0	8	5	0	0
+scale	3	500000000000000	850000000000000	0	8	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>5.0793450881612e+14</x>
+<y>1.7636363636364</y>
+<right>605660377358490</right>
+<bottom>1.6247191011236</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(2)Linear Fit
+<b>Dataset</b>: Table1_2
+<b>Function</b>: m*x+q
+<b>Chi^2/doF</b> = 2.81960e-04
+<b>R^2</b> = 0.9989
+<b>m</b> = 3.43140e-15 +/- 6.56141e-17
+<b>q</b> = -1.16788e+00 +/- 4.41731e-02
+</Text>
+<Font>Sans Serif	10	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Graph6	1	1	13/06/2017 15:08
+geometry	921	201	473	420	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	455	359
+<PageGeometry>0.0107527	0.013369	0.978495	0.959893</PageGeometry>
 PlotTitle	Messung der Knickspannung Uk	#000000	4
 <Antialiasing>0</Antialiasing>
 <Autoscaling>1</Autoscaling>
@@ -316,9 +401,9 @@ Margin	0
 Border	0	#000000
 grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
 EnabledAxes	1	1	1	1	
-AxesTitles	Wellenlänge (nm)	Uk (V)		 	
+AxesTitles	Frequenz (Hz)	Knickspannung (V)		 	
 AxesTitleColors	#000000	#000000	#000000	#000000	
-AxesTitleAlignment	5124	5124	4	5124
+AxesTitleAlignment	4	5124	4	5124
 AxesTitleDistance	2	2	2	2
 InvertedTitle	0	0	0	0
 TitleFont	Sans Serif	12	75	0	0	0
@@ -341,10 +426,10 @@ curve	Table3_1	Table3_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0
 <Title>NonLinearFit1</Title>
 <Expression>m*x+q</Expression>
 <Variable>x</Variable>
-<Range>466.1	931.5</Range>
+<Range>321840000000000	643190000000000</Range>
 <Points>1000</Points>
-<Constant>m	-0.00323987188034081</Constant>
-<Constant>q	4.07574794113466</Constant>
+<Constant>m	4.70740676676684e-15</Constant>
+<Constant>q	-0.334198870709583</Constant>
 <Style>0</Style>
 <LineStyle>1</LineStyle>
 <Pen>
@@ -357,10 +442,10 @@ curve	Table3_1	Table3_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0
 <CurveType>0</CurveType>
 <Visible>1</Visible>
 </Function>
-scale	0	1	2.6	0	9	5	0	0
+scale	0	1	3	0	5	5	0	0
 scale	1	1	2.6	0	9	5	0	0
-scale	2	400	1000	0	7	5	0	0
-scale	3	400	1000	0	7	5	0	0
+scale	2	300000000000000	650000000000000	0	8	5	0	0
+scale	3	300000000000000	650000000000000	0	8	5	0	0
 LabelsFormat	0	6	0	6	0	6	0	6
 AxisType	0	0	0	0	
 MajorTicks	3	3	3	3
@@ -379,22 +464,22 @@ EnabledTickLabels	1	0	1	0
 <Color>#000000</Color>
 <FrameWidth>1</FrameWidth>
 <LineStyle>0</LineStyle>
-<x>413.60201511335</x>
-<y>1.6841750841751</y>
-<right>703.778337531486</right>
-<bottom>1.06464646464646</bottom>
+<x>3.0705289672544e+14</x>
+<y>2.9191919191919</y>
+<right>473677581863980</right>
+<bottom>2.14478114478114</bottom>
 <attachTo>1</attachTo>
 <onTop>1</onTop>
 <visible>1</visible>
 <Text>
 \l(1)%(1)
-\l(2)%(2)
+\l(2)Linear Fit
 <b>Dataset</b>: Table3_2
 <b>Function</b>: m*x+q
-<b>Chi^2/doF</b> = 1.19418e-02
-<b>R^2</b> = 0.97472
-<b>m</b> = -3.23987e-03 +/- 3.01223e-04
-<b>q</b> = 4.07575e+00 +/- 1.96289e-01
+<b>Chi^2/doF</b> = 3.26414e-02
+<b>R^2</b> = 0.93091
+<b>m</b> = 4.70741e-15 +/- 7.40421e-16
+<b>q</b> = -3.34199e-01 +/- 3.80692e-01
 </Text>
 <Font>Sans Serif	10	50	0	0	0</Font>
 <TextColor>#000000</TextColor>
@@ -476,6 +561,566 @@ RMSE (Root Mean Squared Error) = 0.10928
 RSS (Residual Sum of Squares) = 0.035825
 ---------------------------------------------------------------------------------------
 Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+
+[09/06/2017 02:44	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table3_2, using function: h*c/(x*e)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 4.66100e+02 to x = 9.31500e+02
+h = -8.38371e-19 +/- 4.19186e-19
+--------------------------------------------------------------------------------------
+Chi^2/doF = 9.04779e+12
+R^2 = -2.5535e+13
+Adjusted R^2 = -3.4047e+13
+RMSE (Root Mean Squared Error) = 3.008e+06
+RSS (Residual Sum of Squares) = 3.6191e+13
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+c = 2.9979e+08 (constant)
+e = 1.6022e-19 (constant)
+---------------------------------------------------------------------------------------
+[09/06/2017 02:45	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table3_2, using function: h*c/(x*e)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 4.66100e+02 to x = 9.31500e+02
+c = 1.03282e+01 +/- 4.35240e+15
+e = 8.22762e-02 +/- 5.24051e+07
+h = 9.72528e+00 +/- 4.09831e+15
+--------------------------------------------------------------------------------------
+Chi^2/doF = 6.15417e-02
+R^2 = 0.91316
+Adjusted R^2 = 0.65263
+RMSE (Root Mean Squared Error) = 0.24808
+RSS (Residual Sum of Squares) = 0.12308
+---------------------------------------------------------------------------------------
+Iterations = 19
+Status = success
+---------------------------------------------------------------------------------------
+[09/06/2017 02:45	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table3_2, using function: h*c/(x*e)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 4.66100e+02 to x = 9.31500e+02
+c = 1.03465e+01 +/- 2.62553e+09
+e = 8.24490e-02 +/- 5.88688e+06
+h = 9.72845e+00 +/- 1.85681e+09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 6.15417e-02
+R^2 = 0.91316
+Adjusted R^2 = 0.65263
+RMSE (Root Mean Squared Error) = 0.24808
+RSS (Residual Sum of Squares) = 0.12308
+---------------------------------------------------------------------------------------
+Iterations = 5
+Status = success
+---------------------------------------------------------------------------------------
+[09/06/2017 02:45	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table3_2, using function: h*c/(x*e)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 4.66100e+02 to x = 9.31500e+02
+c = 1.03643e+01 +/- 1.74615e+09
+e = 8.16316e-02 +/- 9.85899e+06
+h = 9.61548e+00 +/- 1.19710e+09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 6.15417e-02
+R^2 = 0.91316
+Adjusted R^2 = 0.65263
+RMSE (Root Mean Squared Error) = 0.24808
+RSS (Residual Sum of Squares) = 0.12308
+---------------------------------------------------------------------------------------
+Iterations = 7
+Status = success
+---------------------------------------------------------------------------------------
+[09/06/2017 02:45	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table3_2, using function: h*c/(x*e)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 4.66100e+02 to x = 9.31500e+02
+c = 1.03669e+01 +/- 1.94816e+09
+e = 8.15108e-02 +/- 1.48200e+07
+h = 9.59888e+00 +/- 3.29339e+09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 6.15417e-02
+R^2 = 0.91316
+Adjusted R^2 = 0.65263
+RMSE (Root Mean Squared Error) = 0.24808
+RSS (Residual Sum of Squares) = 0.12308
+---------------------------------------------------------------------------------------
+Iterations = 5
+Status = success
+---------------------------------------------------------------------------------------
+[09/06/2017 02:45	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table3_2, using function: h*c/(x*e)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 4.66100e+02 to x = 9.31500e+02
+c = 1.03768e+01 +/- 1.17467e+09
+e = 8.16669e-02 +/- 1.42380e+07
+h = 9.60805e+00 +/- 8.54467e+08
+--------------------------------------------------------------------------------------
+Chi^2/doF = 6.15417e-02
+R^2 = 0.91316
+Adjusted R^2 = 0.65263
+RMSE (Root Mean Squared Error) = 0.24808
+RSS (Residual Sum of Squares) = 0.12308
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = success
+---------------------------------------------------------------------------------------
+[09/06/2017 02:45	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table3_2, using function: h*c/(x*e)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 4.66100e+02 to x = 9.31500e+02
+c = 1.03975e+01 +/- 1.24602e+16
+e = 8.19753e-02 +/- 1.64190e+07
+h = 9.62518e+00 +/- 1.15347e+16
+--------------------------------------------------------------------------------------
+Chi^2/doF = 6.15417e-02
+R^2 = 0.91316
+Adjusted R^2 = 0.65263
+RMSE (Root Mean Squared Error) = 0.24808
+RSS (Residual Sum of Squares) = 0.12308
+---------------------------------------------------------------------------------------
+Iterations = 6
+Status = success
+---------------------------------------------------------------------------------------
+[09/06/2017 02:45	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table3_2, using function: h*c/(x*e)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 4.66100e+02 to x = 9.31500e+02
+c = 1.04225e+01 +/- 2.76460e+09
+e = 8.17673e-02 +/- 4.87167e+06
+h = 9.57763e+00 +/- 2.49100e+09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 6.15417e-02
+R^2 = 0.91316
+Adjusted R^2 = 0.65263
+RMSE (Root Mean Squared Error) = 0.24808
+RSS (Residual Sum of Squares) = 0.12308
+---------------------------------------------------------------------------------------
+Iterations = 5
+Status = success
+---------------------------------------------------------------------------------------
+[09/06/2017 02:45	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table3_2, using function: h*c/(x*e)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 4.66100e+02 to x = 9.31500e+02
+c = 1.04476e+01 +/- 9.16074e+09
+e = 8.19950e-02 +/- 5.63433e+06
+h = 9.58130e+00 +/- 8.65796e+09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 6.15417e-02
+R^2 = 0.91316
+Adjusted R^2 = 0.65263
+RMSE (Root Mean Squared Error) = 0.24808
+RSS (Residual Sum of Squares) = 0.12308
+---------------------------------------------------------------------------------------
+Iterations = 4
+Status = success
+---------------------------------------------------------------------------------------
+[09/06/2017 02:45	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table3_2, using function: h*c/(x*e)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 4.66100e+02 to x = 9.31500e+02
+c = 1.04553e+01 +/- 6.75687e+15
+e = 8.19307e-02 +/- 6.28376e+06
+h = 9.56669e+00 +/- 6.18258e+15
+--------------------------------------------------------------------------------------
+Chi^2/doF = 6.15417e-02
+R^2 = 0.91316
+Adjusted R^2 = 0.65263
+RMSE (Root Mean Squared Error) = 0.24808
+RSS (Residual Sum of Squares) = 0.12308
+---------------------------------------------------------------------------------------
+Iterations = 4
+Status = success
+---------------------------------------------------------------------------------------
+[09/06/2017 02:45	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table3_2, using function: h*c/(x*e)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 4.66100e+02 to x = 9.31500e+02
+c = 1.04070e+01 +/- 1.22408e+09
+e = 8.14626e-02 +/- 6.26586e+06
+h = 9.55617e+00 +/- 9.61037e+08
+--------------------------------------------------------------------------------------
+Chi^2/doF = 6.15417e-02
+R^2 = 0.91316
+Adjusted R^2 = 0.65263
+RMSE (Root Mean Squared Error) = 0.24808
+RSS (Residual Sum of Squares) = 0.12308
+---------------------------------------------------------------------------------------
+Iterations = 5
+Status = success
+---------------------------------------------------------------------------------------
+[09/06/2017 02:45	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table3_2, using function: h*c/(x*e)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 4.66100e+02 to x = 9.31500e+02
+c = 1.04120e+01 +/- 6.16386e+09
+e = 8.13594e-02 +/- 2.26222e+07
+h = 9.53948e+00 +/- 3.04355e+09
+--------------------------------------------------------------------------------------
+Chi^2/doF = 6.15417e-02
+R^2 = 0.91316
+Adjusted R^2 = 0.65263
+RMSE (Root Mean Squared Error) = 0.24808
+RSS (Residual Sum of Squares) = 0.12308
+---------------------------------------------------------------------------------------
+Iterations = 4
+Status = success
+---------------------------------------------------------------------------------------
+[09/06/2017 02:49	Plot: ''Graph3'']
+Non-linear Fit of dataset: Table3_2, using function: h*c/(x*e)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 4.66100e+02 to x = 9.31500e+02
+c = 1.95711e-16 +/- 7.32884e-18
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.07727e-02
+R^2 = 0.91315
+Adjusted R^2 = 0.8842
+RMSE (Root Mean Squared Error) = 0.17542
+RSS (Residual Sum of Squares) = 0.12309
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = success
+---------------------------------------------------------------------------------------
+e = 1.6022e-19 (constant)
+h = 1 (constant)
+---------------------------------------------------------------------------------------
+[09/06/2017 02:49	Plot: ''Graph3'']
+Non-linear Fit of dataset: Table3_2, using function: h*c/(x*e)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 4.66100e+02 to x = 9.31500e+02
+h = -8.38371e-19 +/- 4.19186e-19
+--------------------------------------------------------------------------------------
+Chi^2/doF = 9.04779e+12
+R^2 = -2.5535e+13
+Adjusted R^2 = -3.4047e+13
+RMSE (Root Mean Squared Error) = 3.008e+06
+RSS (Residual Sum of Squares) = 3.6191e+13
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+c = 2.9979e+08 (constant)
+e = 1.6022e-19 (constant)
+---------------------------------------------------------------------------------------
+[09/06/2017 02:50	Plot: ''Graph3'']
+Non-linear Fit of dataset: Table3_2, using function: h*c/(x*e)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 4.66100e+02 to x = 9.31500e+02
+h = 6.52448e-25 +/- 2.44458e-26
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.07709e-02
+R^2 = 0.91316
+Adjusted R^2 = 0.88421
+RMSE (Root Mean Squared Error) = 0.17542
+RSS (Residual Sum of Squares) = 0.12308
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+c = 2.9979e+08 (constant)
+e = 1.6022e-19 (constant)
+---------------------------------------------------------------------------------------
+[09/06/2017 02:52	Plot: ''Graph3'']
+Non-linear Fit of dataset: Table3_2, using function: m/x+q
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 4.66100e+02 to x = 9.31500e+02
+m = 1.41122e+03 +/- 2.21981e+02
+q = -3.34145e-01 +/- 3.80706e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.26450e-02
+R^2 = 0.9309
+Adjusted R^2 = 0.8618
+RMSE (Root Mean Squared Error) = 0.18068
+RSS (Residual Sum of Squares) = 0.097935
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+[09/06/2017 02:52	Plot: ''Graph3'']
+Non-linear Fit of dataset: Table3_2, using function: m/x+q
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 4.66100e+02 to x = 9.31500e+02
+m = 1.41122e+03 +/- 2.21981e+02
+q = -3.34145e-01 +/- 3.80706e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.26450e-02
+R^2 = 0.9309
+Adjusted R^2 = 0.8618
+RMSE (Root Mean Squared Error) = 0.18068
+RSS (Residual Sum of Squares) = 0.097935
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+
+[12/06/2017 13:28	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table2_2, using function: m*x+q
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 3.65000e-07 to x = 5.78000e-07
+m = 4.55535e+06 +/- 1.83243e+05
+q = -3.25010e+00 +/- 8.67063e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.13474e-03
+R^2 = 0.99517
+Adjusted R^2 = 0.99034
+RMSE (Root Mean Squared Error) = 0.033686
+RSS (Residual Sum of Squares) = 0.0034042
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = success
+---------------------------------------------------------------------------------------
+[12/06/2017 13:36	Plot: ''Graph5'']
+Non-linear Fit of dataset: Table2_2, using function: q+m*x
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 8.21350e+14 to x = 5.18670e+14
+m = -3.27197e-15 +/- 1.33856e-16
+q = 1.04331e+00 +/- 9.01155e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.17347e-03
+R^2 = 0.995
+Adjusted R^2 = 0.99001
+RMSE (Root Mean Squared Error) = 0.034256
+RSS (Residual Sum of Squares) = 0.0035204
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = success
+---------------------------------------------------------------------------------------
+
+[13/06/2017 13:32	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table1_2, using function: m*x+q
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 8.21350e+14 to x = 5.18670e+14
+m = 3.43140e-15 +/- 6.56141e-17
+q = -1.16788e+00 +/- 4.41731e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.81960e-04
+R^2 = 0.9989
+Adjusted R^2 = 0.99781
+RMSE (Root Mean Squared Error) = 0.016792
+RSS (Residual Sum of Squares) = 0.00084588
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = success
+---------------------------------------------------------------------------------------
+
+[13/06/2017 15:03	Plot: ''Graph6'']
+Non-linear Fit of dataset: Table4_2, using function: m*x+q
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 5.18670e+14 to x = 8.21350e+14
+m = 3.19506e-15 +/- 2.06994e-16
+q = -1.13729e+00 +/- 1.39353e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.80613e-03
+R^2 = 0.98757
+Adjusted R^2 = 0.97513
+RMSE (Root Mean Squared Error) = 0.052973
+RSS (Residual Sum of Squares) = 0.0084184
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = success
+---------------------------------------------------------------------------------------
+[13/06/2017 15:10	Plot: ''Graph6'']
+Non-linear Fit of dataset: Table3_2, using function: m*x+q
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 6.43190e+14 to x = 3.21840e+14
+m = 4.70741e-15 +/- 7.40421e-16
+q = -3.34199e-01 +/- 3.80692e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.26414e-02
+R^2 = 0.93091
+Adjusted R^2 = 0.86182
+RMSE (Root Mean Squared Error) = 0.18067
+RSS (Residual Sum of Squares) = 0.097924
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = success
+---------------------------------------------------------------------------------------
+
+[14/06/2017 11:07	Plot: ''Graph7'']
+Non-linear Fit of dataset: Table4_2, using function: 1/(m*x)+q
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 5.18600e-07 to x = 6.44500e-07
+m = 6.60839e+05 +/- inf
+q = -3.67911e-01 +/- inf
+--------------------------------------------------------------------------------------
+Chi^2/doF = inf
+R^2 = 1
+RSS (Residual Sum of Squares) = 1.2456e-21
+---------------------------------------------------------------------------------------
+Iterations = 24
+Status = success
+---------------------------------------------------------------------------------------
+[14/06/2017 11:08	Plot: ''Graph7'']
+Non-linear Fit of dataset: Table4_2, using function: x/m+q
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 5.18600e-07 to x = 6.44500e-07
+m = -6.55929e+05 +/- inf
+q = 2.26500e+00 +/- inf
+--------------------------------------------------------------------------------------
+Chi^2/doF = inf
+R^2 = 6.7468e-13
+RSS (Residual Sum of Squares) = 0.16245
+---------------------------------------------------------------------------------------
+Iterations = 4
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+[14/06/2017 11:10	Plot: ''Graph7'']
+Non-linear Fit of dataset: Table4_2, using function: 1/(m*x+q)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 5.18600e-07 to x = 6.44500e-07
+m = 8.96693e+05 +/- inf
+q = -7.28681e-02 +/- inf
+--------------------------------------------------------------------------------------
+Chi^2/doF = inf
+R^2 = 1
+RSS (Residual Sum of Squares) = 6.9044e-17
+---------------------------------------------------------------------------------------
+Iterations = 8
+Status = success
+---------------------------------------------------------------------------------------
+[14/06/2017 11:12	Plot: ''Graph7'']
+Non-linear Fit of dataset: Table4_2, using function: 1/(m*x+q)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 5.18600e-07 to x = 6.44500e-07
+m = -8.96811e+20 +/- inf
+q = 1.04315e+15 +/- inf
+--------------------------------------------------------------------------------------
+Chi^2/doF = inf
+R^2 = 1
+RSS (Residual Sum of Squares) = 2.9469e-57
+---------------------------------------------------------------------------------------
+Iterations = 54
+Status = success
+---------------------------------------------------------------------------------------
+[14/06/2017 11:52	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table1_2, using function: m*x+q
+Weighting Method: Direct Weighting using Dataset: Table1_3
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 8.21350e+14 to x = 5.18670e+14
+m = 3.43140e-15 +/- 6.56141e-17
+q = -1.16788e+00 +/- 4.41731e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.40980e-05
+R^2 = 0.9989
+Adjusted R^2 = 0.99781
+RMSE (Root Mean Squared Error) = 0.0037547
+RSS (Residual Sum of Squares) = 4.2294e-05
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = success
+---------------------------------------------------------------------------------------
+[14/06/2017 11:52	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table1_2, using function: m*x+q
+Weighting Method: Arbitrary Dataset: Table1_3
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 8.21350e+14 to x = 5.18670e+14
+m = 3.43140e-15 +/- 6.56141e-17
+q = -1.16788e+00 +/- 4.41731e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.12784e-01
+R^2 = 0.9989
+Adjusted R^2 = 0.99781
+RMSE (Root Mean Squared Error) = 0.33583
+RSS (Residual Sum of Squares) = 0.33835
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[14/06/2017 11:53	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table1_2, using function: m*x+q
+Weighting Method: Statistical
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 8.21350e+14 to x = 5.18670e+14
+m = 3.44041e-15 +/- 5.79438e-17
+q = -1.17399e+00 +/- 3.64936e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.11139e-04
+R^2 = 0.99926
+Adjusted R^2 = 0.99853
+RMSE (Root Mean Squared Error) = 0.014531
+RSS (Residual Sum of Squares) = 0.00063342
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = success
+---------------------------------------------------------------------------------------
+[14/06/2017 11:54	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table1_2, using function: m*x+q
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 8.21350e+14 to x = 5.18670e+14
+m = 3.43140e-15 +/- 6.56141e-17
+q = -1.16788e+00 +/- 4.41731e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.81960e-04
+R^2 = 0.9989
+Adjusted R^2 = 0.99781
+RMSE (Root Mean Squared Error) = 0.016792
+RSS (Residual Sum of Squares) = 0.00084588
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+[14/06/2017 11:54	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table1_2, using function: m*x+q
+Weighting Method: Arbitrary Dataset: Table1_3
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 8.21350e+14 to x = 5.18670e+14
+m = 3.43140e-15 +/- 6.56141e-17
+q = -1.16788e+00 +/- 4.41731e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.12784e-01
+R^2 = 0.9989
+Adjusted R^2 = 0.99781
+RMSE (Root Mean Squared Error) = 0.33583
+RSS (Residual Sum of Squares) = 0.33835
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[14/06/2017 11:54	Plot: ''Graph4'']
+Non-linear Fit of dataset: Table1_2, using function: m*x+q
+Weighting Method: Direct Weighting using Dataset: Table1_3
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 8.21350e+14 to x = 5.18670e+14
+m = 3.43140e-15 +/- 6.56141e-17
+q = -1.16788e+00 +/- 4.41731e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.40980e-05
+R^2 = 0.9989
+Adjusted R^2 = 0.99781
+RMSE (Root Mean Squared Error) = 0.0037547
+RSS (Residual Sum of Squares) = 4.2294e-05
+---------------------------------------------------------------------------------------
+Iterations = 1
 Status = success
 ---------------------------------------------------------------------------------------
 </log>

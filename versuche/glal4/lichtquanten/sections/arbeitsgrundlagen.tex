@@ -1,5 +1,7 @@
 \section{Arbeitsgrundlagen}
 
+(Auszug aus der Aufgabenstellung\cite{ref:aufgabenstellung})
+
 Die Ausbreitung von Licht und deren Wechselwirkung mit  materiellen  K\"orpern
 kann in zwei Bereichen aufgeteilt werden.
 
@@ -100,72 +102,116 @@ Leitungs-  und  Valenzband = Breite der Bandl\"ucke (engl. \textit{gap}) $E_g$
 massgebend.  Dies  ergibt  die  langwellige Grenze  der  Photoempfindlichkeit.
 
 
-\subsection{Bestimmung der Plank'schen Konstante h}
+\subsection{Leuchtdioden, physikalische Grundlagen}
 
-Elektronen  in  der  Photokathode  absorbieren  die  Energie  $h\cdot\nu$  der
-einfallenden Photonen. Ist  ihre  Energie anschließend hoch genug, so k\"onnen
-sie  das  Metall  verlassen  und  fuhren so zu einer positiven  Aufladung  der
-beleuchteten Elektrode. Die Elektronen haben nach  dem  Verlassen  der Kathode
-eine gewisse  maximale  kinetische  Energie $E_{kin}$, die aber nicht ganz der
-Energie  der absorbierten Photonen entspricht, sondern  etwas  niedriger  ist.
-Dies  liegt  daran,  dass  beim  Austritt  aus  jedem  Material die sogenannte
-Austrittsarbeit $W_A$  aufgebracht werden muss, bzw. beim Eintritt wieder frei
-wird. Es gilt die Gleichung:
+Die Lichtemission von  Atomen,  Molek\"ulen  und  Festk\"orpern  kommt dadurch
+zustande, dass Elektro- nen von h\"oheren in tiefer liegende Energiezust\"ande
+\"ubergehen.  Bei  jedem  einzelnen  Quantenprozess wird die  Energiedifferenz
+$\Delta  E$  als   einzelnes   Photon   mit   der   Wellenl\"ange  $\lambda  =
+\frac{hc}{\Delta  E}$  ausgesandt.  Leuchtdioden   (Lumineszenzdioden,   engl.
+\textit{light  emitting diodes}, abgek\"urzt LED) sind spezielle, hochdotierte
+p-n-Dioden,  vorwiegend  III/V-Halbleiter wie  GaAs,  GaP  und  Mischkristalle
+GaAsxP1-x,  eine  \"Ubersichtstabelle  findet sich in PI, S. 690. Fliesst  ein
+Strom in  Leitrichtung,  gehen  im Bereich des p-n-\"Uberganges Elektronen vom
+Leitungsband  ins Valenzband \"uber,  wobei  der  Energieunterschied  von  der
+ungef\"ahren  Gr\"osse  des Bandabstandes = Bandl\"ucke  (engl.  gap)  Eg  als
+Photon emittiert wird.  Wir  geben  nachfolgend  eine  kurze  Darstellung  der
+Vorg\"ange am p-n-\"Ubergang, f\"ur  eine  genauere  Betrachtung  sei  auf die
+Literatur, z.B. PI, 9.2.3.2 und 9.2.3.3, S. 665 ff. verwiesen.
+
+\subsubsection{Vorg\"ange am p-n-\"Ubergang}
+
+Bringen  wir  ein  p-   und  ein  n-leitendes  Halbleitermaterial  in  Kontakt
+\ref{fig:pn},   so   bestehen   an   der   Grenzfl\"ache   f\"ur   die  beiden
+Ladungstr\"agersorten,    Elektronen     und    L\"ocher,    vorerst    grosse
+Konzentrationsgef\"alle   .    Diese    bewirken,    dass    die    jeweiligen
+Majorit\"ats-Ladungstr\"ager \"uber die Grenze ins Nachbargebiet diffundieren:
+die  Elektronen  ins  p-Gebiet,  die  L\"ocher  ins  n-Gebiet. Dort  ist  ihre
+Lebensdauer kurz, denn sie rekombinieren mit den  dort  zahlreich  vorhandenen
+Majorit\"ats- Ladungstr\"agern der jeweils  anderen Sorte. Wegen der Verarmung
+an   Majorit\"ats-Ladungstr\"agern   bildet   sich   auf   der   n-Seite   des
+
+\"Ubergangs eine positive, auf der p-Seite eine negative, ortsfeste Raumladung
+$\rho(x)$  aus,  welche  je  aus den nicht mehr kompensierten  Akzeptor-  bzw.
+Donator-Ionen besteht. Das damit verbundene elektrische Feld  $E(x)$ hat einen
+Driftstrom zur Folge, der entgegen dem Diffusionsstrom  fliesst,  und  solange
+anw\"achst,   bis   der  stromlose  Gleichgewichtszustand  erreicht  ist.  Die
+zugeh\"orige Potentialdifferenz  heisst  Diffusionsspannung  $U_d$ und ist ein
+wichtiger Parameter des p-n-\"Ubergangs.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.8\linewidth]{images/pn}
+    \caption{(Aus HP 8.4)}
+    \label{fig:pn}
+\end{figure}
+
+Legt man eine  \"aussere  Spannung  in  Leitrichtung $p \to n$ an, so wird die
+Potentialbarriere reduziert auf den Wert $U_d - U$ , die Raumladungszone (RLZ)
+wird schmaler und der Driftstrom kleiner.  Es  fliesst also ein Nettostrom von
+Ladungstr\"agern   \"uber   den  p-n-\"Ubergang  und  rekombiniert  wie   oben
+beschrieben -- im p-Gebiet  die  eingedrungenen  Elektronen  mit L\"ochern, im
+n-Gebiet die  eingedrungenen L\"ocher mit Elektronen. Dieser Durchlassstrom in
+Leitrichtung wird im p-Gebiet von  L\"ochern,  im  n-Gebiet von Elektronen, im
+p-n-\"Ubergang von beiden  Ladungstr\"agersorten  getragen. Solange $U < U_d$,
+bestimmt  die  Potentialdifferenz  in  der RLZ den Strom, der in  diesem  Fall
+exponentiell verl\"auft.  Wenn $U > U_d$ wird der p-n-\"Ubergang ``flach'' und
+der  Materialwiderstand  beidseits des \"Ubergangs wird bestimmend, die  Diode
+verh\"alt sich dann  wie  ein  Ohm'scher  Widerstand.  Der steile Stromanstieg
+setzt  bei  $U  \approx  U_d$  ein,   dort   beobachtet   man  den  Knick  der
+Diodenkennlinie. Polt man die  \"aussere  Spannung in Sperrrichtung $n \to p$,
+so erh\"oht man  die  Potentialbarriere  und  verbreitert  die Raumladungszone
+(RLZ). Es  fliesst  ein winziger Sperrstrom, der dadurch bedingt ist, dass ein
+kleiner  Bruchteil  der Ladungstr\"ager gen\"ugend thermische Energie hat,  um
+die  Barriere  zu  \"uberqueren,  er   nimmt  mit  der  Temperatur  stark  zu.
+
+
+\subsubsection{Leuchtdioden}
+
+Rekombination   der   Ladungstr\"ager  heisst  im  Klartext:  \"Ubergang   von
+Elektronen  aus  dem  Leitungsband  ins  Valenzband.  Die  dabei frei werdende
+Energie  wird  bei  der  normalen  Diode  in   W\"arme  umgewandelt,  bei  der
+Leuchtdiode hingegen wird sie \"uberwiegend als Licht  frei. Die nebenstehende
+Figur veranschaulicht  die Vorg\"ange am p-n-\"Ubergang. Der aufmerksame Leser
+merkt: Dieser Vorgang ist der Umkehrprozess zum inneren Photoeffekt, wo in der
+(an   Ladungstr\"agern  verarmten)  Raumladungszone  einer  in   Sperrrichtung
+gepolten Diode Elektron-Lochpaare erzeugt werden.
+
+\clearpage
+\begin{wrapfigure}{r}{.5\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{images/led}
+    \caption{(aus HP 8.6)}
+    \label{fig:led}
+\end{wrapfigure}
+
+Die Rekombinationsrate ist  proportional zum Strom, n\"aherungsweise gilt dies
+auch f\"ur die  Pro  duktionsrate  der  Photonen.  Allerdings  tritt  nur  ein
+Bruchteil davon aus, wof\"ur u.a. der grosse Brech ungsindex des Materials ($n
+\approx  3.5$)  verantwortlich  ist,   schon   bei   einem   relativ   kleinen
+Einfallswinkel auf die Grenzfl\"ache  tritt  Totalreflexion  auf. Das Spektrum
+des  emittierten   Lichtes   wird   von   der   inneren   Energiestruktur  des
+Halbleiter-Materials    bestimmt,    d.h.   vom   Abstand   zwischen   Valenz-
+undLeitungsband-Kanten  $E_g$,  von  der  energetischen  Lage  der Akzeptoren,
+Donatoren   und  anderer  St\"orstellen.  Eine   grosse   Zahl   verschiedener
+Rekombinationsprozesse  tr\"agt  zur   Lichtemission   bei:  Leitungsband  -->
+Valenzband, Donator --> Valenzband,  Leitungsband  -->  Akzeptor,  Donator -->
+Akzeptor  usw..  Bei  h\"oheren Temperaturen verschwinden die Einzelheiten und
+das Spektrum  nimmt eine mehr oder weniger glockenf\"ormige Form an. F\"ur die
+h\"aufigste Quantenenergie kann man n\"aherungsweise den Wert $E_{\gamma} =  h
+c  \lambda  \approx  E_g$  erwarten.  Es  stellt  sich   die   Frage,  welcher
+Zusammenhang zur Kennlinie  der  Leuchtdiode  besteht.  Die Diffusionsspannung
+$U_d$ h\"angt in komplizierter Weise vom Material,  seiner Dotierung sowie dem
+geometrischen Aufbau der Diode ab. Weil Leuchtdioden hoch dotiert sind, liegen
+die Fermi-Energien nahe den Bandkanten und $e \cdot U_d$ ist ungef\"ahr gleich
+dem Bandabstand $E_g$, in der Regel etwas  kleiner.  Wir  haben  oben gesehen,
+dass $U_d$ etwa der Knickspannung UK  der  Kennlinie  entspricht. Die messbare
+Knickspannung  und die Wellenl\"ange des Emissionsmaximums einer  LED  sollten
+also n\"aherungsweise der Beziehung:
 
 \begin{equation}
-    E_{kin} = \frac{1}{2}m_e v^2 = h\cdot\nu - W_{A,Kathode}
+    e \cdot U_K \approx E_{\gamma} = h c \lambda
 \end{equation}
 
-Die  Messung  der  maximalen  kinetischen  Energie  der  Elektronen  kann  auf
-verschiedene    Arten   erfolgen.   Denkbar   w\"are    zum    Beispiel    die
-Fluggeschwindigkeit  direkt  zu   bestimmen.  Allerdings  w\"are  ein  daf\"ur
-geeigneter  Aufbau  sehr aufw\"andig. Einfacher ist es, zwischen  Kathode  und
-Anode eine  Gegenspannung anzulegen, die gerade so eingestellt wird, dass auch
-die  schnellsten  Elektronen  die  Anode  gerade  nicht  mehr  erreichen.  Der
-(relativ) einfach messbare  Photostrom  wird  fur  diesen  Wert $U_{max}$ dann
-gerade null. $U_{max}\cdot e$ entspricht bis  auf  einen  konstanten Summanden
-der kinetischen Energie $E_{kin}$. Die Konstante kommt daher, dass nat\"urlich
-nicht nur die Kathode, sondern auch die Anode eine Austrittsarbeit hat. Da die
-beiden Elektroden \"uber das Messger\"at  verbunden  sind,  muss auch noch die
-Kontaktspannung    berucksichtigt   werden,   so   dass   schließlich    gilt:
-
-\begin{align}
-    U_{max}(\nu)\cdot e &= E_{kin} - U_{Kontakt} \cdot e \\
-                        &= \left(h\cdot\nu - W_{A,Kathode}\right) - \left(W_{A,Anode}-W_{A,Kathode}\right) \\
-                        &= h\cdot\nu - W_{A,Anode}
-    \label{eq:umax}
-\end{align}
-
-Die Austrittsarbeit der Kathode spielt f\"ur den Wert  der  Gegenspannung also
-tats\"achlich keine Rolle. Ihre Gr\"osse entscheidet aber nat\"urlich trotzdem
-dar\"uber,  ob  \"uberhaupt  Photoelektronen emittiert werden k\"onnen und wie
-hoch  deren kinetische Energie ist. Die Austrittsarbeiten h\"angen  nicht  von
-der  Frequenz  des  eingestrahlten Lichtes ab. Deshalb kann man auch ohne ihre
-Kenntnis  mit  Hilfe  der  Gleichung  \ref{eq:umax}  aus  zwei  Messungen  von
-$U_max(\nu)$  f\"ur  verschiedene  Lichtfrequenzen  $\nu_1$  und $\nu_2$ durch
-Differenzbildung die Konstante $h$ bestimmen:
-
-\begin{equation}
-    h = \frac{e\cdot\left(U_{max}(\nu_2) - U_{max}(\nu_1)\right)}{\nu_2 - \nu_1}
-\end{equation}
-
-Oder, falls mehrere Messdaten vorhanden sind, kann mittels linearer Regression
-die Konstante $h$ auch anhand der Steigung berechnet werden:
-
-\begin{equation}
-    h = e \cdot m
-    \label{eq:h}
-\end{equation}
-
-Wobei $m$ die Steigung des Fits der Funktion  $U_{max}(\nu)  =  m\cdot\nu + q$
-ist.
-
-Die  Tatsache,  dass  zwar  die  Anzahl, jedoch (zumindest fur  konventionelle
-Lichtquellen)   nicht   die   Energie  der  austretenden  Elektronen  von  der
-Intensit\"at  der   Strahlung   abh\"angt,   f\"uhrte   um   1900  zu  grossen
-Erkl\"arungsschwierigkeiten im Rahmen der allgemein akzeptierten Wellentheorie
-des Lichtes. Die Beobachtung, dass die Farbe, und damit die Wellenl\"ange bzw.
-Frequenz, die Energie der Elektronen bestimmte, war v\"ollig unverst\"andlich.
-Die Probleme konnten erst durch die im Jahr 1905 von  Einstein  vorgeschlagene
-quantenmechanische Deutung des Photoeffektes beseitigt werden.
+gen\"ugen, meistens findet man einen um etwa \SI{10}{\percent} kleineren Wert.
 
