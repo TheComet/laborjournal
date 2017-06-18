@@ -1,0 +1,43 @@
+\usepackage{gensymb}
+\usepackage{textcomp}
+\usepackage{csquotes}
+\usepackage[german]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lipsum}
+\usepackage{titling}       % Abstract on titlepage
+\usepackage{changepage}    % Change width of abstract text
+\usepackage{makecell}      % newlines in table cells
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{wrapfig}
+\usepackage[flushleft]{threeparttable}
+\usepackage{booktabs}  % Required for \toprule, \midrule, \bottomrule
+\usepackage[backend=bibtex,bibstyle=numeric,sorting=nyt]{biblatex}
+\usepackage[toc,page]{appendix}
+\usepackage{siunitx}
+\usepackage{subcaption}
+\usepackage{pdfpages}
+\sisetup{output-exponent-marker=\ensuremath{\mathrm{E}}}
+
+% Labels per section
+\numberwithin{equation}{section}
+
+% For MATLAB code
+\usepackage{listings}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+
+% Also required for tuning appearance of MATLAB code
+\usepackage{microtype}
+\usepackage[scaled]{beramono}
+\newcommand\smaller{\fontsize{8}{8.2}\selectfont}
+\newcommand*\LSTfont{\smaller\ttfamily\SetTracking{encoding=*}{-60}\lsstyle}
+
+% Laplace L
+\DeclareMathOperator{\laplace}{\mathscr{L}}
+
+% Global relative size for all figures
+\newcommand{\imagewidth}{.9\linewidth}

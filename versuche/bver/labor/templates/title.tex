@@ -1,0 +1,31 @@
+\newcommand{\project}[1]{\gdef\@project{#1}}
+\newcommand{\@project}{}
+
+\newcommand{\supervisor}[1]{\gdef\@supervisor{#1}}
+\newcommand{\@supervisor}{}
+
+\renewcommand\maketitle{
+  \begin{titlepage}
+    ~\\
+    \begin{figure}[h]
+      \includegraphics[width=0.5\textwidth]{templates/fhnwlogo.pdf}
+    \end{figure}
+    ~\\[1cm]
+    \textbf{\Large \@project}
+    ~\\[0.8cm]
+    \textbf{\fontsize{22}{10}\selectfont \@title}
+    ~\\[3cm]
+    \textit{\Large
+      \@author
+    }
+    \vfill
+    \hfill
+    \@supervisor
+    \hspace{1cm}
+    
+    \noindent\hspace{-1in}\rule{19cm}{6pt}\\
+    \large{{\today}}
+
+  \end{titlepage}
+
+}

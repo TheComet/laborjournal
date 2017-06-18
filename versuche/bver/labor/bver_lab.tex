@@ -1,0 +1,66 @@
+\documentclass{templates/fhnwreport}
+
+\graphicspath{{./resources/}{../resources/}}
+
+\begin{document}
+
+% **************************************************************************** %
+% Title
+% **************************************************************************** %
+\project{Bildverarbeitung}
+\title{
+  Laborbericht\\[.5em]
+  Bildverarbeitungslabor  
+}
+\author{
+  Alex Murray, Simon Sturm, Florian Wernli\\
+  Elektro- und Informationstechnik\\
+  Fachhochschule Nordwestschweiz\\
+}
+
+\supervisor{Betreuer: Stefan Umbricht, Jürg P. Keller}
+
+\maketitle
+
+\clearpage
+\pagestyle{empty}
+{
+  \tableofcontents
+}
+
+\clearpage
+\pagestyle{fancy}
+\section{Schärfe \& Lichtmenge}
+\input{sections/010_Schaerfe_Lichtmenge.tex}
+
+\clearpage
+\section{Brennweite}
+\input{sections/020_Brennweite.tex}
+
+\clearpage
+\section{Beleuchtung \& Filter}
+\input{sections/030_Beleuchtung_Filter.tex}
+
+\clearpage
+\section{Rauschen}
+\input{sections/040_Rauschen.tex}
+
+\clearpage
+\section{Bildqualität}
+\input{sections/050_Bildqualitaet.tex}
+
+\clearpage
+\section{Makro}
+\input{sections/060_Makro.tex}
+
+% **************************************************************************** %
+% Quellenverzeichnis
+% **************************************************************************** %
+\clearpage
+\phantomsection
+\bibliographystyle{IEEEtran}
+\addcontentsline{toc}{section}{\bibname}
+\bibliography{bibliography}
+% % **************************************************************************** %
+\end{document}
+

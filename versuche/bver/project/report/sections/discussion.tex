@@ -1,0 +1,20 @@
+\section{Diskussion}
+
+Die verwendete Methode ist sehr spezifisch abgestummen worden f\"ur die kleine
+Anzahl Bilder, die wir zur Entwicklung verwendeten. W\"urden  andere  Bauteile
+die Farbe Blau  enthalten,  oder  w\"are  die  Leiterplatine  Blau  oder  hoch
+reflektiv, oder w\"aren die Widerst\"ande  \textit{nicht}  Blau sondern Beige,
+oder  w\"urde  man  das Bild mit anderen  Lichtverh\"altnissen  aufnehmen,  so
+w\"urde die Erkennung nicht mehr funktionieren.
+
+Es ist uns nicht gelungen, die  Farben  perfekt  zu dekodieren, vorallem nicht
+bei \"ahnlichen Farben  wie Rot und Braun, oder Grau und Silber, oder Gold und
+Gelb.  Es  w\"are  m\"oglich, dies bei der Dekodierung entgegenzuwirken, indem
+``unm\"ogliche'' Farb-Reihenfolgen detektiert werden und  von  der  Gruppe von
+m\"oglichen Ergebnissen eliminiert werden. Die Zeit daf\"ur hat gefehlt.
+
+Ein anderer Ansatz mit neuralen Netzwerken wurde betrachtet,  aber  wegen  der
+unmengen  n\"otiger  Bilder  zur  Trainierung  des Netzwerkes nicht umgesetzt.
+
+Der  MATLAB-Code kann online auf GitHub\cite{ref:matlab-code} angeschaut resp.
+heruntergeladen werden.

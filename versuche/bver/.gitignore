@@ -4,9 +4,10 @@
 *.fls
 *.log
 *.out
-*.pdf
 *.toc
 *.blg
 *.swp
 *.synctex.gz
-bver_lab.pdf
+*.m~
+*.bib
+*.xml
